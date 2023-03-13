@@ -1,0 +1,120 @@
+CRITICAL - 2022-12-02 14:48:07 --> You must set the database table to be used with your query.
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Model.php(1764): CodeIgniter\Model->builder()
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\TradingModel.php(2617): CodeIgniter\Model->__get('gmodel')
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Trading.php(2208): App\Models\TradingModel->profit_loss_xls_export_data(Array)
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->Profit_Loss_xls()
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#9 {main}
+CRITICAL - 2022-12-02 14:53:07 --> You must set the database table to be used with your query.
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Model.php(1764): CodeIgniter\Model->builder()
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\TradingModel.php(2617): CodeIgniter\Model->__get('gmodel')
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Trading.php(2208): App\Models\TradingModel->profit_loss_xls_export_data(Array)
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->Profit_Loss_xls()
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#9 {main}
+CRITICAL - 2022-12-02 14:54:16 --> You must set the database table to be used with your query.
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Model.php(1764): CodeIgniter\Model->builder()
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\TradingModel.php(2617): CodeIgniter\Model->__get('gmodel')
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Trading.php(2208): App\Models\TradingModel->profit_loss_xls_export_data(Array)
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->Profit_loss_xls()
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#9 {main}
+CRITICAL - 2022-12-02 14:54:25 --> You must set the database table to be used with your query.
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Model.php(1764): CodeIgniter\Model->builder()
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\TradingModel.php(2617): CodeIgniter\Model->__get('gmodel')
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Trading.php(2208): App\Models\TradingModel->profit_loss_xls_export_data(Array)
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->Profit_loss_xls()
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#9 {main}
+CRITICAL - 2022-12-02 14:57:53 --> You must set the database table to be used with your query.
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Model.php(1764): CodeIgniter\Model->builder()
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\TradingModel.php(2642): CodeIgniter\Model->__get('model')
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Trading.php(2208): App\Models\TradingModel->profit_loss_xls_export_data(Array)
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->Profit_loss_xls()
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#9 {main}
+CRITICAL - 2022-12-02 14:58:43 --> Undefined index: inc_total
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\TradingModel.php(2664): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\backup_trupt...', 2664, Array)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Trading.php(2208): App\Models\TradingModel->profit_loss_xls_export_data(Array)
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->Profit_loss_xls()
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#7 {main}
+CRITICAL - 2022-12-02 14:59:28 --> Undefined index: opening_bal
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\TradingModel.php(2665): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\backup_trupt...', 2665, Array)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Trading.php(2208): App\Models\TradingModel->profit_loss_xls_export_data(Array)
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->Profit_loss_xls()
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#7 {main}
+CRITICAL - 2022-12-02 15:00:17 --> Undefined index: exp_total
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\TradingModel.php(2675): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\backup_trupt...', 2675, Array)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Trading.php(2208): App\Models\TradingModel->profit_loss_xls_export_data(Array)
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->Profit_loss_xls()
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#7 {main}
+CRITICAL - 2022-12-02 15:00:19 --> Undefined index: exp_total
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\TradingModel.php(2675): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\backup_trupt...', 2675, Array)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Trading.php(2208): App\Models\TradingModel->profit_loss_xls_export_data(Array)
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->Profit_loss_xls()
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#7 {main}
+CRITICAL - 2022-12-02 15:21:24 --> You must set the database table to be used with your query.
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Model.php(1764): CodeIgniter\Model->builder()
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\TradingModel.php(2642): CodeIgniter\Model->__get('model')
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Trading.php(2208): App\Models\TradingModel->profit_loss_xls_export_data(Array)
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->Profit_loss_xls()
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#9 {main}
+CRITICAL - 2022-12-02 15:24:15 --> Undefined index: inc_total
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\TradingModel.php(2658): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\backup_trupt...', 2658, Array)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Trading.php(2208): App\Models\TradingModel->profit_loss_xls_export_data(Array)
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->Profit_loss_xls()
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#7 {main}
+CRITICAL - 2022-12-02 17:43:25 --> Undefined index: pur_total_rate
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\TradingModel.php(2671): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\backup_trupt...', 2671, Array)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Trading.php(2209): App\Models\TradingModel->profit_loss_xls_export_data(Array)
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->Profit_loss_xls()
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#7 {main}

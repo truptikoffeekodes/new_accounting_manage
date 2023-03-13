@@ -1,0 +1,288 @@
+CRITICAL - 2022-09-14 10:40:14 --> Table 'manifest_erp.sales_item' doesn't exist
+#0 C:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `si`.*, ...')
+#1 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `si`.*, ...')
+#2 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `si`.*, ...')
+#3 C:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `si`.*, ...', Array, false)
+#4 C:\trupti\new_klamp_accounting\app\Models\GstModel.php(1638): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(158): App\Models\GstModel->get_hsn_summary('2022-04-01', '2023-03-31')
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Hsn_summary()
+#7 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#11 {main}
+CRITICAL - 2022-09-14 10:44:08 --> Table 'manifest_erp.sales_item' doesn't exist
+#0 C:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `si`.*, ...')
+#1 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `si`.*, ...')
+#2 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `si`.*, ...')
+#3 C:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `si`.*, ...', Array, false)
+#4 C:\trupti\new_klamp_accounting\app\Models\GstModel.php(1642): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(158): App\Models\GstModel->get_hsn_summary('2022-04-01', '2023-03-31')
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Hsn_summary()
+#7 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#11 {main}
+CRITICAL - 2022-09-14 10:44:40 --> Table 'manifest_erp.sales_item' doesn't exist
+#0 C:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `si`.*, ...')
+#1 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `si`.*, ...')
+#2 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `si`.*, ...')
+#3 C:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `si`.*, ...', Array, false)
+#4 C:\trupti\new_klamp_accounting\app\Models\GstModel.php(1642): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(158): App\Models\GstModel->get_hsn_summary('2022-04-01', '2023-03-31')
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Hsn_summary()
+#7 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#11 {main}
+CRITICAL - 2022-09-14 10:45:00 --> Undefined variable: gmodel
+#0 C:\trupti\new_klamp_accounting\app\Models\GstModel.php(1649): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 1649, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(158): App\Models\GstModel->get_hsn_summary('2022-04-01', '2023-03-31')
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Hsn_summary()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-14 10:47:35 --> Undefined index: type
+#0 C:\trupti\new_klamp_accounting\app\Models\GstModel.php(1753): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 1753, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(158): App\Models\GstModel->get_hsn_summary('2022-04-01', '2023-03-31')
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Hsn_summary()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-14 10:49:35 --> Undefined index: type
+#0 C:\trupti\new_klamp_accounting\app\Models\GstModel.php(1754): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 1754, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(158): App\Models\GstModel->get_hsn_summary('2022-04-01', '2023-03-31')
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Hsn_summary()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-14 10:50:35 --> Undefined variable: data
+#0 C:\trupti\new_klamp_accounting\app\Models\GstModel.php(1749): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 1749, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(158): App\Models\GstModel->get_hsn_summary('2022-04-01', '2023-03-31')
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Hsn_summary()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-14 15:17:26 --> Undefined index: id
+#0 C:\trupti\new_klamp_accounting\app\Models\UserModel.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 16, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\User.php(35): App\Models\UserModel->insert_edit_user(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\User->create_user()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-14 15:19:09 --> Table 'manifest_erp.user' doesn't exist
+#0 C:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT *\nFROM `...')
+#1 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\trupti\new_klamp_accounting\app\Models\UserModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\trupti\new_klamp_accounting\app\Controllers\User.php(35): App\Models\UserModel->insert_edit_user(Array)
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\User->create_user()
+#7 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#11 {main}
+CRITICAL - 2022-09-14 15:19:25 --> Unknown column 'utype' in 'field list'
+#0 C:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `us...')
+#1 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\trupti\new_klamp_accounting\app\Models\UserModel.php(65): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\trupti\new_klamp_accounting\app\Controllers\User.php(35): App\Models\UserModel->insert_edit_user(Array)
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\User->create_user()
+#7 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#11 {main}
+CRITICAL - 2022-09-14 15:20:45 --> Unknown column 'utype' in 'field list'
+#0 C:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `us...')
+#1 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\trupti\new_klamp_accounting\app\Models\UserModel.php(65): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\trupti\new_klamp_accounting\app\Controllers\User.php(35): App\Models\UserModel->insert_edit_user(Array)
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\User->create_user()
+#7 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#11 {main}
+CRITICAL - 2022-09-14 15:21:20 --> Unknown column 'utype' in 'field list'
+#0 C:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `us...')
+#1 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\trupti\new_klamp_accounting\app\Models\UserModel.php(65): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\trupti\new_klamp_accounting\app\Controllers\User.php(35): App\Models\UserModel->insert_edit_user(Array)
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\User->create_user()
+#7 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#11 {main}
+CRITICAL - 2022-09-14 15:22:11 --> Unknown column 'utype' in 'field list'
+#0 C:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `us...')
+#1 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\trupti\new_klamp_accounting\app\Models\UserModel.php(65): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\trupti\new_klamp_accounting\app\Controllers\User.php(35): App\Models\UserModel->insert_edit_user(Array)
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\User->create_user()
+#7 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#11 {main}
+CRITICAL - 2022-09-14 15:24:00 --> Unknown column 'utype' in 'field list'
+#0 C:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `us...')
+#1 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\trupti\new_klamp_accounting\app\Models\UserModel.php(65): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\trupti\new_klamp_accounting\app\Controllers\User.php(35): App\Models\UserModel->insert_edit_user(Array)
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\User->create_user()
+#7 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#11 {main}
+CRITICAL - 2022-09-14 16:12:25 --> Undefined index: status
+#0 C:\trupti\new_klamp_accounting\app\Models\UserModel.php(103): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 103, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\User.php(51): App\Models\UserModel->get_users_data(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\User->Getdata('user')
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-14 16:13:38 --> Undefined index: status
+#0 C:\trupti\new_klamp_accounting\app\Models\UserModel.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 104, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\User.php(51): App\Models\UserModel->get_users_data(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\User->Getdata('user')
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-14 16:14:00 --> Undefined index: status
+#0 C:\trupti\new_klamp_accounting\app\Models\UserModel.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 104, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\User.php(51): App\Models\UserModel->get_users_data(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\User->GetData('user')
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-14 16:14:20 --> Undefined index: status
+#0 C:\trupti\new_klamp_accounting\app\Models\UserModel.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 104, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\User.php(51): App\Models\UserModel->get_users_data(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\User->Getdata('user')
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-14 16:14:53 --> Undefined index: status
+#0 C:\trupti\new_klamp_accounting\app\Models\UserModel.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 104, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\User.php(51): App\Models\UserModel->get_users_data(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\User->Getdata('user')
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-14 16:15:02 --> Undefined index: status
+#0 C:\trupti\new_klamp_accounting\app\Models\UserModel.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 104, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\User.php(51): App\Models\UserModel->get_users_data(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\User->Getdata('user')
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-14 16:21:18 --> Undefined property: stdClass::$isblock
+#0 C:\trupti\new_klamp_accounting\app\Models\AuthModel.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\trupti\\new_k...', 52, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Auth.php(19): App\Models\AuthModel->login(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Auth->index()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-14 16:22:23 --> Undefined property: stdClass::$isactive
+#0 C:\trupti\new_klamp_accounting\app\Models\AuthModel.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\trupti\\new_k...', 53, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Auth.php(19): App\Models\AuthModel->login(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Auth->index()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-14 16:22:23 --> Undefined property: stdClass::$isactive
+#0 C:\trupti\new_klamp_accounting\app\Models\AuthModel.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\trupti\\new_k...', 53, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Auth.php(19): App\Models\AuthModel->login(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Auth->index()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-14 16:23:12 --> Undefined property: stdClass::$username
+#0 C:\trupti\new_klamp_accounting\app\Models\AuthModel.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\trupti\\new_k...', 56, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Auth.php(19): App\Models\AuthModel->login(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Auth->index()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-14 16:23:59 --> Undefined property: stdClass::$adid
+#0 C:\trupti\new_klamp_accounting\app\Models\AuthModel.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\trupti\\new_k...', 57, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Auth.php(19): App\Models\AuthModel->login(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Auth->index()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-14 16:25:33 --> Undefined property: stdClass::$utype
+#0 C:\trupti\new_klamp_accounting\app\Models\AuthModel.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\trupti\\new_k...', 58, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Auth.php(19): App\Models\AuthModel->login(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Auth->index()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-14 17:48:48 --> Undefined variable: final_sub
+#0 C:\trupti\new_klamp_accounting\app\Models\SalesModel.php(1435): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 1435, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(312): App\Models\SalesModel->insert_edit_salesinvoice(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->add_salesinvoice()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-14 17:49:09 --> Undefined variable: final_sub
+#0 C:\trupti\new_klamp_accounting\app\Models\SalesModel.php(1424): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 1424, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(312): App\Models\SalesModel->insert_edit_salesinvoice(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->add_salesinvoice()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}

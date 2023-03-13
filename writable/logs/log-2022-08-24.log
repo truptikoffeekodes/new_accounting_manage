@@ -1,0 +1,273 @@
+CRITICAL - 2022-08-24 10:06:40 --> Argument 1 passed to CodeIgniter\Database\MySQLi\Connection::setDatabase() must be of the type string, null given, called in C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php on line 3362
+#0 C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php(3362): CodeIgniter\Database\MySQLi\Connection->setDatabase(NULL)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1668): App\Models\AddbookModel->get_ledger_register(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->get_ledger_register()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-24 12:21:03 --> count(): Parameter must be an array or an object that implements Countable
+#0 C:\trupti\new_klamp_accounting\app\Views\addbook\ledger_outstanding_list.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\trupti\\new_k...', 127, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('addbook/ledger_...', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1670): view('addbook/ledger_...', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_list()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-08-24 12:32:48 --> Undefined variable: sort_data
+#0 C:\trupti\new_klamp_accounting\app\Helpers\report_helper.php(7293): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 7293, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1650): get_ledger_outstanding_list('2022-07-25', '2022-08-24', 1)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_list()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-24 12:48:56 --> Undefined variable: thirty
+#0 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1625): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 1625, Array)
+#1 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_list()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#6 {main}
+CRITICAL - 2022-08-24 12:49:20 --> Undefined variable: thirty
+#0 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1626): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 1626, Array)
+#1 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_list()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#6 {main}
+CRITICAL - 2022-08-24 12:52:33 --> Undefined variable: today
+#0 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1622): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 1622, Array)
+#1 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_list()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#6 {main}
+CRITICAL - 2022-08-24 12:57:38 --> Undefined variable: thirty
+#0 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1658): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 1658, Array)
+#1 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_list()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#6 {main}
+CRITICAL - 2022-08-24 13:02:37 --> Undefined variable: thirty
+#0 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1661): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 1661, Array)
+#1 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_list()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#6 {main}
+CRITICAL - 2022-08-24 13:02:55 --> Undefined variable: thirty
+#0 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1661): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 1661, Array)
+#1 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_list()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#6 {main}
+CRITICAL - 2022-08-24 13:02:58 --> Undefined variable: thirty
+#0 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1661): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 1661, Array)
+#1 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_list()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#6 {main}
+CRITICAL - 2022-08-24 13:03:48 --> Undefined index: from
+#0 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1671): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 1671, Array)
+#1 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_list()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#6 {main}
+CRITICAL - 2022-08-24 13:09:08 --> Call to a member function format() on bool
+#0 C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php(3724): db_date('2')
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1651): App\Models\AddbookModel->get_old_ledger_register('2022-06-01\r\n')
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_list()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-24 13:11:07 --> Call to a member function format() on bool
+#0 C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php(3724): db_date('2')
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1638): App\Models\AddbookModel->get_old_ledger_register('2022-07-25')
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_list()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-24 13:15:10 --> Undefined index: to
+#0 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1670): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 1670, Array)
+#1 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_list()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#6 {main}
+CRITICAL - 2022-08-24 13:15:29 --> Undefined index: to
+#0 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1670): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 1670, Array)
+#1 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_list()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#6 {main}
+CRITICAL - 2022-08-24 13:22:43 --> Undefined variable: today
+#0 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1664): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 1664, Array)
+#1 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_list()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#6 {main}
+CRITICAL - 2022-08-24 15:34:58 --> You must set the database table to be used with your query.
+#0 C:\trupti\new_klamp_accounting\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\trupti\new_klamp_accounting\system\Model.php(1816): CodeIgniter\Model->builder()
+#2 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1622): CodeIgniter\Model->__call('get_ledger_outs...', Array)
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_list()
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-08-24 15:51:13 --> Undefined variable: db
+#0 C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php(4828): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 4828, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1622): App\Models\AddbookModel->get_ledger_outstanding_list(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_list()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-24 15:54:48 --> Argument 1 passed to CodeIgniter\Database\MySQLi\Connection::setDatabase() must be of the type string, null given, called in C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php on line 4827
+#0 C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php(4827): CodeIgniter\Database\MySQLi\Connection->setDatabase(NULL)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1622): App\Models\AddbookModel->get_ledger_outstanding_list(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_list()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-24 15:55:23 --> Table 'manifest_erp.gl_group' doesn't exist
+#0 C:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `id`\nFRO...')
+#1 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`\nFRO...')
+#2 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`\nFRO...')
+#3 C:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `id`\nFRO...', Array, false)
+#4 C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php(4833): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1622): App\Models\AddbookModel->get_ledger_outstanding_list(Array)
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_list()
+#7 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#11 {main}
+CRITICAL - 2022-08-24 15:56:55 --> Undefined variable: page
+#0 C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php(4852): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 4852, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1622): App\Models\AddbookModel->get_ledger_outstanding_list(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_list()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-24 15:59:45 --> Undefined variable: data
+#0 C:\trupti\new_klamp_accounting\app\Helpers\report_helper.php(7233): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 7233, Array)
+#1 C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php(4890): get_ledger_outstanding_list('2022-07-25\r\n', '2022-08-24', '95')
+#2 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1622): App\Models\AddbookModel->get_ledger_outstanding_list(Array)
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_list()
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-08-24 16:19:19 --> Undefined variable: start_date
+#0 C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php(4898): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 4898, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1622): App\Models\AddbookModel->get_ledger_outstanding_list(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_list()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-24 16:23:43 --> Undefined variable: thirty
+#0 C:\trupti\new_klamp_accounting\app\Views\addbook\ledger_outstanding_list.php(130): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 130, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('addbook/ledger_...', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1630): view('addbook/ledger_...', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_list()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-08-24 16:41:42 --> Undefined variable: row
+#0 C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php(4904): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 4904, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1622): App\Models\AddbookModel->get_ledger_outstanding_list(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_list()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-24 16:45:39 --> Undefined variable: number_of_page
+#0 C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php(4921): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 4921, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1622): App\Models\AddbookModel->get_ledger_outstanding_list(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_list()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-24 17:08:11 --> Undefined variable: gl_grp
+#0 C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php(4929): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 4929, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1622): App\Models\AddbookModel->get_ledger_outstanding_list(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_list()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-24 17:49:03 --> Undefined variable: db
+#0 C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php(5104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 5104, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1650): App\Models\AddbookModel->ledger_outstanding_list_xls_export_data(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->ledger_outstanding_list_xls_export()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-24 17:50:00 --> Undefined variable: page
+#0 C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php(5115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 5115, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1650): App\Models\AddbookModel->ledger_outstanding_list_xls_export_data(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->ledger_outstanding_list_xls_export()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-24 17:51:01 --> Not unique table/alias: 'gl'
+#0 C:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `acc`.`i...')
+#1 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `acc`.`i...')
+#2 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `acc`.`i...')
+#3 C:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `acc`.`i...', Array, false)
+#4 C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php(5120): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1650): App\Models\AddbookModel->ledger_outstanding_list_xls_export_data(Array)
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->ledger_outstanding_list_xls_export()
+#7 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#11 {main}

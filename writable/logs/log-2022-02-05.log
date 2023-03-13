@@ -1,0 +1,104 @@
+CRITICAL - 2022-02-05 05:12:32 --> Undefined variable: result
+#0 /var/www/html/app/Models/SalesModel.php(694): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Sales.php(409): App\Models\SalesModel->search_item_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-05 05:12:52 --> Undefined variable: result
+#0 /var/www/html/app/Models/SalesModel.php(694): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Sales.php(409): App\Models\SalesModel->search_item_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-05 05:12:53 --> Undefined variable: result
+#0 /var/www/html/app/Models/SalesModel.php(694): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Sales.php(409): App\Models\SalesModel->search_item_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-05 05:12:54 --> Undefined variable: result
+#0 /var/www/html/app/Models/SalesModel.php(694): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Sales.php(409): App\Models\SalesModel->search_item_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-05 05:12:55 --> Undefined variable: result
+#0 /var/www/html/app/Models/SalesModel.php(694): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Sales.php(409): App\Models\SalesModel->search_item_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-05 05:15:26 --> Undefined index: uom
+#0 /var/www/html/app/Models/ItemsModel.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(241): App\Models\ItemsModel->insert_edit_item()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->add_item()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-05 05:15:46 --> Undefined variable: result
+#0 /var/www/html/app/Models/SalesModel.php(694): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Sales.php(409): App\Models\SalesModel->search_item_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-05 05:15:59 --> Undefined variable: result
+#0 /var/www/html/app/Models/SalesModel.php(694): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Sales.php(409): App\Models\SalesModel->search_item_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-05 05:16:03 --> Undefined variable: result
+#0 /var/www/html/app/Models/SalesModel.php(694): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Sales.php(409): App\Models\SalesModel->search_item_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-05 06:35:50 --> Undefined index: uom
+#0 /var/www/html/app/Models/ItemsModel.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(241): App\Models\ItemsModel->insert_edit_item()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->add_item()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-05 06:38:38 --> Undefined variable: result
+#0 /var/www/html/app/Models/PurchaseModel.php(1711): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Purchase.php(85): App\Models\PurchaseModel->search_purchase_challan_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-05 07:06:47 --> Undefined variable: result
+#0 /var/www/html/app/Models/SalesModel.php(694): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Sales.php(409): App\Models\SalesModel->search_item_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-05 08:30:12 --> Argument 1 passed to CodeIgniter\Database\MySQLi\Connection::setDatabase() must be of the type string, null given, called in /var/www/html/app/Models/MasterModel.php on line 688
+#0 /var/www/html/app/Models/MasterModel.php(688): CodeIgniter\Database\MySQLi\Connection->setDatabase()
+#1 /var/www/html/app/Controllers/Master.php(795): App\Models\MasterModel->search_transport_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

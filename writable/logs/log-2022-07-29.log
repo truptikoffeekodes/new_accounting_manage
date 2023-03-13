@@ -1,0 +1,20 @@
+CRITICAL - 2022-07-29 12:12:15 --> Call to a member function format() on bool
+#0 D:\trupti\new_klamp_accounting\app\Models\AddbookModel.php(3398): db_date('20-22-0501')
+#1 D:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1430): App\Models\AddbookModel->get_ledger_register(Array)
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->ledger()
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-07-29 14:32:48 --> Undefined variable: page
+#0 D:\trupti\new_klamp_accounting\app\Views\addbook\sales_register.php(167): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\new_k...', 167, Array)
+#1 D:\trupti\new_klamp_accounting\system\View\View.php(246): include('D:\\trupti\\new_k...')
+#2 D:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('addbook/sales_r...', Array, true)
+#3 D:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(738): view('addbook/sales_r...', Array)
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Sales_register()
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#6 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#9 {main}

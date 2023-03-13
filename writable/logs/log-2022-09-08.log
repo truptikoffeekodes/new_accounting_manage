@@ -1,0 +1,124 @@
+CRITICAL - 2022-09-08 10:18:40 --> Illegal offset type
+#0 C:\trupti\new_klamp_accounting\app\Helpers\balanceSheet_helper.php(775): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal offset ...', 'C:\\trupti\\new_k...', 775, Array)
+#1 C:\trupti\new_klamp_accounting\app\Helpers\balanceSheet_helper.php(90): Currlib_data('63', '2022-04-01', '2023-03-31')
+#2 C:\trupti\new_klamp_accounting\app\Controllers\Trading.php(579): get_Currlib_sub_grp_data('32', '2022-04-01', '2023-03-31')
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->get_current_lib_sub_grp()
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-09-08 10:19:28 --> Illegal offset type
+#0 C:\trupti\new_klamp_accounting\app\Helpers\balanceSheet_helper.php(802): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal offset ...', 'C:\\trupti\\new_k...', 802, Array)
+#1 C:\trupti\new_klamp_accounting\app\Helpers\balanceSheet_helper.php(90): Currlib_data('64', '2022-04-01', '2023-03-31')
+#2 C:\trupti\new_klamp_accounting\app\Controllers\Trading.php(579): get_Currlib_sub_grp_data('32', '2022-04-01', '2023-03-31')
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->get_current_lib_sub_grp()
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-09-08 12:37:14 --> Unknown column 'acc.status' in 'where clause'
+#0 C:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `acc`.`n...')
+#1 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `acc`.`n...')
+#2 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `acc`.`n...')
+#3 C:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `acc`.`n...', Array, false)
+#4 C:\trupti\new_klamp_accounting\app\Models\MasterModel.php(651): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\trupti\new_klamp_accounting\app\Controllers\Master.php(815): App\Models\MasterModel->search_pur_delivery(Array)
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Master->Getdata('search_pur_deli...')
+#7 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#11 {main}
+CRITICAL - 2022-09-08 15:42:19 --> Undefined index: pid
+#0 C:\trupti\new_klamp_accounting\app\Models\PurchaseModel.php(1649): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 1649, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Purchase.php(164): App\Models\PurchaseModel->insert_edit_purchaseinvoice(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->add_purchaseinvoice()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-08 15:42:31 --> Undefined index: pid
+#0 C:\trupti\new_klamp_accounting\app\Models\PurchaseModel.php(1649): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 1649, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Purchase.php(164): App\Models\PurchaseModel->insert_edit_purchaseinvoice(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->add_purchaseinvoice()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-08 16:06:27 --> Undefined index: item_uom
+#0 C:\trupti\new_klamp_accounting\app\Models\PurchaseModel.php(2359): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 2359, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Purchase.php(92): App\Models\PurchaseModel->search_purchase_challan_data(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->Getdata('get_purchase_ch...')
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-08 16:42:52 --> Undefined variable: purchase_sgst
+#0 C:\trupti\new_klamp_accounting\app\Helpers\balanceSheet_helper.php(4057): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 4057, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Trading.php(1870): get_purchase_monthly('01-04-2022', '31-03-2023', '528')
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchase_monthly_AcWise()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-08 16:53:55 --> Undefined variable: generalPurchase
+#0 C:\trupti\new_klamp_accounting\app\Views\trading\liability\general_purchase_monthly.php(216): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 216, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('trading/liabili...', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Trading.php(2169): view('trading/liabili...', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->generalPurchase_monthly()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-09-08 17:12:48 --> Undefined variable: generalPurchase
+#0 C:\trupti\new_klamp_accounting\app\Views\trading\liability\general_purchase_monthly.php(216): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 216, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('trading/liabili...', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Trading.php(2169): view('trading/liabili...', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->generalPurchase_monthly()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-09-08 17:18:14 --> Undefined variable: generalPurchase
+#0 C:\trupti\new_klamp_accounting\app\Views\trading\liability\general_purchase_monthly.php(216): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 216, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('trading/liabili...', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Trading.php(2169): view('trading/liabili...', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->generalPurchase_monthly()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-09-08 17:22:36 --> Undefined variable: generalPurchase
+#0 C:\trupti\new_klamp_accounting\app\Views\trading\liability\general_purchase_monthly.php(216): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 216, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('trading/liabili...', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Trading.php(2169): view('trading/liabili...', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->generalPurchase_monthly()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-09-08 17:24:38 --> Undefined variable: generalPurchase
+#0 C:\trupti\new_klamp_accounting\app\Views\trading\liability\general_purchase_monthly.php(216): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 216, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('trading/liabili...', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Trading.php(2169): view('trading/liabili...', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->generalPurchase_monthly()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}

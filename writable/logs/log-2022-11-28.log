@@ -1,0 +1,49 @@
+CRITICAL - 2022-11-28 10:40:59 --> Unable to connect to the database.
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Database\MySQLi\Connection.php(275): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\ApiModel.php(341): CodeIgniter\Database\MySQLi\Connection->setDatabase('ACE20227T93')
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Api.php(287): App\Models\ApiModel->insert_edit_sale_invoice(Array)
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->add_sale_invoice()
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#8 {main}
+CRITICAL - 2022-11-28 11:48:16 --> A non-numeric value encountered
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\ApiModel.php(893): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'D:\\backup_trupt...', 893, Array)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Api.php(308): App\Models\ApiModel->insert_edit_sale_return(Array)
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->add_sale_return()
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#7 {main}
+CRITICAL - 2022-11-28 11:50:25 --> Undefined index: supp_inv
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\ApiModel.php(825): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\backup_trupt...', 825, Array)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Api.php(308): App\Models\ApiModel->insert_edit_sale_return(Array)
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->add_sale_return()
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#7 {main}
+CRITICAL - 2022-11-28 16:50:20 --> Unknown database 'kla2022zfdh'
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Database\MySQLi\Connection.php(278): mysqli->select_db('KLA2022ZFDH')
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\ApiModel.php(3966): CodeIgniter\Database\MySQLi\Connection->setDatabase('KLA2022ZFDH')
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Api.php(401): App\Models\ApiModel->insert_edit_purchase_invoice(Array)
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->add_purchase_invoice()
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#8 {main}
+CRITICAL - 2022-11-28 16:50:43 --> Unknown database 'kla2022zfdh'
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Database\MySQLi\Connection.php(278): mysqli->select_db('KLA2022ZFDH')
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Helpers\base_helper.php(146): CodeIgniter\Database\MySQLi\Connection->setDatabase('KLA2022ZFDH')
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\AccountModel.php(195): getManagedData('account a', Array, Array, 'and is_delete=0')
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Account.php(53): App\Models\AccountModel->get_account_data(Array)
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Account->Getdata('account')
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#9 {main}

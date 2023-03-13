@@ -1,0 +1,180 @@
+CRITICAL - 2022-07-07 11:49:36 --> Undefined variable: item
+#0 D:\trupti\klamp_accounting\app\Views\pdf\general_sales.php(180): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 180, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('pdf/general_sal...', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Sales.php(285): view('pdf/general_sal...', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->pdf_general('18')
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-07-07 11:50:25 --> Undefined variable: item
+#0 D:\trupti\klamp_accounting\app\Views\pdf\general_sales.php(180): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 180, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('pdf/general_sal...', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Sales.php(285): view('pdf/general_sal...', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->pdf_general('18')
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-07-07 11:50:58 --> Undefined index: qty
+#0 D:\trupti\klamp_accounting\app\Views\pdf\general_sales.php(182): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\klamp...', 182, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('pdf/general_sal...', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Sales.php(285): view('pdf/general_sal...', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->pdf_general('18')
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-07-07 11:51:49 --> Undefined variable: item
+#0 D:\trupti\klamp_accounting\app\Views\pdf\general_sales.php(246): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 246, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('pdf/general_sal...', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Sales.php(285): view('pdf/general_sal...', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->pdf_general('18')
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-07-07 11:53:09 --> Undefined index: hsn
+#0 D:\trupti\klamp_accounting\app\Views\pdf\general_sales.php(453): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\klamp...', 453, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('pdf/general_sal...', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Sales.php(285): view('pdf/general_sal...', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->pdf_general('18')
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-07-07 12:12:38 --> Undefined index: hsn
+#0 D:\trupti\klamp_accounting\app\Views\pdf\general_sales.php(453): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\klamp...', 453, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('pdf/general_sal...', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Sales.php(285): view('pdf/general_sal...', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->pdf_general('18')
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-07-07 12:35:29 --> Undefined index: hsn
+#0 D:\trupti\klamp_accounting\app\Views\pdf\general_sales.php(453): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\klamp...', 453, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('pdf/general_sal...', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Sales.php(285): view('pdf/general_sal...', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->pdf_general('19')
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-07-07 17:12:52 --> Undefined index: type
+#0 D:\trupti\klamp_accounting\app\Controllers\Gst.php(164): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\klamp...', 164, Array)
+#1 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->cr_dr_reg_invoice()
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#6 {main}
+CRITICAL - 2022-07-07 17:14:04 --> Undefined index: type
+#0 D:\trupti\klamp_accounting\app\Controllers\Gst.php(164): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\klamp...', 164, Array)
+#1 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->cr_dr_reg_invoice()
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#6 {main}
+CRITICAL - 2022-07-07 17:21:34 --> Undefined index: type
+#0 D:\trupti\klamp_accounting\app\Controllers\Gst.php(164): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\klamp...', 164, Array)
+#1 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->cr_dr_reg_invoice()
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#6 {main}
+CRITICAL - 2022-07-07 20:12:52 --> Undefined index: type
+#0 D:\trupti\klamp_accounting\app\Controllers\Gst.php(186): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\klamp...', 186, Array)
+#1 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->cr_dr_unreg_invoice()
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#6 {main}
+CRITICAL - 2022-07-07 20:13:51 --> Undefined index: type
+#0 D:\trupti\klamp_accounting\app\Controllers\Gst.php(186): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\klamp...', 186, Array)
+#1 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->cr_dr_unreg_invoice()
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#6 {main}
+CRITICAL - 2022-07-07 20:15:22 --> Undefined index: type
+#0 D:\trupti\klamp_accounting\app\Controllers\Gst.php(191): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\klamp...', 191, Array)
+#1 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->cr_dr_unreg_invoice()
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#6 {main}
+CRITICAL - 2022-07-07 20:15:29 --> Undefined variable: type
+#0 D:\trupti\klamp_accounting\app\Views\gst\cr_dr_unreg_detail.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 56, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/cr_dr_unreg...', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Gst.php(140): view('gst/cr_dr_unreg...', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->cr_dr_unreg_detail()
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-07-07 20:15:48 --> Undefined variable: type
+#0 D:\trupti\klamp_accounting\app\Views\gst\cr_dr_unreg_detail.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 56, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/cr_dr_unreg...', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Gst.php(140): view('gst/cr_dr_unreg...', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->cr_dr_unreg_detail()
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-07-07 20:16:09 --> Undefined variable: type
+#0 D:\trupti\klamp_accounting\app\Views\gst\cr_dr_unreg_detail.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 56, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/cr_dr_unreg...', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Gst.php(140): view('gst/cr_dr_unreg...', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->cr_dr_unreg_detail()
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-07-07 20:17:20 --> Undefined variable: type
+#0 D:\trupti\klamp_accounting\app\Views\gst\cr_dr_unreg_detail.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 56, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/cr_dr_unreg...', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Gst.php(140): view('gst/cr_dr_unreg...', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->cr_dr_unreg_detail()
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-07-07 20:18:41 --> Undefined variable: type
+#0 D:\trupti\klamp_accounting\app\Views\gst\cr_dr_unreg_detail.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 56, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/cr_dr_unreg...', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Gst.php(140): view('gst/cr_dr_unreg...', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->cr_dr_unreg_detail()
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}

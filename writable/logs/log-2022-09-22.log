@@ -1,0 +1,94 @@
+CRITICAL - 2022-09-22 10:26:40 --> Division by zero
+#0 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(848): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', 'C:\\trupti\\new_k...', 848, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(176): App\Models\ApendColumnModel->update_sales_challan_item_disc()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_challan_item_disc()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-22 10:36:45 --> Undefined variable: result3
+#0 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(936): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 936, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(176): App\Models\ApendColumnModel->update_sales_challan_item_disc()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_challan_item_disc()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-22 14:15:39 --> Argument 1 passed to CodeIgniter\Database\MySQLi\Connection::setDatabase() must be of the type string, null given, called in C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php on line 799
+#0 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(799): CodeIgniter\Database\MySQLi\Connection->setDatabase(NULL)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(176): App\Models\ApendColumnModel->update_sales_challan_item_disc()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_challan_item_disc()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-22 14:15:42 --> Argument 1 passed to CodeIgniter\Database\MySQLi\Connection::setDatabase() must be of the type string, null given, called in C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php on line 799
+#0 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(799): CodeIgniter\Database\MySQLi\Connection->setDatabase(NULL)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(176): App\Models\ApendColumnModel->update_sales_challan_item_disc()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_challan_item_disc()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-22 14:15:53 --> Argument 1 passed to CodeIgniter\Database\MySQLi\Connection::setDatabase() must be of the type string, null given, called in C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php on line 799
+#0 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(799): CodeIgniter\Database\MySQLi\Connection->setDatabase(NULL)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(176): App\Models\ApendColumnModel->update_sales_challan_item_disc()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_challan_item_disc()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-22 14:16:04 --> Argument 1 passed to CodeIgniter\Database\MySQLi\Connection::setDatabase() must be of the type string, null given, called in C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php on line 799
+#0 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(799): CodeIgniter\Database\MySQLi\Connection->setDatabase(NULL)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(176): App\Models\ApendColumnModel->update_sales_challan_item_disc()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_challan_item_disc()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-22 14:25:16 --> Undefined variable: result3
+#0 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(1091): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 1091, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(185): App\Models\ApendColumnModel->update_sales_invoice_item_disc()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_invoice_item_disc()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-22 15:46:55 --> Unknown column 'is_update_column' in 'where clause'
+#0 C:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT *\nFROM `...')
+#1 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(1277): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(167): App\Models\ApendColumnModel->update_sales_general_item_disc()
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_general_item_disc()
+#7 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#11 {main}
+CRITICAL - 2022-09-22 16:59:17 --> Undefined variable: pur_total_rate
+#0 C:\trupti\new_klamp_accounting\app\Helpers\report_helper.php(611): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 611, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Trading.php(765): sale_purchase_itm_total('2021-04-01', '2022-03-31')
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseReturn_voucher()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-22 17:11:38 --> Undefined variable: purchase
+#0 C:\trupti\new_klamp_accounting\app\Helpers\report_helper.php(595): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 595, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Trading.php(765): sale_purchase_itm_total('2021-04-01', '2022-03-31')
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseReturn_voucher()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}

@@ -1,0 +1,9 @@
+CRITICAL - 2022-11-25 16:04:00 --> Undefined index: total
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Helpers\gst_helper.php(2514): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\backup_trupt...', 2514, Array)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Gst.php(287): get_b2b_b2c_detail('2022-11-01', '2022-11-20')
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2b_detail()
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#7 {main}

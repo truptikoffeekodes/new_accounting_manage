@@ -1,0 +1,138 @@
+CRITICAL - 2022-08-29 12:51:10 --> Undefined index: tds
+#0 C:\trupti\new_klamp_accounting\app\Models\AccountModel.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 108, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Account.php(63): App\Models\AccountModel->insert_edit_account(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Account->add_account()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-29 12:52:05 --> Undefined index: tds
+#0 C:\trupti\new_klamp_accounting\app\Models\AccountModel.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 108, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Account.php(63): App\Models\AccountModel->insert_edit_account(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Account->add_account()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-29 13:00:00 --> A non-numeric value encountered
+#0 C:\trupti\new_klamp_accounting\app\Views\addbook\bank.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\trupti\\new_k...', 156, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('addbook/bank', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1377): view('addbook/bank', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Bank()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-08-29 13:04:53 --> A non-numeric value encountered
+#0 C:\trupti\new_klamp_accounting\app\Views\addbook\bank.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\trupti\\new_k...', 156, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('addbook/bank', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1377): view('addbook/bank', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Bank()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-08-29 13:05:29 --> A non-numeric value encountered
+#0 C:\trupti\new_klamp_accounting\app\Views\addbook\bank.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\trupti\\new_k...', 156, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('addbook/bank', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1377): view('addbook/bank', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Bank()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-08-29 13:09:18 --> Undefined index: opening_bal
+#0 C:\trupti\new_klamp_accounting\app\Views\addbook\bank.php(151): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 151, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('addbook/bank', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1377): view('addbook/bank', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Bank()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-08-29 15:10:34 --> Undefined variable: result
+#0 C:\trupti\new_klamp_accounting\app\Models\SalesModel.php(804): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 804, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(528): App\Models\SalesModel->search_item_data(NULL)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->Getdata('Item')
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-29 15:10:35 --> Undefined variable: result
+#0 C:\trupti\new_klamp_accounting\app\Models\SalesModel.php(804): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 804, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(528): App\Models\SalesModel->search_item_data('s')
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->Getdata('Item')
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-29 15:10:37 --> Undefined variable: result
+#0 C:\trupti\new_klamp_accounting\app\Models\SalesModel.php(804): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 804, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(528): App\Models\SalesModel->search_item_data('')
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->Getdata('Item')
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-29 15:10:37 --> Undefined variable: result
+#0 C:\trupti\new_klamp_accounting\app\Models\SalesModel.php(804): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 804, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(528): App\Models\SalesModel->search_item_data('i')
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->Getdata('Item')
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-29 15:10:38 --> Undefined variable: result
+#0 C:\trupti\new_klamp_accounting\app\Models\SalesModel.php(804): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 804, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(528): App\Models\SalesModel->search_item_data('')
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->Getdata('Item')
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-29 15:26:09 --> Invalid file: templets.php
+#0 C:\trupti\new_klamp_accounting\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templets.php')
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(257): CodeIgniter\View\View->render('templets', Array, true)
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('master/item_grp', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Items.php(43): view('master/item_grp', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Items->item_grp()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Items))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-08-29 15:40:49 --> Undefined offset: 0
+#0 C:\trupti\new_klamp_accounting\app\Views\addbook\sales_gst_register.php(218): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\trupti\\new_k...', 218, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('addbook/sales_g...', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(768): view('addbook/sales_g...', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Sales_gst_register()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-08-29 17:10:21 --> Undefined index: data
+#0 C:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(675): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 675, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(680): get_gstr3_detail('2022-08-29', '2022-09-06')
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->gstr3()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}

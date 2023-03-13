@@ -1,0 +1,29 @@
+CRITICAL - 2022-09-04 22:32:32 --> Undefined offset: 2
+#0 C:\trupti\new_klamp_accounting\app\Models\PurchaseModel.php(1141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\trupti\\new_k...', 1141, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Purchase.php(203): App\Models\PurchaseModel->insert_edit_purchasereturn(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->add_purchasereturn()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-04 22:32:41 --> Undefined offset: 2
+#0 C:\trupti\new_klamp_accounting\app\Models\PurchaseModel.php(1141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\trupti\\new_k...', 1141, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Purchase.php(203): App\Models\PurchaseModel->insert_edit_purchasereturn(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->add_purchasereturn()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-04 22:56:53 --> Undefined variable: item
+#0 C:\trupti\new_klamp_accounting\app\Views\purchase\create_purchasereturn.php(376): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 376, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('purchase/create...', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Purchase.php(219): view('purchase/create...', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->add_purchasereturn()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}

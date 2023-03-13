@@ -1,0 +1,86 @@
+CRITICAL - 2022-11-23 10:51:15 --> Unknown database 'tes2022l1je'
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Database\MySQLi\Connection.php(278): mysqli->select_db('TES2022L1JE')
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Helpers\base_helper.php(146): CodeIgniter\Database\MySQLi\Connection->setDatabase('TES2022L1JE')
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\AccountModel.php(195): getManagedData('account a', Array, Array, 'and is_delete=0')
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Account.php(53): App\Models\AccountModel->get_account_data(Array)
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Account->Getdata('account')
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#9 {main}
+CRITICAL - 2022-11-23 15:34:04 --> You must set the database table to be used with your query.
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Model.php(1816): CodeIgniter\Model->builder()
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Master.php(894): CodeIgniter\Model->__call('search_purchase...', Array)
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Master->Getdata('search_purchase...')
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master))
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#8 {main}
+CRITICAL - 2022-11-23 15:34:14 --> You must set the database table to be used with your query.
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Model.php(1816): CodeIgniter\Model->builder()
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Master.php(894): CodeIgniter\Model->__call('search_purchase...', Array)
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Master->Getdata('search_purchase...')
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master))
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#8 {main}
+CRITICAL - 2022-11-23 15:36:07 --> You must set the database table to be used with your query.
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Model.php(1816): CodeIgniter\Model->builder()
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Master.php(894): CodeIgniter\Model->__call('search_purchase...', Array)
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Master->Getdata('search_purchase...')
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master))
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#8 {main}
+CRITICAL - 2022-11-23 16:56:30 --> Undefined variable: result
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\PurchaseModel.php(2962): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\backup_trupt...', 2962, Array)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Purchase.php(81): App\Models\PurchaseModel->get_purchaseinvoice_databyid(Array)
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->Getdata('search_purchase...')
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#7 {main}
+CRITICAL - 2022-11-23 16:56:46 --> Undefined variable: result
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\PurchaseModel.php(2962): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\backup_trupt...', 2962, Array)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Purchase.php(81): App\Models\PurchaseModel->get_purchaseinvoice_databyid(Array)
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->Getdata('search_purchase...')
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#7 {main}
+CRITICAL - 2022-11-23 16:59:04 --> Undefined variable: result
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\PurchaseModel.php(2964): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\backup_trupt...', 2964, Array)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Purchase.php(81): App\Models\PurchaseModel->get_purchaseinvoice_databyid(Array)
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->Getdata('search_purchase...')
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#7 {main}
+CRITICAL - 2022-11-23 17:02:03 --> Undefined index: item_uom
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\PurchaseModel.php(2717): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\backup_trupt...', 2717, Array)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Purchase.php(92): App\Models\PurchaseModel->search_purchase_challan_data(Array)
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->Getdata('get_purchase_ch...')
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#7 {main}
+CRITICAL - 2022-11-23 18:14:05 --> Undefined index: item_uom
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\PurchaseModel.php(2820): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\backup_trupt...', 2820, Array)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Purchase.php(132): App\Models\PurchaseModel->get_purchase_challan('25')
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->add_purchasechallan('25')
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#7 {main}

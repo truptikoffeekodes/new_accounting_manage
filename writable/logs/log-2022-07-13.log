@@ -1,0 +1,169 @@
+CRITICAL - 2022-07-13 09:11:53 --> Table 'manifest_erp.sales_invoice' doesn't exist
+#0 D:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `si`.`id...')
+#1 D:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `si`.`id...')
+#2 D:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `si`.`id...')
+#3 D:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `si`.`id...', Array, false)
+#4 D:\trupti\new_klamp_accounting\app\Helpers\report_helper.php(5001): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(211): Outstanding('receivable', NULL, NULL)
+#6 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Outstanding('receivable')
+#7 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#8 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#11 {main}
+CRITICAL - 2022-07-13 09:47:43 --> Undefined index: account_name
+#0 D:\trupti\new_klamp_accounting\app\Models\BankModel.php(1513): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\new_k...', 1513, Array)
+#1 D:\trupti\new_klamp_accounting\app\Controllers\Bank.php(444): App\Models\BankModel->get_invoice_databyid(Array)
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Bank->Getdata('search_invoice')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bank))
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-07-13 09:47:44 --> Undefined index: account_name
+#0 D:\trupti\new_klamp_accounting\app\Models\BankModel.php(1513): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\new_k...', 1513, Array)
+#1 D:\trupti\new_klamp_accounting\app\Controllers\Bank.php(444): App\Models\BankModel->get_invoice_databyid(Array)
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Bank->Getdata('search_invoice')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bank))
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-07-13 09:48:02 --> Undefined index: account_name
+#0 D:\trupti\new_klamp_accounting\app\Models\BankModel.php(1513): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\new_k...', 1513, Array)
+#1 D:\trupti\new_klamp_accounting\app\Controllers\Bank.php(444): App\Models\BankModel->get_invoice_databyid(Array)
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Bank->Getdata('search_invoice')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bank))
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-07-13 09:55:11 --> Undefined index: account_name
+#0 D:\trupti\new_klamp_accounting\app\Models\BankModel.php(1513): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\new_k...', 1513, Array)
+#1 D:\trupti\new_klamp_accounting\app\Controllers\Bank.php(444): App\Models\BankModel->get_invoice_databyid(Array)
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Bank->Getdata('search_invoice')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bank))
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-07-13 09:55:20 --> Undefined index: account_name
+#0 D:\trupti\new_klamp_accounting\app\Models\BankModel.php(1513): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\new_k...', 1513, Array)
+#1 D:\trupti\new_klamp_accounting\app\Controllers\Bank.php(444): App\Models\BankModel->get_invoice_databyid(Array)
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Bank->Getdata('search_invoice')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bank))
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-07-13 09:55:26 --> Undefined index: account_name
+#0 D:\trupti\new_klamp_accounting\app\Models\BankModel.php(1513): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\new_k...', 1513, Array)
+#1 D:\trupti\new_klamp_accounting\app\Controllers\Bank.php(444): App\Models\BankModel->get_invoice_databyid(Array)
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Bank->Getdata('search_invoice')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bank))
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-07-13 09:55:32 --> Undefined index: account_name
+#0 D:\trupti\new_klamp_accounting\app\Models\BankModel.php(1513): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\new_k...', 1513, Array)
+#1 D:\trupti\new_klamp_accounting\app\Controllers\Bank.php(444): App\Models\BankModel->get_invoice_databyid(Array)
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Bank->Getdata('search_invoice')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bank))
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-07-13 10:02:51 --> Undefined index: account_name
+#0 D:\trupti\new_klamp_accounting\app\Models\BankModel.php(1513): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\new_k...', 1513, Array)
+#1 D:\trupti\new_klamp_accounting\app\Controllers\Bank.php(444): App\Models\BankModel->get_invoice_databyid(Array)
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Bank->Getdata('search_invoice')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bank))
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-07-13 10:02:52 --> Undefined index: account_name
+#0 D:\trupti\new_klamp_accounting\app\Models\BankModel.php(1513): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\new_k...', 1513, Array)
+#1 D:\trupti\new_klamp_accounting\app\Controllers\Bank.php(444): App\Models\BankModel->get_invoice_databyid(Array)
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Bank->Getdata('search_invoice')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bank))
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-07-13 10:02:53 --> Undefined index: account_name
+#0 D:\trupti\new_klamp_accounting\app\Models\BankModel.php(1513): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\new_k...', 1513, Array)
+#1 D:\trupti\new_klamp_accounting\app\Controllers\Bank.php(444): App\Models\BankModel->get_invoice_databyid(Array)
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Bank->Getdata('search_invoice')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bank))
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-07-13 10:02:53 --> Undefined index: account_name
+#0 D:\trupti\new_klamp_accounting\app\Models\BankModel.php(1513): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\new_k...', 1513, Array)
+#1 D:\trupti\new_klamp_accounting\app\Controllers\Bank.php(444): App\Models\BankModel->get_invoice_databyid(Array)
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Bank->Getdata('search_invoice')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bank))
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-07-13 10:03:09 --> Undefined index: account_name
+#0 D:\trupti\new_klamp_accounting\app\Models\BankModel.php(1513): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\new_k...', 1513, Array)
+#1 D:\trupti\new_klamp_accounting\app\Controllers\Bank.php(444): App\Models\BankModel->get_invoice_databyid(Array)
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Bank->Getdata('search_invoice')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bank))
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-07-13 10:03:23 --> Undefined index: account_name
+#0 D:\trupti\new_klamp_accounting\app\Models\BankModel.php(1513): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\new_k...', 1513, Array)
+#1 D:\trupti\new_klamp_accounting\app\Controllers\Bank.php(444): App\Models\BankModel->get_invoice_databyid(Array)
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Bank->Getdata('search_invoice')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bank))
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-07-13 14:17:50 --> Table 'manifest_erp.purchase_invoice' doesn't exist
+#0 D:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `pi`.`id...')
+#1 D:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pi`.`id...')
+#2 D:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pi`.`id...')
+#3 D:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `pi`.`id...', Array, false)
+#4 D:\trupti\new_klamp_accounting\app\Helpers\report_helper.php(5097): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(211): Outstanding('payable', NULL, NULL)
+#6 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Outstanding('payable')
+#7 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#8 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#11 {main}
+CRITICAL - 2022-07-13 17:31:33 --> Unknown column 'pi.party_account' in 'field list'
+#0 D:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `pg`.*, ...')
+#1 D:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pg`.*, ...')
+#2 D:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pg`.*, ...')
+#3 D:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `pg`.*, ...', Array, false)
+#4 D:\trupti\new_klamp_accounting\app\Models\BankModel.php(1446): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\trupti\new_klamp_accounting\app\Controllers\Bank.php(444): App\Models\BankModel->get_invoice_databyid(Array)
+#6 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Bank->Getdata('search_invoice')
+#7 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bank))
+#8 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#11 {main}
+CRITICAL - 2022-07-13 17:31:35 --> Unknown column 'pi.party_account' in 'field list'
+#0 D:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `pg`.*, ...')
+#1 D:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pg`.*, ...')
+#2 D:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pg`.*, ...')
+#3 D:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `pg`.*, ...', Array, false)
+#4 D:\trupti\new_klamp_accounting\app\Models\BankModel.php(1446): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\trupti\new_klamp_accounting\app\Controllers\Bank.php(444): App\Models\BankModel->get_invoice_databyid(Array)
+#6 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Bank->Getdata('search_invoice')
+#7 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bank))
+#8 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#11 {main}

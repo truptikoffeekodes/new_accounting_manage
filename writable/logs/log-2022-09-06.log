@@ -1,0 +1,157 @@
+CRITICAL - 2022-09-06 15:20:17 --> You must set the database table to be used with your query.
+#0 C:\trupti\new_klamp_accounting\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\trupti\new_klamp_accounting\system\Model.php(1816): CodeIgniter\Model->builder()
+#2 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(62): CodeIgniter\Model->__call('get_sales_chall...', Array)
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->challan_detail('10')
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-09-06 15:22:38 --> You must set the database table to be used with your query.
+#0 C:\trupti\new_klamp_accounting\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\trupti\new_klamp_accounting\system\Model.php(1816): CodeIgniter\Model->builder()
+#2 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(62): CodeIgniter\Model->__call('get_sales_chall...', Array)
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->challan_detail('10')
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-09-06 15:23:29 --> You must set the database table to be used with your query.
+#0 C:\trupti\new_klamp_accounting\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\trupti\new_klamp_accounting\system\Model.php(1816): CodeIgniter\Model->builder()
+#2 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(62): CodeIgniter\Model->__call('get_sales_chall...', Array)
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->challan_detail('10')
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-09-06 15:24:03 --> You must set the database table to be used with your query.
+#0 C:\trupti\new_klamp_accounting\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\trupti\new_klamp_accounting\system\Model.php(1816): CodeIgniter\Model->builder()
+#2 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(62): CodeIgniter\Model->__call('get_sales_chall...', Array)
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->challan_detail('10')
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-09-06 15:24:23 --> You must set the database table to be used with your query.
+#0 C:\trupti\new_klamp_accounting\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\trupti\new_klamp_accounting\system\Model.php(1816): CodeIgniter\Model->builder()
+#2 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(62): CodeIgniter\Model->__call('get_sales_chall...', Array)
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->challan_detail('10')
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-09-06 15:24:38 --> You must set the database table to be used with your query.
+#0 C:\trupti\new_klamp_accounting\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\trupti\new_klamp_accounting\system\Model.php(1816): CodeIgniter\Model->builder()
+#2 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(62): CodeIgniter\Model->__call('get_sales_chall...', Array)
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->challan_detail('10')
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-09-06 15:26:03 --> Undefined index: code
+#0 C:\trupti\new_klamp_accounting\app\Views\Sales\challan_detail.php(189): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 189, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('Sales/challan_d...', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(66): view('Sales/challan_d...', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->challan_detail('10')
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-09-06 15:43:26 --> Undefined index: hsn
+#0 C:\trupti\new_klamp_accounting\app\Views\pdf\sales_challan.php(479): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 479, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('pdf/sales_chall...', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(133): view('pdf/sales_chall...', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->pdf_challan('10')
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-09-06 15:51:08 --> syntax error, unexpected '}', expecting end of file
+#0 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('pdf/sales_chall...', Array, true)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(133): view('pdf/sales_chall...', Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->pdf_challan('10')
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-06 16:06:25 --> Undefined index: code
+#0 C:\trupti\new_klamp_accounting\app\Views\Sales\sales_invoice_detail.php(189): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 189, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('Sales/sales_inv...', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(286): view('Sales/sales_inv...', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->invoice_detail('7')
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-09-06 16:28:46 --> Undefined variable: discount_amt
+#0 C:\trupti\new_klamp_accounting\app\Views\pdf\sales_challan.php(322): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 322, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('pdf/sales_chall...', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(133): view('pdf/sales_chall...', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->pdf_challan('10')
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-09-06 22:08:52 --> Undefined index: hsn
+#0 C:\trupti\new_klamp_accounting\app\Views\pdf\sales_return.php(455): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 455, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('pdf/sales_retur...', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(239): view('pdf/sales_retur...', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->pdf_return('10')
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-09-06 22:20:29 --> Undefined index: code
+#0 C:\trupti\new_klamp_accounting\app\Views\purchase\purchase_challan_detail.php(205): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 205, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('purchase/purcha...', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Purchase.php(278): view('purchase/purcha...', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->purchase_challan_detail('4')
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-09-06 22:40:58 --> Undefined index: code
+#0 C:\trupti\new_klamp_accounting\app\Views\purchase\purchase_return_detail.php(200): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 200, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('purchase/purcha...', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Purchase.php(292): view('purchase/purcha...', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->purchase_return_detail('9')
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-09-06 22:43:42 --> Undefined variable: sub_total
+#0 C:\trupti\new_klamp_accounting\app\Views\purchase\purchase_return_detail.php(239): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 239, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('purchase/purcha...', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Purchase.php(292): view('purchase/purcha...', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->purchase_return_detail('9')
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}

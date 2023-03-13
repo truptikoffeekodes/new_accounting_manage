@@ -1,0 +1,420 @@
+CRITICAL - 2022-09-28 14:57:25 --> Table 'kla2022zfdh.states' doesn't exist
+#0 D:\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `id`\nFRO...')
+#1 D:\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`\nFRO...')
+#2 D:\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`\nFRO...')
+#3 D:\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `id`\nFRO...', Array, false)
+#4 D:\new_klamp_accounting\app\Models\ApiModel.php(3105): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#6 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#7 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#8 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#11 {main}
+CRITICAL - 2022-09-28 14:59:00 --> Table 'kla2022zfdh.states' doesn't exist
+#0 D:\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `id`\nFRO...')
+#1 D:\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`\nFRO...')
+#2 D:\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`\nFRO...')
+#3 D:\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `id`\nFRO...', Array, false)
+#4 D:\new_klamp_accounting\app\Models\ApiModel.php(3105): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#6 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#7 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#8 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#11 {main}
+CRITICAL - 2022-09-28 15:29:47 --> Undefined offset: 1
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3229): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\new_klamp_ac...', 3229, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 15:31:08 --> Undefined offset: 1
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3229): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\new_klamp_ac...', 3229, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 15:56:06 --> Undefined offset: 2
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3234): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\new_klamp_ac...', 3234, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 15:57:54 --> Undefined offset: 2
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3235): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\new_klamp_ac...', 3235, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 15:58:48 --> Undefined offset: 1
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3230): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\new_klamp_ac...', 3230, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 15:59:07 --> Unsupported operand types
+#0 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#1 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#6 {main}
+CRITICAL - 2022-09-28 16:00:00 --> Unsupported operand types
+#0 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#1 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#6 {main}
+CRITICAL - 2022-09-28 16:04:51 --> Cannot use a scalar value as an array
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3229): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot use a sc...', 'D:\\new_klamp_ac...', 3229, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 16:06:03 --> Cannot use a scalar value as an array
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3229): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot use a sc...', 'D:\\new_klamp_ac...', 3229, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 16:06:25 --> Undefined offset: 1
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3229): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\new_klamp_ac...', 3229, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 16:07:06 --> Undefined offset: 1
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3229): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\new_klamp_ac...', 3229, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 16:07:25 --> Undefined offset: 1
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3229): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\new_klamp_ac...', 3229, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 16:08:30 --> Undefined offset: 46
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3229): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\new_klamp_ac...', 3229, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 16:09:11 --> Illegal offset type
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3229): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal offset ...', 'D:\\new_klamp_ac...', 3229, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 16:09:30 --> Illegal offset type
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3229): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal offset ...', 'D:\\new_klamp_ac...', 3229, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 16:10:20 --> Undefined offset: 46
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3229): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\new_klamp_ac...', 3229, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 16:26:35 --> syntax error, unexpected '$pid' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 D:\new_klamp_accounting\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\new_klamp_ac...')
+#1 D:\new_klamp_accounting\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ApiM...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ApiM...')
+#3 D:\new_klamp_accounting\app\Controllers\Api.php(22): spl_autoload_call('App\\Models\\ApiM...')
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Api->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 D:\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#6 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#9 {main}
+CRITICAL - 2022-09-28 16:26:52 --> syntax error, unexpected '$pid' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 D:\new_klamp_accounting\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\new_klamp_ac...')
+#1 D:\new_klamp_accounting\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ApiM...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ApiM...')
+#3 D:\new_klamp_accounting\app\Controllers\Api.php(22): spl_autoload_call('App\\Models\\ApiM...')
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Api->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 D:\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#6 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#9 {main}
+CRITICAL - 2022-09-28 16:27:29 --> syntax error, unexpected 'foreach' (T_FOREACH), expecting function (T_FUNCTION) or const (T_CONST)
+#0 D:\new_klamp_accounting\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\new_klamp_ac...')
+#1 D:\new_klamp_accounting\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ApiM...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ApiM...')
+#3 D:\new_klamp_accounting\app\Controllers\Api.php(22): spl_autoload_call('App\\Models\\ApiM...')
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Api->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 D:\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#6 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#9 {main}
+CRITICAL - 2022-09-28 16:28:38 --> syntax error, unexpected 'foreach' (T_FOREACH), expecting function (T_FUNCTION) or const (T_CONST)
+#0 D:\new_klamp_accounting\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\new_klamp_ac...')
+#1 D:\new_klamp_accounting\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ApiM...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ApiM...')
+#3 D:\new_klamp_accounting\app\Controllers\Api.php(22): spl_autoload_call('App\\Models\\ApiM...')
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Api->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 D:\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#6 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#9 {main}
+CRITICAL - 2022-09-28 16:31:57 --> Undefined index: pid
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3182): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 3182, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 16:32:44 --> Undefined index: pid
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3181): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 3181, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 17:18:45 --> Undefined index: pid
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3188): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 3188, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 18:23:09 --> Undefined index: rate
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3222): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 3222, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 18:25:24 --> Undefined index: id
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3537): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 3537, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 18:26:25 --> Undefined index: rate
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3255): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 3255, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 18:26:44 --> Unsupported operand types
+#0 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#1 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#6 {main}
+CRITICAL - 2022-09-28 18:43:45 --> Undefined index: rate
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3254): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 3254, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 18:44:02 --> Undefined index: rate
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3254): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 3254, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 18:58:40 --> Undefined variable: new_item
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3177): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\new_klamp_ac...', 3177, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 19:07:54 --> Unknown column 'voucher_type' in 'field list'
+#0 D:\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `sa...')
+#1 D:\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sa...')
+#2 D:\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sa...')
+#3 D:\new_klamp_accounting\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sa...', Array, false)
+#4 D:\new_klamp_accounting\app\Models\ApiModel.php(3520): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#6 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#7 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#8 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#11 {main}
+CRITICAL - 2022-09-28 19:13:54 --> Unknown column 'voucher_type' in 'field list'
+#0 D:\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `sa...')
+#1 D:\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sa...')
+#2 D:\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sa...')
+#3 D:\new_klamp_accounting\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sa...', Array, false)
+#4 D:\new_klamp_accounting\app\Models\ApiModel.php(3552): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#6 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#7 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#8 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#11 {main}
+CRITICAL - 2022-09-28 19:15:10 --> Unknown column 'voucher_type' in 'field list'
+#0 D:\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `sa...')
+#1 D:\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sa...')
+#2 D:\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sa...')
+#3 D:\new_klamp_accounting\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sa...', Array, false)
+#4 D:\new_klamp_accounting\app\Models\ApiModel.php(3552): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#6 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#7 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#8 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#11 {main}
+CRITICAL - 2022-09-28 19:23:55 --> Unsupported operand types
+#0 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#1 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#6 {main}
+CRITICAL - 2022-09-28 19:24:47 --> Undefined index: hsn
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3209): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 3209, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 19:26:18 --> Undefined index: hsn
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3209): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 3209, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 19:29:54 --> Undefined variable: item_id
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3177): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\new_klamp_ac...', 3177, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 19:30:32 --> Undefined index: hsn
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 3185, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 19:32:31 --> Undefined index: id
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3511): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 3511, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 19:33:21 --> Undefined variable: new_pid
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3184): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\new_klamp_ac...', 3184, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 19:36:23 --> Undefined index: hsn
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3189): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 3189, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-28 19:47:51 --> Undefined variable: item_id
+#0 D:\new_klamp_accounting\app\Models\ApiModel.php(3185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\new_klamp_ac...', 3185, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Api.php(352): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}

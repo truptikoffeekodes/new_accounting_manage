@@ -1,0 +1,87 @@
+CRITICAL - 2022-11-20 16:33:52 --> Unknown column 'is_update_discount' in 'field list'
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('UPDATE `sales_i...')
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `sales_i...')
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `sales_i...')
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Database\BaseBuilder.php(2456): CodeIgniter\Database\BaseConnection->query('UPDATE `sales_i...', Array, false)
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\GeneralModel.php(572): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\SalesApendColumnModel.php(1871): App\Models\GeneralModel->update_data_table('sales_item', Array, Array)
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\SalesApendColumn.php(128): App\Models\SalesApendColumnModel->new_update_sales_challan_item_disc()
+#7 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\SalesApendColumn->sales_challan_item_disc()
+#8 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SalesApendColumn))
+#9 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#12 {main}
+CRITICAL - 2022-11-20 17:01:37 --> Undefined variable: result2
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\SalesApendColumnModel.php(2022): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\backup_trupt...', 2022, Array)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\SalesApendColumn.php(137): App\Models\SalesApendColumnModel->new_update_sales_invoice_item_disc()
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\SalesApendColumn->sales_invoice_item_disc()
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SalesApendColumn))
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#7 {main}
+CRITICAL - 2022-11-20 17:22:00 --> Undefined variable: result1
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\SalesApendColumnModel.php(2023): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\backup_trupt...', 2023, Array)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\SalesApendColumn.php(137): App\Models\SalesApendColumnModel->new_update_sales_invoice_item_disc()
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\SalesApendColumn->sales_invoice_item_disc()
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SalesApendColumn))
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#7 {main}
+CRITICAL - 2022-11-20 17:23:23 --> Undefined variable: result1
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\SalesApendColumnModel.php(2026): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\backup_trupt...', 2026, Array)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\SalesApendColumn.php(137): App\Models\SalesApendColumnModel->new_update_sales_invoice_item_disc()
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\SalesApendColumn->sales_invoice_item_disc()
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SalesApendColumn))
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#7 {main}
+CRITICAL - 2022-11-20 17:23:25 --> Undefined variable: result1
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\SalesApendColumnModel.php(2026): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\backup_trupt...', 2026, Array)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\SalesApendColumn.php(137): App\Models\SalesApendColumnModel->new_update_sales_invoice_item_disc()
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\SalesApendColumn->sales_invoice_item_disc()
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SalesApendColumn))
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#7 {main}
+CRITICAL - 2022-11-20 17:24:07 --> Undefined variable: result1
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\SalesApendColumnModel.php(2027): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\backup_trupt...', 2027, Array)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\SalesApendColumn.php(137): App\Models\SalesApendColumnModel->new_update_sales_invoice_item_disc()
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\SalesApendColumn->sales_invoice_item_disc()
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SalesApendColumn))
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#7 {main}
+CRITICAL - 2022-11-20 17:24:09 --> Undefined variable: result1
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\SalesApendColumnModel.php(2027): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\backup_trupt...', 2027, Array)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\SalesApendColumn.php(137): App\Models\SalesApendColumnModel->new_update_sales_invoice_item_disc()
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\SalesApendColumn->sales_invoice_item_disc()
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SalesApendColumn))
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#7 {main}
+CRITICAL - 2022-11-20 18:08:05 --> Undefined index: amount
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\SalesApendColumnModel.php(1860): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\backup_trupt...', 1860, Array)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\SalesApendColumn.php(206): App\Models\SalesApendColumnModel->update_sales_subtotal()
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\SalesApendColumn->sales_sub_total()
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SalesApendColumn))
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#7 {main}
+CRITICAL - 2022-11-20 18:17:05 --> You must set the database table to be used with your query.
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Model.php(1816): CodeIgniter\Model->builder()
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\SalesApendColumn.php(216): CodeIgniter\Model->__call('update_general_...', Array)
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\SalesApendColumn->sales_general_sub_total()
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SalesApendColumn))
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#8 {main}

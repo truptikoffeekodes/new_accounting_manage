@@ -1,0 +1,332 @@
+CRITICAL - 2022-07-06 10:34:23 --> Cannot redeclare App\Controllers\Gst::gstr1_xls_export()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 10:34:33 --> Cannot redeclare App\Controllers\Gst::gstr1_xls_export()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 10:54:20 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 10:55:20 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 11:29:29 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 11:31:59 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 11:34:13 --> Call to a member function format() on bool
+#0 D:\trupti\klamp_accounting\app\Controllers\Gst.php(316): db_date('2022-16-15')
+#1 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2b_sales_inv_vouchers()
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#6 {main}
+CRITICAL - 2022-07-06 11:46:11 --> You must set the database table to be used with your query.
+#0 D:\trupti\klamp_accounting\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 D:\trupti\klamp_accounting\system\Model.php(1816): CodeIgniter\Model->builder()
+#2 D:\trupti\klamp_accounting\app\Models\GstModel.php(1519): CodeIgniter\Model->__call('get_b2b_b2c_det...', Array)
+#3 D:\trupti\klamp_accounting\app\Controllers\Gst.php(632): App\Models\GstModel->b2b_sales_inv_vouchers_xls_export_data(Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2b_sales_inv_vouchers_xls_export()
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-07-06 11:58:43 --> Illegal parameter data types date and row for operation '>='
+#0 D:\trupti\klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `si`.*, ...')
+#1 D:\trupti\klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `si`.*, ...')
+#2 D:\trupti\klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `si`.*, ...')
+#3 D:\trupti\klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `si`.*, ...', Array, false)
+#4 D:\trupti\klamp_accounting\app\Helpers\gst_helper.php(1542): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\trupti\klamp_accounting\app\Models\GstModel.php(1520): get_b2b_b2c_detail(Array)
+#6 D:\trupti\klamp_accounting\app\Controllers\Gst.php(632): App\Models\GstModel->b2b_sales_inv_vouchers_xls_export_data(Array)
+#7 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2b_sales_inv_vouchers_xls_export()
+#8 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#9 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#12 {main}
+CRITICAL - 2022-07-06 12:21:33 --> Undefined variable: from
+#0 D:\trupti\klamp_accounting\app\Views\gst\gstr1_b2b_invoices.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 20, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr1_b2b_i...', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Gst.php(429): view('gst/gstr1_b2b_i...', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2b_gnrl_sales_inv_vouchers()
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-07-06 12:22:27 --> Undefined variable: from
+#0 D:\trupti\klamp_accounting\app\Views\gst\gstr1_b2b_invoices.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 20, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr1_b2b_i...', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Gst.php(429): view('gst/gstr1_b2b_i...', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2b_gnrl_sales_inv_vouchers()
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-07-06 12:23:34 --> Undefined variable: from
+#0 D:\trupti\klamp_accounting\app\Views\gst\gstr1_b2b_invoices.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 20, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr1_b2b_i...', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Gst.php(429): view('gst/gstr1_b2b_i...', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2b_gnrl_sales_inv_vouchers()
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-07-06 13:04:42 --> Call to a member function format() on bool
+#0 D:\trupti\klamp_accounting\app\Controllers\Gst.php(316): db_date('2022-16-15')
+#1 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2b_sales_inv_vouchers()
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#6 {main}
+CRITICAL - 2022-07-06 13:07:11 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 13:08:16 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 13:09:41 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 13:13:34 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 13:13:48 --> Maximum 31 characters allowed in sheet title.
+#0 D:\trupti\klamp_accounting\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Worksheet\Worksheet.php(850): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet::checkSheetTitle('B2B Sales Invoi...')
+#1 D:\trupti\klamp_accounting\app\Models\GstModel.php(1579): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->setTitle('B2B Sales Invoi...')
+#2 D:\trupti\klamp_accounting\app\Controllers\Gst.php(632): App\Models\GstModel->b2b_sales_inv_vouchers_xls_export_data(Array)
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2b_sales_inv_vouchers_xls_export()
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#8 {main}
+CRITICAL - 2022-07-06 13:14:26 --> Maximum 31 characters allowed in sheet title.
+#0 D:\trupti\klamp_accounting\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Worksheet\Worksheet.php(850): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet::checkSheetTitle('B2B Sales Invoi...')
+#1 D:\trupti\klamp_accounting\app\Models\GstModel.php(1579): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->setTitle('B2B Sales Invoi...')
+#2 D:\trupti\klamp_accounting\app\Controllers\Gst.php(632): App\Models\GstModel->b2b_sales_inv_vouchers_xls_export_data(Array)
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2b_sales_inv_vouchers_xls_export()
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#8 {main}
+CRITICAL - 2022-07-06 13:20:35 --> Undefined variable: from
+#0 D:\trupti\klamp_accounting\app\Views\gst\gstr1_b2b_invoices.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 20, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr1_b2b_i...', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Gst.php(329): view('gst/gstr1_b2b_i...', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2b_sales_inv_vouchers()
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-07-06 13:21:38 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 13:21:46 --> Undefined variable: from
+#0 D:\trupti\klamp_accounting\app\Views\gst\gstr1_b2b_invoices.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 20, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr1_b2b_i...', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Gst.php(329): view('gst/gstr1_b2b_i...', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2b_sales_inv_vouchers()
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-07-06 13:26:27 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 14:42:40 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 14:47:29 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 14:48:32 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 14:49:32 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 14:50:43 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 14:51:52 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 15:51:46 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'D:\\trupti\\klamp...', 101, Array)
+#1 D:\trupti\klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 D:\trupti\klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 D:\trupti\klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 D:\trupti\klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 D:\trupti\klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 D:\trupti\klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 D:\trupti\klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 D:\trupti\klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#13 {main}
+CRITICAL - 2022-07-06 15:51:46 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at D:\trupti\klamp_accounting\app\Config\Events.php:33) in D:\trupti\klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'D:\\trupti\\klamp...', 164, Array)
+#1 D:\trupti\klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 15:51:50 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'D:\\trupti\\klamp...', 101, Array)
+#1 D:\trupti\klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 D:\trupti\klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 D:\trupti\klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 D:\trupti\klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 D:\trupti\klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 D:\trupti\klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 D:\trupti\klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 D:\trupti\klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#13 {main}
+CRITICAL - 2022-07-06 15:51:50 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at D:\trupti\klamp_accounting\app\Config\Events.php:33) in D:\trupti\klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'D:\\trupti\\klamp...', 164, Array)
+#1 D:\trupti\klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 15:52:06 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'D:\\trupti\\klamp...', 101, Array)
+#1 D:\trupti\klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 D:\trupti\klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 D:\trupti\klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 D:\trupti\klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 D:\trupti\klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 D:\trupti\klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 D:\trupti\klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 D:\trupti\klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#13 {main}
+CRITICAL - 2022-07-06 15:52:06 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at D:\trupti\klamp_accounting\app\Config\Events.php:33) in D:\trupti\klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'D:\\trupti\\klamp...', 164, Array)
+#1 D:\trupti\klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 16:24:27 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 16:25:30 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 16:26:30 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 17:10:45 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 17:12:01 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 17:13:07 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 17:15:53 --> Undefined index: sales_b2c_small
+#0 D:\trupti\klamp_accounting\app\Models\GstModel.php(1702): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\klamp...', 1702, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Gst.php(693): App\Models\GstModel->b2c_small_xls_export_data(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2c_small_xls_export()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-07-06 17:20:34 --> Undefined variable: from
+#0 D:\trupti\klamp_accounting\app\Views\gst\gstr1_b2c_small_invoices.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 37, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr1_b2c_s...', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Gst.php(371): view('gst/gstr1_b2c_s...', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2c_small_gnrl_sales_inv_vouchers()
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-07-06 17:23:08 --> Undefined variable: from
+#0 D:\trupti\klamp_accounting\app\Views\gst\gstr1_b2c_small_invoices.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 37, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr1_b2c_s...', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Gst.php(371): view('gst/gstr1_b2c_s...', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2c_small_gnrl_sales_inv_vouchers()
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-07-06 17:27:11 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-06 17:33:44 --> Undefined index: type
+#0 D:\trupti\klamp_accounting\app\Controllers\Gst.php(158): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\klamp...', 158, Array)
+#1 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->cr_dr_reg_invoice()
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#6 {main}
+CRITICAL - 2022-07-06 17:33:53 --> Undefined index: type
+#0 D:\trupti\klamp_accounting\app\Controllers\Gst.php(158): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\klamp...', 158, Array)
+#1 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->cr_dr_reg_invoice()
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#6 {main}
+CRITICAL - 2022-07-06 17:36:27 --> Undefined variable: from
+#0 D:\trupti\klamp_accounting\app\Views\gst\cr_dr_reg_invoice.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 20, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/cr_dr_reg_i...', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Gst.php(161): view('gst/cr_dr_reg_i...', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->cr_dr_reg_invoice()
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-07-06 17:43:07 --> Undefined variable: from
+#0 D:\trupti\klamp_accounting\app\Views\gst\cr_dr_reg_invoice.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 20, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/cr_dr_reg_i...', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Gst.php(165): view('gst/cr_dr_reg_i...', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->cr_dr_reg_invoice()
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}

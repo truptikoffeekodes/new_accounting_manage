@@ -1,0 +1,563 @@
+CRITICAL - 2022-02-21 05:05:36 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:06:18 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:06:23 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:06:24 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:06:26 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:06:27 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:06:28 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:06:29 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:06:30 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:06:33 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:17:09 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:34:26 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:34:33 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:34:34 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:34:34 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:34:35 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:34:37 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:34:40 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:34:40 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:34:42 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:34:43 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:34:50 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:34:51 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:34:52 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:34:53 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:42:12 --> Invalid file: Sales/create_ac_invoice.php
+#0 /var/www/html/system/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /var/www/html/app/Common.php(48): CodeIgniter\View\View->render()
+#2 /var/www/html/app/Controllers/Sales.php(217): view()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->add_ACinvoice()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-21 05:42:16 --> Invalid file: Sales/create_ac_invoice.php
+#0 /var/www/html/system/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /var/www/html/app/Common.php(48): CodeIgniter\View\View->render()
+#2 /var/www/html/app/Controllers/Sales.php(217): view()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->add_ACinvoice()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-21 05:42:28 --> Invalid file: Sales/create_ac_invoice.php
+#0 /var/www/html/system/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /var/www/html/app/Common.php(48): CodeIgniter\View\View->render()
+#2 /var/www/html/app/Controllers/Sales.php(217): view()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->add_ACinvoice()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-21 05:43:25 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:44:38 --> Undefined variable: result
+#0 /var/www/html/app/Models/MasterModel.php(1148): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(769): App\Models\MasterModel->search_acc_particular_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:44:43 --> Undefined variable: result
+#0 /var/www/html/app/Models/MasterModel.php(1148): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(769): App\Models\MasterModel->search_acc_particular_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:55:23 --> Column 'voucher_type' cannot be null
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/PurchaseModel.php(1163): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/app/Controllers/Purchase.php(228): App\Models\PurchaseModel->insert_edit_general_pur()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->add_general_pur()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-21 05:55:23 --> Column 'voucher_type' cannot be null
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/PurchaseModel.php(1163): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/app/Controllers/Purchase.php(228): App\Models\PurchaseModel->insert_edit_general_pur()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->add_general_pur()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-21 05:57:01 --> Undefined variable: result
+#0 /var/www/html/app/Models/MasterModel.php(1148): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(769): App\Models\MasterModel->search_acc_particular_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:57:08 --> Undefined variable: result
+#0 /var/www/html/app/Models/MasterModel.php(1148): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(769): App\Models\MasterModel->search_acc_particular_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:57:11 --> Undefined variable: result
+#0 /var/www/html/app/Models/MasterModel.php(1148): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(769): App\Models\MasterModel->search_acc_particular_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:57:12 --> Undefined variable: result
+#0 /var/www/html/app/Models/MasterModel.php(1148): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(769): App\Models\MasterModel->search_acc_particular_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:57:12 --> Undefined variable: result
+#0 /var/www/html/app/Models/MasterModel.php(1148): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(769): App\Models\MasterModel->search_acc_particular_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:57:17 --> Undefined variable: result
+#0 /var/www/html/app/Models/MasterModel.php(1148): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(769): App\Models\MasterModel->search_acc_particular_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:57:17 --> Undefined variable: result
+#0 /var/www/html/app/Models/MasterModel.php(1148): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(769): App\Models\MasterModel->search_acc_particular_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 05:57:20 --> Undefined variable: result
+#0 /var/www/html/app/Models/MasterModel.php(1148): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(769): App\Models\MasterModel->search_acc_particular_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 06:02:59 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 06:03:13 --> Column 'voucher_type' cannot be null
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/PurchaseModel.php(1163): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/app/Controllers/Purchase.php(228): App\Models\PurchaseModel->insert_edit_general_pur()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->add_general_pur()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-21 06:03:18 --> Column 'voucher_type' cannot be null
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/PurchaseModel.php(1163): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/app/Controllers/Purchase.php(228): App\Models\PurchaseModel->insert_edit_general_pur()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->add_general_pur()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-21 06:13:57 --> Undefined variable: result
+#0 /var/www/html/app/Models/MasterModel.php(1148): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(769): App\Models\MasterModel->search_acc_particular_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 06:15:42 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 06:15:46 --> Column 'voucher_type' cannot be null
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/PurchaseModel.php(1163): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/app/Controllers/Purchase.php(228): App\Models\PurchaseModel->insert_edit_general_pur()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->add_general_pur()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-21 06:15:47 --> Column 'voucher_type' cannot be null
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/PurchaseModel.php(1163): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/app/Controllers/Purchase.php(228): App\Models\PurchaseModel->insert_edit_general_pur()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->add_general_pur()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-21 06:17:52 --> Column 'voucher_type' cannot be null
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/PurchaseModel.php(1163): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/app/Controllers/Purchase.php(228): App\Models\PurchaseModel->insert_edit_general_pur()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->add_general_pur()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-21 06:17:52 --> Column 'voucher_type' cannot be null
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/PurchaseModel.php(1163): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/app/Controllers/Purchase.php(228): App\Models\PurchaseModel->insert_edit_general_pur()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->add_general_pur()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-21 06:19:33 --> Undefined variable: result
+#0 /var/www/html/app/Models/MasterModel.php(1148): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(769): App\Models\MasterModel->search_acc_particular_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 06:20:20 --> Column 'voucher_type' cannot be null
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/PurchaseModel.php(1163): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/app/Controllers/Purchase.php(228): App\Models\PurchaseModel->insert_edit_general_pur()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->add_general_pur()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-21 06:20:20 --> Column 'voucher_type' cannot be null
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/PurchaseModel.php(1163): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/app/Controllers/Purchase.php(228): App\Models\PurchaseModel->insert_edit_general_pur()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->add_general_pur()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-21 06:26:00 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 06:26:59 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 06:28:24 --> Column 'voucher_type' cannot be null
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/PurchaseModel.php(1163): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/app/Controllers/Purchase.php(228): App\Models\PurchaseModel->insert_edit_general_pur()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->add_general_pur()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-21 06:28:24 --> Column 'voucher_type' cannot be null
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/PurchaseModel.php(1163): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/app/Controllers/Purchase.php(228): App\Models\PurchaseModel->insert_edit_general_pur()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->add_general_pur()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-21 06:31:58 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 06:36:43 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 06:36:44 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 06:36:46 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 06:36:48 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 06:37:07 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 06:42:07 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

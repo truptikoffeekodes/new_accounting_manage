@@ -1,0 +1,559 @@
+CRITICAL - 2021-12-23 00:47:31 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Trading.php(182): trading_expense_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Trading->pl_dashboard()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-23 00:47:46 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Trading.php(182): trading_expense_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Trading->pl_dashboard()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-23 00:48:04 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Trading.php(63): trading_expense_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Trading->dashboard()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-23 01:10:37 --> Unknown column 'acc.status' in 'where clause'
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/MasterModel.php(566): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Master.php(729): App\Models\MasterModel->search_sale_delivery()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-23 01:17:45 --> Unknown column 'acc.status' in 'where clause'
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/MasterModel.php(566): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Master.php(729): App\Models\MasterModel->search_sale_delivery()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-23 01:17:48 --> Unknown column 'acc.status' in 'where clause'
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/MasterModel.php(566): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Master.php(729): App\Models\MasterModel->search_sale_delivery()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-23 01:17:55 --> Unknown column 'acc.status' in 'where clause'
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/MasterModel.php(566): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Master.php(729): App\Models\MasterModel->search_sale_delivery()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-23 01:17:59 --> Unknown column 'acc.status' in 'where clause'
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/MasterModel.php(566): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Master.php(729): App\Models\MasterModel->search_sale_delivery()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-23 01:18:08 --> Unknown column 'acc.status' in 'where clause'
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/MasterModel.php(566): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Master.php(729): App\Models\MasterModel->search_sale_delivery()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-23 01:18:11 --> Unknown column 'acc.status' in 'where clause'
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/MasterModel.php(566): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Master.php(729): App\Models\MasterModel->search_sale_delivery()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-23 01:18:13 --> Unknown column 'acc.status' in 'where clause'
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/MasterModel.php(566): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Master.php(729): App\Models\MasterModel->search_sale_delivery()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-23 01:21:28 --> Undefined index: challan
+#0 /var/www/html/app/Models/SalesModel.php(1116): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Sales.php(160): App\Models\SalesModel->insert_edit_salesinvoice()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->add_salesinvoice()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-23 01:22:21 --> Undefined index: challan
+#0 /var/www/html/app/Models/SalesModel.php(1116): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Sales.php(160): App\Models\SalesModel->insert_edit_salesinvoice()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->add_salesinvoice()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-23 01:22:28 --> Undefined index: challan
+#0 /var/www/html/app/Models/SalesModel.php(1116): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Sales.php(160): App\Models\SalesModel->insert_edit_salesinvoice()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->add_salesinvoice()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-23 01:22:45 --> Undefined index: challan
+#0 /var/www/html/app/Models/SalesModel.php(1116): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Sales.php(160): App\Models\SalesModel->insert_edit_salesinvoice()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->add_salesinvoice()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-23 01:22:48 --> Undefined index: challan
+#0 /var/www/html/app/Models/SalesModel.php(1116): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Sales.php(160): App\Models\SalesModel->insert_edit_salesinvoice()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->add_salesinvoice()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-23 01:22:53 --> Undefined index: challan
+#0 /var/www/html/app/Models/SalesModel.php(1116): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Sales.php(160): App\Models\SalesModel->insert_edit_salesinvoice()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->add_salesinvoice()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-23 01:23:09 --> Undefined index: challan
+#0 /var/www/html/app/Models/SalesModel.php(1116): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Sales.php(160): App\Models\SalesModel->insert_edit_salesinvoice()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->add_salesinvoice()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-23 01:23:19 --> Undefined index: challan
+#0 /var/www/html/app/Models/SalesModel.php(1116): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Sales.php(160): App\Models\SalesModel->insert_edit_salesinvoice()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->add_salesinvoice()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-23 01:23:50 --> Undefined index: challan
+#0 /var/www/html/app/Models/SalesModel.php(1116): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Sales.php(160): App\Models\SalesModel->insert_edit_salesinvoice()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->add_salesinvoice()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-23 01:24:26 --> Unknown column 'acc.status' in 'where clause'
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/MasterModel.php(566): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Master.php(729): App\Models\MasterModel->search_sale_delivery()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-23 01:24:50 --> Undefined index: challan
+#0 /var/www/html/app/Models/SalesModel.php(1116): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Sales.php(160): App\Models\SalesModel->insert_edit_salesinvoice()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->add_salesinvoice()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-23 01:25:00 --> Undefined index: challan
+#0 /var/www/html/app/Models/SalesModel.php(1116): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Sales.php(160): App\Models\SalesModel->insert_edit_salesinvoice()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->add_salesinvoice()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-23 01:27:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as broker_name asc
+			LIMIT 0, 10' at line 4
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Helpers/base_helper.php(219): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/SalesModel.php(754): getManagedData()
+#5 /var/www/html/app/Controllers/Sales.php(372): App\Models\SalesModel->get_challan_detail()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->Getdata()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-23 01:28:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as account_name asc
+			LIMIT 0, 10' at line 4
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Helpers/base_helper.php(219): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/SalesModel.php(754): getManagedData()
+#5 /var/www/html/app/Controllers/Sales.php(372): App\Models\SalesModel->get_challan_detail()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->Getdata()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-23 01:44:39 --> Undefined variable: result
+#0 /var/www/html/app/Models/MillingModel.php(3052): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Milling.php(1082): App\Models\MillingModel->search_item_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Milling->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-23 02:09:15 --> Undefined index: challan
+#0 /var/www/html/app/Models/PurchaseModel.php(1289): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Purchase.php(152): App\Models\PurchaseModel->insert_edit_purchaseinvoice()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->add_purchaseinvoice()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-23 03:39:38 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:39:41 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:39:44 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:39:46 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:39:55 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:40:00 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:40:07 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:40:10 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:40:11 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:40:13 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:40:14 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:40:15 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:40:16 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:40:17 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:40:18 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:40:18 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:40:19 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:40:27 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:40:36 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:42:39 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:42:44 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:42:54 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:45:54 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:45:56 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:45:57 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:46:20 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:48:43 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:48:46 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 03:48:58 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 04:05:07 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 04:05:09 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 04:05:11 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-23 04:05:29 --> Undefined variable: tot_pg_expens
+#0 /var/www/html/app/Helpers/report_helper.php(801): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Models/MasterModel.php(822): trading_expense_data()
+#2 /var/www/html/app/Controllers/Master.php(718): App\Models\MasterModel->search_bank_paticular_data()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}

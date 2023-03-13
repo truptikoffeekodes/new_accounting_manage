@@ -1,0 +1,293 @@
+CRITICAL - 2022-02-03 01:51:11 --> Table 'TES2022RIMY.jv_main' doesn't exist
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Helpers/base_helper.php(219): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/BankModel.php(761): getManagedData()
+#5 /var/www/html/app/Controllers/Bank.php(379): App\Models\BankModel->get_jvparticular_data()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Bank->Getdata()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-03 01:51:27 --> Table 'TES2022RIMY.jv_main' doesn't exist
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Helpers/base_helper.php(219): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/BankModel.php(761): getManagedData()
+#5 /var/www/html/app/Controllers/Bank.php(379): App\Models\BankModel->get_jvparticular_data()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Bank->Getdata()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-03 04:00:23 --> Unknown column 'pc.challan_no' in 'field list'
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Helpers/base_helper.php(219): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/PurchaseModel.php(152): getManagedData()
+#5 /var/www/html/app/Controllers/Purchase.php(56): App\Models\PurchaseModel->get_purchasechallan_data()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->Getdata()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-03 04:00:35 --> Unknown column 'pc.challan_no' in 'field list'
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Helpers/base_helper.php(219): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/PurchaseModel.php(152): getManagedData()
+#5 /var/www/html/app/Controllers/Purchase.php(56): App\Models\PurchaseModel->get_purchasechallan_data()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->Getdata()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-03 04:01:37 --> Unknown column 'pc.challan_no' in 'field list'
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Helpers/base_helper.php(219): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/PurchaseModel.php(152): getManagedData()
+#5 /var/www/html/app/Controllers/Purchase.php(56): App\Models\PurchaseModel->get_purchasechallan_data()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->Getdata()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-03 04:02:40 --> Unknown column 'pc.challan_no' in 'field list'
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Helpers/base_helper.php(219): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/PurchaseModel.php(152): getManagedData()
+#5 /var/www/html/app/Controllers/Purchase.php(56): App\Models\PurchaseModel->get_purchasechallan_data()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->Getdata()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-03 04:02:45 --> Unknown column 'challan_no' in 'field list'
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/GeneralModel.php(115): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Purchase.php(127): App\Models\GeneralModel->get_purchase_id()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->add_purchasechallan()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-03 04:03:37 --> Unknown column 'pc.challan_no' in 'field list'
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Helpers/base_helper.php(219): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/PurchaseModel.php(152): getManagedData()
+#5 /var/www/html/app/Controllers/Purchase.php(56): App\Models\PurchaseModel->get_purchasechallan_data()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->Getdata()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-03 04:04:37 --> Unknown column 'pc.challan_no' in 'field list'
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Helpers/base_helper.php(219): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/PurchaseModel.php(152): getManagedData()
+#5 /var/www/html/app/Controllers/Purchase.php(56): App\Models\PurchaseModel->get_purchasechallan_data()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->Getdata()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-03 04:07:26 --> Unknown column 'challan_no' in 'field list'
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/GeneralModel.php(115): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/app/Controllers/Purchase.php(127): App\Models\GeneralModel->get_purchase_id()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->add_purchasechallan()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-03 04:10:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'CREATE TABLE `sales_return` (
+  `id` int NOT NULL,
+  `return_no` int(250) N...' at line 24
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Models/CompanyModel.php(283): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/Company.php(56): App\Models\CompanyModel->insert_edit_company()
+#5 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Company->CreateCompany()
+#6 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-03 04:25:37 --> Table 'contra_trans' already exists
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Models/CompanyModel.php(283): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/Company.php(56): App\Models\CompanyModel->insert_edit_company()
+#5 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Company->CreateCompany()
+#6 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-03 04:26:00 --> Table 'contra_trans' already exists
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Models/CompanyModel.php(283): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/Company.php(56): App\Models\CompanyModel->insert_edit_company()
+#5 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Company->CreateCompany()
+#6 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-03 04:26:15 --> Table 'contra_trans' already exists
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Models/CompanyModel.php(283): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/Company.php(56): App\Models\CompanyModel->insert_edit_company()
+#5 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Company->CreateCompany()
+#6 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-03 04:26:32 --> Table 'contra_trans' already exists
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Models/CompanyModel.php(283): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/Company.php(56): App\Models\CompanyModel->insert_edit_company()
+#5 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Company->CreateCompany()
+#6 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-03 04:27:19 --> Table 'contra_trans' already exists
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Models/CompanyModel.php(283): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/Company.php(56): App\Models\CompanyModel->insert_edit_company()
+#5 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Company->CreateCompany()
+#6 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-03 04:28:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'CREATE TABLE `sales_return` (
+  `id` int NOT NULL,
+  `return_no` int(250) N...' at line 24
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Models/CompanyModel.php(283): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/Company.php(56): App\Models\CompanyModel->insert_edit_company()
+#5 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Company->CreateCompany()
+#6 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-03 04:34:42 --> Table 'contra_trans' already exists
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Models/CompanyModel.php(283): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/Company.php(56): App\Models\CompanyModel->insert_edit_company()
+#5 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Company->CreateCompany()
+#6 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-03 04:36:46 --> Table 'contra_trans' already exists
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Models/CompanyModel.php(283): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/Company.php(56): App\Models\CompanyModel->insert_edit_company()
+#5 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Company->CreateCompany()
+#6 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-03 04:39:44 --> Table 'contra_trans' already exists
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Models/CompanyModel.php(283): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/Company.php(56): App\Models\CompanyModel->insert_edit_company()
+#5 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Company->CreateCompany()
+#6 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-03 04:44:28 --> Table 'contra_trans' already exists
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Models/CompanyModel.php(283): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/Company.php(56): App\Models\CompanyModel->insert_edit_company()
+#5 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Company->CreateCompany()
+#6 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-03 05:46:23 --> Undefined variable: result
+#0 /var/www/html/app/Models/SalesModel.php(694): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Sales.php(409): App\Models\SalesModel->search_item_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-03 06:21:40 --> Undefined variable: result
+#0 /var/www/html/app/Models/SalesModel.php(694): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Sales.php(409): App\Models\SalesModel->search_item_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-03 06:34:13 --> Undefined index: challan
+#0 /var/www/html/app/Models/PurchaseModel.php(1325): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Purchase.php(153): App\Models\PurchaseModel->insert_edit_purchaseinvoice()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->add_purchaseinvoice()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-03 06:34:31 --> Undefined variable: result
+#0 /var/www/html/app/Models/SalesModel.php(694): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Sales.php(409): App\Models\SalesModel->search_item_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-03 06:38:10 --> Undefined index: challan
+#0 /var/www/html/app/Models/PurchaseModel.php(1325): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Purchase.php(153): App\Models\PurchaseModel->insert_edit_purchaseinvoice()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->add_purchaseinvoice()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-03 06:38:10 --> Undefined index: challan
+#0 /var/www/html/app/Models/PurchaseModel.php(1325): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Purchase.php(153): App\Models\PurchaseModel->insert_edit_purchaseinvoice()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->add_purchaseinvoice()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

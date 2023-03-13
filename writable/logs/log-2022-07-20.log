@@ -1,0 +1,124 @@
+CRITICAL - 2022-07-20 10:10:26 --> Undefined variable: hsn
+#0 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(912): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\new_k...', 912, Array)
+#1 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('outward')
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#6 {main}
+CRITICAL - 2022-07-20 10:10:57 --> You must set the database table to be used with your query.
+#0 D:\trupti\new_klamp_accounting\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 D:\trupti\new_klamp_accounting\system\Model.php(1816): CodeIgniter\Model->builder()
+#2 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(912): CodeIgniter\Model->__call('get_gstr3_detai...', Array)
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('outward')
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-07-20 10:22:12 --> Undefined variable: post
+#0 D:\trupti\new_klamp_accounting\app\Models\GstModel.php(2370): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\new_k...', 2370, Array)
+#1 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(912): App\Models\GstModel->get_gstr3_detail('2022-06-16', '2023-04-06', 'outward')
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('outward')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-07-20 10:38:13 --> Undefined variable: from
+#0 D:\trupti\new_klamp_accounting\app\Views\gst\gstr3_detail.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\new_k...', 20, Array)
+#1 D:\trupti\new_klamp_accounting\system\View\View.php(246): include('D:\\trupti\\new_k...')
+#2 D:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr3_detai...', Array, true)
+#3 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(921): view('gst/gstr3_detai...', Array)
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('outward')
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-07-20 10:38:57 --> Undefined variable: from
+#0 D:\trupti\new_klamp_accounting\app\Views\gst\gstr3_detail.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\new_k...', 20, Array)
+#1 D:\trupti\new_klamp_accounting\system\View\View.php(246): include('D:\\trupti\\new_k...')
+#2 D:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr3_detai...', Array, true)
+#3 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(921): view('gst/gstr3_detai...', Array)
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('outward')
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-07-20 11:07:26 --> Undefined variable: result
+#0 D:\trupti\new_klamp_accounting\app\Views\gst\gstr3_detail.php(193): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\new_k...', 193, Array)
+#1 D:\trupti\new_klamp_accounting\system\View\View.php(246): include('D:\\trupti\\new_k...')
+#2 D:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr3_detai...', Array, true)
+#3 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(921): view('gst/gstr3_detai...', Array)
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('outward')
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-07-20 11:22:48 --> count(): Parameter must be an array or an object that implements Countable
+#0 D:\trupti\new_klamp_accounting\app\Views\gst\gstr3_detail.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'D:\\trupti\\new_k...', 190, Array)
+#1 D:\trupti\new_klamp_accounting\system\View\View.php(246): include('D:\\trupti\\new_k...')
+#2 D:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr3_detai...', Array, true)
+#3 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(921): view('gst/gstr3_detai...', Array)
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('outward')
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-07-20 11:23:20 --> count(): Parameter must be an array or an object that implements Countable
+#0 D:\trupti\new_klamp_accounting\app\Views\gst\gstr3_detail.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'D:\\trupti\\new_k...', 190, Array)
+#1 D:\trupti\new_klamp_accounting\system\View\View.php(246): include('D:\\trupti\\new_k...')
+#2 D:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr3_detai...', Array, true)
+#3 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(921): view('gst/gstr3_detai...', Array)
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('outward')
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-07-20 11:31:48 --> syntax error, unexpected end of file
+#0 D:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr3_detai...', Array, true)
+#1 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(921): view('gst/gstr3_detai...', Array)
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('unregister')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-07-20 13:05:17 --> Undefined variable: inward
+#0 D:\trupti\new_klamp_accounting\app\Views\gst\gstr3_detail.php(221): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\new_k...', 221, Array)
+#1 D:\trupti\new_klamp_accounting\system\View\View.php(246): include('D:\\trupti\\new_k...')
+#2 D:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr3_detai...', Array, true)
+#3 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(921): view('gst/gstr3_detai...', Array)
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('eligable_itc')
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-07-20 13:05:54 --> Undefined index: inward
+#0 D:\trupti\new_klamp_accounting\app\Views\gst\gstr3_detail.php(221): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\new_k...', 221, Array)
+#1 D:\trupti\new_klamp_accounting\system\View\View.php(246): include('D:\\trupti\\new_k...')
+#2 D:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr3_detai...', Array, true)
+#3 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(921): view('gst/gstr3_detai...', Array)
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('eligable_itc')
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-07-20 13:30:21 --> Undefined index: inward
+#0 D:\trupti\new_klamp_accounting\app\Views\gst\gstr3_detail.php(221): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\new_k...', 221, Array)
+#1 D:\trupti\new_klamp_accounting\system\View\View.php(246): include('D:\\trupti\\new_k...')
+#2 D:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr3_detai...', Array, true)
+#3 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(921): view('gst/gstr3_detai...', Array)
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('eligable_itc')
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#9 {main}

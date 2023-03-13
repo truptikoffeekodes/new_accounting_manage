@@ -1,0 +1,9 @@
+CRITICAL - 2022-09-24 10:36:03 --> Undefined index: purchase_Gray_total_rate
+#0 C:\trupti\new_klamp_accounting\app\Helpers\report_helper.php(2824): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 2824, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Trading.php(347): balancesheet_detail('2022-07-01', '2022-09-30')
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->balacesheet()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}

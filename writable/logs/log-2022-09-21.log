@@ -1,0 +1,235 @@
+CRITICAL - 2022-09-21 14:26:57 --> Class 'App\Controllers\ApendColumnModel' not found
+#0 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\ApendColumn->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#1 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#5 {main}
+CRITICAL - 2022-09-21 14:36:17 --> Undefined variable: taxes
+#0 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(384): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 384, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(95): App\Models\ApendColumnModel->update_challan_gst_acc()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_challan_gst_acc()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-21 14:36:34 --> in_array() expects parameter 2 to be array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'in_array() expe...', 'C:\\trupti\\new_k...', 384, Array)
+#1 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(384): in_array('igst', '"[\\"sgst\\",\\"cg...')
+#2 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(95): App\Models\ApendColumnModel->update_challan_gst_acc()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_challan_gst_acc()
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-09-21 15:09:23 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::limite()
+#0 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(95): App\Models\ApendColumnModel->update_challan_gst_acc()
+#1 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_challan_gst_acc()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#6 {main}
+CRITICAL - 2022-09-21 15:09:49 --> Unknown column 'is_update_column' in 'where clause'
+#0 C:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT *\nFROM `...')
+#1 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(376): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(95): App\Models\ApendColumnModel->update_challan_gst_acc()
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_challan_gst_acc()
+#7 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#11 {main}
+CRITICAL - 2022-09-21 15:27:14 --> Undefined variable: result3
+#0 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(409): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 409, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(95): App\Models\ApendColumnModel->update_sales_challan_gst_acc()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_challan_gst_acc()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-21 15:27:56 --> Undefined variable: result3
+#0 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(409): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 409, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(95): App\Models\ApendColumnModel->update_sales_challan_gst_acc()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_challan_gst_acc()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-21 15:27:58 --> Undefined variable: result3
+#0 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(409): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 409, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(95): App\Models\ApendColumnModel->update_sales_challan_gst_acc()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_challan_gst_acc()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-21 15:28:31 --> Undefined variable: result3
+#0 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(409): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 409, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(95): App\Models\ApendColumnModel->update_sales_challan_gst_acc()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_challan_gst_acc()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-21 15:28:32 --> Undefined variable: result3
+#0 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(409): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 409, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(95): App\Models\ApendColumnModel->update_sales_challan_gst_acc()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_challan_gst_acc()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-21 15:28:58 --> Undefined variable: result3
+#0 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(409): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 409, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(95): App\Models\ApendColumnModel->update_sales_challan_gst_acc()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_challan_gst_acc()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-21 15:28:59 --> Undefined variable: result3
+#0 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(409): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 409, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(95): App\Models\ApendColumnModel->update_sales_challan_gst_acc()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_challan_gst_acc()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-21 15:42:21 --> Cannot redeclare App\Models\ApendColumnModel::update_sales_general_gst_acc()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-09-21 15:44:35 --> Unknown column 'is_update_column' in 'where clause'
+#0 C:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT *\nFROM `...')
+#1 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(645): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(140): App\Models\ApendColumnModel->update_purchase_invoice_gst_acc()
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->purchase_invoice_gst_acc()
+#7 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#11 {main}
+CRITICAL - 2022-09-21 16:29:35 --> Undefined variable: row
+#0 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(802): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 802, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(176): App\Models\ApendColumnModel->update_sales_item_disc()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_item_disc()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-21 16:30:52 --> Undefined index: expence
+#0 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(818): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 818, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(176): App\Models\ApendColumnModel->update_sales_item_disc()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_item_disc()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-21 16:31:31 --> Undefined index: price
+#0 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(824): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 824, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(176): App\Models\ApendColumnModel->update_sales_item_disc()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_item_disc()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-21 16:32:13 --> Undefined variable: total
+#0 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(828): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 828, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(176): App\Models\ApendColumnModel->update_sales_item_disc()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_item_disc()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-21 16:32:31 --> Undefined variable: post
+#0 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(847): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 847, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(176): App\Models\ApendColumnModel->update_sales_item_disc()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_item_disc()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-21 16:32:51 --> Uninitialized string offset: 13492
+#0 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(855): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Uninitialized s...', 'C:\\trupti\\new_k...', 855, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(176): App\Models\ApendColumnModel->update_sales_item_disc()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_item_disc()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-21 16:33:34 --> Uninitialized string offset: 13492
+#0 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(855): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Uninitialized s...', 'C:\\trupti\\new_k...', 855, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(176): App\Models\ApendColumnModel->update_sales_item_disc()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_item_disc()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-21 16:52:03 --> Undefined variable: post
+#0 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(886): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 886, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(176): App\Models\ApendColumnModel->update_sales_item_disc()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_item_disc()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-21 16:54:01 --> Undefined variable: post
+#0 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(886): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 886, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(176): App\Models\ApendColumnModel->update_sales_item_disc()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_item_disc()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-21 17:27:36 --> You must set the database table to be used with your query.
+#0 C:\trupti\new_klamp_accounting\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\trupti\new_klamp_accounting\system\Model.php(1816): CodeIgniter\Model->builder()
+#2 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(176): CodeIgniter\Model->__call('update_sales_ch...', Array)
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_challan_item_disc()
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-09-21 17:28:01 --> Undefined variable: new_disc
+#0 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(883): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 883, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(176): App\Models\ApendColumnModel->update_sales_challan_item_disc()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_challan_item_disc()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-21 17:35:38 --> Undefined variable: new_disc
+#0 C:\trupti\new_klamp_accounting\app\Models\ApendColumnModel.php(881): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 881, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\ApendColumn.php(176): App\Models\ApendColumnModel->update_sales_challan_item_disc()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\ApendColumn->sales_challan_item_disc()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApendColumn))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}

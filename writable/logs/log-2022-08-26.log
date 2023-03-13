@@ -1,0 +1,152 @@
+CRITICAL - 2022-08-26 14:43:42 --> Unable to connect to the database.
+#0 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\trupti\new_klamp_accounting\app\Models\AuthModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Auth.php(19): App\Models\AuthModel->login(Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Auth->index()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-08-26 15:03:47 --> Invalid file: master/ledger_list.php
+#0 C:\trupti\new_klamp_accounting\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('master/ledger_l...')
+#1 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('master/ledger_l...', Array, true)
+#2 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1688): view('master/ledger_l...', Array)
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->ledger_list()
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-08-26 15:30:56 --> Argument 1 passed to CodeIgniter\Database\MySQLi\Connection::setDatabase() must be of the type string, null given, called in C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php on line 3362
+#0 C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php(3362): CodeIgniter\Database\MySQLi\Connection->setDatabase(NULL)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1695): App\Models\AddbookModel->get_ledger_register(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->ledger_list()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-26 15:33:22 --> Argument 1 passed to CodeIgniter\Database\MySQLi\Connection::setDatabase() must be of the type string, null given, called in C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php on line 3362
+#0 C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php(3362): CodeIgniter\Database\MySQLi\Connection->setDatabase(NULL)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1695): App\Models\AddbookModel->get_ledger_register(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->ledger_list()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-26 15:34:16 --> Argument 1 passed to CodeIgniter\Database\MySQLi\Connection::setDatabase() must be of the type string, null given, called in C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php on line 3362
+#0 C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php(3362): CodeIgniter\Database\MySQLi\Connection->setDatabase(NULL)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1695): App\Models\AddbookModel->get_ledger_register(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->ledger_list()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-26 15:34:22 --> Argument 1 passed to CodeIgniter\Database\MySQLi\Connection::setDatabase() must be of the type string, null given, called in C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php on line 3362
+#0 C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php(3362): CodeIgniter\Database\MySQLi\Connection->setDatabase(NULL)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1695): App\Models\AddbookModel->get_ledger_register(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->ledger_list()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-26 15:35:15 --> Table 'manifest_erp.account' doesn't exist
+#0 C:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `name`\nF...')
+#1 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `name`\nF...')
+#2 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `name`\nF...')
+#3 C:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `name`\nF...', Array, false)
+#4 C:\trupti\new_klamp_accounting\app\Models\GeneralModel.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php(3369): App\Models\GeneralModel->get_data_table('account', Array, 'name')
+#6 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1695): App\Models\AddbookModel->get_ledger_register(Array)
+#7 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->ledger_list()
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#12 {main}
+CRITICAL - 2022-08-26 15:42:40 --> Undefined variable: page
+#0 C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php(5646): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 5646, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1692): App\Models\AddbookModel->get_ledger_outstanding_list_new(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->ledger_list()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-26 16:23:03 --> Undefined variable: page
+#0 C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php(5438): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 5438, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1690): App\Models\AddbookModel->get_ledger_outstanding_list_new(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_list()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-26 16:57:47 --> Undefined variable: all_purchase_general
+#0 C:\trupti\new_klamp_accounting\app\Views\trading\dashboard.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 201, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('trading/dashboa...', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Trading.php(119): view('trading/dashboa...', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->dashboard()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-08-26 17:09:59 --> Cannot redeclare sale_purchase_vouhcer() (previously declared in C:\trupti\new_klamp_accounting\app\Helpers\report_helper.php:479)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-26 17:25:46 --> Undefined index: purchase_general_taxable
+#0 C:\trupti\new_klamp_accounting\app\Helpers\report_helper.php(7310): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 7310, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Trading.php(71): sale_purchase_general_vouhcer('2021-04-01', '2022-03-31')
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->dashboard()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-26 17:28:03 --> Undefined variable: purrchase_general
+#0 C:\trupti\new_klamp_accounting\app\Helpers\report_helper.php(7310): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 7310, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Trading.php(71): sale_purchase_general_vouhcer('2021-04-01', '2022-03-31')
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->dashboard()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-26 17:28:17 --> Undefined index: sales_generalreturn_taxable
+#0 C:\trupti\new_klamp_accounting\app\Helpers\report_helper.php(7312): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 7312, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Trading.php(71): sale_purchase_general_vouhcer('2021-04-01', '2022-03-31')
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->dashboard()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-26 17:37:33 --> Undefined variable: general
+#0 C:\trupti\new_klamp_accounting\app\Views\trading\dashboard.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 185, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('trading/dashboa...', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Trading.php(125): view('trading/dashboa...', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->dashboard()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-08-26 17:38:19 --> Undefined variable: treding
+#0 C:\trupti\new_klamp_accounting\app\Views\trading\dashboard.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 185, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('trading/dashboa...', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Trading.php(125): view('trading/dashboa...', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->dashboard()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}

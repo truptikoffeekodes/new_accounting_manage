@@ -1,0 +1,901 @@
+CRITICAL - 2022-08-08 10:44:26 --> Undefined variable: gnmodel
+#0 C:\trupti\new_klamp_accounting\app\Models\SalesModel.php(2251): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 2251, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(555): App\Models\SalesModel->get_item_taxability()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->item_taxability()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-08 10:44:57 --> Undefined variable: gnmodel
+#0 C:\trupti\new_klamp_accounting\app\Models\SalesModel.php(2251): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 2251, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(555): App\Models\SalesModel->get_item_taxability()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->item_taxability()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-08 11:25:02 --> Undefined variable: gnmodel
+#0 C:\trupti\new_klamp_accounting\app\Models\SalesModel.php(2269): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 2269, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(555): App\Models\SalesModel->get_item_taxability()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->item_taxability()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-08 11:25:52 --> Undefined index: taxability
+#0 C:\trupti\new_klamp_accounting\app\Models\SalesModel.php(2269): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 2269, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(555): App\Models\SalesModel->get_item_taxability()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->item_taxability()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-08 11:27:52 --> Undefined index: taxability
+#0 C:\trupti\new_klamp_accounting\app\Models\SalesModel.php(2269): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 2269, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(555): App\Models\SalesModel->get_item_taxability()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->item_taxability()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-08 11:29:06 --> Undefined index: taxability
+#0 C:\trupti\new_klamp_accounting\app\Models\SalesModel.php(2255): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 2255, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(555): App\Models\SalesModel->get_item_taxability()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->item_taxability()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-08 11:33:47 --> Undefined index: taxability
+#0 C:\trupti\new_klamp_accounting\app\Models\SalesModel.php(2256): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 2256, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(555): App\Models\SalesModel->get_item_taxability()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->item_taxability()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-08 11:34:23 --> Undefined index: taxability
+#0 C:\trupti\new_klamp_accounting\app\Models\SalesModel.php(2256): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 2256, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(555): App\Models\SalesModel->get_item_taxability()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->item_taxability()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-08 11:35:08 --> Undefined index: taxability
+#0 C:\trupti\new_klamp_accounting\app\Models\SalesModel.php(2255): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 2255, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(555): App\Models\SalesModel->get_item_taxability()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->item_taxability()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-08 11:35:57 --> Undefined index: taxability
+#0 C:\trupti\new_klamp_accounting\app\Models\SalesModel.php(2255): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 2255, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(555): App\Models\SalesModel->get_item_taxability()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->item_taxability()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-08 11:36:13 --> Undefined index: taxability
+#0 C:\trupti\new_klamp_accounting\app\Models\SalesModel.php(2255): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 2255, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(555): App\Models\SalesModel->get_item_taxability()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->item_taxability()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-08 11:36:48 --> Undefined index: taxability
+#0 C:\trupti\new_klamp_accounting\app\Models\SalesModel.php(2255): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 2255, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(555): App\Models\SalesModel->get_item_taxability()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->item_taxability()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-08 11:48:58 --> Undefined variable: item_taxability
+#0 C:\trupti\new_klamp_accounting\app\Models\SalesModel.php(2270): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 2270, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(555): App\Models\SalesModel->get_item_taxability()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->item_taxability()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-08 11:49:21 --> Undefined variable: item_taxability
+#0 C:\trupti\new_klamp_accounting\app\Models\SalesModel.php(2270): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 2270, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(555): App\Models\SalesModel->get_item_taxability()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->item_taxability()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-08 11:50:21 --> Undefined index: taxability
+#0 C:\trupti\new_klamp_accounting\app\Models\SalesModel.php(2257): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 2257, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(555): App\Models\SalesModel->get_item_taxability()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->item_taxability()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-08 12:00:00 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 13:53:25 --> Unknown column 'taxability' in 'field list'
+#0 C:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('UPDATE `sales_c...')
+#1 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `sales_c...')
+#2 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `sales_c...')
+#3 C:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(2456): CodeIgniter\Database\BaseConnection->query('UPDATE `sales_c...', Array, false)
+#4 C:\trupti\new_klamp_accounting\app\Models\GeneralModel.php(522): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\trupti\new_klamp_accounting\app\Models\SalesModel.php(2341): App\Models\GeneralModel->update_data_table('sales_challan', Array, Array)
+#6 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(565): App\Models\SalesModel->update_sales_challan_taxability()
+#7 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->sales_challan_taxability()
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#12 {main}
+CRITICAL - 2022-08-08 14:25:12 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:33:39 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:33:39 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:33:42 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:33:42 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:33:43 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:33:43 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:33:45 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:33:45 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:33:46 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:33:46 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:34:02 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:34:02 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:34:57 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:34:57 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:34:58 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:34:58 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:34:58 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:34:58 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:34:59 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:34:59 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:34:59 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:34:59 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:34:59 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:34:59 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:35:00 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:35:00 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:35:00 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:35:00 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:35:00 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:35:00 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:35:00 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:35:00 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:37:27 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:37:27 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:37:28 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:37:28 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:37:29 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:37:29 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:37:30 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:37:30 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:38:24 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:38:24 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:38:25 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:38:25 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:43:55 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:43:55 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:46:33 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:46:33 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:46:37 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:46:38 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:47:04 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:47:04 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:47:18 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:47:18 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 14:51:54 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'C:\\trupti\\new_k...', 101, Array)
+#1 C:\trupti\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 C:\trupti\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 C:\trupti\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#13 {main}
+CRITICAL - 2022-08-08 14:51:54 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\trupti\new_klamp_accounting\app\Config\Events.php:33) in C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\trupti\\new_k...', 164, Array)
+#1 C:\trupti\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-08 17:37:15 --> Unknown database 'tes2022skpu'
+#0 C:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(278): mysqli->select_db('TES2022SKPU')
+#1 C:\trupti\new_klamp_accounting\app\Models\ApiModel.php(348): CodeIgniter\Database\MySQLi\Connection->setDatabase('TES2022SKPU')
+#2 C:\trupti\new_klamp_accounting\app\Controllers\Api.php(289): App\Models\ApiModel->insert_edit_sale_invoice(Array)
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->add_sale_invoice()
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-08-08 17:37:37 --> Unknown database 'ace20223huy'
+#0 C:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(278): mysqli->select_db('ACE20223HUY')
+#1 C:\trupti\new_klamp_accounting\app\Models\ApiModel.php(348): CodeIgniter\Database\MySQLi\Connection->setDatabase('ACE20223HUY')
+#2 C:\trupti\new_klamp_accounting\app\Controllers\Api.php(289): App\Models\ApiModel->insert_edit_sale_invoice(Array)
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->add_sale_invoice()
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-08-08 17:39:52 --> Undefined variable: gmodel
+#0 C:\trupti\new_klamp_accounting\app\Models\ApiModel.php(388): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 388, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Api.php(289): App\Models\ApiModel->insert_edit_sale_invoice(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->add_sale_invoice()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-08 17:45:06 --> Undefined variable: row
+#0 C:\trupti\new_klamp_accounting\app\Models\ApiModel.php(578): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 578, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Api.php(289): App\Models\ApiModel->insert_edit_sale_invoice(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->add_sale_invoice()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-08 17:47:44 --> Undefined variable: row
+#0 C:\trupti\new_klamp_accounting\app\Models\ApiModel.php(746): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 746, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Api.php(289): App\Models\ApiModel->insert_edit_sale_invoice(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->add_sale_invoice()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-08 17:49:25 --> A non-numeric value encountered
+#0 C:\trupti\new_klamp_accounting\app\Models\ApiModel.php(746): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\trupti\\new_k...', 746, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Api.php(289): App\Models\ApiModel->insert_edit_sale_invoice(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->add_sale_invoice()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-08 18:22:22 --> Undefined index: pid
+#0 C:\trupti\new_klamp_accounting\app\Models\ApiModel.php(1746): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 1746, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Api.php(331): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-08 18:23:16 --> Undefined index: pid
+#0 C:\trupti\new_klamp_accounting\app\Models\ApiModel.php(1746): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 1746, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Api.php(331): App\Models\ApiModel->ecom_hsn_insert_edit_sale_invoice(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Api->ecom_hsn_add_sale_invoice()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}

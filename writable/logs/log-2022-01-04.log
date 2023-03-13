@@ -1,0 +1,24 @@
+CRITICAL - 2022-01-04 04:53:47 --> Undefined index: challan
+#0 /var/www/html/app/Models/PurchaseModel.php(1289): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Purchase.php(152): App\Models\PurchaseModel->insert_edit_purchaseinvoice()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->add_purchaseinvoice()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-01-04 04:54:20 --> Undefined index: challan
+#0 /var/www/html/app/Models/PurchaseModel.php(1289): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Purchase.php(152): App\Models\PurchaseModel->insert_edit_purchaseinvoice()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->add_purchaseinvoice()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-01-04 04:56:32 --> Undefined variable: result
+#0 /var/www/html/app/Models/SalesModel.php(694): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Sales.php(407): App\Models\SalesModel->search_item_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Sales->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

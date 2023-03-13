@@ -1,0 +1,593 @@
+CRITICAL - 2022-09-26 11:29:10 --> Unknown column 'is_expence' in 'where clause'
+#0 D:\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT SUM(taxa...')
+#1 D:\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(taxa...')
+#2 D:\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(taxa...')
+#3 D:\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT SUM(taxa...', Array, false)
+#4 D:\new_klamp_accounting\app\Helpers\report_helper.php(510): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\new_klamp_accounting\app\Controllers\Trading.php(73): sale_purchase_vouhcer('2021-04-01', '2022-03-31')
+#6 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->trading()
+#7 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#8 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#11 {main}
+CRITICAL - 2022-09-26 11:34:46 --> Unknown column 'is_expence' in 'where clause'
+#0 D:\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT SUM(taxa...')
+#1 D:\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(taxa...')
+#2 D:\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(taxa...')
+#3 D:\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT SUM(taxa...', Array, false)
+#4 D:\new_klamp_accounting\app\Helpers\report_helper.php(510): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\new_klamp_accounting\app\Controllers\Trading.php(73): sale_purchase_vouhcer('2021-04-01', '2022-03-31')
+#6 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->trading()
+#7 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#8 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#11 {main}
+CRITICAL - 2022-09-26 11:34:49 --> Unknown column 'is_expence' in 'where clause'
+#0 D:\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT SUM(taxa...')
+#1 D:\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(taxa...')
+#2 D:\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(taxa...')
+#3 D:\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT SUM(taxa...', Array, false)
+#4 D:\new_klamp_accounting\app\Helpers\report_helper.php(510): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\new_klamp_accounting\app\Controllers\Trading.php(785): sale_purchase_vouhcer('2021-04-01', '2022-03-31')
+#6 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->sales_voucher()
+#7 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#8 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#11 {main}
+CRITICAL - 2022-09-26 14:48:57 --> Unknown column 'is_cancle' in 'where clause'
+#0 D:\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT *\nFROM `...')
+#1 D:\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\new_klamp_accounting\app\Helpers\report_helper.php(519): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\new_klamp_accounting\app\Controllers\Trading.php(73): sale_purchase_vouhcer('2021-04-01', '2022-03-31')
+#6 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->trading()
+#7 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#8 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#11 {main}
+CRITICAL - 2022-09-26 15:26:28 --> Undefined variable: id
+#0 D:\new_klamp_accounting\app\Helpers\report_helper.php(5956): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\new_klamp_ac...', 5956, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(828): purchaseItem_monthly_data('2021-04-01', '2022-03-31')
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_monthly()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 15:53:14 --> Undefined variable: id
+#0 D:\new_klamp_accounting\app\Helpers\report_helper.php(5956): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\new_klamp_ac...', 5956, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(828): purchaseItem_monthly_data('2021-04-01', '2022-03-31')
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_monthly()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 16:11:24 --> Undefined variable: purchase_invoice
+#0 D:\new_klamp_accounting\app\Helpers\report_helper.php(5952): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\new_klamp_ac...', 5952, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(828): purchaseItem_monthly_data('2021-04-01', '2022-03-31')
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_monthly()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 16:12:09 --> Undefined index: id
+#0 D:\new_klamp_accounting\app\Helpers\report_helper.php(5956): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 5956, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(828): purchaseItem_monthly_data('2021-04-01', '2022-03-31')
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_monthly()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 16:14:17 --> Undefined variable: purchase
+#0 D:\new_klamp_accounting\app\Helpers\report_helper.php(5963): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\new_klamp_ac...', 5963, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(828): purchaseItem_monthly_data('2021-04-01', '2022-03-31')
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_monthly()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 16:35:00 --> Undefined variable: id
+#0 D:\new_klamp_accounting\app\Helpers\report_helper.php(5946): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\new_klamp_ac...', 5946, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(828): purchaseItem_monthly_data('2021-04-01', '2022-03-31')
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_monthly()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 16:36:10 --> Undefined index: id
+#0 D:\new_klamp_accounting\app\Helpers\report_helper.php(5960): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 5960, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(828): purchaseItem_monthly_data('2021-04-01', '2022-03-31')
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_monthly()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 16:36:41 --> Undefined variable: purchase
+#0 D:\new_klamp_accounting\app\Helpers\report_helper.php(5967): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\new_klamp_ac...', 5967, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(828): purchaseItem_monthly_data('2021-04-01', '2022-03-31')
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_monthly()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 16:37:02 --> Undefined index: voucher_count
+#0 D:\new_klamp_accounting\app\Helpers\report_helper.php(6018): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 6018, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(828): purchaseItem_monthly_data('2021-04-01', '2022-03-31')
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_monthly()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 16:40:29 --> Undefined index: voucher_count
+#0 D:\new_klamp_accounting\app\Helpers\report_helper.php(6018): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 6018, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(828): purchaseItem_monthly_data('2021-04-01', '2022-03-31')
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_monthly()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 16:41:26 --> Undefined index: total_net_amt
+#0 D:\new_klamp_accounting\app\Helpers\report_helper.php(6019): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 6019, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(828): purchaseItem_monthly_data('2021-04-01', '2022-03-31')
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_monthly()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 16:57:52 --> Cannot use a scalar value as an array
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(253): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot use a sc...', 'D:\\new_klamp_ac...', 253, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(960): App\Models\TradingModel->purchaseItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 16:58:37 --> Cannot use a scalar value as an array
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(253): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot use a sc...', 'D:\\new_klamp_ac...', 253, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(960): App\Models\TradingModel->purchaseItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 17:01:03 --> Cannot use a scalar value as an array
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(255): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot use a sc...', 'D:\\new_klamp_ac...', 255, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(960): App\Models\TradingModel->purchaseItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 17:01:06 --> Cannot use a scalar value as an array
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(255): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot use a sc...', 'D:\\new_klamp_ac...', 255, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(960): App\Models\TradingModel->purchaseItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 17:03:24 --> Cannot use a scalar value as an array
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(256): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot use a sc...', 'D:\\new_klamp_ac...', 256, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(960): App\Models\TradingModel->purchaseItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 17:03:25 --> Cannot use a scalar value as an array
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(256): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot use a sc...', 'D:\\new_klamp_ac...', 256, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(960): App\Models\TradingModel->purchaseItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 17:04:07 --> Cannot use a scalar value as an array
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(256): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot use a sc...', 'D:\\new_klamp_ac...', 256, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(960): App\Models\TradingModel->purchaseItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 17:04:55 --> Cannot use a scalar value as an array
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(256): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot use a sc...', 'D:\\new_klamp_ac...', 256, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(960): App\Models\TradingModel->purchaseItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 17:05:47 --> Cannot use a scalar value as an array
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(256): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot use a sc...', 'D:\\new_klamp_ac...', 256, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(960): App\Models\TradingModel->purchaseItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 17:06:18 --> Cannot use a scalar value as an array
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(256): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot use a sc...', 'D:\\new_klamp_ac...', 256, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(960): App\Models\TradingModel->purchaseItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 17:06:22 --> Cannot use a scalar value as an array
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(256): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot use a sc...', 'D:\\new_klamp_ac...', 256, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(960): App\Models\TradingModel->purchaseItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 17:08:08 --> Cannot use a scalar value as an array
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(258): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot use a sc...', 'D:\\new_klamp_ac...', 258, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(960): App\Models\TradingModel->purchaseItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 17:13:47 --> Cannot use a scalar value as an array
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(258): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot use a sc...', 'D:\\new_klamp_ac...', 258, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(960): App\Models\TradingModel->purchaseItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 17:16:39 --> Cannot use a scalar value as an array
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(258): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot use a sc...', 'D:\\new_klamp_ac...', 258, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(960): App\Models\TradingModel->purchaseItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 17:16:41 --> Cannot use a scalar value as an array
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(258): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot use a sc...', 'D:\\new_klamp_ac...', 258, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(960): App\Models\TradingModel->purchaseItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 17:17:32 --> Cannot use a scalar value as an array
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(258): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot use a sc...', 'D:\\new_klamp_ac...', 258, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(960): App\Models\TradingModel->purchaseItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 17:17:55 --> Cannot use a scalar value as an array
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(301): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot use a sc...', 'D:\\new_klamp_ac...', 301, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(960): App\Models\TradingModel->purchaseItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 17:18:51 --> Cannot use a scalar value as an array
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(258): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot use a sc...', 'D:\\new_klamp_ac...', 258, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(960): App\Models\TradingModel->purchaseItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 17:19:07 --> Cannot use a scalar value as an array
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(301): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot use a sc...', 'D:\\new_klamp_ac...', 301, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(960): App\Models\TradingModel->purchaseItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 17:51:34 --> Undefined index: total
+#0 D:\new_klamp_accounting\app\Helpers\report_helper.php(5977): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 5977, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(828): purchaseItem_monthly_data('2021-04-01', '2022-03-31')
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_monthly()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 18:26:04 --> Undefined index: taxable
+#0 D:\new_klamp_accounting\app\Views\trading\purchaseItem_voucher.php(127): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 127, Array)
+#1 D:\new_klamp_accounting\system\View\View.php(246): include('D:\\new_klamp_ac...')
+#2 D:\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('trading/purchas...', Array, true)
+#3 D:\new_klamp_accounting\app\Controllers\Trading.php(963): view('trading/purchas...', Array)
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#5 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#6 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#9 {main}
+CRITICAL - 2022-09-26 18:29:53 --> syntax error, unexpected 'else' (T_ELSE)
+#0 D:\new_klamp_accounting\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\new_klamp_ac...')
+#1 D:\new_klamp_accounting\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Trad...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Trad...')
+#3 D:\new_klamp_accounting\app\Controllers\Trading.php(18): spl_autoload_call('App\\Models\\Trad...')
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Trading->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 D:\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#6 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#9 {main}
+CRITICAL - 2022-09-26 18:31:10 --> Undefined index: id
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(237): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 237, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(960): App\Models\TradingModel->purchaseItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 18:34:54 --> Undefined index: taxable
+#0 D:\new_klamp_accounting\app\Views\trading\purchaseItem_voucher.php(127): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 127, Array)
+#1 D:\new_klamp_accounting\system\View\View.php(246): include('D:\\new_klamp_ac...')
+#2 D:\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('trading/purchas...', Array, true)
+#3 D:\new_klamp_accounting\app\Controllers\Trading.php(963): view('trading/purchas...', Array)
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#5 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#6 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#9 {main}
+CRITICAL - 2022-09-26 18:37:12 --> Undefined variable: purchase
+#0 D:\new_klamp_accounting\app\Views\trading\purchaseItem_voucher.php(121): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\new_klamp_ac...', 121, Array)
+#1 D:\new_klamp_accounting\system\View\View.php(246): include('D:\\new_klamp_ac...')
+#2 D:\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('trading/purchas...', Array, true)
+#3 D:\new_klamp_accounting\app\Controllers\Trading.php(963): view('trading/purchas...', Array)
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#5 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#6 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#9 {main}
+CRITICAL - 2022-09-26 18:37:49 --> Undefined variable: purchase
+#0 D:\new_klamp_accounting\app\Views\trading\purchaseItem_voucher.php(121): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\new_klamp_ac...', 121, Array)
+#1 D:\new_klamp_accounting\system\View\View.php(246): include('D:\\new_klamp_ac...')
+#2 D:\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('trading/purchas...', Array, true)
+#3 D:\new_klamp_accounting\app\Controllers\Trading.php(963): view('trading/purchas...', Array)
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#5 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#6 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#9 {main}
+CRITICAL - 2022-09-26 18:37:51 --> Undefined variable: purchase
+#0 D:\new_klamp_accounting\app\Views\trading\purchaseItem_voucher.php(121): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\new_klamp_ac...', 121, Array)
+#1 D:\new_klamp_accounting\system\View\View.php(246): include('D:\\new_klamp_ac...')
+#2 D:\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('trading/purchas...', Array, true)
+#3 D:\new_klamp_accounting\app\Controllers\Trading.php(963): view('trading/purchas...', Array)
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#5 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#6 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#9 {main}
+CRITICAL - 2022-09-26 18:38:44 --> Array to string conversion
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(288): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\new_klamp_ac...', 288, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(960): App\Models\TradingModel->purchaseItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 20:29:09 --> Undefined index: purchase
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(289): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 289, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(960): App\Models\TradingModel->purchaseItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 22:07:17 --> Undefined index: pg_amount
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(306): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 306, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(960): App\Models\TradingModel->purchaseItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 22:09:05 --> Undefined index: pg_amount
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(307): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 307, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(960): App\Models\TradingModel->purchaseItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 22:09:06 --> Undefined index: pg_amount
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(307): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 307, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(960): App\Models\TradingModel->purchaseItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 22:09:33 --> Undefined variable: purchase
+#0 D:\new_klamp_accounting\app\Views\trading\purchaseItem_voucher.php(121): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\new_klamp_ac...', 121, Array)
+#1 D:\new_klamp_accounting\system\View\View.php(246): include('D:\\new_klamp_ac...')
+#2 D:\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('trading/purchas...', Array, true)
+#3 D:\new_klamp_accounting\app\Controllers\Trading.php(964): view('trading/purchas...', Array)
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_voucher_wise()
+#5 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#6 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#9 {main}
+CRITICAL - 2022-09-26 22:23:59 --> Undefined index: added_Amt
+#0 D:\new_klamp_accounting\app\Helpers\report_helper.php(5975): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 5975, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(828): purchaseItem_monthly_data('2021-04-01', '2022-03-31')
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_monthly()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 22:39:31 --> Undefined variable: id
+#0 D:\new_klamp_accounting\app\Helpers\report_helper.php(5990): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\new_klamp_ac...', 5990, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(828): purchaseItem_monthly_data('2021-04-01', '2022-03-31')
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_monthly()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 22:49:04 --> Undefined index: voucher_count
+#0 D:\new_klamp_accounting\app\Helpers\report_helper.php(6057): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 6057, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(828): purchaseItem_monthly_data('2021-04-01', '2022-03-31')
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_monthly()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 22:49:24 --> Undefined index: total_net_amt
+#0 D:\new_klamp_accounting\app\Helpers\report_helper.php(6058): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 6058, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(828): purchaseItem_monthly_data('2021-04-01', '2022-03-31')
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_monthly()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 22:50:21 --> Undefined index: total_net_amt
+#0 D:\new_klamp_accounting\app\Helpers\report_helper.php(6058): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 6058, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(828): purchaseItem_monthly_data('2021-04-01', '2022-03-31')
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_monthly()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 22:55:46 --> Undefined offset: 10
+#0 D:\new_klamp_accounting\app\Helpers\report_helper.php(6006): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\new_klamp_ac...', 6006, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(828): purchaseItem_monthly_data('2021-04-01', '2022-03-31')
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_monthly()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 23:01:57 --> Unknown column 'pp' in 'field list'
+#0 D:\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT MONTH(pg...')
+#1 D:\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MONTH(pg...')
+#2 D:\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MONTH(pg...')
+#3 D:\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT MONTH(pg...', Array, false)
+#4 D:\new_klamp_accounting\app\Helpers\report_helper.php(5991): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\new_klamp_accounting\app\Controllers\Trading.php(828): purchaseItem_monthly_data('2021-04-01', '2022-03-31')
+#6 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_monthly()
+#7 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#8 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#11 {main}
+CRITICAL - 2022-09-26 23:02:59 --> Unknown column 'pp' in 'field list'
+#0 D:\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT MONTH(pg...')
+#1 D:\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MONTH(pg...')
+#2 D:\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MONTH(pg...')
+#3 D:\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT MONTH(pg...', Array, false)
+#4 D:\new_klamp_accounting\app\Helpers\report_helper.php(5991): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\new_klamp_accounting\app\Controllers\Trading.php(828): purchaseItem_monthly_data('2021-04-01', '2022-03-31')
+#6 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_monthly()
+#7 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#8 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#11 {main}
+CRITICAL - 2022-09-26 23:03:38 --> Undefined index: discount
+#0 D:\new_klamp_accounting\app\Helpers\report_helper.php(6000): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 6000, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(828): purchaseItem_monthly_data('2021-04-01', '2022-03-31')
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_monthly()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 23:27:29 --> Undefined index: taxable
+#0 D:\new_klamp_accounting\app\Helpers\report_helper.php(6019): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 6019, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(828): purchaseItem_monthly_data('2021-04-01', '2022-03-31')
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_monthly()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-26 23:31:14 --> Undefined index: total
+#0 D:\new_klamp_accounting\app\Views\trading\purchaseItem_monthly.php(177): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 177, Array)
+#1 D:\new_klamp_accounting\system\View\View.php(246): include('D:\\new_klamp_ac...')
+#2 D:\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('trading/purchas...', Array, true)
+#3 D:\new_klamp_accounting\app\Controllers\Trading.php(837): view('trading/purchas...', Array)
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_monthly()
+#5 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#6 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#9 {main}
+CRITICAL - 2022-09-26 23:31:27 --> Undefined index: total
+#0 D:\new_klamp_accounting\app\Views\trading\purchaseItem_monthly.php(177): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 177, Array)
+#1 D:\new_klamp_accounting\system\View\View.php(246): include('D:\\new_klamp_ac...')
+#2 D:\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('trading/purchas...', Array, true)
+#3 D:\new_klamp_accounting\app\Controllers\Trading.php(837): view('trading/purchas...', Array)
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_monthly()
+#5 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#6 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#9 {main}
+CRITICAL - 2022-09-26 23:31:30 --> Undefined index: total
+#0 D:\new_klamp_accounting\app\Views\trading\purchaseItem_monthly.php(177): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 177, Array)
+#1 D:\new_klamp_accounting\system\View\View.php(246): include('D:\\new_klamp_ac...')
+#2 D:\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('trading/purchas...', Array, true)
+#3 D:\new_klamp_accounting\app\Controllers\Trading.php(837): view('trading/purchas...', Array)
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseItem_monthly()
+#5 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#6 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#9 {main}

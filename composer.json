@@ -1,0 +1,8 @@
+{
+	
+    "require": {
+        "dompdf/dompdf": "^1.0",
+        "phpoffice/phpspreadsheet": "^1.17",
+        "hermawan/codeigniter4-datatables": "^0.5.2"
+    }
+}

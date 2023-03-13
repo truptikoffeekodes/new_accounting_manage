@@ -1,0 +1,20 @@
+CRITICAL - 2022-12-19 11:30:51 --> Undefined index: sub_total
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Views\trading\purchaseItem_voucher.php(127): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\backup_trupt...', 127, Array)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\View\View.php(246): include('D:\\backup_trupt...')
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('trading/purchas...', Array, true)
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Addbook.php(1097): view('trading/purchas...', Array)
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->purchaseItem_voucher_wise()
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#9 {main}
+CRITICAL - 2022-12-19 19:35:03 --> Argument 1 passed to CodeIgniter\Database\MySQLi\Connection::setDatabase() must be of the type string, null given, called in D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\AddbookModel.php on line 2474
+#0 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Models\AddbookModel.php(2474): CodeIgniter\Database\MySQLi\Connection->setDatabase(NULL)
+#1 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\app\Controllers\Addbook.php(971): App\Models\AddbookModel->get_Purchase_register(Array)
+#2 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Purchase_register()
+#3 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\backup_trupti\new_klamp_accounting\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\backup_trupt...')
+#7 {main}

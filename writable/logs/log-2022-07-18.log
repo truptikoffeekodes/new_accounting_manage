@@ -1,0 +1,57 @@
+CRITICAL - 2022-07-18 10:33:10 --> Undefined variable: taxes
+#0 D:\trupti\new_klamp_accounting\app\Views\Sales\sales_general_detail.php(241): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\new_k...', 241, Array)
+#1 D:\trupti\new_klamp_accounting\system\View\View.php(246): include('D:\\trupti\\new_k...')
+#2 D:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('Sales/sales_gen...', Array, true)
+#3 D:\trupti\new_klamp_accounting\app\Controllers\Sales.php(342): view('Sales/sales_gen...', Array)
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->general_detail('58')
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#6 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-07-18 11:39:57 --> Undefined index: 
+#0 D:\trupti\new_klamp_accounting\app\Views\pdf\general_sales.php(539): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\new_k...', 539, Array)
+#1 D:\trupti\new_klamp_accounting\system\View\View.php(246): include('D:\\trupti\\new_k...')
+#2 D:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('pdf/general_sal...', Array, true)
+#3 D:\trupti\new_klamp_accounting\app\Controllers\Sales.php(286): view('pdf/general_sal...', Array)
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->pdf_general('58')
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#6 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-07-18 12:11:28 --> Undefined variable: invoice
+#0 D:\trupti\new_klamp_accounting\app\Views\pdf\general_purchase.php(94): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\new_k...', 94, Array)
+#1 D:\trupti\new_klamp_accounting\system\View\View.php(246): include('D:\\trupti\\new_k...')
+#2 D:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('pdf/general_pur...', Array, true)
+#3 D:\trupti\new_klamp_accounting\app\Controllers\Purchase.php(493): view('pdf/general_pur...', Array)
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->pdf_general('100')
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#6 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-07-18 12:38:54 --> A non well formed numeric value encountered
+#0 D:\trupti\new_klamp_accounting\app\Helpers\report_helper.php(6282): CodeIgniter\Debug\Exceptions->errorHandler(8, 'A non well form...', 'D:\\trupti\\new_k...', 6282, Array)
+#1 D:\trupti\new_klamp_accounting\app\Views\pdf\general_sales.php(422): inword('1,716.08')
+#2 D:\trupti\new_klamp_accounting\system\View\View.php(246): include('D:\\trupti\\new_k...')
+#3 D:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('pdf/general_sal...', Array, true)
+#4 D:\trupti\new_klamp_accounting\app\Controllers\Sales.php(286): view('pdf/general_sal...', Array)
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->pdf_general('58')
+#6 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#7 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#10 {main}
+CRITICAL - 2022-07-18 12:39:54 --> A non well formed numeric value encountered
+#0 D:\trupti\new_klamp_accounting\app\Helpers\report_helper.php(6282): CodeIgniter\Debug\Exceptions->errorHandler(8, 'A non well form...', 'D:\\trupti\\new_k...', 6282, Array)
+#1 D:\trupti\new_klamp_accounting\app\Views\pdf\general_sales.php(422): inword('1,716.08')
+#2 D:\trupti\new_klamp_accounting\system\View\View.php(246): include('D:\\trupti\\new_k...')
+#3 D:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('pdf/general_sal...', Array, true)
+#4 D:\trupti\new_klamp_accounting\app\Controllers\Sales.php(286): view('pdf/general_sal...', Array)
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->pdf_general('58')
+#6 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#7 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#10 {main}

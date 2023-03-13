@@ -1,0 +1,386 @@
+CRITICAL - 2022-08-01 12:09:28 --> Cache unable to write to C:\trupti\new_klamp_accounting\writable\cache/
+#0 C:\trupti\new_klamp_accounting\system\Cache\Handlers\FileHandler.php(78): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('C:\\trupti\\new_k...')
+#1 C:\trupti\new_klamp_accounting\system\Cache\CacheFactory.php(84): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(123): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(115): CodeIgniter\Config\BaseService::getSharedInstance('cache', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(102): CodeIgniter\Config\Services::cache()
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(629): cache()
+#7 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(298): CodeIgniter\CodeIgniter->displayCache(Object(Config\Cache))
+#8 C:\trupti\new_klamp_accounting\system\CLI\Console.php(86): CodeIgniter\CodeIgniter->run()
+#9 C:\trupti\new_klamp_accounting\spark(57): CodeIgniter\CLI\Console->run()
+#10 {main}
+CRITICAL - 2022-08-01 12:10:33 --> Cache unable to write to C:\trupti\new_klamp_accounting\writable\cache/
+#0 C:\trupti\new_klamp_accounting\system\Cache\Handlers\FileHandler.php(78): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('C:\\trupti\\new_k...')
+#1 C:\trupti\new_klamp_accounting\system\Cache\CacheFactory.php(84): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(123): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(115): CodeIgniter\Config\BaseService::getSharedInstance('cache', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(102): CodeIgniter\Config\Services::cache()
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(629): cache()
+#7 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(298): CodeIgniter\CodeIgniter->displayCache(Object(Config\Cache))
+#8 C:\trupti\new_klamp_accounting\system\CLI\Console.php(86): CodeIgniter\CodeIgniter->run()
+#9 C:\trupti\new_klamp_accounting\spark(57): CodeIgniter\CLI\Console->run()
+#10 {main}
+CRITICAL - 2022-08-01 12:11:22 --> Cache unable to write to C:\trupti\new_klamp_accounting\writable\cache/
+#0 C:\trupti\new_klamp_accounting\system\Cache\Handlers\FileHandler.php(78): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('C:\\trupti\\new_k...')
+#1 C:\trupti\new_klamp_accounting\system\Cache\CacheFactory.php(84): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(123): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(115): CodeIgniter\Config\BaseService::getSharedInstance('cache', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(102): CodeIgniter\Config\Services::cache()
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(629): cache()
+#7 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(298): CodeIgniter\CodeIgniter->displayCache(Object(Config\Cache))
+#8 C:\trupti\new_klamp_accounting\system\CLI\Console.php(86): CodeIgniter\CodeIgniter->run()
+#9 C:\trupti\new_klamp_accounting\spark(57): CodeIgniter\CLI\Console->run()
+#10 {main}
+CRITICAL - 2022-08-01 12:17:24 --> Cache unable to write to C:\trupti\new_klamp_accounting\writable\cache/
+#0 C:\trupti\new_klamp_accounting\system\Cache\Handlers\FileHandler.php(78): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('C:\\trupti\\new_k...')
+#1 C:\trupti\new_klamp_accounting\system\Cache\CacheFactory.php(84): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(123): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(115): CodeIgniter\Config\BaseService::getSharedInstance('cache', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(102): CodeIgniter\Config\Services::cache()
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(629): cache()
+#7 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(298): CodeIgniter\CodeIgniter->displayCache(Object(Config\Cache))
+#8 C:\trupti\new_klamp_accounting\system\CLI\Console.php(86): CodeIgniter\CodeIgniter->run()
+#9 C:\trupti\new_klamp_accounting\spark(57): CodeIgniter\CLI\Console->run()
+#10 {main}
+CRITICAL - 2022-08-01 12:35:34 --> Cache unable to write to C:\trupti\new_klamp_accounting\writable\cache/
+#0 C:\trupti\new_klamp_accounting\system\Cache\Handlers\FileHandler.php(78): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('C:\\trupti\\new_k...')
+#1 C:\trupti\new_klamp_accounting\system\Cache\CacheFactory.php(84): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(123): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(115): CodeIgniter\Config\BaseService::getSharedInstance('cache', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(102): CodeIgniter\Config\Services::cache()
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(629): cache()
+#7 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(298): CodeIgniter\CodeIgniter->displayCache(Object(Config\Cache))
+#8 C:\trupti\new_klamp_accounting\system\CLI\Console.php(86): CodeIgniter\CodeIgniter->run()
+#9 C:\trupti\new_klamp_accounting\spark(63): CodeIgniter\CLI\Console->run()
+#10 {main}
+CRITICAL - 2022-08-01 12:38:37 --> Cache unable to write to C:\trupti\new_klamp_accounting\writable\cache/
+#0 C:\trupti\new_klamp_accounting\system\Cache\Handlers\FileHandler.php(78): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('C:\\trupti\\new_k...')
+#1 C:\trupti\new_klamp_accounting\system\Cache\CacheFactory.php(84): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(123): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(115): CodeIgniter\Config\BaseService::getSharedInstance('cache', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(102): CodeIgniter\Config\Services::cache()
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(629): cache()
+#7 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(298): CodeIgniter\CodeIgniter->displayCache(Object(Config\Cache))
+#8 C:\trupti\new_klamp_accounting\system\CLI\Console.php(86): CodeIgniter\CodeIgniter->run()
+#9 C:\trupti\new_klamp_accounting\spark(63): CodeIgniter\CLI\Console->run()
+#10 {main}
+CRITICAL - 2022-08-01 12:39:08 --> Cache unable to write to C:\trupti\new_klamp_accounting\writable\cache/
+#0 C:\trupti\new_klamp_accounting\system\Cache\Handlers\FileHandler.php(78): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('C:\\trupti\\new_k...')
+#1 C:\trupti\new_klamp_accounting\system\Cache\CacheFactory.php(84): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(123): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(115): CodeIgniter\Config\BaseService::getSharedInstance('cache', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(102): CodeIgniter\Config\Services::cache()
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(629): cache()
+#7 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(298): CodeIgniter\CodeIgniter->displayCache(Object(Config\Cache))
+#8 C:\trupti\new_klamp_accounting\system\CLI\Console.php(86): CodeIgniter\CodeIgniter->run()
+#9 C:\trupti\new_klamp_accounting\spark(63): CodeIgniter\CLI\Console->run()
+#10 {main}
+CRITICAL - 2022-08-01 12:39:37 --> Cache unable to write to C:\trupti\new_klamp_accounting\writable\cache/
+#0 C:\trupti\new_klamp_accounting\system\Cache\Handlers\FileHandler.php(78): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('C:\\trupti\\new_k...')
+#1 C:\trupti\new_klamp_accounting\system\Cache\CacheFactory.php(84): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+#2 C:\trupti\new_klamp_accounting\system\Config\Services.php(123): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+#3 C:\trupti\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\system\Config\Services.php(115): CodeIgniter\Config\BaseService::getSharedInstance('cache', NULL)
+#5 C:\trupti\new_klamp_accounting\system\Common.php(102): CodeIgniter\Config\Services::cache()
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(629): cache()
+#7 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(298): CodeIgniter\CodeIgniter->displayCache(Object(Config\Cache))
+#8 C:\trupti\new_klamp_accounting\system\CLI\Console.php(86): CodeIgniter\CodeIgniter->run()
+#9 C:\trupti\new_klamp_accounting\spark(63): CodeIgniter\CLI\Console->run()
+#10 {main}
+CRITICAL - 2022-08-01 12:43:14 --> Unable to connect to the database.
+#0 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\trupti\new_klamp_accounting\app\Models\AuthModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Auth.php(19): App\Models\AuthModel->login(Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Auth->index()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-08-01 12:43:23 --> Unable to connect to the database.
+#0 C:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\trupti\new_klamp_accounting\app\Models\AuthModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Auth.php(19): App\Models\AuthModel->login(Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Auth->index()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-08-01 13:35:03 --> Undefined index: return_count
+#0 C:\trupti\new_klamp_accounting\app\Views\gst\gstr1.php(265): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 265, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr1', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(42): view('gst/gstr1', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->gstr1()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-08-01 13:35:07 --> Undefined index: return_count
+#0 C:\trupti\new_klamp_accounting\app\Views\gst\gstr1.php(265): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 265, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr1', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(42): view('gst/gstr1', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->gstr1()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-08-01 13:35:11 --> Undefined index: return_count
+#0 C:\trupti\new_klamp_accounting\app\Views\gst\gstr1.php(265): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 265, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr1', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(42): view('gst/gstr1', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->gstr1()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-08-01 13:38:21 --> Unknown database 'kla2022nrmy'
+#0 C:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(278): mysqli->select_db('KLA2022NRMY')
+#1 C:\trupti\new_klamp_accounting\app\Helpers\base_helper.php(132): CodeIgniter\Database\MySQLi\Connection->setDatabase('KLA2022NRMY')
+#2 C:\trupti\new_klamp_accounting\app\Models\AccountModel.php(195): getManagedData('account a', Array, Array, 'and is_delete=0')
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Account.php(53): App\Models\AccountModel->get_account_data(Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Account->Getdata('account')
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-08-01 13:38:33 --> Unknown database 'kla2022zfdh'
+#0 C:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(278): mysqli->select_db('KLA2022ZFDH')
+#1 C:\trupti\new_klamp_accounting\app\Helpers\base_helper.php(132): CodeIgniter\Database\MySQLi\Connection->setDatabase('KLA2022ZFDH')
+#2 C:\trupti\new_klamp_accounting\app\Models\AccountModel.php(195): getManagedData('account a', Array, Array, 'and is_delete=0')
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Account.php(53): App\Models\AccountModel->get_account_data(Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Account->Getdata('account')
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-08-01 13:41:39 --> Undefined index: return_count
+#0 C:\trupti\new_klamp_accounting\app\Views\gst\gstr1.php(265): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 265, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr1', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(42): view('gst/gstr1', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->gstr1()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-08-01 14:10:43 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-01 14:12:16 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-01 14:13:16 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-01 14:14:16 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-01 14:15:16 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-08-01 15:47:13 --> You must set the database table to be used with your query.
+#0 C:\trupti\new_klamp_accounting\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\trupti\new_klamp_accounting\system\Model.php(1816): CodeIgniter\Model->builder()
+#2 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(308): CodeIgniter\Model->__call('get_state_wise_...', Array)
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2c_small_state_vouchers()
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-08-01 15:55:19 --> Too few arguments to function App\Models\GstModel::get_state_wise_voucher(), 2 passed in C:\trupti\new_klamp_accounting\app\Controllers\Gst.php on line 308 and exactly 3 expected
+#0 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(308): App\Models\GstModel->get_state_wise_voucher('2021-04-01', '2022-03-31')
+#1 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2c_small_state_vouchers()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#6 {main}
+CRITICAL - 2022-08-01 16:03:13 --> syntax error, unexpected ')'
+#0 C:\trupti\new_klamp_accounting\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\trupti\\new_k...')
+#1 C:\trupti\new_klamp_accounting\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\GstM...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\GstM...')
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(13): spl_autoload_call('App\\Models\\GstM...')
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Gst->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-08-01 16:11:15 --> Undefined variable: statecode
+#0 C:\trupti\new_klamp_accounting\app\Models\GstModel.php(1582): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 1582, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(308): App\Models\GstModel->get_state_wise_voucher('2021-04-01', '2022-03-31', '27')
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2c_small_state_vouchers()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-01 16:18:58 --> Undefined index: rate
+#0 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 308, Array)
+#1 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2c_small_state_vouchers()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#6 {main}
+CRITICAL - 2022-08-01 16:19:04 --> Undefined index: rate
+#0 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 308, Array)
+#1 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2c_small_state_vouchers()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#6 {main}
+CRITICAL - 2022-08-01 16:20:38 --> Undefined variable: statecode
+#0 C:\trupti\new_klamp_accounting\app\Models\GstModel.php(1582): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 1582, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(308): App\Models\GstModel->get_state_wise_voucher('2021-04-01', '2022-03-31', '27', '18.00')
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2c_small_state_vouchers()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-01 16:21:40 --> Undefined variable: new_b2c_small
+#0 C:\trupti\new_klamp_accounting\app\Models\GstModel.php(1617): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 1617, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(308): App\Models\GstModel->get_state_wise_voucher('2021-04-01', '2022-03-31', '27', '18.00')
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2c_small_state_vouchers()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-01 16:36:05 --> Undefined variable: from
+#0 C:\trupti\new_klamp_accounting\app\Views\gst\gstr1_b2c_small_state_invoices.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 20, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr1_b2c_s...', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(323): view('gst/gstr1_b2c_s...', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2c_small_state_vouchers()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-08-01 16:44:59 --> Undefined variable: from
+#0 C:\trupti\new_klamp_accounting\app\Views\gst\gstr1_b2c_small_state_invoices.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 20, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr1_b2c_s...', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(323): view('gst/gstr1_b2c_s...', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2c_small_state_vouchers()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-08-01 16:46:03 --> Undefined variable: start_date
+#0 C:\trupti\new_klamp_accounting\app\Views\gst\gstr1_b2c_small_state_invoices.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 89, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr1_b2c_s...', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(323): view('gst/gstr1_b2c_s...', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2c_small_state_vouchers()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-08-01 16:46:57 --> Undefined variable: result
+#0 C:\trupti\new_klamp_accounting\app\Views\gst\gstr1_b2c_small_state_invoices.php(186): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 186, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr1_b2c_s...', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(323): view('gst/gstr1_b2c_s...', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2c_small_state_vouchers()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-08-01 17:51:44 --> Undefined variable: statecode
+#0 C:\trupti\new_klamp_accounting\app\Models\GstModel.php(1541): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\trupti\\new_k...', 1541, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(308): App\Models\GstModel->get_state_wise_voucher('2021-04-01', '2022-03-31', '12', '18.00')
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2c_small_state_vouchers()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-08-01 17:52:48 --> Call to undefined function App\Models\array_murge()
+#0 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(308): App\Models\GstModel->get_state_wise_voucher('2021-04-01', '2022-03-31', '12', '18.00')
+#1 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2c_small_state_vouchers()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#6 {main}
+CRITICAL - 2022-08-01 17:53:28 --> Call to undefined function App\Models\array_marge()
+#0 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(308): App\Models\GstModel->get_state_wise_voucher('2021-04-01', '2022-03-31', '12', '18.00')
+#1 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2c_small_state_vouchers()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#6 {main}
+CRITICAL - 2022-08-01 17:55:11 --> Undefined index: invoice_no
+#0 C:\trupti\new_klamp_accounting\app\Views\gst\gstr1_b2c_small_state_invoices.php(147): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 147, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr1_b2c_s...', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(323): view('gst/gstr1_b2c_s...', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2c_small_state_vouchers()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-08-01 17:56:42 --> Undefined index: invoice_no
+#0 C:\trupti\new_klamp_accounting\app\Views\gst\gstr1_b2c_small_state_invoices.php(152): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 152, Array)
+#1 C:\trupti\new_klamp_accounting\system\View\View.php(246): include('C:\\trupti\\new_k...')
+#2 C:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr1_b2c_s...', Array, true)
+#3 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(323): view('gst/gstr1_b2c_s...', Array)
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2c_small_state_vouchers()
+#5 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-08-01 18:35:59 --> Undefined index: state_code
+#0 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 308, Array)
+#1 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2c_small_state_vouchers()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#6 {main}
+CRITICAL - 2022-08-01 18:36:43 --> Undefined index: state_code
+#0 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 308, Array)
+#1 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2c_small_state_vouchers()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#6 {main}
+CRITICAL - 2022-08-01 18:37:56 --> Undefined index: state_code
+#0 C:\trupti\new_klamp_accounting\app\Controllers\Gst.php(308): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 308, Array)
+#1 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->b2c_small_state_vouchers()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#6 {main}

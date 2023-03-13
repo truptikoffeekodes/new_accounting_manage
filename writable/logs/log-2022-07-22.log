@@ -1,0 +1,11 @@
+CRITICAL - 2022-07-22 15:11:58 --> Unknown database 'tes2022kn0b'
+#0 D:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(278): mysqli->select_db('TES2022KN0B')
+#1 D:\trupti\new_klamp_accounting\app\Helpers\base_helper.php(132): CodeIgniter\Database\MySQLi\Connection->setDatabase('TES2022KN0B')
+#2 D:\trupti\new_klamp_accounting\app\Models\AccountModel.php(195): getManagedData('account a', Array, Array, 'and is_delete=0')
+#3 D:\trupti\new_klamp_accounting\app\Controllers\Account.php(53): App\Models\AccountModel->get_account_data(Array)
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Account->Getdata('account')
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#6 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#9 {main}

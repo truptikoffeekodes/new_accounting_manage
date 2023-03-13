@@ -1,0 +1,33 @@
+CRITICAL - 2022-02-02 23:16:59 --> Unknown collation: 'utf8mb4_0900_ai_ci'
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Models/CompanyModel.php(286): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/Company.php(56): App\Models\CompanyModel->insert_edit_company()
+#5 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Company->CreateCompany()
+#6 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-02 23:17:39 --> Unknown collation: 'utf8mb4_0900_ai_ci'
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Models/CompanyModel.php(286): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/Company.php(56): App\Models\CompanyModel->insert_edit_company()
+#5 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Company->CreateCompany()
+#6 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-02 23:26:57 --> Unknown collation: 'utf8mb4_0900_ai_ci'
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Models/CompanyModel.php(283): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/Company.php(56): App\Models\CompanyModel->insert_edit_company()
+#5 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Company->CreateCompany()
+#6 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}

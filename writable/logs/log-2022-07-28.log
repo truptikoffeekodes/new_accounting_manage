@@ -1,0 +1,48 @@
+CRITICAL - 2022-07-28 10:11:27 --> Undefined variable: purchaseGeneral_eligable
+#0 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(1791): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\new_k...', 1791, Array)
+#1 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(688): get_eligible_itc_nill(Array)
+#2 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(925): get_gstr3_detail('2022-06-16', '2023-04-06')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('eligable_itc')
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-07-28 10:55:30 --> Undefined variable: taxable
+#0 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(838): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\new_k...', 838, Array)
+#1 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(925): get_gstr3_detail('2022-06-16', '2023-04-06')
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('eligable_itc')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-07-28 10:56:24 --> Illegal string offset 'id'
+#0 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(849): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'D:\\trupti\\new_k...', 849, Array)
+#1 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(925): get_gstr3_detail('2022-06-16', '2023-04-06')
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('eligable_itc')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-07-28 11:00:35 --> Undefined variable: taxable
+#0 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(890): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\new_k...', 890, Array)
+#1 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(925): get_gstr3_detail('2022-06-16', '2023-04-06')
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('eligable_itc')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-07-28 11:54:54 --> Use of undefined constant suggestion - assumed 'suggestion' (this will throw an Error in a future version of PHP)
+#0 D:\trupti\new_klamp_accounting\app\Views\bank\create_bankTrans.php(590): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'D:\\trupti\\new_k...', 590, Array)
+#1 D:\trupti\new_klamp_accounting\system\View\View.php(246): include('D:\\trupti\\new_k...')
+#2 D:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('bank/create_ban...', Array, true)
+#3 D:\trupti\new_klamp_accounting\app\Controllers\Bank.php(301): view('bank/create_ban...', Array)
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Bank->add_banktrans('768')
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bank))
+#6 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#9 {main}

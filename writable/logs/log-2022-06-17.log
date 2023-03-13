@@ -1,0 +1,88 @@
+CRITICAL - 2022-06-17 11:15:37 --> Undefined index: start_date
+#0 D:\trupti\klamp_accounting\app\Helpers\report_helper.php(5396): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\klamp...', 5396, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(227): get_legderoutstanding_data(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_report()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-06-17 12:49:22 --> Too few arguments to function App\Models\PurchaseModel::get_account_list(), 0 passed in D:\trupti\klamp_accounting\app\Controllers\Purchase.php on line 165 and exactly 1 expected
+#0 D:\trupti\klamp_accounting\app\Controllers\Purchase.php(165): App\Models\PurchaseModel->get_account_list()
+#1 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->add_purchaseinvoice('42')
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#6 {main}
+CRITICAL - 2022-06-17 16:16:39 --> Undefined variable: gstr1
+#0 D:\trupti\klamp_accounting\app\Views\addbook\outstanding_report.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 22, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('addbook/outstan...', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(196): view('addbook/outstan...', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Outstanding('receivable')
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-06-17 16:50:10 --> Undefined variable: type
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(3125): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 3125, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(208): App\Models\AddbookModel->outstanding_xls_export_data(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->outstanding_xls_export()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-06-17 17:17:56 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-06-17 17:49:49 --> Undefined index: gamount
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(3175): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\klamp...', 3175, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(208): App\Models\AddbookModel->outstanding_xls_export_data(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->outstanding_xls_export()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-06-17 17:52:43 --> Undefined index: gamount
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(3175): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\klamp...', 3175, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(208): App\Models\AddbookModel->outstanding_xls_export_data(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->outstanding_xls_export()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-06-17 17:54:06 --> Undefined index: gpanding_amount
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(3176): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\klamp...', 3176, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(208): App\Models\AddbookModel->outstanding_xls_export_data(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->outstanding_xls_export()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-06-17 17:55:03 --> Undefined index: gnet_amount
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(3174): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\klamp...', 3174, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(208): App\Models\AddbookModel->outstanding_xls_export_data(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->outstanding_xls_export()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-06-17 17:57:22 --> Undefined index: inv_id
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(3172): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\klamp...', 3172, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(208): App\Models\AddbookModel->outstanding_xls_export_data(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->outstanding_xls_export()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-06-17 18:01:23 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

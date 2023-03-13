@@ -1,0 +1,151 @@
+CRITICAL - 2022-09-20 11:36:23 --> Undefined index: item_uom
+#0 C:\trupti\new_klamp_accounting\app\Models\PurchaseModel.php(2374): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\trupti\\new_k...', 2374, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Purchase.php(92): App\Models\PurchaseModel->search_purchase_challan_data(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->Getdata('get_purchase_ch...')
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-20 13:00:39 --> Undefined offset: 0
+#0 C:\trupti\new_klamp_accounting\app\Models\PurchaseModel.php(2000): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\trupti\\new_k...', 2000, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Purchase.php(164): App\Models\PurchaseModel->insert_edit_purchaseinvoice(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->add_purchaseinvoice()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-20 13:01:23 --> Undefined offset: 0
+#0 C:\trupti\new_klamp_accounting\app\Models\PurchaseModel.php(2000): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\trupti\\new_k...', 2000, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Purchase.php(164): App\Models\PurchaseModel->insert_edit_purchaseinvoice(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->add_purchaseinvoice()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-20 13:01:34 --> Undefined offset: 0
+#0 C:\trupti\new_klamp_accounting\app\Models\PurchaseModel.php(2000): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\trupti\\new_k...', 2000, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Purchase.php(164): App\Models\PurchaseModel->insert_edit_purchaseinvoice(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->add_purchaseinvoice()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-20 14:39:50 --> Undefined offset: 0
+#0 C:\trupti\new_klamp_accounting\app\Models\PurchaseModel.php(1048): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\trupti\\new_k...', 1048, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Purchase.php(203): App\Models\PurchaseModel->insert_edit_purchasereturn(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->add_purchasereturn()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-20 14:40:09 --> Undefined offset: 1
+#0 C:\trupti\new_klamp_accounting\app\Models\PurchaseModel.php(1048): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\trupti\\new_k...', 1048, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Purchase.php(203): App\Models\PurchaseModel->insert_edit_purchasereturn(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->add_purchasereturn()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-20 14:40:35 --> A non-numeric value encountered
+#0 C:\trupti\new_klamp_accounting\app\Models\PurchaseModel.php(981): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\trupti\\new_k...', 981, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Purchase.php(203): App\Models\PurchaseModel->insert_edit_purchasereturn(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->add_purchasereturn()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-20 14:41:41 --> A non-numeric value encountered
+#0 C:\trupti\new_klamp_accounting\app\Models\PurchaseModel.php(981): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\trupti\\new_k...', 981, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Purchase.php(203): App\Models\PurchaseModel->insert_edit_purchasereturn(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->add_purchasereturn()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-20 14:43:50 --> A non-numeric value encountered
+#0 C:\trupti\new_klamp_accounting\app\Models\PurchaseModel.php(982): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\trupti\\new_k...', 982, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Purchase.php(203): App\Models\PurchaseModel->insert_edit_purchasereturn(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->add_purchasereturn()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-20 14:44:41 --> Call to undefined function App\Models\number()
+#0 C:\trupti\new_klamp_accounting\app\Controllers\Purchase.php(203): App\Models\PurchaseModel->insert_edit_purchasereturn(Array)
+#1 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->add_purchasereturn()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#6 {main}
+CRITICAL - 2022-09-20 14:45:11 --> Call to undefined function App\Models\int()
+#0 C:\trupti\new_klamp_accounting\app\Controllers\Purchase.php(203): App\Models\PurchaseModel->insert_edit_purchasereturn(Array)
+#1 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->add_purchasereturn()
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#6 {main}
+CRITICAL - 2022-09-20 14:46:32 --> A non-numeric value encountered
+#0 C:\trupti\new_klamp_accounting\app\Models\PurchaseModel.php(982): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\trupti\\new_k...', 982, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Purchase.php(203): App\Models\PurchaseModel->insert_edit_purchasereturn(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->add_purchasereturn()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-20 14:48:10 --> Trying to get property 'qty' of non-object
+#0 C:\trupti\new_klamp_accounting\app\Models\PurchaseModel.php(979): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\trupti\\new_k...', 979, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Purchase.php(203): App\Models\PurchaseModel->insert_edit_purchasereturn(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->add_purchasereturn()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-20 14:48:38 --> Undefined offset: 1
+#0 C:\trupti\new_klamp_accounting\app\Models\PurchaseModel.php(1050): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\trupti\\new_k...', 1050, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Purchase.php(203): App\Models\PurchaseModel->insert_edit_purchasereturn(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->add_purchasereturn()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-20 14:48:48 --> A non-numeric value encountered
+#0 C:\trupti\new_klamp_accounting\app\Models\PurchaseModel.php(983): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\trupti\\new_k...', 983, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Purchase.php(203): App\Models\PurchaseModel->insert_edit_purchasereturn(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->add_purchasereturn()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-20 14:49:25 --> A non-numeric value encountered
+#0 C:\trupti\new_klamp_accounting\app\Models\PurchaseModel.php(983): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\trupti\\new_k...', 983, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Purchase.php(203): App\Models\PurchaseModel->insert_edit_purchasereturn(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->add_purchasereturn()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-09-20 14:49:59 --> A non-numeric value encountered
+#0 C:\trupti\new_klamp_accounting\app\Models\PurchaseModel.php(983): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\trupti\\new_k...', 983, Array)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Purchase.php(203): App\Models\PurchaseModel->insert_edit_purchasereturn(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->add_purchasereturn()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}

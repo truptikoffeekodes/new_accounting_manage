@@ -1,0 +1,16 @@
+CRITICAL - 2021-12-29 05:01:44 --> Undefined index: uom
+#0 /var/www/html/app/Models/ItemsModel.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Items.php(52): App\Models\ItemsModel->insert_edit_item()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Items->CreateItem()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-29 05:01:48 --> Undefined index: uom
+#0 /var/www/html/app/Models/ItemsModel.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Items.php(52): App\Models\ItemsModel->insert_edit_item()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Items->CreateItem()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

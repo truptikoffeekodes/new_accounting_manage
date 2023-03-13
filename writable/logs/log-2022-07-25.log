@@ -1,0 +1,115 @@
+CRITICAL - 2022-07-25 10:26:41 --> Unknown database 'tru2022xjpw'
+#0 D:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(278): mysqli->select_db('TRU2022XJPW')
+#1 D:\trupti\new_klamp_accounting\app\Helpers\base_helper.php(132): CodeIgniter\Database\MySQLi\Connection->setDatabase('TRU2022XJPW')
+#2 D:\trupti\new_klamp_accounting\app\Models\AccountModel.php(195): getManagedData('account a', Array, Array, 'and is_delete=0')
+#3 D:\trupti\new_klamp_accounting\app\Controllers\Account.php(53): App\Models\AccountModel->get_account_data(Array)
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Account->Getdata('account')
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#6 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-07-25 11:00:02 --> Call to undefined function get_salesinvoice_sum()
+#0 D:\trupti\new_klamp_accounting\system\View\View.php(246): include()
+#1 D:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr1', Array, true)
+#2 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(40): view('gst/gstr1', Array)
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->gstr1()
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-07-25 13:21:00 --> Call to undefined function get_salesinvoice_sum()
+#0 D:\trupti\new_klamp_accounting\system\View\View.php(246): include()
+#1 D:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr1', Array, true)
+#2 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(40): view('gst/gstr1', Array)
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->gstr1()
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-07-25 13:23:36 --> Call to undefined function get_salesinvoice_sum()
+#0 D:\trupti\new_klamp_accounting\system\View\View.php(246): include()
+#1 D:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr1', Array, true)
+#2 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(40): view('gst/gstr1', Array)
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->gstr1()
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-07-25 13:24:55 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-25 13:32:29 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-25 13:33:36 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-25 14:28:45 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-25 14:51:44 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-25 15:03:10 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-25 15:03:52 --> Call to undefined function get_salesinvoice_sum()
+#0 D:\trupti\new_klamp_accounting\system\View\View.php(246): include()
+#1 D:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr1', Array, true)
+#2 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(40): view('gst/gstr1', Array)
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->gstr1()
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-07-25 15:04:40 --> Call to undefined function get_salesinvoice_sum()
+#0 D:\trupti\new_klamp_accounting\system\View\View.php(246): include()
+#1 D:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr1', Array, true)
+#2 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(40): view('gst/gstr1', Array)
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->gstr1()
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-07-25 15:05:54 --> Call to undefined function get_salesinvoice_sum()
+#0 D:\trupti\new_klamp_accounting\system\View\View.php(246): include()
+#1 D:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr1', Array, true)
+#2 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(40): view('gst/gstr1', Array)
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->gstr1()
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-07-25 15:10:37 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-25 15:11:42 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-25 15:12:42 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-25 15:57:52 --> Call to a member function format() on bool
+#0 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(34): db_date('2022-05-2022')
+#1 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->gstr1()
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#6 {main}
+CRITICAL - 2022-07-25 17:55:30 --> Undefined index: taxable_return_amount
+#0 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(1188): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\new_k...', 1188, Array)
+#1 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(34): get_gstr1_detail('2022-05-01', '2022-05-31')
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->gstr1()
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#7 {main}

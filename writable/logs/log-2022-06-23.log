@@ -1,0 +1,192 @@
+CRITICAL - 2022-06-23 10:18:25 --> Table 'manifest_erp.account' doesn't exist
+#0 D:\trupti\klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `id`, `n...')
+#1 D:\trupti\klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `n...')
+#2 D:\trupti\klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `n...')
+#3 D:\trupti\klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 D:\trupti\klamp_accounting\app\Helpers\report_helper.php(5421): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(329): get_legderoutstanding_data(Array)
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Ledger_outstanding_report()
+#7 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#8 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#11 {main}
+CRITICAL - 2022-06-23 12:07:55 --> Trying to access array offset on value of type int
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(1106): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\trupti\\klamp...', 1106, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(736): App\Models\AddbookModel->get_Sales_gst_register2_xls(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Sales_gst_register2_xls()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-06-23 13:01:01 --> Undefined variable: result
+#0 D:\trupti\klamp_accounting\app\Models\SalesModel.php(687): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 687, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Sales.php(498): App\Models\SalesModel->search_item_data('testin')
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->Getdata('Item')
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-06-23 13:01:02 --> Undefined variable: result
+#0 D:\trupti\klamp_accounting\app\Models\SalesModel.php(687): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 687, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Sales.php(498): App\Models\SalesModel->search_item_data('testi')
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Sales->Getdata('Item')
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-06-23 13:18:11 --> Undefined offset: 2
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(1151): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\trupti\\klamp...', 1151, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(736): App\Models\AddbookModel->get_Sales_gst_register2_xls(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Sales_gst_register2_xls()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-06-23 13:33:27 --> Undefined variable: sale
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(1088): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 1088, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(736): App\Models\AddbookModel->get_Sales_gst_register2_xls(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Sales_gst_register2_xls()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-06-23 13:33:57 --> Undefined variable: row
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(1091): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 1091, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(736): App\Models\AddbookModel->get_Sales_gst_register2_xls(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Sales_gst_register2_xls()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-06-23 13:34:17 --> Undefined variable: sale
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(1091): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 1091, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(736): App\Models\AddbookModel->get_Sales_gst_register2_xls(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Sales_gst_register2_xls()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-06-23 13:34:59 --> Undefined index: taxes
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(1092): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\klamp...', 1092, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(736): App\Models\AddbookModel->get_Sales_gst_register2_xls(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Sales_gst_register2_xls()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-06-23 14:24:14 --> Undefined index: taxes
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(1092): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\klamp...', 1092, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(736): App\Models\AddbookModel->get_Sales_gst_register2_xls(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Sales_gst_register2_xls()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-06-23 14:30:32 --> Undefined offset: 18
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(1093): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\trupti\\klamp...', 1093, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(736): App\Models\AddbookModel->get_Sales_gst_register2_xls(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Sales_gst_register2_xls()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-06-23 14:31:21 --> Undefined offset: 18
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(1093): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\trupti\\klamp...', 1093, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(736): App\Models\AddbookModel->get_Sales_gst_register2_xls(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Sales_gst_register2_xls()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-06-23 14:39:38 --> Undefined offset: 18
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(1093): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\trupti\\klamp...', 1093, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(736): App\Models\AddbookModel->get_Sales_gst_register2_xls(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Sales_gst_register2_xls()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-06-23 14:40:15 --> Undefined offset: 18
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(1095): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\trupti\\klamp...', 1095, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(736): App\Models\AddbookModel->get_Sales_gst_register2_xls(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Sales_gst_register2_xls()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-06-23 14:41:01 --> Undefined offset: 18
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(1096): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\trupti\\klamp...', 1096, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(736): App\Models\AddbookModel->get_Sales_gst_register2_xls(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Sales_gst_register2_xls()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-06-23 14:47:50 --> Undefined offset: 18
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(1093): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\trupti\\klamp...', 1093, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(736): App\Models\AddbookModel->get_Sales_gst_register2_xls(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Sales_gst_register2_xls()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-06-23 14:56:03 --> Undefined variable: i
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(1145): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 1145, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(736): App\Models\AddbookModel->get_Sales_gst_register2_xls(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Sales_gst_register2_xls()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-06-23 14:56:27 --> Undefined variable: i
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(1148): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 1148, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(736): App\Models\AddbookModel->get_Sales_gst_register2_xls(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Sales_gst_register2_xls()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-06-23 15:19:38 --> Undefined offset: 1
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(1156): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\trupti\\klamp...', 1156, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(736): App\Models\AddbookModel->get_Sales_gst_register2_xls(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Sales_gst_register2_xls()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-06-23 16:51:11 --> Cannot redeclare App\Controllers\Addbook::Gnrl_sales_register_xls()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-06-23 16:51:15 --> Cannot redeclare App\Controllers\Addbook::Gnrl_sales_register_xls()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-06-23 18:00:23 --> syntax error, unexpected '$spreadsheet' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 D:\trupti\klamp_accounting\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\trupti\\klamp...')
+#1 D:\trupti\klamp_accounting\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Addb...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Addb...')
+#3 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(18): spl_autoload_call('App\\Models\\Addb...')
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Addbook->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}

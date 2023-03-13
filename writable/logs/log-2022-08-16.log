@@ -1,0 +1,9 @@
+CRITICAL - 2022-08-16 09:58:18 --> Argument 1 passed to CodeIgniter\Database\MySQLi\Connection::setDatabase() must be of the type string, null given, called in C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php on line 3362
+#0 C:\trupti\new_klamp_accounting\app\Models\AddbookModel.php(3362): CodeIgniter\Database\MySQLi\Connection->setDatabase(NULL)
+#1 C:\trupti\new_klamp_accounting\app\Controllers\Addbook.php(1436): App\Models\AddbookModel->get_ledger_register(Array)
+#2 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->ledger()
+#3 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 C:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('C:\\trupti\\new_k...')
+#7 {main}

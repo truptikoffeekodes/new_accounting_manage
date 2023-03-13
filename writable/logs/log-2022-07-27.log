@@ -1,0 +1,270 @@
+CRITICAL - 2022-07-27 10:14:05 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-27 10:15:06 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-27 10:16:06 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-27 10:17:06 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-27 11:03:01 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\trupti\\new_k...', 689, Array)
+#1 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(689): array_unique(Array)
+#2 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(925): get_gstr3_detail('2022-06-16', '2023-04-06')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('nill')
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-07-27 11:11:09 --> Unknown column 'p.name' in 'field list'
+#0 D:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `a`.`tax...')
+#1 D:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`tax...')
+#2 D:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`tax...')
+#3 D:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`tax...', Array, false)
+#4 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(1561): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(684): get_eligible_itc_nill(Array)
+#6 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(925): get_gstr3_detail('2022-06-16', '2023-04-06')
+#7 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('nill')
+#8 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#9 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#12 {main}
+CRITICAL - 2022-07-27 11:17:58 --> Undefined variable: row1
+#0 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(1626): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\new_k...', 1626, Array)
+#1 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(684): get_eligible_itc_nill(Array)
+#2 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(925): get_gstr3_detail('2022-06-16', '2023-04-06')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('nill')
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-07-27 11:18:45 --> Undefined index: pid
+#0 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(1626): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\new_k...', 1626, Array)
+#1 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(684): get_eligible_itc_nill(Array)
+#2 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(925): get_gstr3_detail('2022-06-16', '2023-04-06')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('nill')
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-07-27 11:19:39 --> Unknown column 'a.name' in 'field list'
+#0 D:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `si`.*, ...')
+#1 D:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `si`.*, ...')
+#2 D:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `si`.*, ...')
+#3 D:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `si`.*, ...', Array, false)
+#4 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(1617): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(684): get_eligible_itc_nill(Array)
+#6 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(925): get_gstr3_detail('2022-06-16', '2023-04-06')
+#7 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('nill')
+#8 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#9 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#12 {main}
+CRITICAL - 2022-07-27 11:21:36 --> Unknown column 'p.party_account' in 'on clause'
+#0 D:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `si`.*, ...')
+#1 D:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `si`.*, ...')
+#2 D:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `si`.*, ...')
+#3 D:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `si`.*, ...', Array, false)
+#4 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(1618): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(684): get_eligible_itc_nill(Array)
+#6 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(925): get_gstr3_detail('2022-06-16', '2023-04-06')
+#7 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('nill')
+#8 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#9 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#12 {main}
+CRITICAL - 2022-07-27 11:27:07 --> Undefined variable: array_gen
+#0 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(1668): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\new_k...', 1668, Array)
+#1 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(684): get_eligible_itc_nill(Array)
+#2 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(925): get_gstr3_detail('2022-06-16', '2023-04-06')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('nill')
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-07-27 11:32:10 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\trupti\\new_k...', 690, Array)
+#1 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(690): array_unique(Array)
+#2 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(925): get_gstr3_detail('2022-06-16', '2023-04-06')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('nill')
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-07-27 11:43:28 --> Undefined variable: purchase_gen
+#0 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(1569): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\new_k...', 1569, Array)
+#1 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(684): get_eligible_itc_nill(Array)
+#2 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(925): get_gstr3_detail('2022-06-16', '2023-04-06')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('nill')
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-07-27 12:34:02 --> Undefined index: taxable
+#0 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(1547): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\new_k...', 1547, Array)
+#1 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(684): get_eligible_itc_nill(Array)
+#2 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(925): get_gstr3_detail('2022-06-16', '2023-04-06')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('nill')
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-07-27 12:47:02 --> Undefined index: taxable
+#0 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(1547): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\new_k...', 1547, Array)
+#1 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(684): get_eligible_itc_nill(Array)
+#2 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(925): get_gstr3_detail('2022-06-16', '2023-04-06')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('nill')
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-07-27 12:47:39 --> Undefined index: taxable
+#0 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(1547): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\new_k...', 1547, Array)
+#1 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(684): get_eligible_itc_nill(Array)
+#2 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(925): get_gstr3_detail('2022-06-16', '2023-04-06')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('nill')
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-07-27 12:49:19 --> Undefined index: tax
+#0 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(1547): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\new_k...', 1547, Array)
+#1 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(684): get_eligible_itc_nill(Array)
+#2 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(925): get_gstr3_detail('2022-06-16', '2023-04-06')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('nill')
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-07-27 13:04:25 --> Undefined variable: exempt
+#0 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(720): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\new_k...', 720, Array)
+#1 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(925): get_gstr3_detail('2022-06-16', '2023-04-06')
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('nill')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-07-27 13:06:02 --> Illegal string offset 'id'
+#0 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(752): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'D:\\trupti\\new_k...', 752, Array)
+#1 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(925): get_gstr3_detail('2022-06-16', '2023-04-06')
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('nill')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-07-27 13:06:32 --> Unknown column 'p.account' in 'on clause'
+#0 D:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `si`.*, ...')
+#1 D:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `si`.*, ...')
+#2 D:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `si`.*, ...')
+#3 D:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `si`.*, ...', Array, false)
+#4 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(760): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(925): get_gstr3_detail('2022-06-16', '2023-04-06')
+#6 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('nill')
+#7 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#8 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#11 {main}
+CRITICAL - 2022-07-27 14:46:07 --> Undefined index: data
+#0 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(682): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\new_k...', 682, Array)
+#1 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(635): get_gstr3_detail('2022-06-16', '2023-04-06')
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->gstr3()
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-07-27 14:46:40 --> array_merge(): Expected parameter 2 to be an array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_merge(): ...', 'D:\\trupti\\new_k...', 684, Array)
+#1 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(684): array_merge(Array, NULL)
+#2 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(635): get_gstr3_detail('2022-06-16', '2023-04-06')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->gstr3()
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#8 {main}
+CRITICAL - 2022-07-27 14:51:29 --> Undefined variable: inward_b2c_b2b
+#0 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(916): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\new_k...', 916, Array)
+#1 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(635): get_gstr3_detail('2022-06-16', '2023-04-06')
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->gstr3()
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-07-27 14:59:29 --> Invalid argument supplied for foreach()
+#0 D:\trupti\new_klamp_accounting\app\Views\gst\gstr3_detail.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'D:\\trupti\\new_k...', 226, Array)
+#1 D:\trupti\new_klamp_accounting\system\View\View.php(246): include('D:\\trupti\\new_k...')
+#2 D:\trupti\new_klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/gstr3_detai...', Array, true)
+#3 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(932): view('gst/gstr3_detai...', Array)
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('eligable_itc')
+#5 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#9 {main}
+CRITICAL - 2022-07-27 16:41:49 --> Undefined variable: gst
+#0 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(820): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\new_k...', 820, Array)
+#1 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(925): get_gstr3_detail('2022-06-16', '2023-04-06')
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('eligable_itc')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-07-27 16:43:03 --> Undefined index: amount
+#0 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(873): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\new_k...', 873, Array)
+#1 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(925): get_gstr3_detail('2022-06-16', '2023-04-06')
+#2 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('eligable_itc')
+#3 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#4 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#7 {main}
+CRITICAL - 2022-07-27 17:11:44 --> Unknown column 'p.account' in 'on clause'
+#0 D:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `si`.*, ...')
+#1 D:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `si`.*, ...')
+#2 D:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `si`.*, ...')
+#3 D:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `si`.*, ...', Array, false)
+#4 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(1796): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(688): get_eligible_itc_nill(Array)
+#6 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(925): get_gstr3_detail('2022-06-16', '2023-04-06')
+#7 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('eligable_itc')
+#8 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#9 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#12 {main}
+CRITICAL - 2022-07-27 17:12:14 --> Unknown column 'p.party_account' in 'on clause'
+#0 D:\trupti\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `a`.`tax...')
+#1 D:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`tax...')
+#2 D:\trupti\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`tax...')
+#3 D:\trupti\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`tax...', Array, false)
+#4 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(1731): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\trupti\new_klamp_accounting\app\Helpers\gst_helper.php(688): get_eligible_itc_nill(Array)
+#6 D:\trupti\new_klamp_accounting\app\Controllers\Gst.php(925): get_gstr3_detail('2022-06-16', '2023-04-06')
+#7 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Gstr3_detail('eligable_itc')
+#8 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#9 D:\trupti\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\trupti\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 D:\trupti\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\new_k...')
+#12 {main}

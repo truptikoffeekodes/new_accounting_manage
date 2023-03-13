@@ -1,0 +1,309 @@
+CRITICAL - 2022-09-29 13:04:38 --> Undefined index: from
+#0 D:\new_klamp_accounting\app\Controllers\Trading.php(744): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 744, Array)
+#1 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchase_voucher()
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#6 {main}
+CRITICAL - 2022-09-29 14:24:05 --> Unknown column 'p.invoice_no' in 'field list'
+#0 D:\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `p`.`id`...')
+#1 D:\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`id`...')
+#2 D:\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`id`...')
+#3 D:\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`id`...', Array, false)
+#4 D:\new_klamp_accounting\app\Models\TradingModel.php(513): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\new_klamp_accounting\app\Controllers\Trading.php(1083): App\Models\TradingModel->purchaseReturnItem_voucher_wise_data(Array)
+#6 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseReturnItem_voucher_wise()
+#7 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#8 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#11 {main}
+CRITICAL - 2022-09-29 14:25:35 --> Unknown column 'p.invoice_no' in 'field list'
+#0 D:\new_klamp_accounting\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `p`.`id`...')
+#1 D:\new_klamp_accounting\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`id`...')
+#2 D:\new_klamp_accounting\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`id`...')
+#3 D:\new_klamp_accounting\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`id`...', Array, false)
+#4 D:\new_klamp_accounting\app\Models\TradingModel.php(513): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\new_klamp_accounting\app\Controllers\Trading.php(1083): App\Models\TradingModel->purchaseReturnItem_voucher_wise_data(Array)
+#6 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->purchaseReturnItem_voucher_wise()
+#7 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#8 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#11 {main}
+CRITICAL - 2022-09-29 14:55:05 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'D:\\new_klamp_ac...', 101, Array)
+#1 D:\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'D:\\new_klamp_ac...')
+#2 D:\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 D:\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 D:\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 D:\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 D:\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 D:\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 D:\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 D:\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#13 {main}
+CRITICAL - 2022-09-29 14:55:05 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at D:\new_klamp_accounting\app\Config\Events.php:33) in D:\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'D:\\new_klamp_ac...', 164, Array)
+#1 D:\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-09-29 14:55:10 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'D:\\new_klamp_ac...', 101, Array)
+#1 D:\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'D:\\new_klamp_ac...')
+#2 D:\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 D:\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 D:\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 D:\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 D:\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 D:\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 D:\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 D:\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#13 {main}
+CRITICAL - 2022-09-29 14:55:10 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at D:\new_klamp_accounting\app\Config\Events.php:33) in D:\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'D:\\new_klamp_ac...', 164, Array)
+#1 D:\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-09-29 14:55:11 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'D:\\new_klamp_ac...', 101, Array)
+#1 D:\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'D:\\new_klamp_ac...')
+#2 D:\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 D:\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 D:\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 D:\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 D:\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 D:\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 D:\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 D:\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#13 {main}
+CRITICAL - 2022-09-29 14:55:11 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at D:\new_klamp_accounting\app\Config\Events.php:33) in D:\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'D:\\new_klamp_ac...', 164, Array)
+#1 D:\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-09-29 14:55:36 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'D:\\new_klamp_ac...', 101, Array)
+#1 D:\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'D:\\new_klamp_ac...')
+#2 D:\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 D:\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 D:\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 D:\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 D:\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 D:\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 D:\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 D:\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#13 {main}
+CRITICAL - 2022-09-29 14:55:36 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at D:\new_klamp_accounting\app\Config\Events.php:33) in D:\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'D:\\new_klamp_ac...', 164, Array)
+#1 D:\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-09-29 14:56:01 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'D:\\new_klamp_ac...', 101, Array)
+#1 D:\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'D:\\new_klamp_ac...')
+#2 D:\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 D:\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 D:\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 D:\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 D:\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 D:\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 D:\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 D:\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#13 {main}
+CRITICAL - 2022-09-29 14:56:01 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at D:\new_klamp_accounting\app\Config\Events.php:33) in D:\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'D:\\new_klamp_ac...', 164, Array)
+#1 D:\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-09-29 15:07:34 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'D:\\new_klamp_ac...', 101, Array)
+#1 D:\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'D:\\new_klamp_ac...')
+#2 D:\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 D:\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 D:\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 D:\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 D:\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 D:\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 D:\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 D:\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#13 {main}
+CRITICAL - 2022-09-29 15:07:34 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at D:\new_klamp_accounting\app\Config\Events.php:33) in D:\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'D:\\new_klamp_ac...', 164, Array)
+#1 D:\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-09-29 15:11:55 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'D:\\new_klamp_ac...', 101, Array)
+#1 D:\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'D:\\new_klamp_ac...')
+#2 D:\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 D:\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 D:\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 D:\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 D:\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 D:\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 D:\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 D:\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#13 {main}
+CRITICAL - 2022-09-29 15:11:55 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at D:\new_klamp_accounting\app\Config\Events.php:33) in D:\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'D:\\new_klamp_ac...', 164, Array)
+#1 D:\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-09-29 15:12:15 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'D:\\new_klamp_ac...', 101, Array)
+#1 D:\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'D:\\new_klamp_ac...')
+#2 D:\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 D:\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 D:\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 D:\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 D:\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 D:\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 D:\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 D:\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#13 {main}
+CRITICAL - 2022-09-29 15:12:15 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at D:\new_klamp_accounting\app\Config\Events.php:33) in D:\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'D:\\new_klamp_ac...', 164, Array)
+#1 D:\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-09-29 15:13:21 --> ini_set(): Headers already sent. You cannot change the session module's ini settings at this time
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Head...', 'D:\\new_klamp_ac...', 101, Array)
+#1 D:\new_klamp_accounting\system\Session\Handlers\FileHandler.php(101): ini_set('session.save_pa...', 'D:\\new_klamp_ac...')
+#2 D:\new_klamp_accounting\system\Config\Services.php(780): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+#3 D:\new_klamp_accounting\system\Config\BaseService.php(123): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#4 D:\new_klamp_accounting\system\Config\Services.php(769): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#5 D:\new_klamp_accounting\system\Common.php(926): CodeIgniter\Config\Services::session()
+#6 D:\new_klamp_accounting\app\Controllers\BaseController.php(65): session('DataSource')
+#7 D:\new_klamp_accounting\app\Controllers\Sales.php(12): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 D:\new_klamp_accounting\system\CodeIgniter.php(891): App\Controllers\Sales->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#9 D:\new_klamp_accounting\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#10 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#13 {main}
+CRITICAL - 2022-09-29 15:13:21 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at D:\new_klamp_accounting\app\Config\Events.php:33) in D:\new_klamp_accounting\system\Debug\Exceptions.php:164
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'D:\\new_klamp_ac...', 164, Array)
+#1 D:\new_klamp_accounting\system\Debug\Exceptions.php(164): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-09-29 15:53:45 --> Undefined variable: sales_total
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(673): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\new_klamp_ac...', 673, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(1096): App\Models\TradingModel->salesReturnItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->salesReturnItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-29 15:54:39 --> Undefined variable: sales_total
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(676): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\new_klamp_ac...', 676, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(1096): App\Models\TradingModel->salesReturnItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->salesReturnItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-29 15:58:18 --> Undefined variable: sales_total
+#0 D:\new_klamp_accounting\app\Models\TradingModel.php(712): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\new_klamp_ac...', 712, Array)
+#1 D:\new_klamp_accounting\app\Controllers\Trading.php(1096): App\Models\TradingModel->salesReturnItem_voucher_wise_data(Array)
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->salesReturnItem_voucher_wise()
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#4 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#7 {main}
+CRITICAL - 2022-09-29 17:35:15 --> Undefined index: from
+#0 D:\new_klamp_accounting\app\Controllers\Trading.php(805): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 805, Array)
+#1 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->salesReturn_voucher()
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#6 {main}
+CRITICAL - 2022-09-29 17:37:47 --> Undefined index: from
+#0 D:\new_klamp_accounting\app\Controllers\Trading.php(805): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 805, Array)
+#1 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->salesReturn_voucher()
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#6 {main}
+CRITICAL - 2022-09-29 17:53:58 --> Undefined index: from
+#0 D:\new_klamp_accounting\app\Controllers\Trading.php(805): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 805, Array)
+#1 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->salesReturn_voucher()
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#6 {main}
+CRITICAL - 2022-09-29 17:54:03 --> Undefined index: from
+#0 D:\new_klamp_accounting\app\Controllers\Trading.php(805): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\new_klamp_ac...', 805, Array)
+#1 D:\new_klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Trading->salesReturn_voucher()
+#2 D:\new_klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trading))
+#3 D:\new_klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\new_klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\new_klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\new_klamp_ac...')
+#6 {main}

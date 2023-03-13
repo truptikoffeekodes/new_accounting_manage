@@ -1,0 +1,147 @@
+CRITICAL - 2022-07-09 09:44:45 --> Argument 1 passed to CodeIgniter\Database\MySQLi\Connection::setDatabase() must be of the type string, null given, called in D:\trupti\klamp_accounting\app\Models\AddbookModel.php on line 833
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(833): CodeIgniter\Database\MySQLi\Connection->setDatabase(NULL)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(748): App\Models\AddbookModel->get_Sales_register(Array, '2')
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Sales_register('2')
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-07-09 09:44:54 --> Argument 1 passed to CodeIgniter\Database\MySQLi\Connection::setDatabase() must be of the type string, null given, called in D:\trupti\klamp_accounting\app\Models\AddbookModel.php on line 833
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(833): CodeIgniter\Database\MySQLi\Connection->setDatabase(NULL)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(748): App\Models\AddbookModel->get_Sales_register(Array, '1')
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Sales_register('1')
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-07-09 09:44:56 --> Argument 1 passed to CodeIgniter\Database\MySQLi\Connection::setDatabase() must be of the type string, null given, called in D:\trupti\klamp_accounting\app\Models\AddbookModel.php on line 833
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(833): CodeIgniter\Database\MySQLi\Connection->setDatabase(NULL)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(748): App\Models\AddbookModel->get_Sales_register(Array, '3')
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Sales_register('3')
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-07-09 13:29:33 --> Too few arguments to function App\Models\AddbookModel::get_Sales_register(), 1 passed in D:\trupti\klamp_accounting\app\Models\AddbookModel.php on line 961 and exactly 5 expected
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(961): App\Models\AddbookModel->get_Sales_register(Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(768): App\Models\AddbookModel->get_Sales_register_xls(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Sales_register_xls()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-07-09 13:29:57 --> Too few arguments to function App\Models\AddbookModel::get_Sales_register(), 1 passed in D:\trupti\klamp_accounting\app\Models\AddbookModel.php on line 961 and exactly 5 expected
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(961): App\Models\AddbookModel->get_Sales_register(Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(768): App\Models\AddbookModel->get_Sales_register_xls(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Sales_register_xls()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-07-09 13:31:15 --> A non-numeric value encountered
+#0 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(866): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'D:\\trupti\\klamp...', 866, Array)
+#1 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(960): App\Models\AddbookModel->get_Sales_register(Array)
+#2 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(768): App\Models\AddbookModel->get_Sales_register_xls(Array)
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->Sales_register_xls()
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#8 {main}
+CRITICAL - 2022-07-09 15:50:49 --> Call to undefined function App\Controllers\get_hsn_summary()
+#0 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Hsn_summary()
+#1 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#5 {main}
+CRITICAL - 2022-07-09 15:51:22 --> Undefined variable: post
+#0 D:\trupti\klamp_accounting\app\Models\GstModel.php(2047): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 2047, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Gst.php(790): App\Models\GstModel->get_hsn_summary('2022-06-16', '2023-04-06')
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Hsn_summary()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-07-09 15:52:12 --> Undefined variable: gmodel
+#0 D:\trupti\klamp_accounting\app\Models\GstModel.php(2051): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 2051, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Gst.php(790): App\Models\GstModel->get_hsn_summary('2022-06-16', '2023-04-06')
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Hsn_summary()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-07-09 15:54:15 --> Undefined index: state_code
+#0 D:\trupti\klamp_accounting\app\Models\GstModel.php(180): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\klamp...', 180, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Gst.php(52): App\Models\GstModel->gstr1_export_data(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->gstr1_export()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-07-09 16:32:14 --> Undefined variable: start_date
+#0 D:\trupti\klamp_accounting\app\Views\gst\hsn_summary.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 84, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/hsn_summary', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Gst.php(796): view('gst/hsn_summary', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Hsn_summary()
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-07-09 16:33:45 --> Undefined variable: start_date
+#0 D:\trupti\klamp_accounting\app\Views\gst\hsn_summary.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 84, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/hsn_summary', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Gst.php(796): view('gst/hsn_summary', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Hsn_summary()
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-07-09 16:54:01 --> Undefined variable: start_date
+#0 D:\trupti\klamp_accounting\app\Views\gst\hsn_summary.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 84, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/hsn_summary', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Gst.php(796): view('gst/hsn_summary', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Hsn_summary()
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-07-09 16:55:25 --> Undefined variable: start_date
+#0 D:\trupti\klamp_accounting\app\Views\gst\hsn_summary.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 84, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/hsn_summary', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Gst.php(796): view('gst/hsn_summary', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Hsn_summary()
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-07-09 16:57:15 --> Undefined index: start_date
+#0 D:\trupti\klamp_accounting\app\Views\gst\hsn_summary.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\trupti\\klamp...', 84, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('gst/hsn_summary', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Gst.php(796): view('gst/hsn_summary', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Gst->Hsn_summary()
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gst))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-07-09 17:16:19 --> Cannot redeclare App\Models\GstModel::get_hsn_summary()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

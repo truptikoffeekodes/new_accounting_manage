@@ -1,0 +1,87 @@
+CRITICAL - 2022-02-10 05:51:25 --> Unknown column 'a.is_static' in 'field list'
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Helpers/base_helper.php(219): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/AccountModel.php(161): getManagedData()
+#5 /var/www/html/app/Controllers/Account.php(78): App\Models\AccountModel->get_account_data()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Account->Getdata()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-10 05:51:33 --> Unknown column 'a.is_static' in 'field list'
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Helpers/base_helper.php(219): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Models/AccountModel.php(161): getManagedData()
+#5 /var/www/html/app/Controllers/Account.php(78): App\Models\AccountModel->get_account_data()
+#6 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Account->Getdata()
+#7 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-10 05:52:49 --> Argument 1 passed to CodeIgniter\Database\MySQLi\Connection::setDatabase() must be of the type string, null given, called in /var/www/html/app/Models/GeneralModel.php on line 395
+#0 /var/www/html/app/Models/GeneralModel.php(395): CodeIgniter\Database\MySQLi\Connection->setDatabase()
+#1 /var/www/html/app/Models/CompanyModel.php(502): App\Models\GeneralModel->update_data_table()
+#2 /var/www/html/app/Controllers/Company.php(169): App\Models\CompanyModel->UpdateData()
+#3 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Company->Action()
+#4 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-10 06:04:23 --> Unknown collation: 'utf8mb4_0900_ai_ci'
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Models/CompanyModel.php(286): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/Company.php(56): App\Models\CompanyModel->insert_edit_company()
+#5 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Company->CreateCompany()
+#6 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-10 06:05:58 --> Table 'contra_trans' already exists
+#0 /var/www/html/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/app/Models/CompanyModel.php(286): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/app/Controllers/Company.php(56): App\Models\CompanyModel->insert_edit_company()
+#5 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Company->CreateCompany()
+#6 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-10 08:30:26 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-10 08:30:30 --> Undefined index: id
+#0 /var/www/html/app/Models/GeneralModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Master.php(851): App\Models\GeneralModel->search_purchasevouchertype_data()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Master->Getdata()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-10 08:30:51 --> Undefined index: pid
+#0 /var/www/html/app/Models/PurchaseModel.php(213): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Purchase.php(117): App\Models\PurchaseModel->insert_edit_purchasechallan()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->add_purchasechallan()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-10 08:35:45 --> Undefined index: pid
+#0 /var/www/html/app/Models/PurchaseModel.php(213): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/app/Controllers/Purchase.php(117): App\Models\PurchaseModel->insert_edit_purchasechallan()
+#2 /var/www/html/system/CodeIgniter.php(918): App\Controllers\Purchase->add_purchasechallan()
+#3 /var/www/html/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#4 /var/www/html/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/html/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

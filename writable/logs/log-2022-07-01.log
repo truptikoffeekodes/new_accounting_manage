@@ -1,0 +1,143 @@
+CRITICAL - 2022-07-01 12:14:10 --> You must set the database table to be used with your query.
+#0 D:\trupti\klamp_accounting\system\Model.php(1237): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 D:\trupti\klamp_accounting\system\Model.php(1816): CodeIgniter\Model->builder()
+#2 D:\trupti\klamp_accounting\app\Controllers\Master.php(895): CodeIgniter\Model->__call('search_purchase...', Array)
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Master->Getdata('search_purchase...')
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master))
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#8 {main}
+CRITICAL - 2022-07-01 12:16:36 --> Undefined variable: result
+#0 D:\trupti\klamp_accounting\app\Models\PurchaseModel.php(1911): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 1911, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Purchase.php(76): App\Models\PurchaseModel->get_purchaseinvoice_databyid(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->Getdata('search_purchase...')
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-07-01 12:17:29 --> Undefined variable: result
+#0 D:\trupti\klamp_accounting\app\Models\PurchaseModel.php(1911): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 1911, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Purchase.php(76): App\Models\PurchaseModel->get_purchaseinvoice_databyid(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->Getdata('search_purchase...')
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-07-01 12:17:45 --> Undefined variable: gmodel
+#0 D:\trupti\klamp_accounting\app\Models\MasterModel.php(660): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 660, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Master.php(815): App\Models\MasterModel->search_pur_delivery(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Master->Getdata('search_pur_deli...')
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-07-01 12:17:49 --> Undefined variable: gmodel
+#0 D:\trupti\klamp_accounting\app\Models\MasterModel.php(660): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 660, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Master.php(815): App\Models\MasterModel->search_pur_delivery(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Master->Getdata('search_pur_deli...')
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-07-01 12:17:57 --> Undefined variable: gmodel
+#0 D:\trupti\klamp_accounting\app\Models\MasterModel.php(660): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 660, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Master.php(815): App\Models\MasterModel->search_pur_delivery(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Master->Getdata('search_pur_deli...')
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-07-01 12:24:05 --> Undefined variable: gmodel
+#0 D:\trupti\klamp_accounting\app\Models\MasterModel.php(660): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 660, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Master.php(815): App\Models\MasterModel->search_pur_delivery(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Master->Getdata('search_pur_deli...')
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-07-01 12:24:40 --> Undefined variable: gmodel
+#0 D:\trupti\klamp_accounting\app\Models\MasterModel.php(660): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 660, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Master.php(815): App\Models\MasterModel->search_pur_delivery(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Master->Getdata('search_pur_deli...')
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-07-01 12:55:02 --> Undefined variable: sun_deb
+#0 D:\trupti\klamp_accounting\app\Models\MasterModel.php(645): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 645, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Master.php(815): App\Models\MasterModel->search_pur_delivery(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Master->Getdata('search_pur_deli...')
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Master))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-07-01 12:58:11 --> Undefined variable: result
+#0 D:\trupti\klamp_accounting\app\Models\PurchaseModel.php(1911): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 1911, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Purchase.php(76): App\Models\PurchaseModel->get_purchaseinvoice_databyid(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->Getdata('search_purchase...')
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-07-01 12:58:14 --> Undefined variable: result
+#0 D:\trupti\klamp_accounting\app\Models\PurchaseModel.php(1911): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 1911, Array)
+#1 D:\trupti\klamp_accounting\app\Controllers\Purchase.php(76): App\Models\PurchaseModel->get_purchaseinvoice_databyid(Array)
+#2 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->Getdata('search_purchase...')
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#7 {main}
+CRITICAL - 2022-07-01 12:59:15 --> Undefined variable: salesinvoice
+#0 D:\trupti\klamp_accounting\app\Views\pdf\purchase_return.php(231): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\trupti\\klamp...', 231, Array)
+#1 D:\trupti\klamp_accounting\system\View\View.php(246): include('D:\\trupti\\klamp...')
+#2 D:\trupti\klamp_accounting\app\Common.php(48): CodeIgniter\View\View->render('pdf/purchase_re...', Array, true)
+#3 D:\trupti\klamp_accounting\app\Controllers\Purchase.php(442): view('pdf/purchase_re...', Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Purchase->pdf_return('2')
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchase))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-07-01 13:19:47 --> Unknown database 'kla2022nrmy'
+#0 D:\trupti\klamp_accounting\system\Database\MySQLi\Connection.php(278): mysqli->select_db('KLA2022NRMY')
+#1 D:\trupti\klamp_accounting\app\Helpers\base_helper.php(132): CodeIgniter\Database\MySQLi\Connection->setDatabase('KLA2022NRMY')
+#2 D:\trupti\klamp_accounting\app\Models\AccountModel.php(195): getManagedData('account a', Array, Array, 'and is_delete=0')
+#3 D:\trupti\klamp_accounting\app\Controllers\Account.php(53): App\Models\AccountModel->get_account_data(Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Account->Getdata('account')
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
+CRITICAL - 2022-07-01 13:23:54 --> Unknown database 'kla2022nrmy'
+#0 D:\trupti\klamp_accounting\system\Database\MySQLi\Connection.php(278): mysqli->select_db('KLA2022NRMY')
+#1 D:\trupti\klamp_accounting\app\Models\AddbookModel.php(3656): CodeIgniter\Database\MySQLi\Connection->setDatabase('KLA2022NRMY')
+#2 D:\trupti\klamp_accounting\app\Controllers\Addbook.php(1402): App\Models\AddbookModel->get_cash_register()
+#3 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Addbook->cash()
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Addbook))
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#8 {main}
+CRITICAL - 2022-07-01 13:24:04 --> Unknown database 'kla2022nrmy'
+#0 D:\trupti\klamp_accounting\system\Database\MySQLi\Connection.php(278): mysqli->select_db('KLA2022NRMY')
+#1 D:\trupti\klamp_accounting\app\Helpers\base_helper.php(132): CodeIgniter\Database\MySQLi\Connection->setDatabase('KLA2022NRMY')
+#2 D:\trupti\klamp_accounting\app\Models\AccountModel.php(195): getManagedData('account a', Array, Array, 'and is_delete=0')
+#3 D:\trupti\klamp_accounting\app\Controllers\Account.php(53): App\Models\AccountModel->get_account_data(Array)
+#4 D:\trupti\klamp_accounting\system\CodeIgniter.php(918): App\Controllers\Account->Getdata('account')
+#5 D:\trupti\klamp_accounting\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Account))
+#6 D:\trupti\klamp_accounting\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\trupti\klamp_accounting\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\trupti\klamp_accounting\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\klamp...')
+#9 {main}
