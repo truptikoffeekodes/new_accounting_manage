@@ -48501,6 +48501,7 @@ CREATE TABLE `gl_group` (
   `id` int(11) NOT NULL,
   `code` varchar(100) NOT NULL,
   `name` varchar(100) NOT NULL,
+  `pid` int(11) NOT NULL,
   `parent` varchar(120) DEFAULT NULL,
   `status` varchar(100) NOT NULL,
   `created_by` int(11) DEFAULT NULL,
@@ -48512,42 +48513,48 @@ CREATE TABLE `gl_group` (
   `is_view` int(11) NOT NULL DEFAULT 0
 );
 
-INSERT INTO `gl_group` (`id`, `code`, `name`, `parent`, `status`, `created_by`, `created_at`, `update_by`, `update_at`, `is_delete`, `is_static`, `is_view`) VALUES
-(1, '0', 'Assets', '', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0,1),
-(2, '1', 'Liabilities', '', '1',0,CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0,1),
-(3, '2', 'Incomes', '', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0,1),
-(4, '3', 'Expenses', '', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0,1),
-(5, 'CUR2021EJHP', 'Current Assets', '1', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0, 0),
-(6, 'CUR2021BAGV', 'Current Liabilities', '2', '1',0, CURRENT_TIMESTAMP(), 0,'0000-00-00 00:00:00', 0, 0, 0),
-(7, 'CAP2021WCS1', 'Capital', '2', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0, 0),
-(8, 'RES2021ITAS', 'Reserves and Surplus', '7', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0, 0),
-(9, 'SEC2021KKCP', 'Secured Loans', '28', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0, 0),
-(10, 'UNS2021QZS4', 'Unsecured Loans', '28', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0, 0),
-(11, 'SUN202181NY', 'Sundry Creditors', '6', '1',0, CURRENT_TIMESTAMP(), 0,'0000-00-00 00:00:00', 0, 0, 0),
-(12, 'PRO20214JXU', 'Provisions', '6', '1',0, CURRENT_TIMESTAMP(), 0,'0000-00-00 00:00:00', 0, 0, 0),
-(13, 'FIX20215CGO', 'Fixed Assets', '1', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0, 0),
-(14, 'INV202131AX', 'Investments', '1', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0, 0),
-(15, 'SUN2021DLAR', 'Sundry Debtors', '5', '1',0, CURRENT_TIMESTAMP(), 0,'0000-00-00 00:00:00', 0, 0, 0),
-(16, 'LOA2021O79W', 'Loans and Advances', '5', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0, 0),
-(17, 'CAS2023YQXP', 'Cash in Hand', '5', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0, 0),
-(18, 'BAN2021AVRO', 'Banks', '5', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0, 0),
-(19, 'OPE2021HPEO', 'Opening Stock', '4', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0, 0),
-(20, 'PUR2021LOB9', 'Purchase', '4', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0, 0),
-(21, 'SAL20219TAH', 'Sales', '3', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0, 0),
-(22, 'TRA2021YJDB', 'Trading Expenses', '4', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0, 0),
-(23, 'CLO2021LJAC', 'Closing Stock', '3', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0, 0),
-(24, 'TRA2021IO0U', 'Trading Income', '3', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00',0, 0, 0),
-(25, 'P &2021DVW3', 'PL Expenses', '4', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0, 0),
-(26, 'P &20216GO0', 'PL Incomes', '3', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0, 0),
-(27, 'DUT2021C7HC', 'Duties and taxes', '6', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0, 0),
-(28, 'LOA2023QW1J', 'Loans(Liability)', '2', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0, 0),
-(29, 'OTH20225SWX', 'Other Income', '26', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0, 0),
-(30, 'DEP2022QOKY', 'Deposits (Asset)', '5', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0, 0),
-(31, 'BRA2022ITJA', 'Branch / Divisions', '2', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0, 0),
-(32, 'BAN2022BSCR', 'Bank OD A/c', '28', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0, 0),
-(33, 'SUS2022KQCX', 'Suspense A/c', '2', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0, 0),
-(34, 'ROU2022H1JM', 'Round off', '25', '1',0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0,0, 0),
-(35, 'BAN2023OJM6', 'Bank OCC A/C', '28', '1', 0, CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0, 0);
+
+INSERT INTO `gl_group` (`id`, `code`, `name`, `pid`, `parent`, `status`, `created_by`, `created_at`, `update_by`, `update_at`, `is_delete`, `is_static`, `is_view`) VALUES
+(1, '0', 'Assets', 0, '', '1', 0, NULL, 0, NULL, 0, 0, 1),
+(2, '1', 'Liabilities', 0, '', '1', 0, NULL, 0, NULL, 0, 0, 1),
+(3, '2', 'Incomes', 0, '', '1', 0, NULL, 0, NULL, 0, 0, 1),
+(4, '3', 'Expenses', 0, '', '1', 0, NULL, 0, NULL, 0, 0, 1),
+(5, 'CUR2021EJHP', 'Current Assets', 0, '1', '1', 4, '2021-01-11 15:35:21', 0, NULL, 0, 0, 0),
+(6, 'CUR2021BAGV', 'Current Liabilities', 0, '2', '1', 4, '2021-01-11 15:35:55', 0, NULL, 0, 0, 0),
+(7, 'CAP2021WCS1', 'Capital', 0, '2', '1', 4, '2021-01-11 15:36:11', 0, NULL, 0, 0, 0),
+(8, 'RES2021ITAS', 'Reserves and Surplus', 0, '7', '1', 4, '2021-01-11 15:36:41', 1, '2023-03-13 16:54:00', 0, 0, 0),
+(9, 'BRO20214I2E', 'Broker', 0, '6', '1', 4, '2021-01-11 15:37:08', 0, NULL, 1, 0, 0),
+(10, 'SEC2021KKCP', 'Secured Loans', 0, '33', '1', 4, '2021-01-11 15:38:04', 4, '2021-02-16 03:31:52', 0, 0, 0),
+(11, 'UNS2021QZS4', 'Unsecured Loans', 0, '33', '1', 4, '2021-01-11 15:39:39', 4, '2021-02-16 03:32:04', 0, 0, 0),
+(12, 'SUN202181NY', 'Sundry Creditors', 0, '6', '1', 4, '2021-01-11 15:40:13', 0, NULL, 0, 0, 0),
+(13, 'PRO20214JXU', 'Provisions', 0, '6', '1', 4, '2021-01-11 15:40:33', 0, NULL, 0, 0, 0),
+(14, 'OTH202159X3', 'Other Liabilities', 0, '6', '1', 4, '2021-01-11 15:41:04', 4, '2021-02-15 04:53:08', 1, 0, 0),
+(15, 'FIX20215CGO', 'Fixed Assets', 0, '1', '1', 4, '2021-01-11 15:41:22', 0, NULL, 0, 0, 0),
+(16, 'INV202131AX', 'Investments', 0, '1', '1', 4, '2021-01-11 15:41:39', 46, '2022-01-28 00:52:36', 0, 0, 0),
+(17, 'SUN2021DLAR', 'Sundry Debtors', 0, '5', '1', 4, '2021-01-11 17:47:54', 0, NULL, 0, 0, 0),
+(18, 'LOA2021O79W', 'Loans and Advances', 0, '5', '1', 4, '2021-01-11 17:48:15', 0, NULL, 0, 0, 0),
+(19, 'CAS2023YQXP', 'Cash in Hand', 0, '5', '1', 4, '2021-01-11 17:48:39', 1, '2023-03-13 16:53:36', 0, 0, 0),
+(20, 'BAN2021AVRO', 'Banks', 0, '5', '1', 4, '2021-01-11 17:48:53', 0, NULL, 0, 0, 0),
+(21, 'OPE2021HPEO', 'Opening Stock', 0, '4', '1', 4, '2021-01-11 17:49:56', 0, NULL, 0, 0, 0),
+(22, 'PUR2021LOB9', 'Purchase', 0, '4', '1', 4, '2021-01-11 17:50:15', 0, NULL, 0, 0, 0),
+(23, 'SAL20219TAH', 'Sales', 0, '3', '1', 4, '2021-01-11 17:50:36', 0, '0000-00-00 00:00:00', 0, 0, 0),
+(24, 'TRA2021YJDB', 'Trading Expenses', 0, '4', '1', 4, '2021-01-11 17:51:03', 0, '0000-00-00 00:00:00', 0, 0, 0),
+(25, 'CLO2021LJAC', 'Closing Stock', 0, '3', '1', 4, '2021-01-11 17:52:06', 0, '0000-00-00 00:00:00', 0, 0, 0),
+(26, 'TRA2021IO0U', 'Trading Income', 0, '3', '1', 4, '2021-01-11 17:52:34', 0, '0000-00-00 00:00:00', 0, 0, 0),
+(27, 'P &2021DVW3', 'PL Expenses', 0, '4', '1', 4, '2021-01-11 17:52:59', 0, '0000-00-00 00:00:00', 0, 0, 0),
+(28, 'P &20216GO0', 'PL Incomes', 0, '3', '1', 4, '2021-01-11 17:53:22', 0, '0000-00-00 00:00:00', 0, 0, 0),
+(29, 'DUT2021C7HC', 'Duties and taxes', 0, '6', '1', 4, '2021-01-29 02:08:34', 1, '2023-01-24 16:38:02', 0, 0, 0),
+(30, 'LOA2023QW1J', 'Loans(Liability)', 0, '2', '1', 4, '2021-02-16 03:31:28', 1, '2023-03-13 16:50:48', 0, 0, 0),
+(31, 'OTH2022UTZG', 'Other Expenses', 0, '30', '1', 40, '2022-01-19 01:32:57', NULL, NULL, 1, 0, 0),
+(32, 'OTH20225SWX', 'Other Income', 0, '31', '1', 40, '2022-01-19 01:33:16', NULL, NULL, 0, 0, 0),
+(33, 'DEP2022QOKY', 'Deposits (Asset)', 0, '5', '1', 46, '2022-01-28 00:57:38', NULL, NULL, 0, 0, 0),
+(34, 'BRA2022ITJA', 'Branch / Divisions', 0, '2', '1', 46, '2022-01-28 00:59:28', NULL, NULL, 0, 0, 0),
+(35, 'BAN2022BSCR', 'Bank OD A/c', 0, '33', '1', 46, '2022-01-28 01:00:15', NULL, NULL, 0, 0, 0),
+(36, 'SUS2022KQCX', 'Suspense A/c', 0, '2', '1', 46, '2022-01-28 01:01:11', NULL, NULL, 0, 0, 0),
+(37, 'SAL2022A9SO', 'Sale', 0, '26', '1', 56, '2022-02-05 03:10:17', NULL, NULL, 1, 0, 0),
+(38, 'PUR2022X8CD', 'Purchases', 0, '25', '1', 56, '2022-02-05 03:10:53', NULL, NULL, 1, 0, 0),
+(39, 'ROU2022H1JM', 'Round off', 0, '30', '1', 7, '2022-02-18 00:35:50', NULL, NULL, 0, 1, 0),
+(40, 'BAN2023OJM6', 'Bank OCC A/C', 0, '30', '1', 1, '2023-03-13 18:44:08', NULL, NULL, 0, 0, 0);
 
 CREATE TABLE `hsn_code` (
   `id` int NOT NULL,
@@ -53508,81 +53515,6 @@ CREATE TABLE `warehouse` (
   `is_delete` varchar(10) NOT NULL DEFAULT '0'
 );
 
-CREATE TABLE `voucher_type` (
-  `id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `parent_id` int(255) DEFAULT NULL,
-  `method_of_numbering` varchar(255) NOT NULL,
-  `prevent_duplicate` int(10) NOT NULL,
-  `prefix` varchar(255) NOT NULL,
-  `set_as` int(1) NOT NULL DEFAULT 0,
-  `is_active` int(1) NOT NULL DEFAULT 0,
-  `created_at` datetime NOT NULL,
-  `created_by` int(255) NOT NULL,
-  `update_at` datetime NOT NULL,
-  `update_by` int(255) NOT NULL,
-  `is_delete` int(1) NOT NULL DEFAULT 0
-);
-INSERT INTO `voucher_type` (`id`, `name`, `parent_id`, `method_of_numbering`, `prevent_duplicate`, `prefix`, `set_as`, `is_active`, `created_at`, `created_by`, `update_at`, `update_by`, `is_delete`) VALUES
-(1, 'Sales', NULL, 'automatic', 0, '', 0, 1, '2023-03-14 00:01:15', 1, '0000-00-00 00:00:00', 0, 0),
-(2, 'Purchase', NULL, 'automatic', 0, '', 0, 1, '2023-03-14 00:01:30', 1, '0000-00-00 00:00:00', 0, 0),
-(3, 'Credit note', NULL, 'automatic', 0, '', 0, 1, '2023-03-14 00:01:46', 1, '0000-00-00 00:00:00', 0, 0),
-(4, 'Debit note', NULL, 'automatic', 0, '', 0, 1, '2023-03-14 00:02:04', 1, '0000-00-00 00:00:00', 0, 0),
-(5, 'Contra', NULL, 'automatic', 0, '', 0, 1, '2023-03-14 00:02:20', 1, '0000-00-00 00:00:00', 0, 0),
-(6, 'Payment', NULL, 'automatic', 0, '', 0, 1, '2023-03-14 00:02:38', 1, '0000-00-00 00:00:00', 0, 0),
-(7, 'Receipt', NULL, 'automatic', 0, '', 0, 1, '2023-03-14 00:02:52', 1, '0000-00-00 00:00:00', 0, 0),
-(8, 'Journal', NULL, 'automatic', 0, '', 0, 1, '2023-03-14 00:03:08', 1, '0000-00-00 00:00:00', 0, 0);
-
-CREATE TABLE `gl_group_summary` (
-  `id` int(11) NOT NULL,
-  `gl_name` varchar(255) NOT NULL,
-  `parent` varchar(255) NOT NULL,
-  `all_sub_glgroup` varchar(255) NOT NULL,
-  `created_at` datetime DEFAULT NULL,
-  `created_by` int(100) DEFAULT NULL,
-  `update_at` datetime DEFAULT NULL,
-  `update_by` int(100) DEFAULT NULL,
-  `is_delete` tinyint(1) NOT NULL
-);
-
-INSERT INTO `gl_group_summary` (`id`, `gl_name`, `parent`, `all_sub_glgroup`, `created_at`, `created_by`, `update_at`, `update_by`, `is_delete`) VALUES
-(1, 'Assets', '', '30,18,17,16,15,14,13,5', CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0),
-(2, 'Liabilities', '', '35,33,32,31,28,27,12,11,10,9,8,7,6', CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0),
-(3, 'Incomes', '', '29,26,24,23,21', CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0),
-(4, 'Expenses', '', '34,25,22,20,19', CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0),
-(5, 'Current Assets', '1', '30,18,17,16,15', CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0),
-(6, 'Current Liabilities', '2', '27,12,11', CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0),
-(7, 'Capital', '2', '8', CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0),
-(8, 'Reserves and Surplus', '7', '', CURRENT_TIMESTAMP(),0, '0000-00-00 00:00:00', 0, 0),
-(9, 'Secured Loans', '28', '', CURRENT_TIMESTAMP(),0, '0000-00-00 00:00:00', 0, 0),
-(10, 'Unsecured Loans', '28', '', CURRENT_TIMESTAMP(),0, '0000-00-00 00:00:00', 0, 0),
-(11, 'Sundry Creditors', '6', '',CURRENT_TIMESTAMP(),0, '0000-00-00 00:00:00', 0, 0),
-(12, 'Provisions', '6', '', CURRENT_TIMESTAMP(),0, '0000-00-00 00:00:00', 0, 0),
-(13, 'Fixed Assets', '1', '', CURRENT_TIMESTAMP(),0, '0000-00-00 00:00:00', 0, 0),
-(14, 'Investments', '1', '', CURRENT_TIMESTAMP(),0, '0000-00-00 00:00:00', 0, 0),
-(15, 'Sundry Debtors', '5', '', CURRENT_TIMESTAMP(),0, '0000-00-00 00:00:00', 0, 0),
-(16, 'Loans and Advances', '5', '', CURRENT_TIMESTAMP(),0, '0000-00-00 00:00:00', 0, 0),
-(17, 'Cash in Hand', '5', '', CURRENT_TIMESTAMP(),0, '0000-00-00 00:00:00', 0, 0),
-(18, 'Banks', '5', '', CURRENT_TIMESTAMP(),0, '0000-00-00 00:00:00', 0, 0),
-(19, 'Opening Stock', '4', '', CURRENT_TIMESTAMP(),0, '0000-00-00 00:00:00', 0, 0),
-(20, 'Purchase', '4', '', CURRENT_TIMESTAMP(),0, '0000-00-00 00:00:00', 0, 0),
-(21, 'Sales', '3', '', CURRENT_TIMESTAMP(),0, '0000-00-00 00:00:00', 0, 0),
-(22, 'Trading Expenses', '4', '', CURRENT_TIMESTAMP(),0, '0000-00-00 00:00:00', 0, 0),
-(23, 'Closing Stock', '3', '', CURRENT_TIMESTAMP(),0, '0000-00-00 00:00:00', 0, 0),
-(24, 'Trading Income', '3', '', CURRENT_TIMESTAMP(),0, '0000-00-00 00:00:00', 0, 0),
-(25, 'PL Expenses', '4', '34', CURRENT_TIMESTAMP(),0, '0000-00-00 00:00:00', 0, 0),
-(26, 'PL Incomes', '3', '29', CURRENT_TIMESTAMP(),0, '0000-00-00 00:00:00', 0, 0),
-(27, 'Duties and taxes', '6', '', CURRENT_TIMESTAMP(),0, '0000-00-00 00:00:00', 0, 0),
-(28, 'Loans(Liability)', '2', '35,32,10,9', CURRENT_TIMESTAMP(),0, '0000-00-00 00:00:00', 0, 0),
-(29, 'Other Income', '26', '', CURRENT_TIMESTAMP(),0, '0000-00-00 00:00:00', 0, 0),
-(30, 'Deposits (Asset)', '5', '', CURRENT_TIMESTAMP(),0, '0000-00-00 00:00:00', 0, 0),
-(31, 'Branch / Divisions', '2', '', CURRENT_TIMESTAMP(),0, '0000-00-00 00:00:00', 0, 0),
-(32, 'Bank OD A/c', '28', '', CURRENT_TIMESTAMP(),0, '0000-00-00 00:00:00', 0, 0),
-(33, 'Suspense A/c', '2', '', CURRENT_TIMESTAMP(),0, '0000-00-00 00:00:00', 0, 0),
-(34, 'Round off', '25', '', CURRENT_TIMESTAMP(),0, '0000-00-00 00:00:00', 0, 0),
-(35, 'Bank OCC A/C', '28', '', CURRENT_TIMESTAMP(), 0, '0000-00-00 00:00:00', 0, 0);
-
-
 ALTER TABLE `jv_main`
   ADD PRIMARY KEY (`id`);
 
@@ -53703,12 +53635,6 @@ ALTER TABLE `warehouse`
 ALTER TABLE `bank_cash_against`
   ADD PRIMARY KEY (`id`);
 
-ALTER TABLE `voucher_type`
-  ADD PRIMARY KEY (`id`);
-
-ALTER TABLE `gl_group_summary`
-  ADD PRIMARY KEY (`id`);
-
 ALTER TABLE `jv_main`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
@@ -53743,7 +53669,7 @@ ALTER TABLE `debit_note`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 ALTER TABLE `gl_group`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 ALTER TABLE `hsn_code`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
@@ -53825,12 +53751,4 @@ ALTER TABLE `bank_cash_against`
 
 ALTER TABLE `contra_trans`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
-COMMIT;
-
-ALTER TABLE `voucher_type`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-COMMIT;
-
-ALTER TABLE `gl_group_summary`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 COMMIT;

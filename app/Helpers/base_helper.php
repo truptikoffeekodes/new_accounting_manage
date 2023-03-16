@@ -616,6 +616,7 @@ function gl_group_summary_array($id)
         $db->setDatabase(session('DataSource'));
     }
     $main = get_parent_gl_group($id);
+    
     $parent_id = floatval($main['parent']);
   
     $result = array();
@@ -647,6 +648,11 @@ function get_parent_gl_group($id)
     $query = $builder->get();
     $result = $query->getRowArray();
     
+    
     return $result;
+}
+function array_remove_by_value($array, $value)
+{
+    return array_values(array_diff($array, array($value)));
 }
 

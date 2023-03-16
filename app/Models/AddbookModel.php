@@ -5581,16 +5581,18 @@ class AddbookModel extends Model
                 'gl_name' => $row['name'],
                 'parent' => $row['parent'],
                 'all_sub_glgroup' => '',
-                'closing' => 0.00,
                 'created_at' => $row['created_at'],
                 'created_by' => $row['created_by'],
                 'update_by' => $row['update_by'],
                 'update_at' => $row['update_at'],
                 'is_delete' => $row['is_delete'],
            );
+          // echo '<pre>';Print_r($pdata);
+           
            $result_gl = $builder_gl_summary->Insert($pdata);
                
         }
+       // exit;
         if(isset($result_gl))
         {
             $msg = array("st"=>"succsess","msg"=>"succsess");
@@ -5613,7 +5615,7 @@ class AddbookModel extends Model
         $builder->orderBy('id', 'desc');
         $query = $builder->get();
         $result = $query->getResultArray();
-       // echo '<pre>';Print_r($result);exit;
+       //echo '<pre>';Print_r($result);exit;
         
         $gnmodel = new GeneralModel();
         foreach ($result as $row) {
@@ -5626,7 +5628,9 @@ class AddbookModel extends Model
                 $old_gl = array();
                 $new_gl = array();
                 $get_data = $gnmodel->get_data_table('gl_group_summary', array('id' => $gl_data['id']),'all_sub_glgroup');
-               
+                $get_data['id'] = $gl_data['id'];
+                //echo '<pre>';Print_r($get_data);
+                
                 if(!empty($get_data['all_sub_glgroup']))
                 {
                     
@@ -5646,8 +5650,10 @@ class AddbookModel extends Model
                 //$result_up = $gnmodel->update_data_table('gl_group_summary', array('id' => $gl_data['id']), array('update_gl' => 1));
 
             }
+          
            
         }
+        //exit;
       
         if(isset($result_gl))
         {

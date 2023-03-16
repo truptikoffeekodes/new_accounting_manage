@@ -1452,7 +1452,7 @@ class Addbook extends BaseController
     {
        
         $data = $this->model->get_gl_group_summary_query_data();
-        echo '<pre>';Print_r($data);exit;
+       // echo '<pre>';Print_r($data);exit;
         
 
     }

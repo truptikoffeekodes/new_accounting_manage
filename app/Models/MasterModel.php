@@ -186,9 +186,80 @@ class MasterModel extends Model
 
         $pdata['update_at'] = date('Y-m-d H:i:s');
         $pdata['update_by'] = session('uid');
+
+        $get_parent_data = $gmodel->get_data_table('gl_group_summary', array('id' => $post['parent_grp']),'all_sub_glgroup');
+
+        //$old_sub_array = $get_parent_data['all_sub_glgroup'];
+        $old_sub_group_arary = gl_group_summary_array($post['id']);
+        foreach($old_sub_group_arary as $row1) 
+        {
+            $get_data = $gmodel->get_data_table('gl_group_summary', array('id' => $row1['id']),'all_sub_glgroup');
+            if(!empty($get_data['all_sub_glgroup']))
+            {
+                $old_gl = explode(",",$get_data['all_sub_glgroup']);
+                $new_array = array_remove_by_value($old_gl, $post['id']);
+                $new_sub = implode(',',$new_array);
+                $result_gl = $gmodel->update_data_table('gl_group_summary', array('id' => $row1['id']), array('all_sub_glgroup' => $new_sub));       
+            }
+        }
+
+        $get_parent_data = $gmodel->get_data_table('gl_group_summary', array('id' => $post['parent_grp']),'all_sub_glgroup');
+       
+        if(!empty($get_parent_data['all_sub_glgroup']))
+        {
+            
+            $old_gl = explode(",",$get_data['all_sub_glgroup']);
+            $new_gl[] = $post['id'];
+            $new_array= array_merge($old_gl,$new_gl);
+           $new_sub = implode(',',$new_array);
+           $result_gl = $gmodel->update_data_table('gl_group_summary', array('id' => $post['parent_grp']), array('all_sub_glgroup' => $new_sub));
+
+            
+        }    
+        else
+        {
+             $result_gl = $gmodel->update_data_table('gl_group_summary', array('id' => $post['parent_grp']), array('all_sub_glgroup' => $post['id']));
+        }
+       
+        $gl_data = gl_group_summary_array(@$post['parent_grp']);
+        foreach($gl_data as $gl_data_row)
+         {
+             $new_sub = array();
+             $new_array = array();
+             $old_gl = array();
+             $new_gl = array();
+             $get_data = $gmodel->get_data_table('gl_group_summary', array('id' => $gl_data_row['id']),'all_sub_glgroup');
+            
+             if(!empty($get_data['all_sub_glgroup']))
+             {
+                 
+                 $old_gl = explode(",",$get_data['all_sub_glgroup']);
+                 $new_gl[] = $post['id'];
+                 $new_array= array_merge($old_gl,$new_gl);
+                $new_sub = implode(',',$new_array);
+                $result_gl = $gmodel->update_data_table('gl_group_summary', array('id' => $gl_data_row['id']), array('all_sub_glgroup' => $new_sub));
+   
+                 
+             }    
+             else
+             {
+                  $result_gl = $gmodel->update_data_table('gl_group_summary', array('id' => $gl_data_row['id']), array('all_sub_glgroup' => $post['id']));
+             }
+           
+         }
+        //echo '<pre>';Print_r($result_gl);exit;
+        
+        
+        $pdata1['update_at'] = date('Y-m-d H:i:s');
+        $pdata1['update_by'] = session('uid');
+
         if (empty($msg)) {
             $builder->where(array("id" => $post['id']));
             $result = $builder->Update($pdata);
+
+            $builder_gl = $db->table('gl_group_summary');
+            $builder_gl->where(array("id" => $post['id']));
+            $result1 = $builder_gl->Update($pdata1);
             
             $builder = $db->table('gl_group');
 
@@ -254,7 +325,7 @@ class MasterModel extends Model
                 }    
                 else
                 {
-                     $result_gl = $gmodel->update_data_table('gl_group_summary', array('id' => $gl_data_row['id']), array('all_sub_glgroup' => $row['id']));
+                     $result_gl = $gmodel->update_data_table('gl_group_summary', array('id' => $gl_data_row['id']), array('all_sub_glgroup' => $id));
                 }
               
             }
@@ -2160,111 +2231,102 @@ public function get_warehouse_data($get){
     public function UpdateData($post) {
         $result = array();
         $db = $this->db;
-       if ($post['type'] == 'Status') {
-            if ($post['method'] == 'bank') {
-                $gnmodel = new GeneralModel();
-                $result = $gnmodel->update_data_table('bank', array('id' => $post['pk']), array('status' => $post['val']));
-            }
-            if ($post['method'] == 'supervisor') {
-                $gnmodel = new GeneralModel();
-                $result = $gnmodel->update_data_table('supervisor', array('id' => $post['pk']), array('status' => $post['val'],'updatedate' => date('Y-m-d')));
-            }
-            if ($post['method'] == 'screenseries') {
-                $gnmodel = new GeneralModel();
-                $result = $gnmodel->update_data_table('screenseries', array('id' => $post['pk']), array('status' => $post['val']));
-            }
-            if ($post['method'] == 'billterm') {
-                $gnmodel = new GeneralModel();
-                $result = $gnmodel->update_data_table('billterm', array('id' => $post['pk']), array('status' => $post['val']));
-            }
-            if ($post['method'] == 'glgrp') {
-                $gnmodel = new GeneralModel();
-                $result = $gnmodel->update_data_table('gl_group', array('id' => $post['pk']), array('status' => $post['val']));
-            }
-            if ($post['method'] == 'hsn') {
-                $gnmodel = new GeneralModel();
-                $result = $gnmodel->update_data_table('hsn_code', array('id' => $post['pk']), array('status' => $post['val']));
-            }
-            if ($post['method'] == 'warehouse') {
-                $gnmodel = new GeneralModel();
-                $result = $gnmodel->update_data_table('warehouse', array('id' => $post['pk']), array('status' => $post['val']));
-            }
-            if ($post['method'] == 'vehicle') {
-                $gnmodel = new GeneralModel();
-                $result = $gnmodel->update_data_table('vehicle', array('id' => $post['pk']), array('status' => $post['val']));
-            }
-            if ($post['method'] == 'transport') {
-                $gnmodel = new GeneralModel();
-                $result = $gnmodel->update_data_table('transport', array('id' => $post['pk']), array('status' => $post['val']));
-            }
-            if ($post['method'] == 'broker') {
-                $gnmodel = new GeneralModel();
-                $result = $gnmodel->update_data_table('broker', array('id' => $post['pk']), array('status' => $post['val']));
-            }
-       }
+        $gnmodel = new GeneralModel();
+        if ($post['type'] == 'Status') {
+                if ($post['method'] == 'bank') {
+                    $result = $gnmodel->update_data_table('bank', array('id' => $post['pk']), array('status' => $post['val']));
+                }
+                if ($post['method'] == 'supervisor') {
+                    $result = $gnmodel->update_data_table('supervisor', array('id' => $post['pk']), array('status' => $post['val'],'updatedate' => date('Y-m-d')));
+                }
+                if ($post['method'] == 'screenseries') {
+                    $result = $gnmodel->update_data_table('screenseries', array('id' => $post['pk']), array('status' => $post['val']));
+                }
+                if ($post['method'] == 'billterm') {
+                    $result = $gnmodel->update_data_table('billterm', array('id' => $post['pk']), array('status' => $post['val']));
+                }
+                if ($post['method'] == 'glgrp') {
+                    $result = $gnmodel->update_data_table('gl_group', array('id' => $post['pk']), array('status' => $post['val']));
+                }
+                if ($post['method'] == 'hsn') {
+                    $result = $gnmodel->update_data_table('hsn_code', array('id' => $post['pk']), array('status' => $post['val']));
+                }
+                if ($post['method'] == 'warehouse') {
+                    $result = $gnmodel->update_data_table('warehouse', array('id' => $post['pk']), array('status' => $post['val']));
+                }
+                if ($post['method'] == 'vehicle') {
+                    $result = $gnmodel->update_data_table('vehicle', array('id' => $post['pk']), array('status' => $post['val']));
+                }
+                if ($post['method'] == 'transport') {
+                    $result = $gnmodel->update_data_table('transport', array('id' => $post['pk']), array('status' => $post['val']));
+                }
+                if ($post['method'] == 'broker') {
+                    $result = $gnmodel->update_data_table('broker', array('id' => $post['pk']), array('status' => $post['val']));
+                }
+        }
         if ($post['type'] == 'Remove') {
-            if ($post['method'] == 'itemgrp') {
-                $gnmodel = new GeneralModel();
+            if ($post['method'] == 'itemgrp') {  
                 $result = $gnmodel->update_data_table('item_group', array('id' => $post['pk']), array('is_delete' => '1'));
             }
             if ($post['method'] == 'billterm') {
-                $gnmodel = new GeneralModel();
                 $result = $gnmodel->update_data_table('billterm', array('id' => $post['pk']), array('is_delete' => '1'));
             }
             if ($post['method'] == 'supervisor') {
-                $gnmodel = new GeneralModel();
                 $result = $gnmodel->update_data_table('supervisor', array('id' => $post['pk']), array('is_delete' => '1'));
             }
             if ($post['method'] == 'glgrp') {
-                $gnmodel = new GeneralModel();
-                $result = $gnmodel->update_data_table('gl_group', array('id' => $post['pk']), array('is_delete' => '1'));
+                
+                $old_sub_group_arary = gl_group_summary_array($post['pk']);
+               
+                foreach($old_sub_group_arary as $row1) 
+                {
+                    $get_data = $gnmodel->get_data_table('gl_group_summary', array('id' => $row1['id']),'all_sub_glgroup');
+                    if(!empty($get_data['all_sub_glgroup']))
+                    {
+                        $old_gl = explode(",",$get_data['all_sub_glgroup']);
+                        $new_array = array_remove_by_value($old_gl,$post['pk']);
+                        $new_sub = implode(',',$new_array);
+                        $result_gl = $gnmodel->update_data_table('gl_group_summary', array('id' => $row1['id']), array('all_sub_glgroup' => $new_sub));       
+                    }
+                }
+                $result = $gnmodel->update_data_table('gl_group', array('id' => $post['pk']), array('is_delete' => '1','update_at' => date('Y-m-d'),'update_by'=>session('uid')));
+                $result1 = $gnmodel->update_data_table('gl_group_summary', array('id' => $post['pk']), array('is_delete' => '1','update_at' => date('Y-m-d'),'update_by'=>session('uid')));
+            
             }
             if ($post['method'] == 'hsn') {
-                $gnmodel = new GeneralModel();
                 $result = $gnmodel->update_data_table('hsn_code', array('id' => $post['pk']), array('is_delete' => '1'));
             }
             if ($post['method'] == 'uom') {
-                $gnmodel = new GeneralModel();
                 $result = $gnmodel->update_data_table('uom', array('id' => $post['pk']), array('is_delete' => '1'));
             }
             if ($post['method'] == 'godown') {
-                $gnmodel = new GeneralModel();
                 $result = $gnmodel->update_data_table('godown', array('id' => $post['pk']), array('is_delete' => '1'));
             }
             if ($post['method'] == 'transport') {
-                $gnmodel = new GeneralModel();
-                $result = $gnmodel->update_data_table('transport', array('id' => $post['pk']), array('is_delete' => '1'));
+               $result = $gnmodel->update_data_table('transport', array('id' => $post['pk']), array('is_delete' => '1'));
             }
             if ($post['method'] == 'cashrece') {
-                $gnmodel = new GeneralModel();
-                $result = $gnmodel->update_data_table('cash_receipt', array('id' => $post['pk']), array('is_delete' => '1'));
+                 $result = $gnmodel->update_data_table('cash_receipt', array('id' => $post['pk']), array('is_delete' => '1'));
             }
             if ($post['method'] == 'cashpayment') {
-                $gnmodel = new GeneralModel();
-                $result = $gnmodel->update_data_table('cash_payment', array('id' => $post['pk']), array('is_delete' => '1'));
+               $result = $gnmodel->update_data_table('cash_payment', array('id' => $post['pk']), array('is_delete' => '1'));
             }
             if ($post['method'] == 'vehicle') {
-                $gnmodel = new GeneralModel();
-                $result = $gnmodel->update_data_table('vehicle', array('id' => $post['pk']), array('is_delete' => '1'));
+                 $result = $gnmodel->update_data_table('vehicle', array('id' => $post['pk']), array('is_delete' => '1'));
             }
             if ($post['method'] == 'bank') {
-                $gnmodel = new GeneralModel();
                 $result = $gnmodel->update_data_table('bank', array('id' => $post['pk']), array('is_delete' => '1'));
             }
             if ($post['method'] == 'screenseries') {
-                $gnmodel = new GeneralModel();
                 $result = $gnmodel->update_data_table('screenseries', array('id' => $post['pk']), array('is_delete' => '1'));
             }
             if ($post['method'] == 'warehouse') {
-                $gnmodel = new GeneralModel();
                 $result = $gnmodel->update_data_table('warehouse', array('id' => $post['pk']), array('is_delete' => '1'));
             }
             if ($post['method'] == 'broker') {
-                $gnmodel = new GeneralModel();
-                $result = $gnmodel->update_data_table('broker', array('id' => $post['pk']), array('is_delete' => '1'));
+                 $result = $gnmodel->update_data_table('broker', array('id' => $post['pk']), array('is_delete' => '1'));
             }
             if ($post['method'] == 'tds') {
-                $gnmodel = new GeneralModel();
                 $result = $gnmodel->update_data_table('tds_rate', array('id' => $post['pk']), array('is_delete' => '1'));
             }
         }
