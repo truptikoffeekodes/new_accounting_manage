@@ -31,7 +31,7 @@
                         <section>
                             <hr>
                             <div class="row">
-
+                               
                                 <div class="col-lg-4 form-group">
                                     <label class="form-label"><b>Under GL Group:</b> <span class="tx-danger">*</span>
                                         <a data-toggle="modal" href="<?= url('master/add_glgrp') ?>" data-target="#fm_model" data-title="Add GL Group ">
@@ -48,8 +48,10 @@
                                     </div>
                                 </div>
                                 <?php
+                               // echo '<pre>';Print_r($account_view);exit;
+                                
                                 if (!empty($account_view)) {
-                                    if (@$account_view['gl_grp'] == 'P & L Expenses' || @$account_view['gl_grp'] == 'P & L Incomes'|| @$account_view['gl_grp'] == 'Trading Expenses' || @$account_view['gl_grp'] == 'Trading Income' ) {
+                                    if (@$account_view['gl_grp'] == 'PL Expenses' || @$account_view['gl_grp'] == 'PL Incomes'|| @$account_view['gl_grp'] == 'Trading Expenses' || @$account_view['gl_grp'] == 'Trading Income' ) {
                                         $ledger_type_display = 'block;';
                                     } else {
                                         $ledger_type_display = 'none;';
@@ -145,6 +147,15 @@
                                 <div class="col-lg-4 form-group" id="brokrage">
                                     <label class="form-label"><b>Brokrage(%):</b></label>
                                     <input class="form-control" name="brokrage" value="<?= @$account_view['brokrage']; ?>" placeholder="Enter Brokrage" type="text">
+                                </div>
+                                <div class="col-lg-4 form-group">
+                                    <label class="form-label">Set as: <span class="tx-danger">*</span></label>
+
+                                    <label class="rdiobox"><input name="set_as" <?= (@$account_view['set_as'] == "0" ? 'checked' : '') ?> value="0" type="radio" onchange="calculate()">
+                                        <span>Default</span></label>
+
+                                    <label class="rdiobox"><input name="set_as" <?= (@$account_view['set_as'] == "1" ? 'checked' : '') ?> value="1" type="radio" onchange="calculate()"> <span>Optional</span></label>
+
                                 </div>
 
                             </div>
@@ -640,9 +651,6 @@
     function afterload() {
 
     }
-
-
-
     if ($.isFunction($.fn.datatable_load)) {
         datatable_load('');
     }
@@ -651,7 +659,6 @@
     function hide_show() {
 
         var gl_id = $('#glgroup_ac').val();
-        //console.log(gl_id);
         $.ajax({
             url: '<?= url('account/get_gl_parent') ?>',
             type: "post",
@@ -660,36 +667,24 @@
 
             },
             success: function(data) {
-                //console.log(data);
                 var glDiv = document.getElementById("gl_hide");
                 var brokrage = document.getElementById("brokrage");
-                //var hsn_div = document.getElementById("hsn_div");
-                //var other_taxes = document.getElementById("taxes_show");
-                //var HideName = document.getElementById("name_hide");
-                //var Name = document.getElementById("name_show");
-                //var HideName = document.getElementById("name_hide");
                 var gstno_div = document.getElementById("gstno_div");
                 var taxability_div = document.getElementById("taxability_div");
                 var gst_type_div = document.getElementById("gst_type_div");
                 var hsn_div = document.getElementById("hsn_div");
-
                 var bank_div = document.getElementById("bank_div");
                 var h3_bank = document.getElementById("h3_bank");
-
                 var tax_div = document.getElementById("tax_div");
                 var h3_tax = document.getElementById("h3_tax_div");
-
                 var bank_holder = document.getElementById("bank_holder");
                 var ac_type = document.getElementById("ac_type");
-
                 var text = data.text;
                 var main_id = data.main_id;
                 var tx_bn_hide = data.tx_bn_hide;
                 var bank_id = data.bank_id;
                 var cash_id = data.cash_id;
-
-
-
+                
                 if (main_id == '16' || main_id == '27' || main_id == '29' || main_id == '30' || main_id == '31') {
                     gst_type_div.style.display = "none";
                     taxability_div.style.display = "block";
@@ -968,28 +963,20 @@
         $('#glgroup_ac').on('select2:select', function(e) {
 
             var data = e.params.data;
-            //console.log(data);
+            //console.log(data);return;
             var glDiv = document.getElementById("gl_hide");
             var brokrage = document.getElementById("brokrage");
-
-            //var Name = document.getElementById("name_show");
-            //var HideName = document.getElementById("name_hide");
             var gstno_div = document.getElementById("gstno_div");
             var taxability_div = document.getElementById("taxability_div");
             var gst_type_div = document.getElementById("gst_type_div");
             var hsn_div = document.getElementById("hsn_div");
-
             var bank_div = document.getElementById("bank_div");
             var h3_bank = document.getElementById("h3_bank");
-
             var tax_div = document.getElementById("tax_div");
             var h3_tax = document.getElementById("h3_tax_div");
-
             var bank_holder = document.getElementById("bank_holder");
             var ac_type = document.getElementById("ac_type");
-
             var trans_div = document.getElementById("trans_div");
-
             var text = data.text;
             var main_id = data.main_id;
             var tx_bn_hide = data.tx_bn_hide;
@@ -1150,6 +1137,28 @@
             }
 
 
+        });
+        $("#voucher_type").select2({
+            width: '100%',
+            placeholder: 'Type GL',
+            ajax: {
+                url: PATH + "Master/Getdata/voucher_type",
+                type: "post",
+                allowClear: true,
+                dataType: 'json',
+                delay: 250,
+                data: function(params) {
+                    return {
+                        searchTerm: params.term // search term
+                    };
+                },
+                processResults: function(response) {
+                    return {
+                        results: response
+                    };
+                },
+                cache: true
+            }
         });
        
 

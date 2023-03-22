@@ -1709,6 +1709,7 @@ class SalesModel extends Model
 
         $pdata = array(
             'voucher_type' => $post['voucher_type'],
+            'ledger' => $post['ledger_type'],
             'gl_group' => $post['gl_group'],
             'invoice_no' => $post['invoice_no'],
             'custom_inv_no' => @$post['custom_inv_no'] ? $post['custom_inv_no'] : '',
@@ -1744,7 +1745,7 @@ class SalesModel extends Model
             'due_days' => $post['due_day'],
             'due_date' => $post['due_date'],
             'stat_adj' => isset($post['stat_adj']) ? $post['stat_adj'] : 0,
-            'round' => @$post['round'],
+            'round' => @$post['round'] ? $post['round'] : '',
             'round_diff' => @$post['round_diff'],
             'taxable' => @$post['taxable'],
             'ship_address' => @$post['ship_address'] ? $post['ship_address'] : '',
@@ -1760,7 +1761,6 @@ class SalesModel extends Model
             'cgst_acc' => @$cgst_acc,
             'sgst_acc' => @$sgst_acc,
         );
-        //echo '<pre>';Print_r($pdata);exit;
         
         if ($post['gst'] != '') {
             if (in_array('Taxable', $post['taxability'])) {
@@ -2497,6 +2497,7 @@ class SalesModel extends Model
             }
 
             $getdelivery = $gmodel->get_data_table('account', array('id' => $row['delivery_code']), 'name');
+            $getledger = $gmodel->get_data_table('account', array('id' => $row['ledger']), 'name');
 
             $gettransport = $gmodel->get_data_table('transport', array('id' => $row['transport']), 'name');
             $getvehicle = $gmodel->get_data_table('vehicle', array('id' => $row['vhicle_no']), 'name');
@@ -2512,6 +2513,7 @@ class SalesModel extends Model
             $getdata['salesinvoice']['delivery_name'] = @$getdelivery['name'];
             $getdata['salesinvoice']['transport_name'] = @$gettransport['name'];
             $getdata['salesinvoice']['vehicle_name'] = @$getvehicle['name'];
+            $getdata['salesinvoice']['ledger_name'] = @$getledger['name'];
             // $getdata['salesinvoice']['broker_ledger_name'] = @$getbroker_ledger['name'];
             // $getdata['salesinvoice']['round_name'] = @$getround['name'];
             // $getdata['salesinvoice']['discount_name'] = @$getdiscount['name'];
@@ -2584,6 +2586,8 @@ class SalesModel extends Model
     // update trupti 24-11-2022
     public function insert_edit_salesreturn($post)
     {
+        //echo '<pre>';Print_r($post);exit;
+        
 
         if (!@$post['pid']) {
             $msg = array('st' => 'fail', 'msg' => "Please Select any Product");
@@ -2762,6 +2766,7 @@ class SalesModel extends Model
         $msg = array();
         $pdata = array(
             'voucher_type' => $post['voucher_type'],
+            'ledger' => $post['ledger_type'],
             'gl_group' => $post['gl_group'],
             'return_no' => $post['return_no'],
             'supp_inv' => $post['supp_inv'],
@@ -2811,6 +2816,8 @@ class SalesModel extends Model
             'cgst_acc' => @$cgst_acc,
             'sgst_acc' => @$sgst_acc,
         );
+        //echo '<pre>';Print_r($pdata);exit;
+        
         if ($post['gst'] != '') {
             if (in_array('Taxable', $post['taxability'])) {
 

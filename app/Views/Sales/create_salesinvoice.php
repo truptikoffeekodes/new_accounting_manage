@@ -40,18 +40,24 @@
                 <div class="card-body">
                     <form action="<?= url('Sales/add_salesinvoice') ?>" class="ajax-form-submit-invoice" method="POST" id="Salesinvoiceform">
                         <div class="row">
-                            <div class="col-lg-6 form-group">
+                            <div class="col-lg-3 form-group">
+                                <label class="form-label">Ledger Type : </label>
+                                <select class="form-control" id="ledger_type" name='ledger_type'>
+                                    <option value="<?= @$salesinvoice['ledger'] ?>">
+                                        <?= @$salesinvoice['ledger_name'] ?>
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-3 form-group">
                                 <label class="form-label">Voucher Type : </label>
-                                <select class="form-control" id="voucher_type" name='voucher_type'>
-                                    <?php if (@$salesinvoice['voucher_type']) { ?>
-                                        <option value="<?= @$salesinvoice['voucher_type'] ?>">
-                                            <?= @$salesinvoice['voucher_name'] ?>
-                                        </option>
-                                    <?php } else { ?>
-                                        <option value="51" selected>
-                                            Sales Taxable
-                                        </option>
+                                <select class="form-control select2"  name='voucher_type'>
+                                    <?php foreach($voucher_list as $row){ ?>
+                                    <option value="<?= @$row['id'] ?>"  <?=(@$salesinvoice['voucher_type'] == $row['id']) ? 'selected' : (($row['set_as'] == 1) ? 'selected' : '') ?>>
+                                        <?= @$row['name'] ?>
+                                    </option>
                                     <?php } ?>
+
                                 </select>
                             </div>
                             <div class="col-lg-3 form-group">
@@ -2106,11 +2112,11 @@
         });
 
 
-        $("#voucher_type").select2({
+        $("#ledger_type").select2({
             width: '100%',
-            placeholder: 'Voucher Type',
+            placeholder: 'Ledger Type',
             ajax: {
-                url: PATH + "Master/Getdata/search_salevouchertype",
+                url: PATH + "Master/Getdata/search_sale_ledger_type",
                 type: "post",
                 allowClear: true,
                 dataType: 'json',

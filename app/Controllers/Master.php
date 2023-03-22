@@ -601,19 +601,16 @@ class Master extends BaseController{
             $get = $this->request->getGet();
             $this->model->get_bank_data($get);
         }
-
         if ($method == 'companygrp') {
             $get = $this->request->getPost();
             $data['suggestions'] = $this->model->search_companygrp_data($get['query']);
             return $this->response->setJSON($data);
         }
-
         if ($method == 'parent_glgrp') {
             $post = $this->request->getPost();
             $data = $this->model->search_parent_glgrp_data($post);
             return $this->response->setJSON($data);
-        }
-        
+        }     
         if ($method == 'finish_item') {
             $post = $this->request->getPost();
             $data = $this->model->search_finish_item_data($post);
@@ -624,43 +621,36 @@ class Master extends BaseController{
             $data = $this->model->search_finishuom_data($post);
             return $this->response->setJSON($data);
         }
-
         if ($method == 'search_uom_data') {
             $post = $this->request->getPost();
             $data = $this->model->search_uom_data($post);
             return $this->response->setJSON($data);
         }
-
         if ($method == 'related_hsn') {
             $post = $this->request->getPost();
             $data = $this->model->search_related_hsn_data($post);
             return $this->response->setJSON($data);
         }
-
         if ($method == 'search_broker') {
             $post = $this->request->getPost();
             $data = $this->model->search_broker_data($post);
             return $this->response->setJSON($data);
         }
-
         if ($method == 'search_warehouse') {
             $post = $this->request->getPost();
             $data = $this->model->search_warehouse_data($post);
             return $this->response->setJSON($data);
-        }
-        
+        } 
         if ($method == 'search_broker_ledger') {
             $post = $this->request->getPost();
             $data = $this->model->search_broker_ledger($post);
             // print_r($data);exit;
             return $this->response->setJSON($data);
         }
-
         if ($method == 'transport') {
             $get = $this->request->getGet();
             $this->model->get_transport_data($get);
         }
-
         if ($method == 'vehicle') {
             $get = $this->request->getGet();
             $this->model->get_vehicle_data($get);
@@ -678,45 +668,37 @@ class Master extends BaseController{
             $data['suggestions']=$this->model->parent_itemgrp_data($post['query']);
             return $this->response->setJSON($data);
         }
-        
         if ($method == 'search_itemgrp') {
             $post = $this->request->getPost();
             $data = $this->model->search_itemgrp_data((@$post['searchTerm']) ? @$post['searchTerm'] : 'A');
             return $this->response->setJSON($data);
         }
-        
         if ($method == 'search_tds') {
             $post = $this->request->getPost();
             $data = $this->model->search_tds_data($post);
             return $this->response->setJSON($data);
         }
-        
-        
         if ($method == 'search_party') {
             $post = $this->request->getPost();
             $data = $this->model->search_party_data($post);
             return $this->response->setJSON($data);
         }
-
         if($method == 'search_country') {
             $post = $this->request->getPost();
             $data=$this->model->getCountry($post);
             return $this->response->setJSON($data);
         }
-
         if($method == 'search_state') {
             $post = $this->request->getPost();
             // print_r($post);exit;
             $data=$this->model->getStates($post);
             return $this->response->setJSON($data);
         }
-
         if($method == 'search_city') {
             $post = $this->request->getPost();
             $data=$this->model->getCities($post);
             return $this->response->setJSON($data);
         }
-
         if ($method == 'search_bank') {
             $post = $this->request->getPost();
             //print_r($post);exit;
@@ -729,55 +711,46 @@ class Master extends BaseController{
             $data=$this->model->search_master_bank_data($post);
             return $this->response->setJSON($data);
         }
-        
         if ($method == 'search_class') {
              $post = $this->request->getPost();
              $data = $this->model->search_class_data($post);
              return $this->response->setJSON($data);
          }
-        
         if($method == 'search_account') {
             $post = $this->request->getPost();
             $data = $this->model->search_account_data($post);
             return $this->response->setJSON($data);
         }
-
         if($method == 'search_trans_bank') {
             $post = $this->request->getPost();
             $data = $this->model->search_trans_bank_data($post);
             return $this->response->setJSON($data);
-        }
-        
+        } 
         if($method == 'search_accountSundry_cred_debt') {
             $post = $this->request->getPost();
             $data = $this->model->search_accountSundry_cred_debt_data($post);
             return $this->response->setJSON($data);
         }
-        
         if($method == 'search_account_mill') {
             $post = $this->request->getPost();
             $data = $this->model->search_account_mill_data($post);
             return $this->response->setJSON($data);
-        }
-        
+        }  
         if($method == 'search_exp_acl') {
             $post = $this->request->getPost();
             $data = $this->model->search_search_exp_ac_data($post);
             return $this->response->setJSON($data);
         }
-
         if($method == 'gst_parti') {
             $post = $this->request->getPost();
             $data = $this->model->search_gst_parti($post);
             return $this->response->setJSON($data);
         }
-
         if($method == 'advance_liability') {
             $post = $this->request->getPost();
             $data = $this->model->search_advance_liability($post);
             return $this->response->setJSON($data);
         }
-
         if($method == 'search_banktrans_account') {
             $post = $this->request->getPost();
             $data = $this->model->search_banktrans_account_data($post);
@@ -788,63 +761,51 @@ class Master extends BaseController{
             $data = $this->model->search_bank_account_data($post);
             return $this->response->setJSON($data);
         }
-
         if($method == 'search_bank_particular') {
             $post = $this->request->getPost();
             $data = $this->model->search_bank_paticular_data($post);
             return $this->response->setJSON($data);
-        }
-        
+        } 
         if ($method == 'particular') {
             $post= $this->request->getPost(); 
             $data = $this->model->search_acc_particular_data(@$post);
             return $this->response->setJSON($data);
         }
-
         if($method == 'search_sale_delivery') {
             $post = $this->request->getPost();
             $data = $this->model->search_sale_delivery($post);
-            
             return $this->response->setJSON($data);
         }
-
         if($method == 'search_pur_delivery') {
             $post = $this->request->getPost();
-            $data = $this->model->search_pur_delivery($post);
-            
+            $data = $this->model->search_pur_delivery($post);    
             return $this->response->setJSON($data);
-        }
-        
+        } 
         if ($method == 'search_particular_item') {
             $post = $this->request->getPost(); 
             $data = $this->model->search_particularitem_data($post);
             return $this->response->setJSON($data);
-        }
-        
+        } 
         if ($method == 'search_transport') {
             $post = $this->request->getPost();
             $data = $this->model->search_transport_data($post);
             return $this->response->setJSON($data);
         }
-
         if ($method == 'search_vehicle') {    
             $post = $this->request->getPost();
             $data= $this->model->search_vehicle_data($post);
             return $this->response->setJSON($data);
         }
-
         if ($method == 'search_sun_credit') {    
             $post = $this->request->getPost();
             $data= $this->model->search_sun_credit(@$post);
             return $this->response->setJSON($data);
         }
-
         if ($method == 'search_sun_debtor') {
             $post = $this->request->getPost();
             $data= $this->model->search_sun_debtor(@$post);
             return $this->response->setJSON($data);
         }
-        
         if ($method == 'search_stform') {
             //print_r("hjdgcjs");exit;
             $get = $this->request->getPost();
@@ -919,6 +880,21 @@ class Master extends BaseController{
             $data= $this->model->search_round_account_data(@$post);
             return $this->response->setJSON($data);
         }
+        if ($method == 'voucher_type') {
+            $post = $this->request->getPost();
+            $data = $this->model->search_voucher_type_data($post);
+            return $this->response->setJSON($data);
+        }
+        if ($method == 'search_sale_ledger_type') {
+            $post = $this->request->getPost();
+            $data = $this->model->search_sale_ledger_type_data($post);
+            return $this->response->setJSON($data);
+        }
+        if ($method == 'search_purchase_ledger_type') {
+            $post = $this->request->getPost();
+            $data = $this->model->search_purchase_ledger_type_data($post);
+            return $this->response->setJSON($data);
+        }
     }
     public function Action($method = '') {
         $result = array();
@@ -930,7 +906,7 @@ class Master extends BaseController{
     }
     public function editable_update(){
         $post = $this->request->getPost();
-        print_r($post);exit;
+       // print_r($post);exit;
     }
 }
 ?>

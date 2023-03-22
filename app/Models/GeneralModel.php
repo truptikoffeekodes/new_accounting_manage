@@ -496,6 +496,7 @@ class GeneralModel extends Model
             $igst_acc = $gmodel->get_data_table('account',array('id'=>@$row['igst_acc']),'name');
             $sgst_acc = $gmodel->get_data_table('account',array('id'=>@$row['sgst_acc']),'name');
             $cgst_acc = $gmodel->get_data_table('account',array('id'=>@$row['cgst_acc']),'name');
+            $ledger = $gmodel->get_data_table('account',array('id'=>@$row['ledger']),'name');
 
             $getdata['s_return']['broker_name']=@$getbroker['name'];
             $getdata['s_return']['delivery_name']=@$getdelivery['name'];
@@ -507,6 +508,7 @@ class GeneralModel extends Model
             $getdata['s_return']['igst_acc_name']=@$igst_acc['name'];
             $getdata['s_return']['sgst_acc_name']=@$sgst_acc['name'];
             $getdata['s_return']['cgst_acc_name']=@$cgst_acc['name'];
+            $getdata['s_return']['ledger_name']=@$ledger['name'];
 
             if(!empty($getinvoice)){
                 $getdata['s_return']['invoice_name']='('.@$getinvoice['id'].') -'.@$row['account_name'].' - '.@$getinvoice['invoice_date'].'- ₹'.@$getinvoice['net_amount'];

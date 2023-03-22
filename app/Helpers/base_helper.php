@@ -655,4 +655,19 @@ function array_remove_by_value($array, $value)
 {
     return array_values(array_diff($array, array($value)));
 }
+function get_voucher_list($type){
+    $db = \Config\Database::connect();
+    $db->setDatabase(session('DataSource')); 
+    $builder = $db->table('voucher_type');
+    $builder->select('*');
+    $builder->where('parent_id',$type);
+    $builder->where('is_delete',0);
+    $builder->where('is_active',1);
+    $query = $builder->get();
+    $result = $query->getResultArray();
+
+    
+    return $result;
+
+}
 

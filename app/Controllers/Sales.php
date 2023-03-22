@@ -317,7 +317,7 @@ class Sales extends BaseController{
         if ($id != '') {
              $data = $this->model->get_sales_invoice($id);
         }
-        // echo '<pre>';print_r($data);exit;
+        $data['voucher_list'] = get_voucher_list('1');
 
         $tax_id = $this->gmodel->get_data_table('gl_group',array('name' => 'Duties and taxes'),'id');
         $tax = $this->gmodel->get_array_table('account',array('gl_group' =>$tax_id['id'],),'name');
@@ -326,7 +326,7 @@ class Sales extends BaseController{
 
         $getId = $this->gmodel->get_saleInv_id('sales_invoice');
         $data['current_id'] = $getId + 1;
-        //print_r(session('DataSource'));exit;
+      
         if(session('DataSource')=='ACE20227T93')
         {
             $c_data['type'] = 'invoice';
@@ -366,6 +366,9 @@ class Sales extends BaseController{
         if($id != '') {
             $data = $this->gmodel->get_sales_return($id);
         }
+        //echo '<pre>';Print_r($data);exit;
+        
+        $data['voucher_list'] = get_voucher_list('1');
 
         $tax_id = $this->gmodel->get_data_table('gl_group',array('name' => 'Duties and taxes'),'id');
         $tax = $this->gmodel->get_array_table('account',array('gl_group' => $tax_id['id']),'name');

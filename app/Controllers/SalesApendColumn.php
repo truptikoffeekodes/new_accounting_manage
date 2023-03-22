@@ -270,6 +270,11 @@ class SalesApendColumn extends BaseController{
         $msg = $this->model->sales_return_update_discount_inexpence_data();
         return $this->response->setJSON($msg);
     }
+    public function update_gl_group_inaccount()
+    {
+        $msg = $this->model->update_gl_group_inaccount_data();
+        return $this->response->setJSON($msg);
+    }
 
 
    

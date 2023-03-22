@@ -41,26 +41,32 @@
                 <div class="card-body">
                     <form action="<?= url('purchase/add_purchasereturn') ?>" class="ajax-form-submit-return" method="POST">
                         <div class="row">
-                            <div class="col-lg-4 form-group">
-                                <label class="form-label">Voucher Type : </label>
-                                <select class="form-control" id="voucher_type" name='voucher_type'>
-                                    <?php if (@$p_return['voucher_type']) { ?>
-                                        <option value="<?= @$p_return['voucher_type'] ?>">
-                                            <?= @$p_return['voucher_name'] ?>
-                                        </option>
-                                    <?php } else { ?>
-                                        <option value="54" selected>
-                                            Purchase Taxable Return
-                                        </option>
-                                    <?php } ?>
+                            <div class="col-lg-3 form-group">
+                                <label class="form-label">Ledger Type : </label>
+                                <select class="form-control" id="ledger_type" name='ledger_type'>
+                                    <option value="<?= @$p_return['ledger'] ?>">
+                                        <?= @$p_return['ledger_name'] ?>
+                                    </option>
                                 </select>
                             </div>
-                            <div class="col-lg-4 form-group">
+
+                            <div class="col-lg-3 form-group">
+                                <label class="form-label">Voucher Type : </label>
+                                <select class="form-control select2"  name='voucher_type'>
+                                    <?php foreach($voucher_list as $row){ ?>
+                                    <option value="<?= @$row['id'] ?>"  <?=(@$p_return['voucher_type'] == $row['id']) ? 'selected' : (($row['set_as'] == 1) ? 'selected' : '') ?>>
+                                        <?= @$row['name'] ?>
+                                    </option>
+                                    <?php } ?>
+
+                                </select>
+                            </div>
+                            <div class="col-lg-3 form-group">
                                 <label class="form-label"> No.: </label>
                                 <input class="form-control fc-datepicker" readonly type="text" name="return_no" value="<?= @$p_return['return_no'] ? @$p_return['return_no'] : $current_id ?>">
                             </div>
 
-                            <div class="col-lg-4 form-group">
+                            <div class="col-lg-3 form-group">
                                 <label class="form-label">Return Date: </label>
                                 <input class="form-control fc-datepicker" name="return_date" value="<?= @$p_return['return_date'] ? $p_return['return_date']  : date('Y-m-d'); ?>" placeholder="YYYY-MM-DD" type="text">
                             </div>
@@ -2037,6 +2043,28 @@
             placeholder: 'Voucher Type',
             ajax: {
                 url: PATH + "Master/Getdata/search_purchaseReturnVoucher",
+                type: "post",
+                allowClear: true,
+                dataType: 'json',
+                delay: 250,
+                data: function(params) {
+                    return {
+                        searchTerm: params.term // search term
+                    };
+                },
+                processResults: function(response) {
+                    return {
+                        results: response
+                    };
+                },
+                cache: true
+            }
+        });
+        $("#ledger_type").select2({
+            width: '100%',
+            placeholder: 'Ledger Type',
+            ajax: {
+                url: PATH + "Master/Getdata/search_purchase_ledger_type",
                 type: "post",
                 allowClear: true,
                 dataType: 'json',

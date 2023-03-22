@@ -1017,6 +1017,7 @@ class PurchaseModel extends Model
 
         $pdata = array(
             'voucher_type' => $post['voucher_type'],
+            'ledger' => $post['ledger_type'], 
             'gl_group' => $post['gl_group'],
             'return_no' => $post['return_no'],
             'return_date' => $date,
@@ -2365,6 +2366,7 @@ class PurchaseModel extends Model
         }
         $pdata = array(
             'voucher_type' => $post['voucher_type'],
+            'ledger' => $post['ledger_type'],
             'gl_group' => $post['gl_group'],
             'invoice_date' => $invoice_date,
             'challan_no' => @$post['challan'] ?  $post['challan'] : '',
@@ -3107,6 +3109,7 @@ class PurchaseModel extends Model
             $igst_acc = $gmodel->get_data_table('account', array('id' => @$row['igst_acc']), 'name');
             $sgst_acc = $gmodel->get_data_table('account', array('id' => @$row['sgst_acc']), 'name');
             $cgst_acc = $gmodel->get_data_table('account', array('id' => @$row['cgst_acc']), 'name');
+            $ledger = $gmodel->get_data_table('account', array('id' => @$row['ledger']), 'name');
 
 
             $getdata['purchaseinvoice']['broker_name'] = @$getbroker['name'];
@@ -3122,6 +3125,7 @@ class PurchaseModel extends Model
             $getdata['purchaseinvoice']['igst_acc_name'] = @$igst_acc['name'];
             $getdata['purchaseinvoice']['sgst_acc_name'] = @$sgst_acc['name'];
             $getdata['purchaseinvoice']['cgst_acc_name'] = @$cgst_acc['name'];
+            $getdata['purchaseinvoice']['ledger_name'] = @$ledger['name'];
         }
 
         $item_builder = $db->table('purchase_item st');
@@ -3512,6 +3516,7 @@ class PurchaseModel extends Model
             $igst_acc = $gmodel->get_data_table('account', array('id' => @$row['igst_acc']), 'name');
             $sgst_acc = $gmodel->get_data_table('account', array('id' => @$row['sgst_acc']), 'name');
             $cgst_acc = $gmodel->get_data_table('account', array('id' => @$row['cgst_acc']), 'name');
+            $ledger = $gmodel->get_data_table('account', array('id' => @$row['ledger']), 'name');
 
             $getdata['p_return']['broker_name'] = @$getbroker['name'];
             $getdata['p_return']['account_name'] = @$getac['name'];
@@ -3527,6 +3532,7 @@ class PurchaseModel extends Model
             $getdata['p_return']['igst_acc_name'] = @$igst_acc['name'];
             $getdata['p_return']['sgst_acc_name'] = @$sgst_acc['name'];
             $getdata['p_return']['cgst_acc_name'] = @$cgst_acc['name'];
+            $getdata['p_return']['ledger_name'] = @$ledger['name'];
 
             if (!empty($getinvoice)) {
                 $getdata['p_return']['invoice_name'] = '(' . @$getinvoice['id'] . ') -' . @$getac['name'] . ' / ' . user_date(@$getinvoice['invoice_date']) . '/ ₹' . @$getinvoice['net_amount'];

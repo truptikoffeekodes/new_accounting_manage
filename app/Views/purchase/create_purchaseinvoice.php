@@ -43,16 +43,25 @@
                     <form action="<?= url('Purchase/add_purchaseinvoice') ?>" class="ajax-form-submit-invoice"
                         method="POST" id="Purchaseinvoiceform">
                         <div class="row">
-                            <div class="col-lg-6 form-group">
-                                <label class="form-label">Voucher Type : </label>
-                                <select class="form-control" id="voucher_type" name='voucher_type'>
-                                    <?php if (@$purchaseinvoice['voucher_type']) { ?>
-                                    <option value="<?= @$purchaseinvoice['voucher_type'] ?>">
-                                        <?= @$purchaseinvoice['voucher_name'] ?>
+                            
+                            <div class="col-lg-3 form-group">
+                                <label class="form-label">Ledger Type : </label>
+                                <select class="form-control" id="ledger_type" name='ledger_type'>
+                                    <option value="<?= @$purchaseinvoice['ledger'] ?>">
+                                        <?= @$purchaseinvoice['ledger_name'] ?>
                                     </option>
-                                    <?php } else { ?>
-                                    <option value="53" selected>Purchase Taxable</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-3 form-group">
+                                <label class="form-label">Voucher Type : </label>
+                                <select class="form-control select2"  name='voucher_type'>
+                                    <?php foreach($voucher_list as $row){ ?>
+                                    <option value="<?= @$row['id'] ?>"  <?=(@$purchaseinvoice['voucher_type'] == $row['id']) ? 'selected' : (($row['set_as'] == 1) ? 'selected' : '') ?>>
+                                        <?= @$row['name'] ?>
+                                    </option>
                                     <?php } ?>
+
                                 </select>
                             </div>
                             <div class="col-lg-6 form-group">
@@ -2409,6 +2418,28 @@ $(document).ready(function() {
             cache: true
         }
     });
+    $("#ledger_type").select2({
+            width: '100%',
+            placeholder: 'Ledger Type',
+            ajax: {
+                url: PATH + "Master/Getdata/search_purchase_ledger_type",
+                type: "post",
+                allowClear: true,
+                dataType: 'json',
+                delay: 250,
+                data: function(params) {
+                    return {
+                        searchTerm: params.term // search term
+                    };
+                },
+                processResults: function(response) {
+                    return {
+                        results: response
+                    };
+                },
+                cache: true
+            }
+        });
 
 });
 

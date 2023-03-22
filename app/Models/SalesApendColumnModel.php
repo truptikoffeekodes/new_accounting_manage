@@ -2545,4 +2545,32 @@ class SalesApendColumnModel extends Model
             
         
     }
+    public function update_gl_group_inaccount_data()
+    {
+        $db = $this->db;
+        $db->setDatabase(session('DataSource'));
+        $builder = $db->table('account');
+        $builder->select('*');
+        $builder->where(array('is_delete' => 0,'is_update_gl'=>0));
+        $result = $builder->get();
+        $result_array = $result->getResultArray();
+        $gmodel = new GeneralModel();
+
+        foreach($result_array as $row)
+        {
+            $old_gl_name = $gmodel->get_data_table('gl_group_old', array('is_delete' => 0,'id'=>$row['gl_group']), 'name');
+            $new_gl_id = $gmodel->get_data_table('gl_group', array('is_delete' => 0,'name'=>$old_gl_name['name']), 'id');
+              echo '<pre>';Print_r($row['id']);
+            echo '<pre>';Print_r($row['gl_group']);
+            echo '<pre>';Print_r($old_gl_name);
+            echo '<pre>';Print_r($new_gl_id);
+            if(!empty($new_gl_id))
+            {
+                $update_total_item = $gmodel->update_data_table('account', array('id' => $row['id']), array('gl_group' => $new_gl_id['id'],'is_update_gl'=>1));
+            }
+          
+          
+        }
+       // exit;
+    }
 }

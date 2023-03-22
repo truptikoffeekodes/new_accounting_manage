@@ -22,7 +22,7 @@
             </div>
             <div class="form-group">
                 <label class="form-label">Method of numbering: </label>
-                <select class="form-control" id="method_of_numbering" name="method_of_numbering" onchange="display_sub(this.value)">
+                <select class="form-control select2" id="method_of_numbering" name="method_of_numbering" onchange="display_sub(this.value)">
                     <option <?= (@$voucher_type['method_of_numbering'] == "automatic" ? 'selected' : '') ?> value="automatic" selected>Automatic</option>
                     <option <?= (@$voucher_type['method_of_numbering'] == "automatic_manual_override" ? 'selected' : '') ?> value="automatic_manual_override">Automatic(manual Override)</option>
                     <option <?= (@$voucher_type['method_of_numbering'] == "manual" ? 'selected' : '') ?> value="manual">Manual</option>
@@ -45,10 +45,10 @@
             <div class="form-group">
                 <label class="form-label">Set as: <span class="tx-danger">*</span></label>
 
-                <label class="rdiobox"><input name="set_as" <?= (@$voucher_type['set_as'] == "0" ? 'checked' : '') ?> value="0" type="radio" onchange="calculate()">
+                <label class="rdiobox"><input name="set_as" <?= (@$voucher_type['set_as'] == "1" ? 'checked' : '') ?> value="1" type="radio" onchange="calculate()">
                     <span>Default</span></label>
 
-                <label class="rdiobox"><input name="set_as" <?= (@$voucher_type['set_as'] == "1" ? 'checked' : '') ?> value="1" type="radio" onchange="calculate()"> <span>Optional</span></label>
+                <label class="rdiobox"><input name="set_as" <?= (@$voucher_type['set_as'] == "0" ? 'checked' : 'checked') ?> value="0" type="radio" onchange="calculate()"> <span>Optional</span></label>
 
             </div>
 
@@ -102,7 +102,10 @@
     function afterload() {}
     $(document).ready(function() {
 
-
+        $('.select2').select2({
+            width: '100%',
+           // placeholder: "Select Option"
+        });
         $("#parent_id").select2({
             width: '100%',
             dropdownParent: $('#fm_model'),

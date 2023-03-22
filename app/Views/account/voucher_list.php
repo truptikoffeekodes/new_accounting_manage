@@ -5,7 +5,7 @@
 <!-- Page Header -->
 <div class="page-header">
     <div>
-        <h2 class="main-content-title tx-24 mg-b-5"> Account </h2>
+        <h2 class="main-content-title tx-24 mg-b-5"> Voucher Type </h2>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
             <li class="breadcrumb-item active" aria-current="page"><?= $title ?></li>
@@ -30,6 +30,7 @@
                                     <th>Name</th>
                                     <th>voucher Type</th>
                                     <th>Method of numbering</th>
+                                    <th>Type</th>
                                     <th>Status</th>
                                     <th>Action</th>
                                 </tr>
@@ -41,6 +42,7 @@
                                 <th>Name</th>
                                 <th>voucher Type</th>
                                 <th>Method of numbering</th>
+                                <th>Type</th>
                                 <th>Status</th>
                                 <th>Action</th>
                             </tfoot>

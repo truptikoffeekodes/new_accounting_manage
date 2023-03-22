@@ -40,23 +40,29 @@
                 <div class="card-body">
                     <form action="<?= url('Sales/add_salesreturn') ?>" class="ajax-form-submit-return" method="POST" id="returnform">
                         <div class="row">
-
-                            <div class="col-lg-3 form-group">
-                                <label class="form-label">Voucher Type : </label>
-                                <select class="form-control" id="voucher_type" name='voucher_type'>
-                                    <?php if (@$s_return['voucher_type']) { ?>
-                                        <option value="<?= @$s_return['voucher_type'] ?>">
-                                            <?= @$s_return['voucher_name'] ?>
-                                        </option>
-                                    <?php } else { ?>
-                                        <option value="52" selected>
-                                            Sales Taxable Return
-                                        </option>
-                                    <?php } ?>
+                            <div class="col-lg-4 form-group">
+                                <label class="form-label">Ledger Type : </label>
+                                <select class="form-control" id="ledger_type" name='ledger_type'>
+                                    <option value="<?= @$s_return['ledger'] ?>">
+                                        <?= @$s_return['ledger_name'] ?>
+                                    </option>
                                 </select>
                             </div>
 
-                            <div class="col-lg-3 form-group">
+                            <div class="col-lg-4 form-group">
+                                <label class="form-label">Voucher Type : </label>
+                                <select class="form-control select2"  name='voucher_type'>
+                                    <?php foreach($voucher_list as $row){ ?>
+                                    <option value="<?= @$row['id'] ?>"  <?=(@$s_return['voucher_type'] == $row['id']) ? 'selected' : (($row['set_as'] == 1) ? 'selected' : '') ?>>
+                                        <?= @$row['name'] ?>
+                                    </option>
+                                    <?php } ?>
+
+                                </select>
+                            </div>
+
+                         
+                            <div class="col-lg-4 form-group">
                                 <label class="form-label">Return No: <span class="tx-danger">*</span></label>
                                 <input class="form-control" readonly type="text" name="return_no" value="<?= @$s_return['return_no'] ? $s_return['return_no'] : @$current_id; ?>">
                             </div>
@@ -67,7 +73,7 @@
                             {
                             ?>
 
-                            <div class="col-lg-3 form-group">
+                            <div class="col-lg-6 form-group">
                                 <label class="form-label">Return Date: <span class="tx-danger">*</span></label>
                                 <input class="form-control fc-datepicker" placeholder="YYYY-MM-DD" type="text"  name="return_date" value="<?= @$s_return['return_date'] ? $s_return['return_date'] : date('Y-m-d'); ?>"  onchange="get_max_customInvno(this.value)" onkeyup="get_max_customInvno(this.value)">
                             </div>
@@ -77,7 +83,7 @@
                             
                             {
                             ?>
-                             <div class="col-lg-3 form-group">
+                             <div class="col-lg-6 form-group">
                                 <label class="form-label">Return Date: <span class="tx-danger">*</span></label>
                                 <input class="form-control fc-datepicker" placeholder="YYYY-MM-DD" type="text" id ="return_date" name="return_date" value="<?= @$s_return['return_date'] ? $s_return['return_date'] : date('Y-m-d'); ?>"  onchange="ecom_get_max_customInvno(this.value)" onkeyup="ecom_get_max_customInvno(this.value)">
                             </div>
@@ -86,14 +92,14 @@
                             else
                             {
                             ?>
-                             <div class="col-lg-3 form-group">
+                             <div class="col-lg-6 form-group">
                                 <label class="form-label">Return Date: <span class="tx-danger">*</span></label>
                                 <input class="form-control fc-datepicker" placeholder="YYYY-MM-DD" type="text" name="return_date" value="<?= @$s_return['return_date'] ? $s_return['return_date'] : date('Y-m-d'); ?>">
                             </div>
                             <?php
                             }
                             ?>
-                            <div class="col-lg-3 form-group">
+                            <div class="col-lg-6 form-group">
                                 <label class="form-label">Supplier Invoice No:</label>
                                 <input class="form-control" type="text" placeholder="Enter Supplier Invoice" id="supp_inv" name="supp_inv" value="<?= @$s_return['supp_inv'] ? $s_return['supp_inv'] : @$supp_inv_no; ?>">
                             </div>
@@ -103,7 +109,7 @@
                                 <div class="row">
                                     <div class="row col-md-12 form-group">
                                         <label class="form-label col-md-4">Account: <span class="tx-danger">*</span></label>
-                                        <div class="input-group" style="width:auto;">
+                                        <div class="input-group col-md-8" style="width:auto;">
                                             <select class="form-control" id="account" name='account'>
                                                 <?php if (@$s_return['account_name']) { ?>
                                                     <option value="<?= @$s_return['account'] ?>">
@@ -2073,6 +2079,28 @@
             placeholder: 'Type Vehicle',
             ajax: {
                 url: PATH + "Master/Getdata/search_vehicle",
+                type: "post",
+                allowClear: true,
+                dataType: 'json',
+                delay: 250,
+                data: function(params) {
+                    return {
+                        searchTerm: params.term // search term
+                    };
+                },
+                processResults: function(response) {
+                    return {
+                        results: response
+                    };
+                },
+                cache: true
+            }
+        });
+        $("#ledger_type").select2({
+            width: '100%',
+            placeholder: 'Ledger Type',
+            ajax: {
+                url: PATH + "Master/Getdata/search_sale_ledger_type",
                 type: "post",
                 allowClear: true,
                 dataType: 'json',

@@ -351,14 +351,27 @@ class AccountModel extends Model
     public function get_gl_parent($id){
             $gmodel = new GeneralModel();
             $row = $gmodel->get_data_table('gl_group',array('id'=>$id),'*');
-            
-            $income_id = $gmodel->get_data_table('gl_group',array('name'=> 'Incomes'),'id');
-            $expence_id = $gmodel->get_data_table('gl_group',array('name'=> 'Expenses'),'id');
-            
+            //echo '<pre>';Print_r($row);exit;
+            $fixed_accets_id =$gmodel->get_data_table('gl_group',array('name'=> 'Fixed Assets'),'id');
+            $tradingexpence_id =$gmodel->get_data_table('gl_group',array('name'=> 'Trading Expenses'),'id');
+            $tradingincome_id =$gmodel->get_data_table('gl_group',array('name'=> 'Trading Income'),'id');
+            $plexpence_id =$gmodel->get_data_table('gl_group',array('name'=> 'PL Expenses'),'id');
+            $plincome_id =$gmodel->get_data_table('gl_group',array('name'=> 'PL Incomes'),'id');
+            $cashinhand_id =$gmodel->get_data_table('gl_group',array('name'=> 'Cash in Hand'),'id');
+            $openingstock_id =$gmodel->get_data_table('gl_group',array('name'=> 'Opening Stock'),'id');
+            $closingstock_id =$gmodel->get_data_table('gl_group',array('name'=> 'Closing Stock'),'id');
+            $inveshment_id =$gmodel->get_data_table('gl_group',array('name'=> 'Investments'),'id');
+            $bank_id =$gmodel->get_data_table('gl_group',array('name'=> 'Banks'),'id');
+            $expence_id =$gmodel->get_data_table('gl_group',array('name'=> 'Expenses'),'id');
+            $liabilities_id =$gmodel->get_data_table('gl_group',array('name'=> 'Liabilities'),'id');
+            $income_id =$gmodel->get_data_table('gl_group',array('name'=> 'Incomes'),'id');
+            $assets_id =$gmodel->get_data_table('gl_group',array('name'=> 'Assets'),'id');
+            $sundrycreditors_id =$gmodel->get_data_table('gl_group',array('name'=> 'Sundry Creditors'),'id');
+            $sundrydebtor_id =$gmodel->get_data_table('gl_group',array('name'=> 'Sundry Debtors'),'id');
+                
             $parent = 0;
             $main_id = '';
-            
-            if($row['id'] == 16 || $row['id'] == 27 || $row['id'] == 29 || $row['id'] == 30 || $row['id'] == 31){
+            if($row['id'] == $fixed_accets_id || $row['id'] == $tradingexpence_id || $row['id'] == $tradingincome_id || $row['id'] == $plexpence_id || $row['id'] == $plincome_id){
                 $main_id = $row['id'];
             }else{
                 if($row['parent'] != 0){
@@ -366,7 +379,7 @@ class AccountModel extends Model
                     $parent = $row['parent'];
                     for($i = 0;$i<$x;$i++){
                         $res = $gmodel->get_data_table('gl_group',array('id'=> $parent),'id,parent');
-                        if($res['id'] == 16 || $res['id'] == 27 || $res['id'] == 29 || $res['id'] == 30 || $res['id'] == 31){
+                        if($res['id'] == $fixed_accets_id || $res['id'] == $tradingexpence_id || $res['id'] == $tradingincome_id || $res['id'] == $plexpence_id || $res['id'] == $plincome_id){
                             $x = 0;
                         }else{
                             $x = $res['parent'];
@@ -377,9 +390,8 @@ class AccountModel extends Model
                     $i = 0;
                 }
             }
-
             $tx_bn_hide = '';
-            if($row['id'] == 21 || $row['id'] == 24 || $row['id'] == 28 || $row['id'] == 17){
+            if($row['id'] == $cashinhand_id || $row['id'] == $openingstock_id || $row['id'] == $closingstock_id || $row['id'] == $inveshment_id){
                 $tx_bn_hide = $row['id'];
             }else{
                 if($row['parent'] != 0){
@@ -387,7 +399,7 @@ class AccountModel extends Model
                     $parent = $row['parent'];
                     for($i = 0;$i<$x;$i++){
                         $res = $gmodel->get_data_table('gl_group',array('id'=> $parent),'id,parent');
-                        if($res['id'] == 21 || $res['id'] == 24 || $res['id'] == 28 || $res['id'] == 17){
+                        if($res['id'] == $cashinhand_id || $res['id'] == $openingstock_id || $res['id'] == $closingstock_id || $res['id'] == $inveshment_id){
                             $x = 0;
                         }else{
                             $x = $res['parent'];
@@ -398,9 +410,8 @@ class AccountModel extends Model
                     $tx_bn_hide = $res['id'];
                 }
             }
-
             $new_hide = '';
-            if($row['id'] == 21 || $row['id'] == 30 || $row['id'] == 29 || $row['id'] == 31){
+            if($row['id'] == $cashinhand_id || $row['id'] == $plexpence_id || $row['id'] == $tradingincome_id || $row['id'] == $plincome_id){
                 $new_hide = $row['id'];
             }else{
                 if($row['parent'] != 0){
@@ -408,7 +419,7 @@ class AccountModel extends Model
                     $parent = $row['parent'];
                     for($i = 0;$i<$x;$i++){
                         $res = $gmodel->get_data_table('gl_group',array('id'=> $parent),'id,parent');
-                        if($res['id'] == 21 || $res['id'] == 30 || $res['id'] == 29 || $res['id'] == 31){
+                        if($res['id'] == $cashinhand_id || $res['id'] == $plexpence_id || $res['id'] == $tradingincome_id || $res['id'] == $plincome_id){
                             $x = 0;
                         }else{
                             $x = $res['parent'];
@@ -421,7 +432,7 @@ class AccountModel extends Model
             }
 
             $bank = '';
-            if($row['id'] == 22 ){
+            if($row['id'] == $bank_id ){
                 $bank = $row['id'];
             }else{
                 if($row['parent'] != 0){
@@ -429,7 +440,7 @@ class AccountModel extends Model
                     $parent = $row['parent'];
                     for($i = 0;$i<$x;$i++){
                         $res = $gmodel->get_data_table('gl_group',array('id'=> $parent),'id,parent');
-                        if($res['id'] == 22){
+                        if($res['id'] == $bank_id){
                             $x = 0;
                         }else{
                             $x = $res['parent'];
@@ -442,7 +453,7 @@ class AccountModel extends Model
             }
 
             $cash = '';
-            if($row['id'] == 21 ){
+            if($row['id'] == $cashinhand_id){
                 $cash = $row['id'];
             }else{
                 if($row['parent'] != 0){
@@ -450,7 +461,7 @@ class AccountModel extends Model
                     $parent = $row['parent'];
                     for($i = 0;$i<$x;$i++){
                         $res = $gmodel->get_data_table('gl_group',array('id'=> $parent),'id,parent');
-                        if($res['id'] == 21){
+                        if($res['id'] == $cashinhand_id){
                             $x = 0;
                         }else{
                             $x = $res['parent'];
@@ -463,7 +474,8 @@ class AccountModel extends Model
             }
 
             $opening_balCr = '';
-            if($row['id'] == 4 || $row['id'] == 2){
+
+            if($row['id'] == $expence_id || $row['id'] == $liabilities_id){
                 $opening_balCr = $row['id'];
             }else{
                 if($row['parent'] != 0){
@@ -471,7 +483,7 @@ class AccountModel extends Model
                     $parent = $row['parent'];
                     for($i = 0;$i<$x;$i++){
                         $res = $gmodel->get_data_table('gl_group',array('id'=> $parent),'id,parent');
-                        if($res['id'] == 4 || $res['id'] == 2){
+                        if($res['id'] == $expence_id || $res['id'] == $liabilities_id){
                             $x = 0;
                         }else{
                             $x = $res['parent'];
@@ -485,15 +497,15 @@ class AccountModel extends Model
 
             $opening_balDr = '';
 
-            if($row['id'] == 1 || $row['id'] == 3){
-                $opening_balDr = $row['id'  ];
+            if($row['id'] == $assets_id || $row['id'] == $income_id){
+                $opening_balDr = $row['id'];
             }else{
                 if($row['parent'] != 0){
                     $x = 5;
                     $parent = $row['parent'];
                     for($i = 0;$i<$x;$i++){
                         $res = $gmodel->get_data_table('gl_group',array('id'=> $parent),'id,parent');
-                        if($res['id'] == 1 || $res['id'] == 3){
+                        if($res['id'] == $assets_id || $res['id'] == $income_id){
                             $x = 0;
                         }else{
                             $x = $res['parent'];
@@ -505,10 +517,8 @@ class AccountModel extends Model
                 }
             }
 
-            
             $creditor_debtor = '';
-
-            if($row['id'] == 13 || $row['id'] == 19){
+            if($row['id'] == $sundrycreditors_id || $row['id'] == $sundrydebtor_id){
                 $creditor_debtor = $row['id'];
             }else{
                 if($row['parent'] != 0){
@@ -516,7 +526,7 @@ class AccountModel extends Model
                     $parent = $row['parent'];
                     for($i = 0;$i<$x;$i++){
                         $res = $gmodel->get_data_table('gl_group',array('id'=> $parent),'id,parent');
-                        if($res['id'] == 13 || $res['id'] == 19){
+                        if($res['id'] == $sundrycreditors_id || $res['id'] == $sundrydebtor_id){
                             $x = 0;
                         }else{
                             $x = $res['parent'];
@@ -557,7 +567,7 @@ class AccountModel extends Model
         );
         $tablename = "voucher_type a";
         $where='';
-        $where .= "and is_delete=0";
+        $where .= "and is_delete=0 and set_as=0";
         
         $rResult = getManagedData($tablename, $dt_col, $dt_search, $where);
         $sEcho = $rResult['draw'];
@@ -575,19 +585,39 @@ class AccountModel extends Model
             
            
                
-            if($row['set_as'] == 1){
+            if($row['set_as'] == 0){
                 $btn = $btnedit . $btndelete;
+                $set_as = "Optional";
             }
             else
             {
                 $btn = '';
+                $set_as = "Default";
+            }
+
+            if($row['method_of_numbering'] == 'automatic')
+            {
+                $method = 'Automatic';
+            }
+            elseif($row['method_of_numbering'] == 'automatic_manual_override')
+            {
+                $method = 'Automatic(manual Override)';
+            }
+            elseif($row['method_of_numbering'] == 'manual')
+            {
+                $method = 'Manual';
+            }
+            else
+            {
+                $method = 'None';
             }
 
             
             $DataRow[] = $row['id'];
-            $DataRow[] = '<a href="'.url('account/voucher_view/').$row['id'].'">'.$row['name'].'</a>';
+            $DataRow[] = $row['name'];
             $DataRow[] = $row['parent_voucher_type'];
-            $DataRow[] = $row['method_of_numbering'];
+            $DataRow[] = $method;
+            $DataRow[] = $set_as;
             $DataRow[] = $status;
             $DataRow[] = $btn;
             $encode[] = $DataRow;
@@ -603,7 +633,7 @@ class AccountModel extends Model
         $db->setDatabase(session('DataSource'));
         $builder = $db->table('voucher_type acc');
         $builder->select('acc.name,acc.id');
-        $builder->where(array('acc.is_delete' => '0' ));
+        $builder->where(array('acc.is_delete' => '0','acc.set_as' => '1'));
         if(@$post['searchTerm'] != ''){
             $builder->like('acc.name',(@$post['searchTerm']) ? @$post['searchTerm'] : 'A');
         }
@@ -656,10 +686,12 @@ class AccountModel extends Model
             'parent_id' => @$post['parent_id'],
             'method_of_numbering' => $post['method_of_numbering'],
             'prevent_duplicate' => @$post['prevent_duplicate'] ? @$post['prevent_duplicate'] : '',
-            'prevent_duplicate' => @$post['Prefix'] ? @$post['Prefix'] : '',
+            'Prefix' => @$post['prefix'] ? @$post['prefix'] : '',
             'set_as' => $post['set_as'],
             'is_active' => 1,
         );
+       // echo '<pre>';Print_r($pdata);exit;
+        
         
         if(!empty($result_array)){
 

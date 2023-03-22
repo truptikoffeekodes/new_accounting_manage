@@ -1464,6 +1464,246 @@ public function insert_edit_uom($post)
         return $result;
     }
 
+    // public function search_parent_glgrp_data($post) {
+        
+    //     $db = $this->db;
+    //     $db->setDatabase(session('DataSource')); 
+    //     $builder = $db->table('gl_group');
+    //     $builder->select('id,name,parent');
+    //     $builder->where(array('is_delete' => '0','is_view' => '0'));
+    //     $builder->limit(5);
+    //     if(isset($post['searchTerm'])){
+    //         $builder->like('name',(@$post['searchTerm']) ? @$post['searchTerm'] : 'A');
+    //     }
+
+    //     $query = $builder->get();
+    //     $getdata = $query->getResultArray();
+    //    // echo '<pre>';Print_r($getdata);exit;
+        
+      
+    //     $gmodel =new GeneralModel();
+    //     $fixed_accets_id =$gmodel->get_data_table('gl_group',array('name'=> 'Fixed Assets'),'id');
+    //     $tradingexpence_id =$gmodel->get_data_table('gl_group',array('name'=> 'Trading Expenses'),'id');
+    //     $tradingincome_id =$gmodel->get_data_table('gl_group',array('name'=> 'Trading Income'),'id');
+    //     $plexpence_id =$gmodel->get_data_table('gl_group',array('name'=> 'PL Expenses'),'id');
+    //     $plincome_id =$gmodel->get_data_table('gl_group',array('name'=> 'PL Incomes'),'id');
+    //     $cashinhand_id =$gmodel->get_data_table('gl_group',array('name'=> 'Cash in Hand'),'id');
+    //     $openingstock_id =$gmodel->get_data_table('gl_group',array('name'=> 'Opening Stock'),'id');
+    //     $closingstock_id =$gmodel->get_data_table('gl_group',array('name'=> 'Closing Stock'),'id');
+    //     $inveshment_id =$gmodel->get_data_table('gl_group',array('name'=> 'Investments'),'id');
+    //     $bank_id =$gmodel->get_data_table('gl_group',array('name'=> 'Banks'),'id');
+    //     $expence_id =$gmodel->get_data_table('gl_group',array('name'=> 'Expenses'),'id');
+    //     $liabilities_id =$gmodel->get_data_table('gl_group',array('name'=> 'Liabilities'),'id');
+    //     $income_id =$gmodel->get_data_table('gl_group',array('name'=> 'Incomes'),'id');
+    //     $assets_id =$gmodel->get_data_table('gl_group',array('name'=> 'Assets'),'id');
+    //     $sundrycreditors_id =$gmodel->get_data_table('gl_group',array('name'=> 'Sundry Creditors'),'id');
+    //     $sundrydebtor_id =$gmodel->get_data_table('gl_group',array('name'=> 'Sundry Debtors'),'id');
+
+    //     $result = array();
+    //     foreach($getdata as $row){
+    //        // echo '<pre>';Print_r($row);
+            
+    //         $parent = 0;
+    //         $main_id = '';
+    //         if($row['id'] == $fixed_accets_id || $row['id'] == $tradingexpence_id || $row['id'] == $tradingincome_id || $row['id'] == $plexpence_id || $row['id'] == $plincome_id){
+    //             $main_id = $row['id'];
+    //         }else{
+    //             if($row['parent'] != 0){
+    //                 $x = 5;
+    //                 $parent = $row['parent'];
+    //                 for($i = 0;$i<$x;$i++){
+    //                     $res = $gmodel->get_data_table('gl_group',array('id'=> $parent),'id,parent');
+    //                     if($res['id'] == $fixed_accets_id || $res['id'] == $tradingexpence_id || $res['id'] == $tradingincome_id || $res['id'] == $plexpence_id || $res['id'] == $plincome_id){
+    //                         $x = 0;
+    //                     }else{
+    //                         $x = $res['parent'];
+    //                     }
+    //                     $parent = $res['parent'];
+    //                 }
+    //                 $main_id = $res['id'];
+    //                 $i = 0;
+    //             }
+    //         }
+    //         $tx_bn_hide = '';
+    //         if($row['id'] == $cashinhand_id || $row['id'] == $openingstock_id || $row['id'] == $closingstock_id || $row['id'] == $inveshment_id){
+    //             $tx_bn_hide = $row['id'];
+    //         }else{
+    //             if($row['parent'] != 0){
+    //                 $x = 5;
+    //                 $parent = $row['parent'];
+    //                 for($i = 0;$i<$x;$i++){
+    //                     $res = $gmodel->get_data_table('gl_group',array('id'=> $parent),'id,parent');
+    //                     if($res['id'] == $cashinhand_id || $res['id'] == $openingstock_id || $res['id'] == $closingstock_id || $res['id'] == $inveshment_id){
+    //                         $x = 0;
+    //                     }else{
+    //                         $x = $res['parent'];
+    //                     }
+    //                     $parent = $res['parent'];
+    //                     $i = 0;
+    //                 }
+    //                 $tx_bn_hide = $res['id'];
+    //             }
+    //         }
+    //         $new_hide = '';
+    //         if($row['id'] == $cashinhand_id || $row['id'] == $plexpence_id || $row['id'] == $tradingincome_id || $row['id'] == $plincome_id){
+    //             $new_hide = $row['id'];
+    //         }else{
+    //             if($row['parent'] != 0){
+    //                 $x = 5;
+    //                 $parent = $row['parent'];
+    //                 for($i = 0;$i<$x;$i++){
+    //                     $res = $gmodel->get_data_table('gl_group',array('id'=> $parent),'id,parent');
+    //                     if($res['id'] == $cashinhand_id || $res['id'] == $plexpence_id || $res['id'] == $tradingincome_id || $res['id'] == $plincome_id){
+    //                         $x = 0;
+    //                     }else{
+    //                         $x = $res['parent'];
+    //                     }
+    //                     $parent = $res['parent'];
+    //                     $i = 0;
+    //                 }
+    //                 $new_hide = $res['id'];
+    //             }
+    //         }
+
+    //         $bank = '';
+    //         if($row['id'] == $bank_id ){
+    //             $bank = $row['id'];
+    //         }else{
+    //             if($row['parent'] != 0){
+    //                 $x = 5;
+    //                 $parent = $row['parent'];
+    //                 for($i = 0;$i<$x;$i++){
+    //                     $res = $gmodel->get_data_table('gl_group',array('id'=> $parent),'id,parent');
+    //                     if($res['id'] == $bank_id){
+    //                         $x = 0;
+    //                     }else{
+    //                         $x = $res['parent'];
+    //                     }
+    //                     $parent = $res['parent'];
+    //                     $i = 0;
+    //                 }
+    //                 $bank = $res['id'];
+    //             }
+    //         }
+
+    //         $cash = '';
+    //         if($row['id'] == $cashinhand_id){
+    //             $cash = $row['id'];
+    //         }else{
+    //             if($row['parent'] != 0){
+    //                 $x = 5;
+    //                 $parent = $row['parent'];
+    //                 for($i = 0;$i<$x;$i++){
+    //                     $res = $gmodel->get_data_table('gl_group',array('id'=> $parent),'id,parent');
+    //                     if($res['id'] == $cashinhand_id){
+    //                         $x = 0;
+    //                     }else{
+    //                         $x = $res['parent'];
+    //                     }
+    //                     $parent = $res['parent'];
+    //                     $i = 0;
+    //                 }
+    //                 $cash = $res['id'];
+    //             }
+    //         }
+
+    //         $opening_balCr = '';
+
+    //         if($row['id'] == $expence_id || $row['id'] == $liabilities_id){
+    //             $opening_balCr = $row['id'];
+    //         }else{
+    //             if($row['parent'] != 0){
+    //                 $x = 5;
+    //                 $parent = $row['parent'];
+    //                 for($i = 0;$i<$x;$i++){
+    //                     $res = $gmodel->get_data_table('gl_group',array('id'=> $parent),'id,parent');
+    //                     if($res['id'] == $expence_id || $res['id'] == $liabilities_id){
+    //                         $x = 0;
+    //                     }else{
+    //                         $x = $res['parent'];
+    //                     }
+    //                     $parent = $res['parent'];
+    //                     $i = 0;
+    //                 }
+    //                 $opening_balCr = $res['id'];
+    //             }
+    //         }
+
+    //         $opening_balDr = '';
+
+    //         if($row['id'] == $assets_id || $row['id'] == $income_id){
+    //             $opening_balDr = $row['id'];
+    //         }else{
+    //             if($row['parent'] != 0){
+    //                 $x = 5;
+    //                 $parent = $row['parent'];
+    //                 for($i = 0;$i<$x;$i++){
+    //                     $res = $gmodel->get_data_table('gl_group',array('id'=> $parent),'id,parent');
+    //                     if($res['id'] == $assets_id || $res['id'] == $income_id){
+    //                         $x = 0;
+    //                     }else{
+    //                         $x = $res['parent'];
+    //                     }
+    //                     $parent = $res['parent'];
+    //                     $i = 0;
+    //                 }
+    //                 $opening_balDr = $res['id'];
+    //             }
+    //         }
+
+    //         $creditor_debtor = '';
+    //         if($row['id'] == $sundrycreditors_id || $row['id'] == $sundrydebtor_id){
+    //             $creditor_debtor = $row['id'];
+    //         }else{
+    //             if($row['parent'] != 0){
+    //                 $x = 5;
+    //                 $parent = $row['parent'];
+    //                 for($i = 0;$i<$x;$i++){
+    //                     $res = $gmodel->get_data_table('gl_group',array('id'=> $parent),'id,parent');
+    //                     if($res['id'] == $sundrycreditors_id || $res['id'] == $sundrydebtor_id){
+    //                         $x = 0;
+    //                     }else{
+    //                         $x = $res['parent'];
+    //                     }
+    //                     $parent = $res['parent'];
+    //                     $i = 0;
+    //                 }
+    //                 $creditor_debtor = $res['id'];
+    //             }
+    //         }
+    //         $result[] = array("text" => $row['name'],"opening_balDr" => @$opening_balDr, "opening_balCr" => @$opening_balCr,"id" => $row['id'],"parent_id" =>$row['parent'],"income_id" =>$income_id['id'], "expense_id" => $expence_id['id'], "main_id"=>$main_id, "tx_bn_hide"=>$tx_bn_hide,'bank_id'=>$bank,'cash_id'=>$cash,'new_hide' => $new_hide,'creditor_debtor'=> $creditor_debtor);
+
+    //     }      
+    //     return $result;
+    // }
+    // public function search_parent_glgrp_data($post)
+    // {
+    //     $db = $this->db;
+    //     $db->setDatabase(session('DataSource')); 
+    //     $builder = $db->table('gl_group');
+    //     $builder->select('id,name,parent');
+    //     $builder->where(array('is_delete' => '0','is_view' => '0'));
+    //     $builder->limit(5);
+    //     if(isset($post['searchTerm'])){
+    //         $builder->like('name',(@$post['searchTerm']) ? @$post['searchTerm'] : 'A');
+    //     }
+    //     $query = $builder->get();
+    //     $getdata = $query->getResultArray();
+    //     //echo '<pre>';Print_r($getdata);exit;
+        
+    //     $data = array();
+    //     foreach($getdata as $row){
+    //         $builder = $db->table('gl_group_summary');
+    //         $builder->select('all_sub_glgroup');
+    //         $builder->where(array('is_delete' => '0','id' => $row['id']));
+    //         $query = $builder->get();
+    //         $get_sub = $query->getRowArray();
+    //         $row['sub_group'] = @$get_sub['all_sub_glgroup'];
+
+    //         $data[] = $row;
+    //     }
+    //     return $data;
+    // }
     public function search_parent_glgrp_data($post) {
         
         $db = $this->db;
@@ -1664,6 +1904,7 @@ public function insert_edit_uom($post)
         return $result;
     }
 
+
     public function search_itemgrp_data($term)
     {
 
@@ -1685,10 +1926,6 @@ public function insert_edit_uom($post)
             return $result;
         
     }
-
-    
-
-    
 
     public function parent_itemgrp_data($term)
     {
@@ -3374,6 +3611,95 @@ public function insert_edit_cashpayment($post)
             }
             return $result;
         }
+        public function search_voucher_type_data($term)
+        {
+
+            $db = $this->db;
+            $db->setDatabase(session('DataSource')); 
+            $builder = $db->table('voucher_type');
+            $builder->select('*');
+            $builder->where(array('is_delete' => '0' ));
+            $builder->where(array('set_as'=>'0'));
+            if(isset($post['searchTerm'])){
+                $builder->like('name',(@$post['searchTerm']) ? @$post['searchTerm'] : 'A');
+            }
+            $query = $builder->get();
+            $getdata = $query->getResultArray();
+            
+    
+            // $db = $this->db;
+            // $db->setDatabase(session('DataSource')); 
+            // $builder = $db->table('voucher_type');
+            // $builder->select('id,name');
+            // $where = "(`code` LIKE '%".$term."%' OR  `name` LIKE '%".$term."%') AND `is_delete` = '0' AND `set_as`=>0";
+            // $builder->where($where);
+            // $query = $builder->get();
+            // $getdata = $query->getResultArray();
+                    
+            $result = array();
+                foreach($getdata as $row){
+                    $result[] = array("text" => $row['name'],"id" => $row['id']);
+                }
+            //print_r($result);exit;
+                return $result;
+            
+        }
+        public function search_sale_ledger_type_data($post){
+
+            $gmodel = new GeneralModel();
+            $sales = $gmodel->get_data_table('gl_group',array('name'=>'Sales'),'id');
+    
+            $sales_gl = gl_list([$sales['id']]);
+            $sales_gl[]=$sales['id'];
+    
+            $db = $this->db;
+            $db->setDatabase(session('DataSource')); 
+            $builder = $db->table('account acc');
+            $builder->select('acc.name,acc.id,acc.gst,acc.tds_rate,acc.tds_limit,acc.state');
+            $builder->join('gl_group gl','gl.id = acc.gl_group');
+            $builder->where(array('acc.is_delete' => '0' ));
+            $builder->whereIn('gl.id',$sales_gl);
+            if(@$post['searchTerm']){
+                $builder->like('acc.name',(@$post['searchTerm']) ? @$post['searchTerm'] : 'A');
+            }
+            $query = $builder->get();
+            $getdata = $query->getResultArray();
+    
+            $result = array();
+            foreach($getdata as $row){
+                $result[] = array("text" => $row['name'],"id" => $row['id'],"gsttin"=>$row['gst'],"tds"=>$row['tds_rate'],"tds_limit"=>$row['tds_limit'],"state"=>$row['state']);
+            }
+            return $result;
+        }
+        public function search_purchase_ledger_type_data($post){
+
+            $gmodel = new GeneralModel();
+            $purchase = $gmodel->get_data_table('gl_group',array('name'=>'Purchase'),'id');
+    
+            $purchase_gl = gl_list([$purchase['id']]);
+            $purchase_gl[]=$purchase['id'];
+    
+            $db = $this->db;
+            $db->setDatabase(session('DataSource')); 
+            $builder = $db->table('account acc');
+            $builder->select('acc.name,acc.id,acc.gst,acc.tds_rate,acc.tds_limit,acc.state');
+            $builder->join('gl_group gl','gl.id = acc.gl_group');
+            $builder->where(array('acc.is_delete' => '0' ));
+            $builder->whereIn('gl.id',$purchase_gl);
+            if(@$post['searchTerm']){
+                $builder->like('acc.name',(@$post['searchTerm']) ? @$post['searchTerm'] : 'A');
+            }
+            $query = $builder->get();
+            $getdata = $query->getResultArray();
+    
+            $result = array();
+            foreach($getdata as $row){
+                $result[] = array("text" => $row['name'],"id" => $row['id'],"gsttin"=>$row['gst'],"tds"=>$row['tds_rate'],"tds_limit"=>$row['tds_limit'],"state"=>$row['state']);
+            }
+            return $result;
+        }
+        
     }
     
+   
 ?>
