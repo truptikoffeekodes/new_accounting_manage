@@ -122,6 +122,7 @@ class AccountModel extends Model
             'hsn' => @$post['hsn'] ? $post['hsn'] : '',
             'alt_gst' => @$post['alt_gst'] ? $post['alt_gst']:'',
             'gst_type' => @$post['gst_type'] ? $post['gst_type'] : '',
+            'set_as' => @$post['set_as'],
         );
 
         if(isset($post['check_tds'])){
@@ -351,7 +352,7 @@ class AccountModel extends Model
     public function get_gl_parent($id){
             $gmodel = new GeneralModel();
             $row = $gmodel->get_data_table('gl_group',array('id'=>$id),'*');
-            //echo '<pre>';Print_r($row);exit;
+            //echo '<pre>';Print_r($id);exit;
             $fixed_accets_id =$gmodel->get_data_table('gl_group',array('name'=> 'Fixed Assets'),'id');
             $tradingexpence_id =$gmodel->get_data_table('gl_group',array('name'=> 'Trading Expenses'),'id');
             $tradingincome_id =$gmodel->get_data_table('gl_group',array('name'=> 'Trading Income'),'id');
@@ -518,7 +519,10 @@ class AccountModel extends Model
             }
 
             $creditor_debtor = '';
+            //echo '<pre>';Print_r($row['id']);exit;
             if($row['id'] == $sundrycreditors_id || $row['id'] == $sundrydebtor_id){
+               
+                
                 $creditor_debtor = $row['id'];
             }else{
                 if($row['parent'] != 0){

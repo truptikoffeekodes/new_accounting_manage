@@ -151,10 +151,10 @@
                                 <div class="col-lg-4 form-group">
                                     <label class="form-label">Set as: <span class="tx-danger">*</span></label>
 
-                                    <label class="rdiobox"><input name="set_as" <?= (@$account_view['set_as'] == "0" ? 'checked' : '') ?> value="0" type="radio" onchange="calculate()">
+                                    <label class="rdiobox"><input name="set_as" <?= (@$account_view['set_as'] == "1" ? 'checked' : '') ?> value="1" type="radio" onchange="calculate()">
                                         <span>Default</span></label>
 
-                                    <label class="rdiobox"><input name="set_as" <?= (@$account_view['set_as'] == "1" ? 'checked' : '') ?> value="1" type="radio" onchange="calculate()"> <span>Optional</span></label>
+                                    <label class="rdiobox"><input name="set_as" <?= (@$account_view['set_as'] == "0" ? 'checked' : 'checked') ?> value="0" type="radio" onchange="calculate()"> <span>Optional</span></label>
 
                                 </div>
 
@@ -340,13 +340,6 @@
                                     <input class="form-control" name="taxpan" value="<?= @$account_view['tax_pan']; ?>" minlength="10" maxlength="10" style="text-transform: uppercase;" placeholder="Enter Income Tax PAN" type="text">
                                 </div>
 
-                                <!-- <div class="col-lg-4 form-group">
-                                    <label class="form-label"><b>TAN NO:</b></label>
-                                    <input class="form-control" name="tanno" value="<?= @$account_view['tan_no']; ?>"
-                                        placeholder="Enter TAN NO" type="text">
-                                </div> -->
-
-
                                 <div class="col-lg-4 form-group alt_gst">
                                     <label class="form-label"><b>SET ALT GST DETAIL:</b></label>
                                     <select class="form-control select2" name="alt_gst">
@@ -362,7 +355,7 @@
 
                                 <?php
                                 if (!empty($account_view)) {
-                                    if ($account_view['gl_group'] == 16 || $account_view['gl_group'] == 27 || $account_view['gl_group'] == 29 || $account_view['gl_group'] == 30 || $account_view['gl_group'] == 31) {
+                                    if ($account_view['gl_group'] == 8 || $account_view['gl_group'] == 13 || $account_view['gl_group'] == 12 || $account_view['gl_group'] == 10 || $account_view['gl_group'] == 11) {
                                         $gst_type_display = 'none;';
                                     } else {
                                         $gst_type_display = 'block;';
@@ -393,7 +386,7 @@
 
                                 <?php
                                 if (!empty($account_view)) {
-                                    if ($account_view['gl_group'] == 16 || $account_view['gl_group'] == 27 || $account_view['gl_group'] == 29 || $account_view['gl_group'] == 30 || $account_view['gl_group'] == 31 || $account_view['gst_type'] == 'Regular') {
+                                    if ($account_view['gl_group'] == 8 || $account_view['gl_group'] == 13 || $account_view['gl_group'] == 12 || $account_view['gl_group'] == 10 || $account_view['gl_group'] == 11 || $account_view['gst_type'] == 'Regular') {
                                         $display = 'block;';
                                     } else {
                                         $display = 'none;';
@@ -412,17 +405,6 @@
                                     </select>
                                 </div>
 
-                                <!--<div class="col-lg-6 form-group">
-                                    <label class="form-label"><b>GST Date:</b></label>
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text">
-                                                <i class="fe fe-calendar lh--9 op-6"></i>
-                                            </div>
-                                        </div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
-                                            type="text" name="gst_date" value="<?= @$account_view['gst_date']; ?>">
-                                    </div>
-                                </div>-->
                                 <div class="col-lg-4 form-group" id="hsn_div">
                                     <label class="form-label"><b>HSN No:</b></label>
                                     <input class="form-control" name="hsn" value="<?= @$account_view['hsn']; ?>" placeholder="Enter HSN No" type="text">
@@ -684,145 +666,166 @@
                 var tx_bn_hide = data.tx_bn_hide;
                 var bank_id = data.bank_id;
                 var cash_id = data.cash_id;
+                var opening_balDr = data.opening_balDr;
+                var opening_balCr = data.opening_balCr;
+                var creditor_debtor = data.creditor_debtor;
                 
-                if (main_id == '16' || main_id == '27' || main_id == '29' || main_id == '30' || main_id == '31') {
-                    gst_type_div.style.display = "none";
-                    taxability_div.style.display = "block";
-                    gstno_div.style.display = "none";
-                    hsn_div.style.display = "block";
-                    bank_div.style.display = "none";
-                    h3_bank.style.display = "none";
+                if (creditor_debtor == '21' || creditor_debtor == '24') {
+                   
+                    trans_div.style.display = "block";
                 } else {
-                    gst_type_div.style.display = "block";
-                    taxability_div.style.display = "none";
-                    // gstno_div.style.display = "block";
-                    hsn_div.style.display = "none";
-                    bank_div.style.display = "block";
-                    h3_bank.style.display = "block";
+                    trans_div.style.display = "none";
                 }
 
-                if (tx_bn_hide == '21' || tx_bn_hide == '24' || tx_bn_hide == '28' || tx_bn_hide == '17') {
+            if (main_id == '8' || main_id == '12' || main_id == '13' || main_id == '10' || main_id == '11') {
+                gst_type_div.style.display = "none";
+                taxability_div.style.display = "block";
+                gstno_div.style.display = "none";
+                hsn_div.style.display = "block";
+                bank_div.style.display = "none";
+                h3_bank.style.display = "none";
+            } else {
+                gst_type_div.style.display = "block";
+                taxability_div.style.display = "none";
+                hsn_div.style.display = "none";
+                bank_div.style.display = "block";
+                h3_bank.style.display = "block";
+            }
 
-                    bank_div.style.display = "none";
-                    h3_bank.style.display = "none";
-                    tax_div.style.display = "none";
-                    h3_tax_div.style.display = "none";
-                } else {
+            if (tx_bn_hide == '35' || tx_bn_hide == '16' || tx_bn_hide == '17' || tx_bn_hide == '23') {
+                bank_div.style.display = "none";
+                h3_bank.style.display = "none";
+                tax_div.style.display = "none";
+                h3_tax_div.style.display = "none";
+            } else {
+                bank_div.style.display = "block";
+                h3_bank.style.display = "block";
+                tax_div.style.display = "block";
+                h3_tax_div.style.display = "block";
+            }
 
-                    bank_div.style.display = "block";
-                    h3_bank.style.display = "block";
-                    tax_div.style.display = "block";
-                    h3_tax_div.style.display = "block";
-                }
+            if (bank_id == '26') {
+                bank_holder.style.display = "block";
+                ac_type.style.display = "block";
+                $('.party_grp').css('display', 'none');
+                $('.print_name').css('display', 'none');
+                $('.interest_rate').css('display', 'none');
+                $('.due_day_div').css('display', 'none');
+                $('.mobile').css('display', 'none');
+                $('.wapp').css('display', 'none');
+                $('.reffered').css('display', 'none');
+                $('.bank').css('display', 'none');
+                $('.alt_gst').css('display', 'none');
+                $('.taxability').css('display', 'none');
 
-                if (bank_id == '22') {
-                    bank_holder.style.display = "block";
-                    ac_type.style.display = "block";
-                    $('.party_grp').css('display', 'none');
-                    $('.print_name').css('display', 'none');
-                    $('.interest_rate').css('display', 'none');
-                    $('.due_day_div').css('display', 'none');
-                    $('.mobile').css('display', 'none');
-                    $('.wapp').css('display', 'none');
-                    $('.reffered').css('display', 'none');
-                    $('.bank').css('display', 'none');
-                    $('.alt_gst').css('display', 'none');
-                    $('.taxability').css('display', 'none');
+            } else if (cash_id == '35') {
+                $('.party_grp').css('display', 'none');
+                $('.print_name').css('display', 'none');
+                $('.interest_rate').css('display', 'none');
+                $('.due_day_div').css('display', 'none');
+                $('.mobile').css('display', 'none');
+                $('.wapp').css('display', 'none');
+                $('.reffered').css('display', 'none');
+                $('.alt_gst').css('display', 'none');
+                $('.taxability').css('display', 'none');
+                h3_bank.style.display = "none";
+                $('#bank_div').css('display', 'none');
+                $('#gst_type').css('display', 'none');
+            } else if (text == 'Expenses' || text == 'Incomes' || data.new_hide == data.expense_id || data.tx_bn_hide == data.income_id) {
+                h3_bank.style.display = "none";
+                bank_div.style.display = "none";
 
-                } else if (cash_id == '21') {
-                    $('.party_grp').css('display', 'none');
-                    $('.print_name').css('display', 'none');
-                    $('.interest_rate').css('display', 'none');
-                    $('.due_day_div').css('display', 'none');
-                    $('.mobile').css('display', 'none');
-                    $('.wapp').css('display', 'none');
-                    $('.reffered').css('display', 'none');
-                    $('.alt_gst').css('display', 'none');
-                    $('.taxability').css('display', 'none');
-                    h3_bank.style.display = "none";
-                    $('#bank_div').css('display', 'none');
-                    $('#gst_type').css('display', 'none');
-                } else if (text == 'Expenses' || text == 'Incomes' || data.new_hide == data.expense_id || data.tx_bn_hide == data.income_id) {
-                    h3_bank.style.display = "none";
-                    bank_div.style.display = "none";
+            } else {
+                bank_holder.style.display = "none";
+                ac_type.style.display = "none";
+                $('.party_grp').css('display', 'block');
+                $('.print_name').css('display', 'block');
+                $('.interest_rate').css('display', 'block');
+                $('.due_day_div').css('display', 'block');
+                $('.mobile').css('display', 'block');
+                $('.wapp').css('display', 'block');
+                $('.reffered').css('display', 'block');
+                $('.bank').css('display', 'block');
+                $('.alt_gst').css('display', 'block');
+                $('.taxability').css('display', 'block');
+                h3_bank.style.display = "block";
 
-                } else {
-                    bank_holder.style.display = "none";
-                    ac_type.style.display = "none";
-                    $('.party_grp').css('display', 'block');
-                    $('.print_name').css('display', 'block');
-                    $('.interest_rate').css('display', 'block');
-                    $('.due_day_div').css('display', 'block');
-                    $('.mobile').css('display', 'block');
-                    $('.wapp').css('display', 'block');
-                    $('.reffered').css('display', 'block');
-                    $('.bank').css('display', 'block');
-                    $('.alt_gst').css('display', 'block');
-                    $('.taxability').css('display', 'block');
-                    h3_bank.style.display = "block";
-
-                    $('#bank_div').css('display', 'block');
-                    $('#gst_type').css('display', 'block');
-                }
-
-                if (bank_id == '22') {
-                    bank_holder.style.display = "block";
-                    ac_type.style.display = "block";
-                } else {
-                    bank_holder.style.display = "none";
-                    ac_type.style.display = "none";
-                }
+                $('#bank_div').css('display', 'block');
+                $('#gst_type').css('display', 'block');
+            }
 
 
-                if (text == 'Broker') {
-                    brokrage.style.display = "block";
-                } else {
-                    brokrage.style.display = "none";
-                }
+            if (opening_balDr == '1' || opening_balDr == '3') {
+                $('select[name="opening_type"]').val('Debit').trigger('change');
+            } else {
+                $('select[name="opening_type"]').val('Credit').trigger('change');
+            }
 
-                if (text == 'Expenses' || text == 'Incomes' || data.new_hide == data.expense_id || data
-                    .parent_id == data.income_id) {
-                    glDiv.style.display = "block";
-                    //hsn_div.style.display = "none";
+            if (opening_balCr == '2' || opening_balCr == '4') {
+                $('select[name="opening_type"]').val('Credit').trigger('change');
+            } else {
+                $('select[name="opening_type"]').val('Debit').trigger('change');
+            }
 
-                } else {
-                    glDiv.style.display = "block";
-                    //hsn_div.style.display = "block";
 
-                }
+            if (text == 'Broker') {
+                brokrage.style.display = "block";
+            } else {
+                brokrage.style.display = "none";
+            }
+            if (text == 'Expenses' || text == 'Incomes' || data.parent_id == data.expense_id || data
+                .parent_id == data.income_id) {
+                glDiv.style.display = "block";
+                // temp solution for this
+                //glDiv.style.display = "none";
 
-                if (text == 'Sundry Creditors' || text == 'Sundry Debtors' || data.parent_id == data.creditor_debtor) {
-                    $('#state').attr('required', 'required');
-                } else {
-                    console.log("no");
-                    $("#state").attr("required", "false");
-                }
-                //alert(text)
+            } else {
+                glDiv.style.display = "block";
 
+            }
+            if (text == 'Expenses' || text == 'Incomes' || data.new_hide == data.expense_id || data.tx_bn_hide == data.income_id) {
+                // temp solution for this
+                //glDiv.style.display = "none";
+            } else {
+                glDiv.style.display = "block";
+            }
+            if (text == 'Sundry Creditors' || text == 'Sundry Debtors' || data.parent_id == data.expense_id || data.parent_id == data.income_id) {
+                $('#state').attr('required', true);
+            } else {
+                $("#state").attr("required", false);
+            }
+           
+          
+            if (text == 'PL Incomes' || text == 'PL Expenses' || text == 'Trading Expenses' || text == 'Trading Income' || main_id == '30' || main_id == '31' || main_id == '27' || main_id == '29' ) {
+
+                $("#ledger_type").css("display", "block");
                 if (text == 'Duties and taxes') {
-                    //HideName.style.display = "none";
-                    //Name.style.display = "block";
-                    $("#tax_type").css("display", "block");
-                    $("#ledger_type").css("display", "none");
-                    
-                    //$("#taxation_show").css("display", "none");
-                    //$('#name').attr('disabled');
+                //alert(text)
+                // HideName.style.display = "none";
+                // Name.style.display = "block";
+                $("#tax_type").css("display", "block");
+                $("#taxation_show").css("display", "none");
+                $("#ledger_type").css("display", "none");
+                //$('#name_show').css("display", "none");
+                //$('#name').attr('disabled');
                 } else {
-                    //Name.style.display = "none";
-                    //HideName.style.display = "block";
+                    // Name.style.display = "none";
+                    // HideName.style.display = "block";
                     $("#tax_type").css("display", "none");
-                    $("#ledger_type").css("display", "none");
-                    //$("#taxation_show").css("display", "none");
+                    $("#taxation_show").css("display", "none");
+                    $("#ledger_type").css("display", "block");
+                    //$('#name_show').css("display", "block");
                     //$('#taxes_name').attr('disabled');
                 }
-                if (text == 'P & L Incomes' || text == 'P & L Expenses' || text == 'Trading Expenses' || text == 'Trading Income' || main_id == '30' || main_id == '31' || main_id == '27' || main_id == '29' ) {
-
-                    $("#ledger_type").css("display", "block");
-                }
-                else
-                {
-                    $("#ledger_type").css("display", "none");
-                }
+                
+            }
+            else
+            {
+                $("#tax_type").css("display", "none");
+                $("#taxation_show").css("display", "none");
+                
+                $("#ledger_type").css("display", "none");
+            }
             },
             error: function(xhr) {
 
@@ -963,7 +966,7 @@
         $('#glgroup_ac').on('select2:select', function(e) {
 
             var data = e.params.data;
-            //console.log(data);return;
+            console.log(data);
             var glDiv = document.getElementById("gl_hide");
             var brokrage = document.getElementById("brokrage");
             var gstno_div = document.getElementById("gstno_div");
@@ -985,14 +988,15 @@
             var opening_balDr = data.opening_balDr;
             var opening_balCr = data.opening_balCr;
             var creditor_debtor = data.creditor_debtor;
-
-            if (creditor_debtor == '13' || creditor_debtor == '19') {
+            //alert(creditor_debtor);
+            if (creditor_debtor == '21' || creditor_debtor == '24') {
+                
                 trans_div.style.display = "block";
             } else {
                 trans_div.style.display = "none";
             }
 
-            if (main_id == '16' || main_id == '27' || main_id == '29' || main_id == '30' || main_id == '31') {
+            if (main_id == '8' || main_id == '12' || main_id == '13' || main_id == '10' || main_id == '11') {
                 gst_type_div.style.display = "none";
                 taxability_div.style.display = "block";
                 gstno_div.style.display = "none";
@@ -1007,7 +1011,7 @@
                 h3_bank.style.display = "block";
             }
 
-            if (tx_bn_hide == '21' || tx_bn_hide == '24' || tx_bn_hide == '28' || tx_bn_hide == '17') {
+            if (tx_bn_hide == '35' || tx_bn_hide == '16' || tx_bn_hide == '17' || tx_bn_hide == '23') {
                 bank_div.style.display = "none";
                 h3_bank.style.display = "none";
                 tax_div.style.display = "none";
@@ -1019,7 +1023,7 @@
                 h3_tax_div.style.display = "block";
             }
 
-            if (bank_id == '22') {
+            if (bank_id == '26') {
                 bank_holder.style.display = "block";
                 ac_type.style.display = "block";
                 $('.party_grp').css('display', 'none');
@@ -1033,7 +1037,7 @@
                 $('.alt_gst').css('display', 'none');
                 $('.taxability').css('display', 'none');
 
-            } else if (cash_id == '21') {
+            } else if (cash_id == '35') {
                 $('.party_grp').css('display', 'none');
                 $('.print_name').css('display', 'none');
                 $('.interest_rate').css('display', 'none');
@@ -1109,32 +1113,35 @@
             } else {
                 $("#state").attr("required", false);
             }
-            //alert(text)
-            if (text == 'Duties and taxes') {
-                // HideName.style.display = "none";
-                // Name.style.display = "block";
-                $("#tax_type").css("display", "block");
-                $("#taxation_show").css("display", "none");
-                $("#ledger_type").css("display", "none");
-                //$('#name_show').css("display", "none");
-                //$('#name').attr('disabled');
-            } else {
-                // Name.style.display = "none";
-                // HideName.style.display = "block";
-                $("#tax_type").css("display", "none");
-                $("#taxation_show").css("display", "none");
-                $("#ledger_type").css("display", "none");
-                //$('#name_show').css("display", "block");
-                //$('#taxes_name').attr('disabled');
-            }
-            if (text == 'P & L Incomes' || text == 'P & L Expenses' || text == 'Trading Expenses' || text == 'Trading Income' || main_id == '30' || main_id == '31' || main_id == '27' || main_id == '29' ) {
-
-                $("#ledger_type").css("display", "block");
+           //alert(text);
+            
+            if (text == 'PL Incomes' || text == 'PL Expenses' || text == 'Trading Expenses' || text == 'Trading Income' || main_id == '30' || main_id == '31' || main_id == '27' || main_id == '29' ) {
+               $("#ledger_type").css("display", "block");
+    
             }
             else
             {
+                $("#tax_type").css("display", "none");
+                $("#taxation_show").css("display", "none");
+                
                 $("#ledger_type").css("display", "none");
             }
+            if (text == 'Duties and taxes') {
+               
+               $("#tax_type").css("display", "block");
+               $("#taxation_show").css("display", "none");
+               $("#ledger_type").css("display", "none");
+          
+           } else {
+               $("#tax_type").css("display", "none");
+               $("#taxation_show").css("display", "none");
+               //$("#ledger_type").css("display", "none");
+             
+           }
+
+            
+               
+            
 
 
         });

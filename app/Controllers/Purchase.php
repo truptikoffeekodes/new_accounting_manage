@@ -207,7 +207,7 @@ class Purchase extends BaseController
         if ($id != '') {
             $data = $this->model->get_purchase_return($id);
         }
-        $data['voucher_list'] = get_voucher_list('2');
+        $data['voucher_list'] = get_voucher_list('4');
         $tax_id = $this->gmodel->get_data_table('gl_group', array('name' => 'Duties and taxes'), 'id');
         $tax = $this->gmodel->get_array_table('account', array('gl_group' => $tax_id['id']), 'name');
         $getId = $this->gmodel->get_lastId('purchase_return');

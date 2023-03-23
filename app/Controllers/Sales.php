@@ -368,7 +368,7 @@ class Sales extends BaseController{
         }
         //echo '<pre>';Print_r($data);exit;
         
-        $data['voucher_list'] = get_voucher_list('1');
+        $data['voucher_list'] = get_voucher_list('3');
 
         $tax_id = $this->gmodel->get_data_table('gl_group',array('name' => 'Duties and taxes'),'id');
         $tax = $this->gmodel->get_array_table('account',array('gl_group' => $tax_id['id']),'name');

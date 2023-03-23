@@ -1,0 +1,10 @@
+CRITICAL - 2023-03-23 15:19:25 --> Trying to access array offset on value of type null
+#0 D:\trupti\working project\new_accounting_manage\app\Helpers\balanceSheet_helper.php(485): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\trupti\\worki...', 485, Array)
+#1 D:\trupti\working project\new_accounting_manage\app\Helpers\balanceSheet_helper.php(39): jv_master('2022-04-01', '2023-03-31', 'Loans')
+#2 D:\trupti\working project\new_accounting_manage\app\Controllers\Balancesheet.php(95): balancesheet_detail('2022-04-01', '2023-03-31')
+#3 D:\trupti\working project\new_accounting_manage\system\CodeIgniter.php(918): App\Controllers\Balancesheet->index()
+#4 D:\trupti\working project\new_accounting_manage\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Balancesheet))
+#5 D:\trupti\working project\new_accounting_manage\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\trupti\working project\new_accounting_manage\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\trupti\working project\new_accounting_manage\system\Commands\Server\rewrite.php(34): require_once('D:\\trupti\\worki...')
+#8 {main}

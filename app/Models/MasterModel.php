@@ -162,6 +162,7 @@ class MasterModel extends Model
         'name' => $post['name'],
         'parent' => @$post['parent_grp'],
         'status' => 1,
+        
     );
 
     $pdata1 = array(
@@ -1718,16 +1719,28 @@ public function insert_edit_uom($post)
         $getdata = $query->getResultArray();
         
         $gmodel =new GeneralModel();
-        $income_id =$gmodel->get_data_table('gl_group',array('name'=> 'Incomes'),'id');
-        $expence_id =$gmodel->get_data_table('gl_group',array('name'=> 'Expenses'),'id');
-        $tradingincome_id =$gmodel->get_data_table('gl_group',array('name'=> 'Trading Expenses'),'id');
-        $tradingexpence_id =$gmodel->get_data_table('gl_group',array('name'=> 'Trading Expenses'),'id');
+        $fixed_accets_id =$gmodel->get_data_table('gl_group',array('name'=> 'Fixed Assets'),'id');
+            $tradingexpence_id =$gmodel->get_data_table('gl_group',array('name'=> 'Trading Expenses'),'id');
+            $tradingincome_id =$gmodel->get_data_table('gl_group',array('name'=> 'Trading Income'),'id');
+            $plexpence_id =$gmodel->get_data_table('gl_group',array('name'=> 'PL Expenses'),'id');
+            $plincome_id =$gmodel->get_data_table('gl_group',array('name'=> 'PL Incomes'),'id');
+            $cashinhand_id =$gmodel->get_data_table('gl_group',array('name'=> 'Cash in Hand'),'id');
+            $openingstock_id =$gmodel->get_data_table('gl_group',array('name'=> 'Opening Stock'),'id');
+            $closingstock_id =$gmodel->get_data_table('gl_group',array('name'=> 'Closing Stock'),'id');
+            $inveshment_id =$gmodel->get_data_table('gl_group',array('name'=> 'Investments'),'id');
+            $bank_id =$gmodel->get_data_table('gl_group',array('name'=> 'Banks'),'id');
+            $expence_id =$gmodel->get_data_table('gl_group',array('name'=> 'Expenses'),'id');
+            $liabilities_id =$gmodel->get_data_table('gl_group',array('name'=> 'Liabilities'),'id');
+            $income_id =$gmodel->get_data_table('gl_group',array('name'=> 'Incomes'),'id');
+            $assets_id =$gmodel->get_data_table('gl_group',array('name'=> 'Assets'),'id');
+            $sundrycreditors_id =$gmodel->get_data_table('gl_group',array('name'=> 'Sundry Creditors'),'id');
+            $sundrydebtor_id =$gmodel->get_data_table('gl_group',array('name'=> 'Sundry Debtors'),'id');
         $result = array();
         
         foreach($getdata as $row){
             $parent = 0;
             $main_id = '';
-            if($row['id'] == 16 || $row['id'] == 27 || $row['id'] == 29 || $row['id'] == 30 || $row['id'] == 31){
+            if($row['id'] == $fixed_accets_id || $row['id'] == $tradingexpence_id || $row['id'] == $tradingincome_id || $row['id'] == $plexpence_id || $row['id'] == $plincome_id){
                 $main_id = $row['id'];
             }else{
                 if($row['parent'] != 0){
@@ -1735,7 +1748,7 @@ public function insert_edit_uom($post)
                     $parent = $row['parent'];
                     for($i = 0;$i<$x;$i++){
                         $res = $gmodel->get_data_table('gl_group',array('id'=> $parent),'id,parent');
-                        if($res['id'] == 16 || $res['id'] == 27 || $res['id'] == 29 || $res['id'] == 30 || $res['id'] == 31){
+                        if($res['id'] == $fixed_accets_id || $res['id'] == $tradingexpence_id || $res['id'] == $tradingincome_id || $res['id'] == $plexpence_id || $res['id'] == $plincome_id){
                             $x = 0;
                         }else{
                             $x = $res['parent'];
@@ -1746,9 +1759,8 @@ public function insert_edit_uom($post)
                     $i = 0;
                 }
             }
-
             $tx_bn_hide = '';
-            if($row['id'] == 21 || $row['id'] == 24 || $row['id'] == 28 || $row['id'] == 17){
+            if($row['id'] == $cashinhand_id || $row['id'] == $openingstock_id || $row['id'] == $closingstock_id || $row['id'] == $inveshment_id){
                 $tx_bn_hide = $row['id'];
             }else{
                 if($row['parent'] != 0){
@@ -1756,7 +1768,7 @@ public function insert_edit_uom($post)
                     $parent = $row['parent'];
                     for($i = 0;$i<$x;$i++){
                         $res = $gmodel->get_data_table('gl_group',array('id'=> $parent),'id,parent');
-                        if($res['id'] == 21 || $res['id'] == 24 || $res['id'] == 28 || $res['id'] == 17){
+                        if($res['id'] == $cashinhand_id || $res['id'] == $openingstock_id || $res['id'] == $closingstock_id || $res['id'] == $inveshment_id){
                             $x = 0;
                         }else{
                             $x = $res['parent'];
@@ -1767,9 +1779,8 @@ public function insert_edit_uom($post)
                     $tx_bn_hide = $res['id'];
                 }
             }
-
             $new_hide = '';
-            if($row['id'] == 21 || $row['id'] == 30 || $row['id'] == 29 || $row['id'] == 31){
+            if($row['id'] == $cashinhand_id || $row['id'] == $plexpence_id || $row['id'] == $tradingincome_id || $row['id'] == $plincome_id){
                 $new_hide = $row['id'];
             }else{
                 if($row['parent'] != 0){
@@ -1777,7 +1788,7 @@ public function insert_edit_uom($post)
                     $parent = $row['parent'];
                     for($i = 0;$i<$x;$i++){
                         $res = $gmodel->get_data_table('gl_group',array('id'=> $parent),'id,parent');
-                        if($res['id'] == 21 || $res['id'] == 30 || $res['id'] == 29 || $res['id'] == 31){
+                        if($res['id'] == $cashinhand_id || $res['id'] == $plexpence_id || $res['id'] == $tradingincome_id || $res['id'] == $plincome_id){
                             $x = 0;
                         }else{
                             $x = $res['parent'];
@@ -1788,10 +1799,9 @@ public function insert_edit_uom($post)
                     $new_hide = $res['id'];
                 }
             }
-           
 
             $bank = '';
-            if($row['id'] == 22 ){
+            if($row['id'] == $bank_id ){
                 $bank = $row['id'];
             }else{
                 if($row['parent'] != 0){
@@ -1799,7 +1809,7 @@ public function insert_edit_uom($post)
                     $parent = $row['parent'];
                     for($i = 0;$i<$x;$i++){
                         $res = $gmodel->get_data_table('gl_group',array('id'=> $parent),'id,parent');
-                        if($res['id'] == 22){
+                        if($res['id'] == $bank_id){
                             $x = 0;
                         }else{
                             $x = $res['parent'];
@@ -1812,7 +1822,7 @@ public function insert_edit_uom($post)
             }
 
             $cash = '';
-            if($row['id'] == 21 ){
+            if($row['id'] == $cashinhand_id){
                 $cash = $row['id'];
             }else{
                 if($row['parent'] != 0){
@@ -1820,7 +1830,7 @@ public function insert_edit_uom($post)
                     $parent = $row['parent'];
                     for($i = 0;$i<$x;$i++){
                         $res = $gmodel->get_data_table('gl_group',array('id'=> $parent),'id,parent');
-                        if($res['id'] == 21){
+                        if($res['id'] == $cashinhand_id){
                             $x = 0;
                         }else{
                             $x = $res['parent'];
@@ -1834,7 +1844,7 @@ public function insert_edit_uom($post)
 
             $opening_balCr = '';
 
-            if($row['id'] == 4 || $row['id'] == 2){
+            if($row['id'] == $expence_id || $row['id'] == $liabilities_id){
                 $opening_balCr = $row['id'];
             }else{
                 if($row['parent'] != 0){
@@ -1842,7 +1852,7 @@ public function insert_edit_uom($post)
                     $parent = $row['parent'];
                     for($i = 0;$i<$x;$i++){
                         $res = $gmodel->get_data_table('gl_group',array('id'=> $parent),'id,parent');
-                        if($res['id'] == 4 || $res['id'] == 2){
+                        if($res['id'] == $expence_id || $res['id'] == $liabilities_id){
                             $x = 0;
                         }else{
                             $x = $res['parent'];
@@ -1856,7 +1866,7 @@ public function insert_edit_uom($post)
 
             $opening_balDr = '';
 
-            if($row['id'] == 1 || $row['id'] == 3){
+            if($row['id'] == $assets_id || $row['id'] == $income_id){
                 $opening_balDr = $row['id'];
             }else{
                 if($row['parent'] != 0){
@@ -1864,7 +1874,7 @@ public function insert_edit_uom($post)
                     $parent = $row['parent'];
                     for($i = 0;$i<$x;$i++){
                         $res = $gmodel->get_data_table('gl_group',array('id'=> $parent),'id,parent');
-                        if($res['id'] == 1 || $res['id'] == 3){
+                        if($res['id'] == $assets_id || $res['id'] == $income_id){
                             $x = 0;
                         }else{
                             $x = $res['parent'];
@@ -1877,8 +1887,10 @@ public function insert_edit_uom($post)
             }
 
             $creditor_debtor = '';
-
-            if($row['id'] == 13 || $row['id'] == 19){
+            //echo '<pre>';Print_r($row['id']);exit;
+            if($row['id'] == $sundrycreditors_id || $row['id'] == $sundrydebtor_id){
+               
+                
                 $creditor_debtor = $row['id'];
             }else{
                 if($row['parent'] != 0){
@@ -1886,7 +1898,7 @@ public function insert_edit_uom($post)
                     $parent = $row['parent'];
                     for($i = 0;$i<$x;$i++){
                         $res = $gmodel->get_data_table('gl_group',array('id'=> $parent),'id,parent');
-                        if($res['id'] == 13 || $res['id'] == 19){
+                        if($res['id'] == $sundrycreditors_id || $res['id'] == $sundrydebtor_id){
                             $x = 0;
                         }else{
                             $x = $res['parent'];
@@ -2209,6 +2221,7 @@ public function get_glgrp_data($get){
         "gl.code",
         "gl.name",
         "(select name from gl_group glg where glg.id = gl.parent)",
+        
     );
     
     $dt_col = array(
