@@ -3,14 +3,14 @@
 
 if (!function_exists('url')) {
 
-    function url($slug){
-        return base_url() .'/'. $slug;
+    function url($slug) {
+        return base_url() . $slug;
     }
 }
 
 if (!function_exists('html_convert')) {
 
-    function html_convert($text){
+    function html_convert($text) {
         $text = str_replace("'", "", $text);
         $text = str_replace("\"", "", $text);
 
@@ -18,7 +18,7 @@ if (!function_exists('html_convert')) {
     }
 }
 
-function search($array, $key, $value){
+function search($array, $key, $value) {
     $results = array();
 
     if (is_array($array)) {
@@ -57,94 +57,947 @@ function generateRandomString($length = 5) {
     return $randomString;
 }
 
-function gl_list($abc,$test = array()){
-        $db = \Config\Database::connect();
-        $db->setDatabase(session('DataSource')); 
-        $builder = $db->table('gl_group');
-        $builder = $builder->select('GROUP_CONCAT(id) as ids');
-        $builder->whereIn('parent',$abc);
-        $query = $builder->get();
-        $getglids = $query->getRow();
+function get_voucher_list($type) {
+    $db = \Config\Database::connect();
+    $db->setDatabase(session('DataSource'));
+    $builder = $db->table('voucher_type');
+    $builder->select('*');
+    $builder->where('parent_id', $type);
+    $builder->where('is_delete', 0);
+    $builder->where('is_active', 1);
+    $query = $builder->get();
+    $result = $query->getResultArray();
 
-        $xyz = $test;
-        if($getglids->ids != ''){
-            
-            $bijo =explode(',',$getglids->ids);
-            $xyz = array_merge($xyz,$bijo);
-            
-            $xyz = gl_list($bijo,$xyz);
-            
-        }
-        
-        return $xyz;
+    return $result;
 }
 
 
-function validateDate($date, $format = 'Y-m-d')
-{
+
+// function insert_update_transaction($data) {
+
+//     try {
+//         $db = \Config\Database::connect();
+//         if (session('DataSource')) {
+//             $db->setDatabase(session('DataSource'));
+//         }
+//         $builder = $db->table('transaction');
+//         $acc_builder = $db->table('account');
+//         $gl_builder = $db->table('gl_group_summary');
+//         $accounts = $data['accounts'];
+
+//         $getTransactions = $builder->where(array("invoice_id" => $data['invoice_id'], "voucher_parent" => $data['voucher_parent']))->select('group_concat(account_id) as acc_ids')->groupBy('invoice_id')->get()->getRow();
+//         $acc_ids = array();
+//         if ($getTransactions) {
+//             $acc_ids = explode(',', $getTransactions->acc_ids);
+//             $new_acc_ids = array();
+//             foreach ($accounts as $row) {
+//                 $new_acc_ids[] = $row['id'];
+//             }
+//             $result = array_diff($acc_ids, $new_acc_ids);
+
+//             if (!empty($result)) {
+//                 $builder->where(array("invoice_id" => $data['invoice_id'], "voucher_parent" => $data['voucher_parent']));
+//                 $builder->whereIn("account_id", $result);
+//                 $builder->update(array('is_delete' => 1));
+//             }
+//         }
+
+//         foreach ($accounts as $row) {
+
+//             $getAccount = $acc_builder->where('id', $row['id'])->get()->getRow();
+//             if (in_array($row['id'], $acc_ids)) {
+//                 $where = array("invoice_id" => $data['invoice_id'], "voucher_parent" => $data['voucher_parent'], "account_id" => $row['id']);
+//                 if ($data['voucher_parent'] == 1 || $data['voucher_parent'] == 4) {
+//                     $update_data = array(
+//                         "voucher_id" => $data['voucher_id'],
+//                         "account_id" => $row['id'],
+//                         "date" => $data['date'],
+//                         "amount" => $row['amount'],
+//                         "update_at" =>  date('Y-m-d H:i:s'),
+//                         "update_by" => $data['uid']
+//                     );
+//                     if ($row['type'] == 'ledger') {
+//                         $update_data['gl_group_id'] = 14;
+//                         $update_data['cr'] = $row['amount'];
+//                     } else if ($row['type'] == 'account') {
+//                         if ($data['voucher_parent'] == 1) {
+//                             $update_data['gl_group_id'] = 24;
+//                         } else {
+//                             $update_data['gl_group_id'] = 21;
+//                         }
+//                         $update_data['type'] = 'cr';
+//                     } else if ($row['type'] == 'particular') {
+//                         $getGroup = $gl_builder->whereIn('id', [7, 9])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+//                         if ($getGroup->id == 1) {
+//                             $update_data['gl_group_id'] =  $getGroup->id;
+//                             $update_data['type'] = 'dr';
+//                         } else {
+//                             $update_data['gl_group_id'] =  $getGroup->id;
+//                             $update_data['type'] = 'cr';
+//                         }
+//                     } else if ($row['type'] == 'gst') {
+//                         $update_data['gl_group_id'] =  27;
+//                         $update_data['type'] = 'cr';
+//                     } else if ($row['type'] == 'discount') {
+//                         $getGroup = $gl_builder->whereIn('id', [10, 11, 12, 13, 14, 15])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+//                         $update_data['gl_group_id'] = $getGroup->id;
+//                         if ($getGroup->id == 14) {
+//                             $update_data['type'] = 'dr';
+//                         } else if ($getGroup->id == 15) {
+//                             $update_data['type'] = 'cr';
+//                         } else if ($getGroup->id == 12) {
+//                             $update_data['type'] = 'dr';
+//                         } else if ($getGroup->id == 13) {
+//                             $update_data['type'] = 'cr';
+//                         } else if ($getGroup->id == 10) {
+//                             $update_data['type'] = 'dr';
+//                         } else {
+//                             $update_data['type'] = 'cr';
+//                         }
+//                     } else {
+//                         $getGroup = $gl_builder->whereIn('id', [10, 11])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+//                         $update_data['gl_group_id'] = $getGroup->id;
+//                         if ($getGroup->id == 10) {
+//                             $update_data['type'] = 'cr';
+//                         } else {
+//                             $update_data['type'] = 'dr';
+//                         }
+//                     }
+//                     $builder->where($where);
+//                     $builder->update($update_data);
+//                 } else {
+//                     if ($data['voucher_parent'] == 5) {
+//                         $getGroup = $gl_builder->whereIn('id', [26, 35])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+//                     } else if ($data['voucher_parent'] == 6 || $data['voucher_parent'] == 7) {
+//                         if ($row['type'] == "cr" && $data['voucher_parent'] == 6) {
+//                             $getGroup = $gl_builder->whereIn('id', [26, 35])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+//                         } else if ($row['type'] == "dr" && $data['voucher_parent'] == 7) {
+//                             $getGroup = $gl_builder->whereIn('id', [26, 35])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+//                         } else {
+//                             $getGroup = $gl_builder->whereIn('id', [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 35])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+//                         }
+//                     } else {
+//                         $getGroup = $gl_builder->whereIn('id', [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 35])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+//                     }
+//                     $update_data = array(
+//                         "voucher_id" => $data['voucher_id'],
+//                         "account_id" => $row['id'],
+//                         "invoice_id" => $data['invoice_id'],
+//                         "date" => $data['date'],
+//                         "amount" => $row['amount'],
+//                         "type" => $row['type'],
+//                         "gl_group_id" =>  $getGroup->id,
+//                         "update_at" =>  date('Y-m-d H:i:s'),
+//                         "update_by" => $data['uid']
+//                     );
+//                     $builder->where($where);
+//                     $builder->update($update_data);
+//                 }
+//             } else {
+
+//                 $insert_data = array();
+//                 if ($data['voucher_parent'] == 1 || $data['voucher_parent'] == 4) {
+//                     if ($row['type'] == 'ledger') {
+//                         $insert_data = array(
+//                             "voucher_parent" => $data['voucher_parent'],
+//                             "voucher_id" => $data['voucher_id'],
+//                             "invoice_id" => $data['invoice_id'],
+//                             "account_id" => $row['id'],
+//                             "gl_group_id" => 14,
+//                             "date" => $data['date'],
+//                             "amount" => $row['amount'],
+//                             "type" => "cr",
+//                             "create_at" =>  date('Y-m-d H:i:s'),
+//                             "create_by" => $data['uid']
+//                         );
+//                     } else if ($row['type'] == 'account') {
+//                         $insert_data = array(
+//                             "voucher_parent" => $data['voucher_parent'],
+//                             "voucher_id" => $data['voucher_id'],
+//                             "invoice_id" => $data['invoice_id'],
+//                             "account_id" => $row['id'],
+//                             "gl_group_id" => $data['voucher_parent'] == 1 ? 24 : 21,
+//                             "date" => $data['date'],
+//                             "amount" => $row['amount'],
+//                             "type" => "cr",
+//                             "create_at" =>  date('Y-m-d H:i:s'),
+//                             "create_by" => $data['uid']
+//                         );
+//                     } else if ($row['type'] == 'particular') {
+//                         $getGroup = $gl_builder->whereIn('id', [7, 9])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+//                         if ($getGroup->id == 1) {
+//                             $insert_data = array(
+//                                 "voucher_parent" => $data['voucher_parent'],
+//                                 "voucher_id" => $data['voucher_id'],
+//                                 "invoice_id" => $data['invoice_id'],
+//                                 "account_id" => $row['id'],
+//                                 "gl_group_id" => $getGroup->id,
+//                                 "date" => $data['date'],
+//                                 "amount" => $row['amount'],
+//                                 "type" => "dr",
+//                                 "create_at" =>  date('Y-m-d H:i:s'),
+//                                 "create_by" => $data['uid']
+//                             );
+//                         } else {
+//                             $insert_data = array(
+//                                 "voucher_parent" => $data['voucher_parent'],
+//                                 "voucher_id" => $data['voucher_id'],
+//                                 "invoice_id" => $data['invoice_id'],
+//                                 "account_id" => $row['id'],
+//                                 "gl_group_id" => $getGroup->id,
+//                                 "date" => $data['date'],
+//                                 "amount" => $row['amount'],
+//                                 "type" => "cr",
+//                                 "create_at" =>  date('Y-m-d H:i:s'),
+//                                 "create_by" => $data['uid']
+//                             );
+//                         }
+//                     } else if ($row['type'] == 'gst') {
+//                         $insert_data = array(
+//                             "voucher_parent" => $data['voucher_parent'],
+//                             "voucher_id" => $data['voucher_id'],
+//                             "invoice_id" => $data['invoice_id'],
+//                             "account_id" => $row['id'],
+//                             "gl_group_id" => 27,
+//                             "date" => $data['date'],
+//                             "amount" => $row['amount'],
+//                             "type" => "cr",
+//                             "create_at" =>  date('Y-m-d H:i:s'),
+//                             "create_by" => $data['uid']
+//                         );
+//                     } else if ($row['type'] == 'discount') {
+//                         $getGroup = $gl_builder->whereIn('id', [10, 11, 12, 13, 14, 15])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+//                         $insert_data = array(
+//                             "voucher_parent" => $data['voucher_parent'],
+//                             "voucher_id" => $data['voucher_id'],
+//                             "invoice_id" => $data['invoice_id'],
+//                             "account_id" => $row['id'],
+//                             "gl_group_id" => $getGroup->id,
+//                             "date" => $data['date'],
+//                             "amount" => $row['amount'],
+//                             "create_at" =>  date('Y-m-d H:i:s'),
+//                             "create_by" => $data['uid']
+//                         );
+//                         if ($getGroup->id == 14) {
+//                             $insert_data['type'] = 'dr';
+//                         } else if ($getGroup->id == 15) {
+//                             $insert_data['type'] = 'cr';
+//                         } else if ($getGroup->id == 12) {
+//                             $insert_data['type'] = 'dr';
+//                         } else if ($getGroup->id == 13) {
+//                             $insert_data['type'] = 'cr';
+//                         } else if ($getGroup->id == 10) {
+//                             $insert_data['type'] = 'dr';
+//                         } else {
+//                             $insert_data['type'] = 'cr';
+//                         }
+//                     } else {
+//                         $getGroup = $gl_builder->whereIn('id', [7, 9])->where('FIND_IN_SET(' . $row['id'] . ',all_sub_glgroup)')->get()->getRow();
+//                         $insert_data = array(
+//                             "voucher_parent" => $data['voucher_parent'],
+//                             "voucher_id" => $data['voucher_id'],
+//                             "invoice_id" => $data['invoice_id'],
+//                             "account_id" => $row['id'],
+//                             "gl_group_id" => $getGroup->id,
+//                             "date" => $data['date'],
+//                             "amount" => $row['amount'],
+//                             "create_at" =>  date('Y-m-d H:i:s'),
+//                             "create_by" => $data['uid']
+//                         );
+//                         if ($getGroup->id == 10) {
+//                             $insert_data['type'] = 'cr';
+//                         } else {
+//                             $insert_data['type'] = 'dr';
+//                         }
+//                     }
+//                 } else if ($data['voucher_parent'] == 2 || $data['voucher_parent'] == 3) {
+
+//                     if ($row['type'] == 'ledger') {
+//                         $insert_data = array(
+//                             "voucher_parent" => $data['voucher_parent'],
+//                             "voucher_id" => $data['voucher_id'],
+//                             "invoice_id" => $data['invoice_id'],
+//                             "account_id" => $row['id'],
+//                             "gl_group_id" => 14,
+//                             "date" => $data['date'],
+//                             "amount" => $row['amount'],
+//                             "type" => "dr",
+//                             "create_at" =>  date('Y-m-d H:i:s'),
+//                             "create_by" => $data['uid']
+//                         );
+//                     } else if ($row['type'] == 'account') {
+//                         $insert_data = array(
+//                             "voucher_parent" => $data['voucher_parent'],
+//                             "voucher_id" => $data['voucher_id'],
+//                             "invoice_id" => $data['invoice_id'],
+//                             "account_id" => $row['id'],
+//                             "gl_group_id" => $data['voucher_parent'] == 1 ? 24 : 21,
+//                             "date" => $data['date'],
+//                             "amount" => $row['amount'],
+//                             "type" => "dr",
+//                             "create_at" =>  date('Y-m-d H:i:s'),
+//                             "create_by" => $data['uid']
+//                         );
+//                     } else if ($row['type'] == 'particular') {
+                        
+//                         $getGroup = $gl_builder->whereIn('id', [7, 9])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+                        
+//                         if ($getGroup->id == 7) {
+//                             $insert_data = array(
+//                                 "voucher_parent" => $data['voucher_parent'],
+//                                 "voucher_id" => $data['voucher_id'],
+//                                 "invoice_id" => $data['invoice_id'],
+//                                 "account_id" => $row['id'],
+//                                 "gl_group_id" => $getGroup->id,
+//                                 "date" => $data['date'],
+//                                 "type" => "cr",
+//                                 "create_at" =>  date('Y-m-d H:i:s'),
+//                                 "create_by" => $data['uid']
+//                             );
+
+//                         } else {
+//                             $insert_data = array(
+//                                 "voucher_parent" => $data['voucher_parent'],
+//                                 "voucher_id" => $data['voucher_id'],
+//                                 "invoice_id" => $data['invoice_id'],
+//                                 "account_id" => $row['id'],
+//                                 "gl_group_id" => $getGroup->id,
+//                                 "date" => $data['date'],
+//                                 "amount" => $row['amount'],
+//                                 "type" => "dr",
+//                                 "create_at" =>  date('Y-m-d H:i:s'),
+//                                 "create_by" => $data['uid']
+//                             );
+
+//                         }
+
+//                     } else if ($row['type'] == 'gst') {
+//                         $insert_data = array(
+//                             "voucher_parent" => $data['voucher_parent'],
+//                             "voucher_id" => $data['voucher_id'],
+//                             "invoice_id" => $data['invoice_id'],
+//                             "account_id" => $row['id'],
+//                             "gl_group_id" => 27,
+//                             "date" => $data['date'],
+//                             "amount" => $row['amount'],
+//                             "type" => "dr",
+//                             "create_at" =>  date('Y-m-d H:i:s'),
+//                             "create_by" => $data['uid']
+//                         );
+//                     } else if ($row['type'] == 'discount') {
+//                         $getGroup = $gl_builder->whereIn('id', [10, 11, 12, 13, 14, 15])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+//                         $insert_data = array(
+//                             "voucher_parent" => $data['voucher_parent'],
+//                             "voucher_id" => $data['voucher_id'],
+//                             "invoice_id" => $data['invoice_id'],
+//                             "account_id" => $row['id'],
+//                             "gl_group_id" => $getGroup->id,
+//                             "date" => $data['date'],
+//                             "amount" => $row['amount'],
+//                             "create_at" =>  date('Y-m-d H:i:s'),
+//                             "create_by" => $data['uid']
+//                         );
+//                         if ($getGroup->id == 14) {
+//                             $insert_data['type'] = 'cr';
+//                         } else if ($getGroup->id == 15) {
+//                             $insert_data['type'] = 'dr';
+//                         } else if ($getGroup->id == 12) {
+//                             $insert_data['type'] = 'cr';
+//                         } else if ($getGroup->id == 13) {
+//                             $insert_data['type'] = 'dr';
+//                         } else if ($getGroup->id == 10) {
+//                             $insert_data['type'] = 'cr';
+//                         } else {
+//                             $insert_data['type'] = 'dr';
+//                         }
+//                     } else {
+//                         $getGroup = $gl_builder->whereIn('id', [7, 9])->where('FIND_IN_SET(' . $row['id'] . ',all_sub_glgroup)')->get()->getRow();
+//                         $insert_data = array(
+//                             "voucher_parent" => $data['voucher_parent'],
+//                             "voucher_id" => $data['voucher_id'],
+//                             "invoice_id" => $data['invoice_id'],
+//                             "account_id" => $row['id'],
+//                             "gl_group_id" => $getGroup->id,
+//                             "date" => $data['date'],
+//                             "create_at" =>  date('Y-m-d H:i:s'),
+//                             "create_by" => $data['uid']
+//                         );
+//                         if ($getGroup->id == 10) {
+//                             $insert_data['type'] = 'dr';
+//                         } else {
+//                             $insert_data['type'] = 'cr';
+//                         }
+//                     }
+
+//                 } else {
+//                     if ($data['voucher_parent'] == 5) {
+//                         $getGroup = $gl_builder->whereIn('id', [26, 35])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+//                     } else if ($data['voucher_parent'] == 6 || $data['voucher_parent'] == 7) {
+//                         if ($row['type'] == "cr" && $data['voucher_parent'] == 6) {
+//                             $getGroup = $gl_builder->whereIn('id', [26, 35])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+//                         } else if ($row['type'] == "dr" && $data['voucher_parent'] == 7) {
+//                             $getGroup = $gl_builder->whereIn('id', [26, 35])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+//                         } else {
+//                             $getGroup = $gl_builder->whereIn('id', [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 35])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+//                         }
+//                     } else {
+//                         $getGroup = $gl_builder->whereIn('id', [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 35])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+//                     }
+
+//                     $insert_data = array(
+//                         "voucher_id" => $data['voucher_id'],
+//                         "account_id" => $row['id'],
+//                         "invoice_id" => $data['invoice_id'],
+//                         "date" => $data['date'],
+//                         "amount" => $row['amount'],
+//                         "type" => $row['type'],
+//                         "gl_group_id" =>  $getGroup->id,
+//                         "create_at" =>  date('Y-m-d H:i:s'),
+//                         "create_by" => $data['uid']
+//                     );
+//                 }
+//                 $builder->insert($insert_data);
+//             }
+//         }
+
+//         return true;
+//     } catch (\Exception $e) {
+//         return false;
+//     }
+// }
+function insert_update_transaction($data) {
+  
+    try {
+        $db = \Config\Database::connect();
+        if (session('DataSource')) {
+            $db->setDatabase(session('DataSource'));
+        }
+        $builder = $db->table('transaction');
+        $acc_builder = $db->table('account');
+        $gl_builder = $db->table('gl_group_summary');
+        $accounts = $data['accounts'];
+
+        $getTransactions = $builder->where(array("invoice_id" => $data['invoice_id'], "voucher_parent" => $data['voucher_parent']))->select('group_concat(account_id) as acc_ids')->groupBy('invoice_id')->get()->getRow();
+
+        $acc_ids = array();
+        if ($getTransactions) {
+            $acc_ids = explode(',', $getTransactions->acc_ids);
+            $new_acc_ids = array();
+            foreach ($accounts as $row) {
+                $new_acc_ids[] = $row['id'];
+            }
+            $result = array_diff($acc_ids, $new_acc_ids);
+
+            if (!empty($result)) {
+                $builder->where(array("invoice_id" => $data['invoice_id'], "voucher_parent" => $data['voucher_parent']));
+                $builder->whereIn("account_id", $result);
+                $builder->update(array('is_delete' => 1));
+            }
+        }
+
+        foreach ($accounts as $row) {
+
+            $getAccount = $acc_builder->where('id', $row['id'])->get()->getRow();
+            if (in_array($row['id'], $acc_ids)) {
+                $where = array("invoice_id" => $data['invoice_id'], "voucher_parent" => $data['voucher_parent'], "account_id" => $row['id']);
+                if ($data['voucher_parent'] == 1 || $data['voucher_parent'] == 4) {
+                    $update_data = array(
+                        "voucher_id" => $data['voucher_id'],
+                        "account_id" => $row['id'],
+                        "date" => $data['date'],
+                        "amount" => $row['amount'],
+                        "update_at" =>  date('Y-m-d H:i:s'),
+                        "update_by" => $data['uid']
+                    );
+                    if ($row['type'] == 'ledger') {
+                        $update_data['gl_group_id'] = 14;
+                        $update_data['cr'] = $row['amount'];
+                    } else if ($row['type'] == 'account') {
+                        if ($data['voucher_parent'] == 1) {
+                            $update_data['gl_group_id'] = 24;
+                        } else {
+                            $update_data['gl_group_id'] = 21;
+                        }
+                        $update_data['type'] = 'cr';
+                    } else if ($row['type'] == 'particular') {
+                        $getGroup = $gl_builder->whereIn('id', [7, 9, 10, 11, 12, 14, 15, 16, 17])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+                        $update_data['gl_group_id'] = $getGroup->id;
+                        if (in_array($getGroup->id, [7, 10, 12, 14, 17])) {
+                            // 11,15,16,
+                            $update_data['type'] = 'cr';
+                        } else {
+                            $update_data['type'] = 'dr';
+                        }
+                    } else if ($row['type'] == 'gst') {
+                        $update_data['gl_group_id'] =  27;
+                        $update_data['type'] = 'cr';
+                    } else if ($row['type'] == 'discount') {
+                        $getGroup = $gl_builder->whereIn('id', [10, 11, 12, 13, 14, 15])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+                        $update_data['gl_group_id'] = $getGroup->id;
+                        if ($getGroup->id == 14) {
+                            $update_data['type'] = 'dr';
+                        } else if ($getGroup->id == 15) {
+                            $update_data['type'] = 'cr';
+                        } else if ($getGroup->id == 12) {
+                            $update_data['type'] = 'dr';
+                        } else if ($getGroup->id == 13) {
+                            $update_data['type'] = 'cr';
+                        } else if ($getGroup->id == 10) {
+                            $update_data['type'] = 'dr';
+                        } else {
+                            $update_data['type'] = 'cr';
+                        }
+                    } else {
+                        $getGroup = $gl_builder->whereIn('id', [10, 11, 12, 14, 15, 16, 17])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+                        $update_data['gl_group_id'] = $getGroup->id;
+                        if (in_array($getGroup->id, [10, 12, 14, 17])) {
+                            // 11,15,16,
+                            $update_data['type'] = 'cr';
+                        } else {
+                            $update_data['type'] = 'dr';
+                        }
+                    }
+                    $builder->where($where);
+                    $builder->update($update_data);
+                } else if ($data['voucher_parent'] == 2 || $data['voucher_parent'] == 3) {
+                    $update_data = array(
+                        "voucher_id" => $data['voucher_id'],
+                        "account_id" => $row['id'],
+                        "date" => $data['date'],
+                        "amount" => $row['amount'],
+                        "update_at" =>  date('Y-m-d H:i:s'),
+                        "update_by" => $data['uid']
+                    );
+                    if ($row['type'] == 'ledger') {
+                        $update_data['gl_group_id'] = 14;
+                        $update_data['dr'] = $row['amount'];
+                    } else if ($row['type'] == 'account') {
+                        if ($data['voucher_parent'] == 1) {
+                            $update_data['gl_group_id'] = 24;
+                        } else {
+                            $update_data['gl_group_id'] = 21;
+                        }
+                        $update_data['type'] = 'dr';
+                    } else if ($row['type'] == 'particular') {
+                        $getGroup = $gl_builder->whereIn('id', [7, 9, 10, 11, 12, 14, 15, 16, 17])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+                        $update_data['gl_group_id'] = $getGroup->id;
+                        if (!in_array($getGroup->id, [7, 10, 12, 14, 17])) {
+                            // 11,15,16,
+                            $update_data['type'] = 'dr';
+                        } else {
+                            $update_data['type'] = 'cr';
+                        }
+                    } else if ($row['type'] == 'gst') {
+                        $update_data['gl_group_id'] =  27;
+                        $update_data['type'] = 'dr';
+                    } else if ($row['type'] == 'discount') {
+                        $getGroup = $gl_builder->whereIn('id', [10, 11, 12, 13, 14, 15])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+                        $update_data['gl_group_id'] = $getGroup->id;
+                        if ($getGroup->id == 14) {
+                            $update_data['type'] = 'cr';
+                        } else if ($getGroup->id == 15) {
+                            $update_data['type'] = 'dr';
+                        } else if ($getGroup->id == 12) {
+                            $update_data['type'] = 'cr';
+                        } else if ($getGroup->id == 13) {
+                            $update_data['type'] = 'dr';
+                        } else if ($getGroup->id == 10) {
+                            $update_data['type'] = 'cr';
+                        } else {
+                            $update_data['type'] = 'dr';
+                        }
+                    } else {
+                        $getGroup = $gl_builder->whereIn('id', [10, 11, 12, 14, 15, 16, 17])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+                        $update_data['gl_group_id'] = $getGroup->id;
+                        if (!in_array($getGroup->id, [10, 12, 14, 17])) {
+                            // 11,15,16,
+                            $update_data['type'] = 'dr';
+                        } else {
+                            $update_data['type'] = 'cr';
+                        }
+                    }
+                } else {
+                    if ($data['voucher_parent'] == 5) {
+                        $getGroup = $gl_builder->whereIn('id', [26, 35])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+                    } else if ($data['voucher_parent'] == 6 || $data['voucher_parent'] == 7) {
+                        if ($row['type'] == "cr" && $data['voucher_parent'] == 6) {
+                            $getGroup = $gl_builder->whereIn('id', [26, 35])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+                        } else if ($row['type'] == "dr" && $data['voucher_parent'] == 7) {
+                            $getGroup = $gl_builder->whereIn('id', [26, 35])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+                        } else {
+                            $getGroup = $gl_builder->whereIn('id', [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 35])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+                        }
+                    } else {
+                        $getGroup = $gl_builder->whereIn('id', [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 35])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+                    }
+                    $update_data = array(
+                        "voucher_id" => $data['voucher_id'],
+                        "account_id" => $row['id'],
+                        "invoice_id" => $data['invoice_id'],
+                        "date" => $data['date'],
+                        "amount" => $row['amount'],
+                        "type" => $row['type'],
+                        "gl_group_id" =>  $getGroup->id,
+                        "update_at" =>  date('Y-m-d H:i:s'),
+                        "update_by" => $data['uid']
+                    );
+                    $builder->where($where);
+                    $builder->update($update_data);
+                }
+            } else {
+                $insert_data = array();
+                if ($data['voucher_parent'] == 1 || $data['voucher_parent'] == 4) {
+                    if ($row['type'] == 'ledger') {
+                        $insert_data = array(
+                            "voucher_parent" => $data['voucher_parent'],
+                            "voucher_id" => $data['voucher_id'],
+                            "invoice_id" => $data['invoice_id'],
+                            "account_id" => $row['id'],
+                            "gl_group_id" => 14,
+                            "date" => $data['date'],
+                            "amount" => $row['amount'],
+                            "type" => "cr",
+                            "create_at" =>  date('Y-m-d H:i:s'),
+                            "create_by" => $data['uid']
+                        );
+                    } else if ($row['type'] == 'account') {
+                        $insert_data = array(
+                            "voucher_parent" => $data['voucher_parent'],
+                            "voucher_id" => $data['voucher_id'],
+                            "invoice_id" => $data['invoice_id'],
+                            "account_id" => $row['id'],
+                            "gl_group_id" => $data['voucher_parent'] == 1 ? 24 : 21,
+                            "date" => $data['date'],
+                            "amount" => $row['amount'],
+                            "type" => "cr",
+                            "create_at" =>  date('Y-m-d H:i:s'),
+                            "create_by" => $data['uid']
+                        );
+                    } else if ($row['type'] == 'particular') {
+                        $getGroup = $gl_builder->whereIn('id', [7, 9, 10, 11, 12, 14, 15, 16, 17])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+                        if (in_array($getGroup->id, [7, 10, 12, 14, 17])) {
+                            $insert_data = array(
+                                "voucher_parent" => $data['voucher_parent'],
+                                "voucher_id" => $data['voucher_id'],
+                                "invoice_id" => $data['invoice_id'],
+                                "account_id" => $row['id'],
+                                "gl_group_id" => $getGroup->id,
+                                "date" => $data['date'],
+                                "amount" => $row['amount'],
+                                "type" => "cr",
+                                "create_at" =>  date('Y-m-d H:i:s'),
+                                "create_by" => $data['uid']
+                            );
+                        } else {
+                            $insert_data = array(
+                                "voucher_parent" => $data['voucher_parent'],
+                                "voucher_id" => $data['voucher_id'],
+                                "invoice_id" => $data['invoice_id'],
+                                "account_id" => $row['id'],
+                                "gl_group_id" => $getGroup->id,
+                                "date" => $data['date'],
+                                "amount" => $row['amount'],
+                                "type" => "dr",
+                                "create_at" =>  date('Y-m-d H:i:s'),
+                                "create_by" => $data['uid']
+                            );
+                        }
+                    } else if ($row['type'] == 'gst') {
+                        $insert_data = array(
+                            "voucher_parent" => $data['voucher_parent'],
+                            "voucher_id" => $data['voucher_id'],
+                            "invoice_id" => $data['invoice_id'],
+                            "account_id" => $row['id'],
+                            "gl_group_id" => 27,
+                            "date" => $data['date'],
+                            "amount" => $row['amount'],
+                            "type" => "cr",
+                            "create_at" =>  date('Y-m-d H:i:s'),
+                            "create_by" => $data['uid']
+                        );
+                    } else if ($row['type'] == 'discount') {
+                        $getGroup = $gl_builder->whereIn('id', [10, 11, 12, 13, 14, 15])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+                        $insert_data = array(
+                            "voucher_parent" => $data['voucher_parent'],
+                            "voucher_id" => $data['voucher_id'],
+                            "invoice_id" => $data['invoice_id'],
+                            "account_id" => $row['id'],
+                            "gl_group_id" => $getGroup->id,
+                            "date" => $data['date'],
+                            "amount" => $row['amount'],
+                            "create_at" =>  date('Y-m-d H:i:s'),
+                            "create_by" => $data['uid']
+                        );
+                        if ($getGroup->id == 14) {
+                            $insert_data['type'] = 'dr';
+                        } else if ($getGroup->id == 15) {
+                            $insert_data['type'] = 'cr';
+                        } else if ($getGroup->id == 12) {
+                            $insert_data['type'] = 'dr';
+                        } else if ($getGroup->id == 13) {
+                            $insert_data['type'] = 'cr';
+                        } else if ($getGroup->id == 10) {
+                            $insert_data['type'] = 'dr';
+                        } else {
+                            $insert_data['type'] = 'cr';
+                        }
+                    } else {
+                        $getGroup = $gl_builder->whereIn('id', [10, 11, 12, 14, 15, 16, 17])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+                        $insert_data = array(
+                            "voucher_parent" => $data['voucher_parent'],
+                            "voucher_id" => $data['voucher_id'],
+                            "invoice_id" => $data['invoice_id'],
+                            "account_id" => $row['id'],
+                            "gl_group_id" => $getGroup->id,
+                            "date" => $data['date'],
+                            "amount" => $row['amount'],
+                            "create_at" =>  date('Y-m-d H:i:s'),
+                            "create_by" => $data['uid']
+                        );
+                        if (in_array($getGroup->id, [10, 12, 14, 17])) {
+                            $insert_data['type'] = 'cr';
+                        } else {
+                            $insert_data['type'] = 'dr';
+                        }
+                    }
+                } else if ($data['voucher_parent'] == 2 || $data['voucher_parent'] == 3) {
+                    if ($row['type'] == 'ledger') {
+                        $insert_data = array(
+                            "voucher_parent" => $data['voucher_parent'],
+                            "voucher_id" => $data['voucher_id'],
+                            "invoice_id" => $data['invoice_id'],
+                            "account_id" => $row['id'],
+                            "gl_group_id" => 14,
+                            "date" => $data['date'],
+                            "amount" => $row['amount'],
+                            "type" => "dr",
+                            "create_at" =>  date('Y-m-d H:i:s'),
+                            "create_by" => $data['uid']
+                        );
+                    } else if ($row['type'] == 'account') {
+                        $insert_data = array(
+                            "voucher_parent" => $data['voucher_parent'],
+                            "voucher_id" => $data['voucher_id'],
+                            "invoice_id" => $data['invoice_id'],
+                            "account_id" => $row['id'],
+                            "gl_group_id" => $data['voucher_parent'] == 1 ? 24 : 21,
+                            "date" => $data['date'],
+                            "amount" => $row['amount'],
+                            "type" => "dr",
+                            "create_at" =>  date('Y-m-d H:i:s'),
+                            "create_by" => $data['uid']
+                        );
+                    } else if ($row['type'] == 'particular') {
+                        $getGroup = $gl_builder->whereIn('id', [7, 9, 10, 11, 12, 14, 15, 16, 17])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+                        if (!in_array($getGroup->id, [7, 10, 12, 14, 17])) {
+                            $insert_data = array(
+                                "voucher_parent" => $data['voucher_parent'],
+                                "voucher_id" => $data['voucher_id'],
+                                "invoice_id" => $data['invoice_id'],
+                                "account_id" => $row['id'],
+                                "gl_group_id" => $getGroup->id,
+                                "date" => $data['date'],
+                                "type" => "cr",
+                                "create_at" =>  date('Y-m-d H:i:s'),
+                                "create_by" => $data['uid']
+                            );
+                        } else {
+                            $insert_data = array(
+                                "voucher_parent" => $data['voucher_parent'],
+                                "voucher_id" => $data['voucher_id'],
+                                "invoice_id" => $data['invoice_id'],
+                                "account_id" => $row['id'],
+                                "gl_group_id" => $getGroup->id,
+                                "date" => $data['date'],
+                                "amount" => $row['amount'],
+                                "type" => "dr",
+                                "create_at" =>  date('Y-m-d H:i:s'),
+                                "create_by" => $data['uid']
+                            );
+                        }
+                    } else if ($row['type'] == 'gst') {
+                        $insert_data = array(
+                            "voucher_parent" => $data['voucher_parent'],
+                            "voucher_id" => $data['voucher_id'],
+                            "invoice_id" => $data['invoice_id'],
+                            "account_id" => $row['id'],
+                            "gl_group_id" => 27,
+                            "date" => $data['date'],
+                            "amount" => $row['amount'],
+                            "type" => "dr",
+                            "create_at" =>  date('Y-m-d H:i:s'),
+                            "create_by" => $data['uid']
+                        );
+                    } else if ($row['type'] == 'discount') {
+                        $getGroup = $gl_builder->whereIn('id', [10, 11, 12, 13, 14, 15])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+                        $insert_data = array(
+                            "voucher_parent" => $data['voucher_parent'],
+                            "voucher_id" => $data['voucher_id'],
+                            "invoice_id" => $data['invoice_id'],
+                            "account_id" => $row['id'],
+                            "gl_group_id" => $getGroup->id,
+                            "date" => $data['date'],
+                            "amount" => $row['amount'],
+                            "create_at" =>  date('Y-m-d H:i:s'),
+                            "create_by" => $data['uid']
+                        );
+                        if ($getGroup->id == 14) {
+                            $insert_data['type'] = 'cr';
+                        } else if ($getGroup->id == 15) {
+                            $insert_data['type'] = 'dr';
+                        } else if ($getGroup->id == 12) {
+                            $insert_data['type'] = 'cr';
+                        } else if ($getGroup->id == 13) {
+                            $insert_data['type'] = 'dr';
+                        } else if ($getGroup->id == 10) {
+                            $insert_data['type'] = 'cr';
+                        } else {
+                            $insert_data['type'] = 'dr';
+                        }
+                    } else {
+                        $getGroup = $gl_builder->whereIn('id', [10, 11, 12, 14, 15, 16, 17])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+                        $insert_data = array(
+                            "voucher_parent" => $data['voucher_parent'],
+                            "voucher_id" => $data['voucher_id'],
+                            "invoice_id" => $data['invoice_id'],
+                            "account_id" => $row['id'],
+                            "gl_group_id" => $getGroup->id,
+                            "date" => $data['date'],
+                            "amount" => $row['amount'],
+                            "create_at" =>  date('Y-m-d H:i:s'),
+                            "create_by" => $data['uid']
+                        );
+                        if (!in_array($getGroup->id, [10, 12, 14, 17])) {
+                            $insert_data['type'] = 'cr';
+                        } else {
+                            $insert_data['type'] = 'dr';
+                        }
+                    }
+                } else {
+                    if ($data['voucher_parent'] == 5) {
+                        $getGroup = $gl_builder->whereIn('id', [26, 35])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+                    } else if ($data['voucher_parent'] == 6 || $data['voucher_parent'] == 7) {
+                        if ($row['type'] == "cr" && $data['voucher_parent'] == 6) {
+                            $getGroup = $gl_builder->whereIn('id', [26, 35])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+                        } else if ($row['type'] == "dr" && $data['voucher_parent'] == 7) {
+                            $getGroup = $gl_builder->whereIn('id', [26, 35])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+                        } else {
+                            $getGroup = $gl_builder->whereIn('id', [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 35])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+                        }
+                    } else {
+                        $getGroup = $gl_builder->whereIn('id', [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 35])->where('FIND_IN_SET(' . $getAccount->gl_group . ',all_sub_glgroup)')->get()->getRow();
+                    }
+
+                    $insert_data = array(
+                        "voucher_id" => $data['voucher_id'],
+                        "account_id" => $row['id'],
+                        "invoice_id" => $data['invoice_id'],
+                        "date" => $data['date'],
+                        "amount" => $row['amount'],
+                        "type" => $row['type'],
+                        "gl_group_id" =>  $getGroup->id,
+                        "create_at" =>  date('Y-m-d H:i:s'),
+                        "create_by" => $data['uid']
+                    );
+                }
+
+                $builder->insert($insert_data);
+            }
+        }
+
+        return true;
+    } catch (\Exception $e) {
+        return false;
+    }
+}
+
+
+
+function gl_list($abc, $test = array()) {
+    $db = \Config\Database::connect();
+    $db->setDatabase(session('DataSource'));
+    $builder = $db->table('gl_group');
+    $builder = $builder->select('GROUP_CONCAT(id) as ids');
+    $builder->whereIn('parent', $abc);
+    $query = $builder->get();
+    $getglids = $query->getRow();
+
+    $xyz = $test;
+    if ($getglids->ids != '') {
+
+        $bijo = explode(',', $getglids->ids);
+        $xyz = array_merge($xyz, $bijo);
+
+        $xyz = gl_list($bijo, $xyz);
+    }
+
+    return $xyz;
+}
+
+function validateDate($date, $format = 'Y-m-d') {
     $d = DateTime::createFromFormat($format, $date);
-    echo 'date : ';print_r($date);exit;
+    echo 'date : ';
+    print_r($date);
+    exit;
 
     // The Y ( 4 digits year ) returns TRUE for any integer with any number of digits so changing the comparison from == to === fixes the issue.
     return $d && $d->format($format) === $date;
 }
 
-function db_date($date){
-   
-        if(!empty($date) && $date != '0000-00-00'){
+function db_date($date) {
 
-            $dt = date_create($date);
-            $year = $dt->format("Y");
-            $ret_date = date_format($dt,'Y-m-d');
+    if (!empty($date) && $date != '0000-00-00') {
 
-        }else{
-            $ret_date = '';
+        $dt = date_create($date);
+        $year = $dt->format("Y");
+        $ret_date = date_format($dt, 'Y-m-d');
+    } else {
+        $ret_date = '';
+    }
+
+    return $ret_date;
+}
+
+function user_date($date) {
+
+    if (!empty($date) && $date != '0000-00-00') {
+        $dt = date_create($date);
+
+        $ret_date = date_format($dt, 'd-m-Y');
+    } else {
+        $ret_date = '';
+    }
+
+    return $ret_date;
+}
+
+function to_time_ago($time) {
+
+    $diff = time() - $time;
+    if ($diff < 1) {
+        return 'less than 1 second ago';
+    }
+    $time_rules = array(
+        12 * 30 * 24 * 60 * 60 => 'year',
+        30 * 24 * 60 * 60     => 'month',
+        24 * 60 * 60         => 'day',
+        60 * 60                 => 'hour',
+        60                     => 'minute',
+        1                     => 'second'
+    );
+    foreach ($time_rules as $secs => $str) {
+        $div = $diff / $secs;
+        if ($div >= 1) {
+            $t = round($div);
+            return $t . ' ' . $str . ($t > 1 ? 's' : '') . ' ago';
         }
-  
-    return $ret_date;
+    }
 }
 
-function user_date($date){  
-  
-        if(!empty($date) && $date != '0000-00-00'){
-            $dt = date_create($date);
-            
-            $ret_date = date_format($dt,'d-m-Y');
-        }else{
-            $ret_date = '';
-        }   
-   
-    return $ret_date;
-}
-
-function to_time_ago( $time ) { 
-    
-	$diff = time() - $time; 
-	if( $diff < 1 ) { 
-		return 'less than 1 second ago'; 
-	} 
-	$time_rules = array ( 
-		12 * 30 * 24 * 60 * 60 => 'year', 
-		30 * 24 * 60 * 60	 => 'month', 
-		24 * 60 * 60		 => 'day', 
-		60 * 60				 => 'hour', 
-		60					 => 'minute', 
-		1					 => 'second'
-	);
-	foreach( $time_rules as $secs => $str ) { 	
-		$div = $diff / $secs; 
-		if( $div >= 1 ) { 		
-			$t = round( $div ); 	
-			return $t . ' ' . $str . ( $t > 1 ? 's' : '' ) . ' ago'; 
-		} 
-	} 
-} 
-
-function getManagedData($tablename, $dt_col, $dt_search, $where, $dt_order = array()){ //print_r($aColumns);exit;
+function getManagedData($tablename, $dt_col, $dt_search, $where, $dt_order = array()) { //print_r($aColumns);exit;
     $db = \Config\Database::connect();
-    
-    if(session('DataSource'))
-    {
+
+    if (session('DataSource')) {
         $db->setDatabase(session('DataSource'));
     }
     $request = \Config\Services::request();
@@ -164,7 +1017,7 @@ function getManagedData($tablename, $dt_col, $dt_search, $where, $dt_order = arr
     $sLimit = "";
     $iDisplayStart = $post['start'];
     $iDisplayLength = $post['length'];
-    
+
     if (isset($iDisplayStart) && $iDisplayLength != '-1') {
         $sLimit = "LIMIT " . intval($iDisplayStart) . ", " .
             intval($iDisplayLength);
@@ -258,7 +1111,7 @@ function getManagedData($tablename, $dt_col, $dt_search, $where, $dt_order = arr
     //$iFilteredTotal
 }
 
-function MakeThumb($source_path, $target_path, $width, $height, $defalusize = '600'){
+function MakeThumb($source_path, $target_path, $width, $height, $defalusize = '600') {
     if ($height == $defalusize && $width == $defalusize) {
         $height = $defalusize;
         $width = $defalusize;
@@ -282,27 +1135,27 @@ function MakeThumb($source_path, $target_path, $width, $height, $defalusize = '6
         ->save($target_path);
 }
 
-function uploadMultiFiles($fieldName, $uploadfolder){
+function uploadMultiFiles($fieldName, $uploadfolder) {
 
     $year = date('Y');
     $month = date('m');
     $day = date('d');
-    $original_path = "/" .$uploadfolder . "/" . $year . "/" . $month . "/" . $day . "/";
+    $original_path = "/" . $uploadfolder . "/" . $year . "/" . $month . "/" . $day . "/";
 
     if (!file_exists(getcwd() . $original_path)) {
         mkdir(getcwd() . $original_path, 0777, true);
     }
-    
+
     $files = $_FILES;
     $randno = uniqid();
     $name = $files[$fieldName]['name'];
-    $allowed = array('csv','xlsx','xls');
+    $allowed = array('csv', 'xlsx', 'xls');
     $ext = pathinfo($name, PATHINFO_EXTENSION);
 
     if (!in_array($ext, $allowed)) {
         $response['errors'] = 'only CSV file Allowed';
         $response['is_success'] = 0;
-    } else{
+    } else {
 
         $pathinfo = pathinfo($name);
         $imageName = $pathinfo['filename'] . '_' . $randno . "." . $pathinfo['extension'];
@@ -313,7 +1166,7 @@ function uploadMultiFiles($fieldName, $uploadfolder){
 
         $targetFile = getcwd() . $original_path . $imageName;
         $tempFile = $_FILES[$fieldName]['tmp_name'];
-        if(move_uploaded_file($tempFile, $targetFile)){
+        if (move_uploaded_file($tempFile, $targetFile)) {
             $response['fileName']  = $original_path . $imageName;
             $response['is_success'] = 1;
         } else {
@@ -324,23 +1177,24 @@ function uploadMultiFiles($fieldName, $uploadfolder){
 
     return $response;
 }
-function get_shortcutkey_data($key_char)
-{
-    echo '<pre>';Print_r($key_char);exit;
-    
+
+function get_shortcutkey_data($key_char) {
+    echo '<pre>';
+    Print_r($key_char);
+    exit;
 }
 // ************** start report helper function*******************//
-function inword($number)
-{
+function inword($number) {
     //$number = 190908100.25;
-    
+
     $no = floor($number);
     $point = round($number - $no, 2) * 100;
     $hundred = null;
     $digits_1 = strlen($no);
     $i = 0;
     $str = array();
-    $words = array('0' => '', '1' => 'one', '2' => 'two',
+    $words = array(
+        '0' => '', '1' => 'one', '2' => 'two',
         '3' => 'three', '4' => 'four', '5' => 'five', '6' => 'six',
         '7' => 'seven', '8' => 'eight', '9' => 'nine',
         '10' => 'ten', '11' => 'eleven', '12' => 'twelve',
@@ -349,42 +1203,40 @@ function inword($number)
         '18' => 'eighteen', '19' => 'nineteen', '20' => 'twenty',
         '30' => 'thirty', '40' => 'forty', '50' => 'fifty',
         '60' => 'sixty', '70' => 'seventy',
-        '80' => 'eighty', '90' => 'ninety');
+        '80' => 'eighty', '90' => 'ninety'
+    );
     $digits = array('', 'hundred', 'thousand', 'lakh', 'crore');
     while ($i < $digits_1) {
         $divider = ($i == 2) ? 10 : 100;
         $number = floor($no % $divider);
         $no = floor($no / $divider);
         $i += ($divider == 10) ? 1 : 2;
-          
+
         if ($number) {
             $plural = (($counter = count($str)) && $number > 9) ? 's' : null;
             $hundred = ($counter == 1 && $str[0]) ? ' and ' : null;
-            $str[] = ($number < 21) ? $words[$number] ." " . $digits[$counter] . $plural . " " . $hundred : $words[floor($number / 10) * 10] . " " . $words[$number % 10] . " ". $digits[$counter] . $plural . " " . $hundred;
+            $str[] = ($number < 21) ? $words[$number] . " " . $digits[$counter] . $plural . " " . $hundred : $words[floor($number / 10) * 10] . " " . $words[$number % 10] . " " . $digits[$counter] . $plural . " " . $hundred;
         } else {
             $str[] = null;
         }
-
     }
     $str = array_reverse($str);
     $result = implode('', $str);
     $points = ($point) ?
-    "." . $words[$point / 10] . " " .
-    $words[$point = $point % 10] : '';
-    
-    if($result == ''){
+        "." . $words[$point / 10] . " " .
+        $words[$point = $point % 10] : '';
+
+    if ($result == '') {
         $result = "ZERO ";
     }
-    if($points == ''){
+    if ($points == '') {
         $points = "ZERO ";
     }
     $data = $result . "Rupees  " . $points . " Paise";
     return $data;
-
 }
 //use in bank
-function get_reconsilation_data($account, $start_date = '', $end_date = '')
-{
+function get_reconsilation_data($account, $start_date = '', $end_date = '') {
 
     $db = \Config\Database::connect();
     if (session('DataSource')) {
@@ -478,7 +1330,7 @@ function get_reconsilation_data($account, $start_date = '', $end_date = '')
 
     $bankcredit_total = 0;
     $bankdebit_total = 0;
-    
+
     foreach ($getdata['bank'] as $row) {
         if ($row['mode'] == 'Receipt') {
             $bankdebit_total = $bankdebit_total + $row["amount"];
@@ -495,8 +1347,8 @@ function get_reconsilation_data($account, $start_date = '', $end_date = '')
 
     return $getdata;
 }
-function get_unreconsilation_data($account, $start_date = '', $end_date = '')
-{
+
+function get_unreconsilation_data($account, $start_date = '', $end_date = '') {
 
     $db = \Config\Database::connect();
     if (session('DataSource')) {
@@ -558,15 +1410,15 @@ function get_unreconsilation_data($account, $start_date = '', $end_date = '')
     $builder->orderBy('bt.receipt_date', 'ASC');
     $query = $builder->get();
     $getresult1 = $query->getResultArray();
-    
+
 
     $getresult2 = array();
-    foreach($getresult1 as $row){
-        if($row['cash_type'] == 'Fund Transfer'){
+    foreach ($getresult1 as $row) {
+        if ($row['cash_type'] == 'Fund Transfer') {
 
-            if($row['account_name'] == $row['bank_account_name']){
+            if ($row['account_name'] == $row['bank_account_name']) {
                 $row['account_name'] = $row['bank_particular_name'];
-            }else{
+            } else {
                 $row['account_name'] = $row['bank_account_name'];
             }
         }
@@ -574,7 +1426,7 @@ function get_unreconsilation_data($account, $start_date = '', $end_date = '')
     }
 
     $merge_arr = array_merge($getresult, $getresult2);
-    
+
     usort($merge_arr, 'date_compare');
 
     $getdata['bank'] = $merge_arr;
@@ -607,35 +1459,33 @@ function get_unreconsilation_data($account, $start_date = '', $end_date = '')
 
     return $getdata;
 }
-function gl_group_summary_array($id)
-{
-    
+
+function gl_group_summary_array($id) {
+
     $db = \Config\Database::connect();
 
     if (session('DataSource')) {
         $db->setDatabase(session('DataSource'));
     }
     $main = get_parent_gl_group($id);
-    
+
     $parent_id = floatval($main['parent']);
-  
+
     $result = array();
-        while($parent_id > 0){  
-         
-           $get_pid = get_parent_gl_group($parent_id);
-            $result[] = $get_pid;
-            if(!empty($get_pid)){
-                $parent_id = floatval($get_pid['parent']);
-             }
-           else {
+    while ($parent_id > 0) {
+
+        $get_pid = get_parent_gl_group($parent_id);
+        $result[] = $get_pid;
+        if (!empty($get_pid)) {
+            $parent_id = floatval($get_pid['parent']);
+        } else {
             $parent_id = 0;
-           }    
         }
+    }
 
     return  $result;
 }
-function get_parent_gl_group($id)
-{
+function get_parent_gl_group($id) {
     $db = \Config\Database::connect();
 
     if (session('DataSource')) {
@@ -647,27 +1497,10 @@ function get_parent_gl_group($id)
     $builder->where('is_delete', 0);
     $query = $builder->get();
     $result = $query->getRowArray();
-    
-    
+
+
     return $result;
 }
-function array_remove_by_value($array, $value)
-{
+function array_remove_by_value($array, $value) {
     return array_values(array_diff($array, array($value)));
 }
-function get_voucher_list($type){
-    $db = \Config\Database::connect();
-    $db->setDatabase(session('DataSource')); 
-    $builder = $db->table('voucher_type');
-    $builder->select('*');
-    $builder->where('parent_id',$type);
-    $builder->where('is_delete',0);
-    $builder->where('is_active',1);
-    $query = $builder->get();
-    $result = $query->getResultArray();
-
-    
-    return $result;
-
-}
-

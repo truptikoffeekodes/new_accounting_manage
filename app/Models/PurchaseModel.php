@@ -4,10 +4,9 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class PurchaseModel extends Model
-{
-    public function insert_edit_debit($post)
-    {
+class PurchaseModel extends Model {
+    
+    public function insert_edit_debit($post) {
 
         $db = $this->db;
         $db->setDatabase(session('DataSource'));
@@ -67,8 +66,7 @@ class PurchaseModel extends Model
         return $msg;
     }
 
-    public function get_debit_data($get)
-    {
+    public function get_debit_data($get) {
         $dt_search = $dt_col = array(
             "id",
             "document",
@@ -122,8 +120,7 @@ class PurchaseModel extends Model
         exit;
     }
 
-    public function get_purchasechallan_data($get)
-    {
+    public function get_purchasechallan_data($get) {
         $dt_search = array(
             "pc.id",
             "pc.challan_date",
@@ -213,8 +210,7 @@ class PurchaseModel extends Model
         exit;
     }
     // update trupti 24-11-2022
-    public function insert_edit_purchasechallan($post)
-    {
+    public function insert_edit_purchasechallan($post) {
 
         if (!@$post['pid']) {
             $msg = array('st' => 'fail', 'msg' => "Please Select any Product");
@@ -613,7 +609,7 @@ class PurchaseModel extends Model
                             'sgst_amt' => $new_item[$i]['sgst_amt'],
                             'taxability' => $new_item[$i]['taxability'],
                             //update discount column 17-01-2023
-                            'total' =>$new_item[$i]['total'],
+                            'total' => $new_item[$i]['total'],
                             'item_disc' => $new_item[$i]['item_disc'],
                             'discount' => $new_item[$i]['discount'],
                             'divide_disc_item_per' => $new_item[$i]['divide_disc_item_per'],
@@ -741,15 +737,11 @@ class PurchaseModel extends Model
                 }
             }
         } else {
-
-           // echo '<pre>';Print_r($post);exit;
-
             $pdata['created_at'] = date('Y-m-d H:i:s');
             $pdata['created_by'] = session('uid');
 
             if (empty($msg)) {
                 $result = $builder->Insert($pdata);
-                // print_r($result);
                 $id = $db->insertID();
 
                 for ($i = 0; $i < count($pid); $i++) {
@@ -778,14 +770,12 @@ class PurchaseModel extends Model
                             'cgst_amt' => $post['cgst_amt'][$i],
                             'sgst_amt' => $post['sgst_amt'][$i],
                             'taxability' => $post['taxability'][$i],
-                            //update discount column 17-01-2023
                             'total' => $total,
                             'item_disc' => $post['item_disc'][$i],
                             'discount' => $post['item_discount_hidden'][$i],
                             'divide_disc_item_per' => $post['item_per'][$i],
                             'divide_disc_item_amt' => $post['divide_disc_amt'][$i],
                             'sub_total' => $sub_total,
-                            // end
                             'added_amt' => $post['item_added_amt_hidden'][$i],
                             'remark' => $post['remark'][$i],
                             'created_at' => date('Y-m-d H:i:s'),
@@ -808,14 +798,12 @@ class PurchaseModel extends Model
                             'cgst_amt' => $post['cgst_amt'][$i],
                             'sgst_amt' => $post['sgst_amt'][$i],
                             'taxability' => $post['taxability'][$i],
-                            //update discount column 17-01-2023
                             'total' => $post['price'][$i],
                             'item_disc' => 0,
                             'discount' => 0,
                             'divide_disc_item_per' => 0,
                             'divide_disc_item_amt' => 0,
                             'sub_total' => $post['price'][$i],
-                            // end
                             'added_amt' => $post['item_added_amt_hidden'][$i],
                             'remark' => $post['remark'][$i],
                             'created_at' => date('Y-m-d H:i:s'),
@@ -823,15 +811,12 @@ class PurchaseModel extends Model
                         );
                     }
                 }
-                //echo '<pre>';Print_r($itemdata);exit;
-                
 
                 $item_builder = $db->table('purchase_item');
                 $result1 = $item_builder->insertBatch($itemdata);
 
                 if ($result && $result1) {
                     $msg = array('st' => 'success', 'msg' => "Your Details Added Successfully!!!");
-                    // return view('master/account_view');
                 } else {
                     $msg = array('st' => 'fail', 'msg' => "Your Details Updated fail");
                 }
@@ -839,14 +824,14 @@ class PurchaseModel extends Model
         }
         return $msg;
     }
-    // update trupti 24-11-2022
-    public function insert_edit_purchasereturn($post)
-    {
+
+    public function insert_edit_purchasereturn($post) {
+
         if (!@$post['pid']) {
             $msg = array('st' => 'fail', 'msg' => "Please Select any Product");
             return $msg;
         }
-        //echo '<pre>';print_r($post);exit;
+
         $db = $this->db;
         $db->setDatabase(session('DataSource'));
         $builder = $db->table('purchase_return');
@@ -855,7 +840,7 @@ class PurchaseModel extends Model
         $builder->limit(1);
         $result = $builder->get();
         $result_array = $result->getRow();
-        // print_r($post);exit;
+        
         $msg = array();
 
         $pid = $post['pid'];
@@ -867,16 +852,24 @@ class PurchaseModel extends Model
         $item_disc = $post['item_disc'];
         $discount = $post['discount'];
         $cess = $post['cess'];
-       
+
         $total = 0.0;
+        $taxable_total = 0.0;
         $item_count = 0;
         $expence_count = 0;
+
+       
         for ($i = 0; $i < count($pid); $i++) {
 
             if ($post['expence'][$i] == 0) {
                 $item_count += 1;
             } else {
                 $expence_count += 1;
+                $tx_accounts[] = array(
+                    "id" =>  $pid[$i],
+                    "amount" => $post['subtotal'][$i],
+                    "type" => "particular",
+                );
             }
         }
         if ($expence_count > 0) {
@@ -901,8 +894,7 @@ class PurchaseModel extends Model
             }
             $total += $final_sub;
         }
-        // discount calculation modification update 16-01-2023
-        //$total = 0;
+        
         if ($post['disc_type'] == '%') {
             if ($post['discount'] == '') {
                 $post['discount'] = 0;
@@ -912,7 +904,7 @@ class PurchaseModel extends Model
                     $total = 0;
                     $item_total_amt = 0;
                     for ($i = 0; $i < count($pid); $i++) {
-                      
+
                         if ($post['expence'][$i] == 0) {
                             $sub = $post['qty'][$i] * $post['price'][$i];
                             $item_total_amt += $sub;
@@ -958,11 +950,14 @@ class PurchaseModel extends Model
                             $item_per = ($sub * 100) / $item_total_amt;
                             $item_disc_amt = ($item_per / 100) * $post['discount'];
                             $final_sub = $sub - $item_disc_amt;
-                          
+
+                            /*** for trading we take only taxable amount without main discount  ***/
+
+                            $taxable_total += $final_sub;
                         } else {
                             $final_sub = $post['price'][$i];
                         }
-                        
+
                         $total += $final_sub;
                     }
                 }
@@ -1014,10 +1009,20 @@ class PurchaseModel extends Model
             $cgst_acc = "";
             $sgst_acc = "";
         }
+        $tx_accounts[] = array(
+            "id" =>  $post['ledger_type'],
+            "amount" => $taxable_total,
+            "type" => "ledger",
+        );
+        $tx_accounts[] = array(
+            "id" =>  $post['account'],
+            "amount" => number_format(@$netamount, 2, '.', ''),
+            "type" => "account",
+        );
 
         $pdata = array(
             'voucher_type' => $post['voucher_type'],
-            'ledger' => $post['ledger_type'], 
+            'ledger' => $post['ledger_type'],
             'gl_group' => $post['gl_group'],
             'return_no' => $post['return_no'],
             'return_date' => $date,
@@ -1100,24 +1105,22 @@ class PurchaseModel extends Model
                 //print_r($post['pid']);exit;
                 //    echo $db->getLastQuery();exit;
                 $item_builder = $db->table('purchase_item');
-                $item_result = $item_builder->select('GROUP_CONCAT(item_id) as item_id')->where(array("parent_id" => $post['id'], "type" => 'return','expence_type'=>'', "is_delete" => 0, "is_expence" => 0))->get();
+                $item_result = $item_builder->select('GROUP_CONCAT(item_id) as item_id')->where(array("parent_id" => $post['id'], "type" => 'return', 'expence_type' => '', "is_delete" => 0, "is_expence" => 0))->get();
                 $getItem = $item_result->getRow();
 
                 $account_builder = $db->table('purchase_item');
-                $account_result = $account_builder->select('GROUP_CONCAT(item_id) as item_id')->where(array("parent_id" => $post['id'], "type" => 'return','expence_type'=>'', "is_delete" => 0, "is_expence" => 1))->get();
+                $account_result = $account_builder->select('GROUP_CONCAT(item_id) as item_id')->where(array("parent_id" => $post['id'], "type" => 'return', 'expence_type' => '', "is_delete" => 0, "is_expence" => 1))->get();
                 $getAccount = $account_result->getRow();
 
                 $account_builder = $db->table('purchase_item');
-                $discount_ac_result = $account_builder->select('item_id')->where(array("parent_id" => $post['id'], "type" => 'return', "is_delete" => 0,'expence_type'=>'discount', "is_expence" => 1))->get();
+                $discount_ac_result = $account_builder->select('item_id')->where(array("parent_id" => $post['id'], "type" => 'return', "is_delete" => 0, 'expence_type' => 'discount', "is_expence" => 1))->get();
                 $getDiscount = $discount_ac_result->getRow();
 
                 $account_builder = $db->table('purchase_item');
-                $round_ac_result = $account_builder->select('item_id')->where(array("parent_id" => $post['id'], "type" => 'return', "is_delete" => 0,'expence_type'=>'rounding_invoices', "is_expence" => 1))->get();
+                $round_ac_result = $account_builder->select('item_id')->where(array("parent_id" => $post['id'], "type" => 'return', "is_delete" => 0, 'expence_type' => 'rounding_invoices', "is_expence" => 1))->get();
                 $getRound = $round_ac_result->getRow();
-                if(!empty($getDiscount))
-                {
-                    if(isset($post['discount_acc']) AND !empty($post['discount_amount_new']))
-                    {
+                if (!empty($getDiscount)) {
+                    if (isset($post['discount_acc']) and !empty($post['discount_amount_new'])) {
                         $disc_data = array(
                             'item_id' => $post['discount_acc'],
                             'rate' => $post['discount_amount_new'],
@@ -1126,21 +1129,22 @@ class PurchaseModel extends Model
                             'update_at' => date('Y-m-d H:i:s'),
                             'update_by' => session('uid'),
                         );
-                        $account_builder->where(array('item_id' => $getDiscount->item_id, 'parent_id' => $post['id'], 'type' => 'return','expence_type'=>'discount'));
+                        $tx_accounts[] = array(
+                            "id" =>  $post['discount_acc'],
+                            "amount" => $post['discount_amount_new'],
+                            "type" => "discount",
+                        );
+                        $account_builder->where(array('item_id' => $getDiscount->item_id, 'parent_id' => $post['id'], 'type' => 'return', 'expence_type' => 'discount'));
                         $account_builder->update($disc_data);
+                     
+                    } else {
+                        $result_up = $gnmodel->update_data_table('purchase_item', array('item_id' => $getDiscount->item_id, 'parent_id' => $post['id'], 'type' => 'return', 'expence_type' => 'discount'), array('is_delete' => '1'));
                     }
-                    else
-                    {
-                        $result_up = $gnmodel->update_data_table('purchase_item', array('item_id' => $getDiscount->item_id, 'parent_id' => $post['id'], 'type' => 'return','expence_type'=>'discount'), array('is_delete' => '1'));
-                    }
-                }
-                else
-                {
-                    if(isset($post['discount_acc']) AND !empty($post['discount_amount_new']))
-                    {
+                } else {
+                    if (isset($post['discount_acc']) and !empty($post['discount_amount_new'])) {
                         $discount_itemdata[] = array(
                             'parent_id' => $post['id'],
-                            'expence_type'=>'discount',
+                            'expence_type' => 'discount',
                             'is_expence' => 1,
                             'item_id' => $post['discount_acc'],
                             'hsn' => '',
@@ -1168,15 +1172,18 @@ class PurchaseModel extends Model
                             'created_at' => date('Y-m-d H:i:s'),
                             'created_by' => session('uid'),
                         );
+                        $tx_accounts[] = array(
+                            "id" =>  $post['discount_acc'],
+                            "amount" => $post['discount_amount_new'],
+                            "type" => "discount",
+                        );
                         $item_builder = $db->table('purchase_item');
                         $result3 = $item_builder->insertBatch($discount_itemdata);
                     }
                 }
 
-                if(!empty($getRound))
-                {
-                    if(isset($post['round']) AND $post['round_diff'] != 0)
-                    {
+                if (!empty($getRound)) {
+                    if (isset($post['round']) and $post['round_diff'] != 0) {
                         $round_data = array(
                             'item_id' => $post['round'],
                             'rate' => $post['round_diff'],
@@ -1185,22 +1192,21 @@ class PurchaseModel extends Model
                             'update_at' => date('Y-m-d H:i:s'),
                             'update_by' => session('uid'),
                         );
-                        $account_builder->where(array('item_id' => $getRound->item_id, 'parent_id' => $post['id'], 'type' => 'return','expence_type'=>'rounding_invoices'));
+                        $tx_accounts[] = array(
+                            "id" =>  $post['round'],
+                            "amount" => $post['round_diff'],
+                            "type" => "roundOff",
+                        );
+                        $account_builder->where(array('item_id' => $getRound->item_id, 'parent_id' => $post['id'], 'type' => 'return', 'expence_type' => 'rounding_invoices'));
                         $account_builder->update($round_data);
+                    } else {
+                        $result_up = $gnmodel->update_data_table('purchase_item', array('item_id' => $getRound->item_id, 'parent_id' => $post['id'], 'type' => 'return', 'expence_type' => 'rounding_invoices'), array('is_delete' => '1'));
                     }
-                    else
-                    {
-                        $result_up = $gnmodel->update_data_table('purchase_item', array('item_id' => $getRound->item_id, 'parent_id' => $post['id'], 'type' => 'return','expence_type'=>'rounding_invoices'), array('is_delete' => '1'));
-             
-                    }
-                }
-                else
-                {
-                    if(isset($post['round']) AND $post['round_diff'] != 0)
-                    {
+                } else {
+                    if (isset($post['round']) and $post['round_diff'] != 0) {
                         $round_itemdata[] = array(
                             'parent_id' => $post['id'],
-                            'expence_type'=>'rounding_invoices',
+                            'expence_type' => 'rounding_invoices',
                             'is_expence' => 1,
                             'item_id' => $post['round'],
                             'hsn' => '',
@@ -1223,10 +1229,15 @@ class PurchaseModel extends Model
                             'divide_disc_item_amt' => 0,
                             'sub_total' => $post['round_diff'],
                             // end
-                            'added_amt' =>'',
+                            'added_amt' => '',
                             'remark' => '',
                             'created_at' => date('Y-m-d H:i:s'),
                             'created_by' => session('uid'),
+                        );
+                        $tx_accounts[] = array(
+                            "id" =>  $post['round'],
+                            "amount" => $post['round_diff'],
+                            "type" => "roundOff",
                         );
                         $item_builder = $db->table('purchase_item');
                         $result2 = $item_builder->insertBatch($round_itemdata);
@@ -1261,16 +1272,16 @@ class PurchaseModel extends Model
                         $item['cgst_amt'] = $post['cgst_amt'][$i];
                         $item['sgst_amt'] = $post['sgst_amt'][$i];
                         $item['taxability'] = $post['taxability'][$i];
-                          //update discount column 17-01-2023
-                          $item['total'] = $total;
-                          $item['item_disc'] = $post['item_disc'][$i];
-                          $item['discount'] = $post['item_discount_hidden'][$i];
-                          $item['divide_disc_item_per'] = @$post['item_per'][$i];
-                          $item['divide_disc_item_amt'] = @$post['divide_disc_amt'][$i];
-                          $item['sub_total'] = $sub_total;
-                          // end
-                          $item['added_amt'] = $post['item_added_amt_hidden'][$i];
-                          $item['remark'] = $post['remark'][$i];
+                        //update discount column 17-01-2023
+                        $item['total'] = $total;
+                        $item['item_disc'] = $post['item_disc'][$i];
+                        $item['discount'] = $post['item_discount_hidden'][$i];
+                        $item['divide_disc_item_per'] = @$post['item_per'][$i];
+                        $item['divide_disc_item_amt'] = @$post['divide_disc_amt'][$i];
+                        $item['sub_total'] = $sub_total;
+                        // end
+                        $item['added_amt'] = $post['item_added_amt_hidden'][$i];
+                        $item['remark'] = $post['remark'][$i];
                         $new_item[] = $item;
                         $new_itempid[] = $post['pid'][$i];
                     } else {
@@ -1286,16 +1297,16 @@ class PurchaseModel extends Model
                         $item['cgst_amt'] = $post['cgst_amt'][$i];
                         $item['sgst_amt'] = $post['sgst_amt'][$i];
                         $item['taxability'] = $post['taxability'][$i];
-                         //update discount column 17-01-2023
-                         $item['total'] = $post['price'][$i];
-                         $item['item_disc'] = 0;
-                         $item['discount'] = 0;
-                         $item['divide_disc_item_per'] = 0;
-                         $item['divide_disc_item_amt'] = 0;
-                         $item['sub_total'] = $post['price'][$i];
-                         //end
-                         $item['added_amt'] = $post['item_added_amt_hidden'][$i];
-                         $item['remark'] = $post['remark'][$i];
+                        //update discount column 17-01-2023
+                        $item['total'] = $post['price'][$i];
+                        $item['item_disc'] = 0;
+                        $item['discount'] = 0;
+                        $item['divide_disc_item_per'] = 0;
+                        $item['divide_disc_item_amt'] = 0;
+                        $item['sub_total'] = $post['price'][$i];
+                        //end
+                        $item['added_amt'] = $post['item_added_amt_hidden'][$i];
+                        $item['remark'] = $post['remark'][$i];
                         $new_account[] = $item;
                         $new_accountpid[] = $post['pid'][$i];
                     }
@@ -1348,16 +1359,16 @@ class PurchaseModel extends Model
                             'igst_amt' => $new_item[$i]['igst_amt'],
                             'cgst_amt' => $new_item[$i]['cgst_amt'],
                             'sgst_amt' => $new_item[$i]['sgst_amt'],
-                             //update discount column 17-01-2023
-                             'total' =>$new_item[$i]['total'],
-                             'item_disc' => $new_item[$i]['item_disc'],
-                             'discount' => $new_item[$i]['discount'],
-                             'divide_disc_item_per' => $new_item[$i]['divide_disc_item_per'],
-                             'divide_disc_item_amt' => $new_item[$i]['divide_disc_item_amt'],
-                             'sub_total' => $new_item[$i]['sub_total'],
-                             // end
-                             'added_amt' => $new_item[$i]['added_amt'],
-                             'remark' => $new_item[$i]['remark'],
+                            //update discount column 17-01-2023
+                            'total' => $new_item[$i]['total'],
+                            'item_disc' => $new_item[$i]['item_disc'],
+                            'discount' => $new_item[$i]['discount'],
+                            'divide_disc_item_per' => $new_item[$i]['divide_disc_item_per'],
+                            'divide_disc_item_amt' => $new_item[$i]['divide_disc_item_amt'],
+                            'sub_total' => $new_item[$i]['sub_total'],
+                            // end
+                            'added_amt' => $new_item[$i]['added_amt'],
+                            'remark' => $new_item[$i]['remark'],
                             'update_at' => date('Y-m-d H:i:s'),
                             'update_by' => session('uid'),
                         );
@@ -1381,16 +1392,16 @@ class PurchaseModel extends Model
                             'cgst_amt' => $new_item[$i]['cgst_amt'],
                             'sgst_amt' => $new_item[$i]['sgst_amt'],
                             'taxability' => $new_item[$i]['taxability'],
-                             //update discount column 17-01-2023
-                             'total' => $new_item[$i]['total'],
-                             'item_disc' => $new_item[$i]['item_disc'],
-                             'discount' => $new_item[$i]['discount'],
-                             'divide_disc_item_per' => $new_item[$i]['divide_disc_item_per'],
-                             'divide_disc_item_amt' => $new_item[$i]['divide_disc_item_amt'],
-                             'sub_total' => $new_item[$i]['sub_total'],
-                             // end
-                             'added_amt' => $new_item[$i]['added_amt'],
-                             'remark' => $new_item[$i]['remark'],
+                            //update discount column 17-01-2023
+                            'total' => $new_item[$i]['total'],
+                            'item_disc' => $new_item[$i]['item_disc'],
+                            'discount' => $new_item[$i]['discount'],
+                            'divide_disc_item_per' => $new_item[$i]['divide_disc_item_per'],
+                            'divide_disc_item_amt' => $new_item[$i]['divide_disc_item_amt'],
+                            'sub_total' => $new_item[$i]['sub_total'],
+                            // end
+                            'added_amt' => $new_item[$i]['added_amt'],
+                            'remark' => $new_item[$i]['remark'],
                             'update_at' => date('Y-m-d H:i:s'),
                             'update_by' => session('uid'),
                         );
@@ -1499,7 +1510,7 @@ class PurchaseModel extends Model
                             'parent_id' => $id,
                             'is_expence' => 0,
                             'item_id' => $post['pid'][$i],
-                             'hsn' => @$post['hsn'][$i] ? $post['hsn'][$i]  : '',
+                            'hsn' => @$post['hsn'][$i] ? $post['hsn'][$i]  : '',
                             'type' => 'return',
                             'uom' => $post['uom'][$i],
                             'rate' => $post['price'][$i],
@@ -1511,16 +1522,16 @@ class PurchaseModel extends Model
                             'cgst_amt' => $post['cgst_amt'][$i],
                             'sgst_amt' => $post['sgst_amt'][$i],
                             'taxability' => $post['taxability'][$i],
-                              //update discount column 17-01-2023
-                              'total' => $total,
-                              'item_disc' => $post['item_disc'][$i],
-                              'discount' => $post['item_discount_hidden'][$i],
-                              'divide_disc_item_per' => $post['item_per'][$i],
-                              'divide_disc_item_amt' => $post['divide_disc_amt'][$i],
-                              'sub_total' => $sub_total,
-                              // end
-                              'added_amt' => $post['item_added_amt_hidden'][$i],
-                              'remark' => $post['remark'][$i],
+                            //update discount column 17-01-2023
+                            'total' => $total,
+                            'item_disc' => $post['item_disc'][$i],
+                            'discount' => $post['item_discount_hidden'][$i],
+                            'divide_disc_item_per' => $post['item_per'][$i],
+                            'divide_disc_item_amt' => $post['divide_disc_amt'][$i],
+                            'sub_total' => $sub_total,
+                            // end
+                            'added_amt' => $post['item_added_amt_hidden'][$i],
+                            'remark' => $post['remark'][$i],
                             'created_at' => date('Y-m-d H:i:s'),
                             'created_by' => session('uid'),
                         );
@@ -1541,16 +1552,16 @@ class PurchaseModel extends Model
                             'cgst_amt' => $post['cgst_amt'][$i],
                             'sgst_amt' => $post['sgst_amt'][$i],
                             'taxability' => $post['taxability'][$i],
-                             //update discount column 17-01-2023
-                             'total' => $post['price'][$i],
-                             'item_disc' => 0,
-                             'discount' => 0,
-                             'divide_disc_item_per' => 0,
-                             'divide_disc_item_amt' => 0,
-                             'sub_total' => $post['price'][$i],
-                             // end
-                             'added_amt' => $post['item_added_amt_hidden'][$i],
-                             'remark' => $post['remark'][$i],
+                            //update discount column 17-01-2023
+                            'total' => $post['price'][$i],
+                            'item_disc' => 0,
+                            'discount' => 0,
+                            'divide_disc_item_per' => 0,
+                            'divide_disc_item_amt' => 0,
+                            'sub_total' => $post['price'][$i],
+                            // end
+                            'added_amt' => $post['item_added_amt_hidden'][$i],
+                            'remark' => $post['remark'][$i],
                             'created_at' => date('Y-m-d H:i:s'),
                             'created_by' => session('uid'),
                         );
@@ -1559,11 +1570,10 @@ class PurchaseModel extends Model
                 //echo '<pre>';print_r($itemdata);exit;
                 $item_builder = $db->table('purchase_item');
                 $result1 = $item_builder->insertBatch($itemdata);
-                if(isset($post['round']) AND $post['round_diff'] != 0)
-                {
+                if (isset($post['round']) and $post['round_diff'] != 0) {
                     $round_itemdata[] = array(
                         'parent_id' => $id,
-                        'expence_type'=>'rounding_invoices',
+                        'expence_type' => 'rounding_invoices',
                         'is_expence' => 1,
                         'item_id' => $post['round'],
                         'hsn' => '',
@@ -1586,19 +1596,23 @@ class PurchaseModel extends Model
                         'divide_disc_item_amt' => 0,
                         'sub_total' => $post['round_diff'],
                         // end
-                        'added_amt' =>'',
+                        'added_amt' => '',
                         'remark' => '',
                         'created_at' => date('Y-m-d H:i:s'),
                         'created_by' => session('uid'),
                     );
+                    $tx_accounts[] = array(
+                        "id" =>  $post['round'],
+                        "amount" => $post['round_diff'],
+                        "type" => "roundOff",
+                    );
                     $item_builder = $db->table('purchase_item');
                     $result2 = $item_builder->insertBatch($round_itemdata);
                 }
-                if(isset($post['discount_acc']) AND !empty($post['discount_amount_new']))
-                {
+                if (isset($post['discount_acc']) and !empty($post['discount_amount_new'])) {
                     $discount_itemdata[] = array(
                         'parent_id' => $id,
-                        'expence_type'=>'discount',
+                        'expence_type' => 'discount',
                         'is_expence' => 1,
                         'item_id' => $post['discount_acc'],
                         'hsn' => '',
@@ -1626,6 +1640,11 @@ class PurchaseModel extends Model
                         'created_at' => date('Y-m-d H:i:s'),
                         'created_by' => session('uid'),
                     );
+                    $tx_accounts[] = array(
+                        "id" =>  $post['discount_acc'],
+                        "amount" => $post['discount_amount_new'],
+                        "type" => "discount",
+                    );
                     $item_builder = $db->table('purchase_item');
                     $result3 = $item_builder->insertBatch($discount_itemdata);
                 }
@@ -1638,12 +1657,23 @@ class PurchaseModel extends Model
                 }
             }
         }
+        $tx_data = array(
+            'voucher_parent' => 2,
+            "voucher_id" => $post['voucher_type'],
+            "invoice_id" => $id,
+            "date" => $date,
+            "accounts" => $tx_accounts,
+            "uid" => session('uid')
+        );
+
+        // echo '<pre>';print_r($tx_data);exit;
+
+        $res = insert_update_transaction($tx_data);
         return $msg;
     }
 
 
-    public function get_purchasereturn_data($get)
-    {
+    public function get_purchasereturn_data($get) {
         $dt_search = array(
             "pr.id",
             "pr.return_no",
@@ -1686,7 +1716,7 @@ class PurchaseModel extends Model
             $btn_cancle = '<a data-toggle="modal" target="_blank"   title="Cancle Return Invoice: ' . $row['id'] . '"  onclick="editable_os(this)"  data-val="' . $row['id'] . '"  data-pk="' . $row['id'] . '" tabindex="-1" class="btn btn-link pd-10"><i class="far fa-times-circle"></i></a> ';
             $getMax = $gmodel->get_data_table('purchase_return', array('is_delete' => 0), 'MAX(return_no) as max_no');
             $btnpdf = '<a href="' . url('Purchase/pdf_return/') . $row['id'] . '" class="btn btn-link pd-6"><i class="fas fa-print"></i></a> ';
-           
+
             if ($row['is_cancle'] == 1 || $row['is_delete'] == 1) {
                 $btn =  $btnview . $btnpdf;
             } else {
@@ -1723,8 +1753,7 @@ class PurchaseModel extends Model
         exit;
     }
     // update trupti 24-11-2022
-    public function get_gnlPur_byid($id)
-    {
+    public function get_gnlPur_byid($id) {
         $db = $this->db;
         $db->setDatabase(session('DataSource'));
         $builder = $db->table('purchase_general pg');
@@ -1763,8 +1792,7 @@ class PurchaseModel extends Model
         return $getdata;
     }
 
-    public function get_general_purchase_data($get)
-    {
+    public function get_general_purchase_data($get) {
 
         $dt_search = array(
 
@@ -1851,8 +1879,7 @@ class PurchaseModel extends Model
         exit;
     }
     // update trupti 24-11-2022
-    public function insert_edit_general_pur($post)
-    {
+    public function insert_edit_general_pur($post) {
         if (!@$post['pid']) {
             $msg = array('st' => 'fail', 'msg' => "Please Select any Product");
             return $msg;
@@ -2184,8 +2211,7 @@ class PurchaseModel extends Model
     }
 
     // update trupti 24-11-2022
-    public function insert_edit_purchaseinvoice($post)
-    {
+    public function insert_edit_purchaseinvoice($post) {
         if (!@$post['pid']) {
             $msg = array('st' => 'fail', 'msg' => "Please Select any Product");
             return $msg;
@@ -2207,19 +2233,25 @@ class PurchaseModel extends Model
         $igst = $post['igst'];
         $cgst = $post['cgst'];
         $sgst = $post['sgst'];
-        // $item_brokrage = $post['item_brokrage'];
         $item_disc = $post['item_disc'];
         $discount = $post['discount'];
         $cess = $post['cess'];
         $total = 0.0;
+        $taxable_total = 0.0;
         $item_count = 0;
         $expence_count = 0;
+
         for ($i = 0; $i < count($pid); $i++) {
 
             if ($post['expence'][$i] == 0) {
                 $item_count += 1;
             } else {
                 $expence_count += 1;
+                $tx_accounts[] = array(
+                    "id" =>  $pid[$i],
+                    "amount" => $post['subtotal'][$i],
+                    "type" => "particular",
+                );
             }
         }
         if ($expence_count > 0) {
@@ -2243,13 +2275,16 @@ class PurchaseModel extends Model
                     $disc_amt = $sub * $item_disc[$i] / 100;
                 }
                 $final_sub = $post['qty'][$i] * $post['price'][$i] - @$disc_amt;
+
+                /*** for trading we take only taxable amount without main discount  ***/
+
+                $taxable_total += $final_sub;
             } else {
                 $final_sub = $post['price'][$i];
             }
             $total += $final_sub;
         }
-        // discount calculation modification update 16-01-2023
-        //$total = 0;
+
         if ($post['disc_type'] == '%') {
             if ($post['discount'] == '') {
                 $post['discount'] = 0;
@@ -2259,7 +2294,7 @@ class PurchaseModel extends Model
                     $total = 0;
                     $item_total_amt = 0;
                     for ($i = 0; $i < count($pid); $i++) {
-                    
+
                         if ($post['expence'][$i] == 0) {
                             $sub = $post['qty'][$i] * $post['price'][$i];
                             $item_total_amt += $sub;
@@ -2289,7 +2324,6 @@ class PurchaseModel extends Model
                 $total = 0;
                 for ($i = 0; $i < count($pid); $i++) {
 
-                    //$total = 0; 
                     $item_total_amt = 0;
                     for ($i = 0; $i < count($pid); $i++) {
 
@@ -2305,18 +2339,16 @@ class PurchaseModel extends Model
                             $item_per = ($sub * 100) / $item_total_amt;
                             $item_disc_amt = ($item_per / 100) * $post['discount'];
                             $final_sub = $sub - $item_disc_amt;
-                       
                         } else {
                             $final_sub = $post['price'][$i];
                         }
-                        //echo '<pre>';Print_r($final_sub);
 
                         $total += $final_sub;
                     }
                 }
             }
         }
-       
+
         if ($post['cess_type'] == '%') {
             if ($post['cess'] == '') {
                 $post['cess'] = 0;
@@ -2339,7 +2371,6 @@ class PurchaseModel extends Model
         $invoice_date = db_date($post['invoice_date']);
         $due_date = db_date($post['due_date']);
 
-        //$netamount = $total + $post['cess'] + $tds_amt + $post['tot_igst'];
         $netamount = $total + $post['cess'] + $tds_amt + $post['tot_igst'] + $post['round_diff'];
 
 
@@ -2364,6 +2395,18 @@ class PurchaseModel extends Model
             $cgst_acc = "";
             $sgst_acc = "";
         }
+
+        $tx_accounts[] = array(
+            "id" =>  $post['ledger_type'],
+            "amount" => $taxable_total,
+            "type" => "ledger",
+        );
+        $tx_accounts[] = array(
+            "id" =>  $post['account'],
+            "amount" => number_format(@$netamount, 2, '.', ''),
+            "type" => "account",
+        );
+
         $pdata = array(
             'voucher_type' => $post['voucher_type'],
             'ledger' => $post['ledger_type'],
@@ -2409,6 +2452,7 @@ class PurchaseModel extends Model
             'cgst_acc' =>  @$cgst_acc,
             'sgst_acc' =>  @$sgst_acc,
         );
+
         if ($post['gst_no'] != '') {
             if (in_array('Taxable', $post['taxability'])) {
 
@@ -2439,6 +2483,7 @@ class PurchaseModel extends Model
                 $pdata['inv_taxability'] = 'N/A';
             }
         }
+
         $gnmodel = new GeneralModel();
         if (!empty($result_array)) {
 
@@ -2447,26 +2492,24 @@ class PurchaseModel extends Model
             if (empty($msg)) {
                 $builder->where(array("id" => $post['id']));
                 $result = $builder->Update($pdata);
-                
+                $id = $post['id'];
                 $item_builder = $db->table('purchase_item');
-                $item_result = $item_builder->select('GROUP_CONCAT(item_id) as item_id')->where(array("parent_id" => $post['id'], "type" => 'invoice', "is_delete" => 0,'expence_type'=>'',  "is_expence" => 0))->get();
+                $item_result = $item_builder->select('GROUP_CONCAT(item_id) as item_id')->where(array("parent_id" => $post['id'], "type" => 'invoice', "is_delete" => 0, 'expence_type' => '',  "is_expence" => 0))->get();
                 $getItem = $item_result->getRow();
 
                 $account_builder = $db->table('purchase_item');
-                $account_result = $account_builder->select('GROUP_CONCAT(item_id) as item_id')->where(array("parent_id" => $post['id'], "type" => 'invoice', "is_delete" => 0,'expence_type'=>'', "is_expence" => 1))->get();
+                $account_result = $account_builder->select('GROUP_CONCAT(item_id) as item_id')->where(array("parent_id" => $post['id'], "type" => 'invoice', "is_delete" => 0, 'expence_type' => '', "is_expence" => 1))->get();
                 $getAccount = $account_result->getRow();
 
                 $account_builder = $db->table('purchase_item');
-                $discount_ac_result = $account_builder->select('item_id')->where(array("parent_id" => $post['id'], "type" => 'invoice', "is_delete" => 0,'expence_type'=>'discount', "is_expence" => 1))->get();
+                $discount_ac_result = $account_builder->select('item_id')->where(array("parent_id" => $post['id'], "type" => 'invoice', "is_delete" => 0, 'expence_type' => 'discount', "is_expence" => 1))->get();
                 $getDiscount = $discount_ac_result->getRow();
 
                 $account_builder = $db->table('purchase_item');
-                $round_ac_result = $account_builder->select('item_id')->where(array("parent_id" => $post['id'], "type" => 'invoice', "is_delete" => 0,'expence_type'=>'rounding_invoices', "is_expence" => 1))->get();
+                $round_ac_result = $account_builder->select('item_id')->where(array("parent_id" => $post['id'], "type" => 'invoice', "is_delete" => 0, 'expence_type' => 'rounding_invoices', "is_expence" => 1))->get();
                 $getRound = $round_ac_result->getRow();
-                if(!empty($getDiscount))
-                {
-                    if(isset($post['discount_acc']) AND !empty($post['discount_amount_new']))
-                    {
+                if (!empty($getDiscount)) {
+                    if (isset($post['discount_acc']) and !empty($post['discount_amount_new'])) {
                         $disc_data = array(
                             'item_id' => $post['discount_acc'],
                             'rate' => $post['discount_amount_new'],
@@ -2475,21 +2518,21 @@ class PurchaseModel extends Model
                             'update_at' => date('Y-m-d H:i:s'),
                             'update_by' => session('uid'),
                         );
-                        $account_builder->where(array('item_id' => $getDiscount->item_id, 'parent_id' => $post['id'], 'type' => 'invoice','expence_type'=>'discount'));
+                        $tx_accounts[] = array(
+                            "id" =>  $post['discount_acc'],
+                            "amount" => $post['discount_amount_new'],
+                            "type" => "discount",
+                        );
+                        $account_builder->where(array('item_id' => $getDiscount->item_id, 'parent_id' => $post['id'], 'type' => 'invoice', 'expence_type' => 'discount'));
                         $account_builder->update($disc_data);
+                    } else {
+                        $result_up = $gnmodel->update_data_table('purchase_item', array('item_id' => $getDiscount->item_id, 'parent_id' => $post['id'], 'type' => 'invoice', 'expence_type' => 'discount'), array('is_delete' => '1'));
                     }
-                    else
-                    {
-                        $result_up = $gnmodel->update_data_table('purchase_item', array('item_id' => $getDiscount->item_id, 'parent_id' => $post['id'], 'type' => 'invoice','expence_type'=>'discount'), array('is_delete' => '1'));
-                    }
-                }
-                else
-                {
-                    if(isset($post['discount_acc']) AND !empty($post['discount_amount_new']))
-                    {
+                } else {
+                    if (isset($post['discount_acc']) and !empty($post['discount_amount_new'])) {
                         $discount_itemdata[] = array(
                             'parent_id' => $post['id'],
-                            'expence_type'=>'discount',
+                            'expence_type' => 'discount',
                             'is_expence' => 1,
                             'item_id' => $post['discount_acc'],
                             'hsn' => '',
@@ -2504,28 +2547,29 @@ class PurchaseModel extends Model
                             'cgst_amt' => '',
                             'sgst_amt' => '',
                             'taxability' => '',
-                            //update discount column 17-01-2023
                             'total' => $post['discount_amount_new'],
                             'item_disc' => 0,
                             'discount' => 0,
                             'divide_disc_item_per' => 0,
                             'divide_disc_item_amt' => 0,
                             'sub_total' => $post['discount_amount_new'],
-                            // end
                             'added_amt' => '',
                             'remark' => '',
                             'created_at' => date('Y-m-d H:i:s'),
                             'created_by' => session('uid'),
+                        );
+                        $tx_accounts[] = array(
+                            "id" =>  $post['discount_acc'],
+                            "amount" => $post['discount_amount_new'],
+                            "type" => "discount",
                         );
                         $item_builder = $db->table('purchase_item');
                         $result3 = $item_builder->insertBatch($discount_itemdata);
                     }
                 }
 
-                if(!empty($getRound))
-                {
-                    if(isset($post['round']) AND $post['round_diff'] != 0)
-                    {
+                if (!empty($getRound)) {
+                    if (isset($post['round']) and $post['round_diff'] != 0) {
                         $round_data = array(
                             'item_id' => $post['round'],
                             'rate' => $post['round_diff'],
@@ -2534,23 +2578,21 @@ class PurchaseModel extends Model
                             'update_at' => date('Y-m-d H:i:s'),
                             'update_by' => session('uid'),
                         );
-                        $account_builder->where(array('item_id' => $getRound->item_id, 'parent_id' => $post['id'], 'type' => 'invoice','expence_type'=>'rounding_invoices'));
+                        $tx_accounts[] = array(
+                            "id" =>  $post['round'],
+                            "amount" => $post['round_diff'],
+                            "type" => "roundOff",
+                        );
+                        $account_builder->where(array('item_id' => $getRound->item_id, 'parent_id' => $post['id'], 'type' => 'invoice', 'expence_type' => 'rounding_invoices'));
                         $account_builder->update($round_data);
+                    } else {
+                        $result_up = $gnmodel->update_data_table('purchase_item', array('item_id' => $getRound->item_id, 'parent_id' => $post['id'], 'type' => 'invoice', 'expence_type' => 'rounding_invoices'), array('is_delete' => '1'));
                     }
-                    else
-                    {
-                        $result_up = $gnmodel->update_data_table('purchase_item', array('item_id' => $getRound->item_id, 'parent_id' => $post['id'], 'type' => 'invoice','expence_type'=>'rounding_invoices'), array('is_delete' => '1'));
-             
-                    }
-
-                }
-                else
-                {
-                    if(isset($post['round']) AND $post['round_diff'] != 0)
-                    {
+                } else {
+                    if (isset($post['round']) and $post['round_diff'] != 0) {
                         $round_itemdata[] = array(
                             'parent_id' => $post['id'],
-                            'expence_type'=>'rounding_invoices',
+                            'expence_type' => 'rounding_invoices',
                             'is_expence' => 1,
                             'item_id' => $post['round'],
                             'hsn' => '',
@@ -2565,18 +2607,21 @@ class PurchaseModel extends Model
                             'cgst_amt' => '',
                             'sgst_amt' => '',
                             'taxability' => '',
-                            //update discount column 17-01-2023
                             'total' => $post['round_diff'],
                             'item_disc' => 0,
                             'discount' => 0,
                             'divide_disc_item_per' => 0,
                             'divide_disc_item_amt' => 0,
                             'sub_total' => $post['round_diff'],
-                            // end
-                            'added_amt' =>'',
+                            'added_amt' => '',
                             'remark' => '',
                             'created_at' => date('Y-m-d H:i:s'),
                             'created_by' => session('uid'),
+                        );
+                        $tx_accounts[] = array(
+                            "id" =>  $post['round'],
+                            "amount" => $post['round_diff'],
+                            "type" => "roundOff",
                         );
                         $item_builder = $db->table('purchase_item');
                         $result2 = $item_builder->insertBatch($round_itemdata);
@@ -2586,7 +2631,6 @@ class PurchaseModel extends Model
                 $new_itempid = array();
                 $new_account = array();
                 $new_accountpid = array();
-                //print_r($getItem);exit;
                 for ($i = 0; $i < count($post['pid']); $i++) {
 
                     if ($post['expence'][$i] == 0) {
@@ -2610,14 +2654,12 @@ class PurchaseModel extends Model
                         $item['cgst_amt'] = $post['cgst_amt'][$i];
                         $item['sgst_amt'] = $post['sgst_amt'][$i];
                         $item['taxability'] = $post['taxability'][$i];
-                        //update discount column 17-01-2023
                         $item['total'] = $total;
                         $item['item_disc'] = $post['item_disc'][$i];
                         $item['discount'] = $post['item_discount_hidden'][$i];
                         $item['divide_disc_item_per'] = @$post['item_per'][$i];
                         $item['divide_disc_item_amt'] = @$post['divide_disc_amt'][$i];
                         $item['sub_total'] = $sub_total;
-                        // end
                         $item['added_amt'] = $post['item_added_amt_hidden'][$i];
                         $item['remark'] = $post['remark'][$i];
                         $new_item[] = $item;
@@ -2635,14 +2677,12 @@ class PurchaseModel extends Model
                         $item['cgst_amt'] = $post['cgst_amt'][$i];
                         $item['sgst_amt'] = $post['sgst_amt'][$i];
                         $item['taxability'] = $post['taxability'][$i];
-                        //update discount column 17-01-2023
                         $item['total'] = $post['price'][$i];
                         $item['item_disc'] = 0;
                         $item['discount'] = 0;
                         $item['divide_disc_item_per'] = 0;
                         $item['divide_disc_item_amt'] = 0;
                         $item['sub_total'] = $post['price'][$i];
-                        //end
                         $item['added_amt'] = $post['item_added_amt_hidden'][$i];
                         $item['remark'] = $post['remark'][$i];
                         $new_account[] = $item;
@@ -2656,7 +2696,6 @@ class PurchaseModel extends Model
 
                 $delete_itemid = array_diff($getitem, $new_itempid);
                 $delete_account = array_diff($getAccount, $new_accountpid);
-                //print_r($delete_itemid);exit;
 
                 if (!empty($delete_itemid)) {
                     foreach ($delete_itemid as $key => $del_id) {
@@ -2677,13 +2716,9 @@ class PurchaseModel extends Model
                     $getItem = $item_result->getRow();
 
                     if (!empty($getItem)) {
-                        //    $qty = $post['qty'][$i] - $getItem->qty;
 
                         $item_data = array(
-                            // 'parent_id'=> $post['id'],
                             'is_expence' => 0,
-                            // 'item_id'=> $new_item[$i]['pid'],
-                            // 'type'=> 'challan',
                             'hsn' => @$post['hsn'][$i] ? $post['hsn'][$i]  : '',
                             'uom' => $new_item[$i]['uom'],
                             'rate' => $new_item[$i]['rate'],
@@ -2695,16 +2730,14 @@ class PurchaseModel extends Model
                             'cgst_amt' => $new_item[$i]['cgst_amt'],
                             'sgst_amt' => $new_item[$i]['sgst_amt'],
                             'taxability' => $new_item[$i]['taxability'],
-                             //update discount column 17-01-2023
-                             'total' =>$new_item[$i]['total'],
-                             'item_disc' => $new_item[$i]['item_disc'],
-                             'discount' => $new_item[$i]['discount'],
-                             'divide_disc_item_per' => $new_item[$i]['divide_disc_item_per'],
-                             'divide_disc_item_amt' => $new_item[$i]['divide_disc_item_amt'],
-                             'sub_total' => $new_item[$i]['sub_total'],
-                             // end
-                             'added_amt' => $new_item[$i]['added_amt'],
-                             'remark' => $new_item[$i]['remark'],
+                            'total' => $new_item[$i]['total'],
+                            'item_disc' => $new_item[$i]['item_disc'],
+                            'discount' => $new_item[$i]['discount'],
+                            'divide_disc_item_per' => $new_item[$i]['divide_disc_item_per'],
+                            'divide_disc_item_amt' => $new_item[$i]['divide_disc_item_amt'],
+                            'sub_total' => $new_item[$i]['sub_total'],
+                            'added_amt' => $new_item[$i]['added_amt'],
+                            'remark' => $new_item[$i]['remark'],
                             'update_at' => date('Y-m-d H:i:s'),
                             'update_by' => session('uid'),
                         );
@@ -2718,7 +2751,6 @@ class PurchaseModel extends Model
                             'item_id' => $new_item[$i]['pid'],
                             'type' => 'invoice',
                             'hsn' => @$post['hsn'][$i] ? $post['hsn'][$i]  : '',
-                            //'item_disc' => $new_item[$i]['item_disc'],
                             'uom' => $new_item[$i]['uom'],
                             'rate' => $new_item[$i]['rate'],
                             'qty' => $new_item[$i]['qty'],
@@ -2729,16 +2761,14 @@ class PurchaseModel extends Model
                             'cgst_amt' => $new_item[$i]['cgst_amt'],
                             'sgst_amt' => $new_item[$i]['sgst_amt'],
                             'taxability' => $new_item[$i]['taxability'],
-                              //update discount column 17-01-2023
-                              'total' => $new_item[$i]['total'],
-                              'item_disc' => $new_item[$i]['item_disc'],
-                              'discount' => $new_item[$i]['discount'],
-                              'divide_disc_item_per' => $new_item[$i]['divide_disc_item_per'],
-                              'divide_disc_item_amt' => $new_item[$i]['divide_disc_item_amt'],
-                              'sub_total' => $new_item[$i]['sub_total'],
-                              // end
-                              'added_amt' => $new_item[$i]['added_amt'],
-                              'remark' => $new_item[$i]['remark'],
+                            'total' => $new_item[$i]['total'],
+                            'item_disc' => $new_item[$i]['item_disc'],
+                            'discount' => $new_item[$i]['discount'],
+                            'divide_disc_item_per' => $new_item[$i]['divide_disc_item_per'],
+                            'divide_disc_item_amt' => $new_item[$i]['divide_disc_item_amt'],
+                            'sub_total' => $new_item[$i]['sub_total'],
+                            'added_amt' => $new_item[$i]['added_amt'],
+                            'remark' => $new_item[$i]['remark'],
                             'update_at' => date('Y-m-d H:i:s'),
                             'update_by' => session('uid'),
                         );
@@ -2751,10 +2781,7 @@ class PurchaseModel extends Model
                     if (!empty($getAccount)) {
 
                         $acc_data = array(
-                            // 'parent_id'=> $post['id'],
                             'is_expence' => 1,
-                            // 'item_id'=> $new_account[$i]['pid'],
-                            // 'type'=> 'challan',
                             'item_disc' => '',
                             'uom' => '',
                             'rate' => $new_account[$i]['rate'],
@@ -2766,16 +2793,14 @@ class PurchaseModel extends Model
                             'cgst_amt' => $new_account[$i]['cgst_amt'],
                             'sgst_amt' => $new_account[$i]['sgst_amt'],
                             'taxability' => $new_account[$i]['taxability'],
-                             //update discount column 17-01-2023
-                             'total' => $new_account[$i]['total'],
-                             'item_disc' => $new_account[$i]['item_disc'],
-                             'discount' => $new_account[$i]['discount'],
-                             'divide_disc_item_per' => $new_account[$i]['divide_disc_item_per'],
-                             'divide_disc_item_amt' => $new_account[$i]['divide_disc_item_amt'],
-                             'sub_total' => $new_account[$i]['sub_total'],
-                             // end
-                             'added_amt' => $new_account[$i]['added_amt'],
-                             'remark' => $new_account[$i]['remark'],
+                            'total' => $new_account[$i]['total'],
+                            'item_disc' => $new_account[$i]['item_disc'],
+                            'discount' => $new_account[$i]['discount'],
+                            'divide_disc_item_per' => $new_account[$i]['divide_disc_item_per'],
+                            'divide_disc_item_amt' => $new_account[$i]['divide_disc_item_amt'],
+                            'sub_total' => $new_account[$i]['sub_total'],
+                            'added_amt' => $new_account[$i]['added_amt'],
+                            'remark' => $new_account[$i]['remark'],
                             'update_at' => date('Y-m-d H:i:s'),
                             'update_by' => session('uid'),
                         );
@@ -2798,16 +2823,14 @@ class PurchaseModel extends Model
                             'cgst_amt' => $new_account[$i]['cgst_amt'],
                             'sgst_amt' => $new_account[$i]['sgst_amt'],
                             'taxability' => $new_account[$i]['taxability'],
-                             //update discount column 17-01-2023
-                             'total' => $new_account[$i]['total'],
-                             'item_disc' => $new_account[$i]['item_disc'],
-                             'discount' => $new_account[$i]['discount'],
-                             'divide_disc_item_per' => $new_account[$i]['divide_disc_item_per'],
-                             'divide_disc_item_amt' => $new_account[$i]['divide_disc_item_amt'],
-                             'sub_total' => $new_account[$i]['sub_total'],
-                             // end
-                             'added_amt' => $new_account[$i]['added_amt'],
-                             'remark' => $new_account[$i]['remark'],
+                            'total' => $new_account[$i]['total'],
+                            'item_disc' => $new_account[$i]['item_disc'],
+                            'discount' => $new_account[$i]['discount'],
+                            'divide_disc_item_per' => $new_account[$i]['divide_disc_item_per'],
+                            'divide_disc_item_amt' => $new_account[$i]['divide_disc_item_amt'],
+                            'sub_total' => $new_account[$i]['sub_total'],
+                            'added_amt' => $new_account[$i]['added_amt'],
+                            'remark' => $new_account[$i]['remark'],
                             'created_at' => date('Y-m-d H:i:s'),
                             'created_by' => session('uid'),
                         );
@@ -2818,20 +2841,17 @@ class PurchaseModel extends Model
 
                 if ($result) {
                     $msg = array('st' => 'success', 'msg' => "Your Details updated Successfully!!!");
-                    //return view('master/account_view');
                 } else {
                     $msg = array('st' => 'fail', 'msg' => "Your Details Updated fail");
                 }
             }
         } else {
-            //echo '<pre>';Print_r($post);exit;
 
             $pdata['created_at'] = date('Y-m-d H:i:s');
             $pdata['created_by'] = session('uid');
 
             if (empty($msg)) {
                 $result = $builder->Insert($pdata);
-                // print_r($result);
                 $id = $db->insertID();
 
                 for ($i = 0; $i < count($pid); $i++) {
@@ -2859,14 +2879,12 @@ class PurchaseModel extends Model
                             'cgst_amt' => $post['cgst_amt'][$i],
                             'sgst_amt' => $post['sgst_amt'][$i],
                             'taxability' => $post['taxability'][$i],
-                            //update discount column 17-01-2023
                             'total' => $total,
                             'item_disc' => $post['item_disc'][$i],
                             'discount' => $post['item_discount_hidden'][$i],
                             'divide_disc_item_per' => $post['item_per'][$i],
                             'divide_disc_item_amt' => $post['divide_disc_amt'][$i],
                             'sub_total' => $sub_total,
-                            // end
                             'added_amt' => $post['item_added_amt_hidden'][$i],
                             'remark' => $post['remark'][$i],
                             'created_at' => date('Y-m-d H:i:s'),
@@ -2889,14 +2907,12 @@ class PurchaseModel extends Model
                             'cgst_amt' => $post['cgst_amt'][$i],
                             'sgst_amt' => $post['sgst_amt'][$i],
                             'taxability' => $post['taxability'][$i],
-                            //update discount column 17-01-2023
                             'total' => $post['price'][$i],
                             'item_disc' => 0,
                             'discount' => 0,
                             'divide_disc_item_per' => 0,
                             'divide_disc_item_amt' => 0,
                             'sub_total' => $post['price'][$i],
-                            // end
                             'added_amt' => $post['item_added_amt_hidden'][$i],
                             'remark' => $post['remark'][$i],
                             'created_at' => date('Y-m-d H:i:s'),
@@ -2904,13 +2920,11 @@ class PurchaseModel extends Model
                         );
                     }
                 }
-                $item_builder = $db->table('purchase_item');
-                $result1 = $item_builder->insertBatch($itemdata);
-                if(isset($post['round']) AND $post['round_diff'] != 0)
-                {
-                    $round_itemdata[] = array(
+
+                if (isset($post['round']) and $post['round_diff'] != 0) {
+                    $itemdata[] = array(
                         'parent_id' => $id,
-                        'expence_type'=>'rounding_invoices',
+                        'expence_type' => 'rounding_invoices',
                         'is_expence' => 1,
                         'item_id' => $post['round'],
                         'hsn' => '',
@@ -2925,28 +2939,28 @@ class PurchaseModel extends Model
                         'cgst_amt' => '',
                         'sgst_amt' => '',
                         'taxability' => '',
-                        //update discount column 17-01-2023
                         'total' => $post['round_diff'],
                         'item_disc' => 0,
                         'discount' => 0,
                         'divide_disc_item_per' => 0,
                         'divide_disc_item_amt' => 0,
                         'sub_total' => $post['round_diff'],
-                        // end
-                        'added_amt' =>'',
+                        'added_amt' => '',
                         'remark' => '',
                         'created_at' => date('Y-m-d H:i:s'),
                         'created_by' => session('uid'),
                     );
-                    $item_builder = $db->table('purchase_item');
-                    $result2 = $item_builder->insertBatch($round_itemdata);
+                    $tx_accounts[] = array(
+                        "id" =>  $post['round'],
+                        "amount" => $post['round_diff'],
+                        "type" => "roundOff",
+                    );
                 }
-                
-                if(isset($post['discount_acc']) AND !empty($post['discount_amount_new']))
-                {
-                    $discount_itemdata[] = array(
+
+                if (isset($post['discount_acc']) and !empty($post['discount_amount_new'])) {
+                    $itemdata[] = array(
                         'parent_id' => $id,
-                        'expence_type'=>'discount',
+                        'expence_type' => 'discount',
                         'is_expence' => 1,
                         'item_id' => $post['discount_acc'],
                         'hsn' => '',
@@ -2961,22 +2975,28 @@ class PurchaseModel extends Model
                         'cgst_amt' => '',
                         'sgst_amt' => '',
                         'taxability' => '',
-                        //update discount column 17-01-2023
                         'total' => $post['discount_amount_new'],
                         'item_disc' => 0,
                         'discount' => 0,
                         'divide_disc_item_per' => 0,
                         'divide_disc_item_amt' => 0,
                         'sub_total' => $post['discount_amount_new'],
-                        // end
                         'added_amt' => '',
                         'remark' => '',
                         'created_at' => date('Y-m-d H:i:s'),
                         'created_by' => session('uid'),
                     );
-                    $item_builder = $db->table('purchase_item');
-                    $result3 = $item_builder->insertBatch($discount_itemdata);
+
+                    $tx_accounts[] = array(
+                        "id" =>  $post['discount_acc'],
+                        "amount" => $post['discount_amount_new'],
+                        "type" => "discount",
+                    );
                 }
+                $item_builder = $db->table('purchase_item');
+                $result1 = $item_builder->insertBatch($itemdata);
+
+
 
                 if ($result && $result1) {
                     $msg = array('st' => 'success', 'msg' => "Your Details Added Successfully!!!");
@@ -2986,11 +3006,23 @@ class PurchaseModel extends Model
                 }
             }
         }
+        $tx_data = array(
+            'voucher_parent' => 2,
+            "voucher_id" => $post['voucher_type'],
+            "invoice_id" => $id,
+            "date" => $invoice_date,
+            "accounts" => $tx_accounts,
+            "uid" => session('uid')
+        );
+
+        // echo '<pre>';print_r($tx_data);exit;
+
+        $res = insert_update_transaction($tx_data);
+
         return $msg;
     }
 
-    public function get_purchaseinvoice_data($get)
-    {
+    public function get_purchaseinvoice_data($get) {
         $dt_search = array(
             "pi.id",
             "pi.invoice_no",
@@ -3080,8 +3112,7 @@ class PurchaseModel extends Model
         exit;
     }
     // update trupti 24-11-2022
-    public function get_purchase_invoice($id)
-    {
+    public function get_purchase_invoice($id) {
 
         $db = $this->db;
         $db->setDatabase(session('DataSource'));
@@ -3109,7 +3140,6 @@ class PurchaseModel extends Model
             $igst_acc = $gmodel->get_data_table('account', array('id' => @$row['igst_acc']), 'name');
             $sgst_acc = $gmodel->get_data_table('account', array('id' => @$row['sgst_acc']), 'name');
             $cgst_acc = $gmodel->get_data_table('account', array('id' => @$row['cgst_acc']), 'name');
-            $ledger = $gmodel->get_data_table('account', array('id' => @$row['ledger']), 'name');
 
 
             $getdata['purchaseinvoice']['broker_name'] = @$getbroker['name'];
@@ -3125,13 +3155,12 @@ class PurchaseModel extends Model
             $getdata['purchaseinvoice']['igst_acc_name'] = @$igst_acc['name'];
             $getdata['purchaseinvoice']['sgst_acc_name'] = @$sgst_acc['name'];
             $getdata['purchaseinvoice']['cgst_acc_name'] = @$cgst_acc['name'];
-            $getdata['purchaseinvoice']['ledger_name'] = @$ledger['name'];
         }
 
         $item_builder = $db->table('purchase_item st');
         $item_builder->select('st.*,st.uom as uom');
         //$item_builder->join('item i','i.id = st.item_id');
-        $item_builder->where(array('st.parent_id' => $id, 'st.type' => 'invoice','st.expence_type'=>'', 'st.is_delete' => 0));
+        $item_builder->where(array('st.parent_id' => $id, 'st.type' => 'invoice', 'st.expence_type' => '', 'st.is_delete' => 0));
         $query = $item_builder->get();
         $getdata1 = $query->getResultArray();
         //echo '<pre>';print_r($getdata1);exit;
@@ -3164,8 +3193,8 @@ class PurchaseModel extends Model
         }
         $item_builder = $db->table('purchase_item st');
         $item_builder->select('st.*,ac.name as acc_name');
-        $item_builder->join('account ac','ac.id = st.item_id');
-        $item_builder->where(array('st.parent_id' => $id, 'st.type' => 'invoice','st.expence_type'=>'rounding_invoices','is_expence'=>1, 'st.is_delete' => 0));
+        $item_builder->join('account ac', 'ac.id = st.item_id');
+        $item_builder->where(array('st.parent_id' => $id, 'st.type' => 'invoice', 'st.expence_type' => 'rounding_invoices', 'is_expence' => 1, 'st.is_delete' => 0));
         $query = $item_builder->get();
         $getrounding = $query->getRowArray();
 
@@ -3174,8 +3203,8 @@ class PurchaseModel extends Model
 
         $item_builder = $db->table('purchase_item st');
         $item_builder->select('st.*,ac.name as acc_name');
-        $item_builder->join('account ac','ac.id = st.item_id');
-        $item_builder->where(array('st.parent_id' => $id, 'st.type' => 'invoice','st.expence_type'=>'discount','is_expence'=>1, 'st.is_delete' => 0));
+        $item_builder->join('account ac', 'ac.id = st.item_id');
+        $item_builder->where(array('st.parent_id' => $id, 'st.type' => 'invoice', 'st.expence_type' => 'discount', 'is_expence' => 1, 'st.is_delete' => 0));
         $query = $item_builder->get();
         $getdiscount = $query->getRowArray();
 
@@ -3186,8 +3215,7 @@ class PurchaseModel extends Model
     }
 
     // update trupti 24-11-2022
-    public function search_purchase_challan_data($post)
-    {
+    public function search_purchase_challan_data($post) {
 
         $db = $this->db;
         $db->setDatabase(session('DataSource'));
@@ -3294,8 +3322,7 @@ class PurchaseModel extends Model
     }
 
     // update trupti 24-11-2022
-    public function get_purchase_challan($id)
-    {
+    public function get_purchase_challan($id) {
 
         $db = $this->db;
         $db->setDatabase(session('DataSource'));
@@ -3373,8 +3400,7 @@ class PurchaseModel extends Model
         return $getdata;
     }
 
-    public function get_master_data($method, $id)
-    {
+    public function get_master_data($method, $id) {
 
         $gnmodel = new GeneralModel();
         if ($method == 'debit') {
@@ -3392,8 +3418,7 @@ class PurchaseModel extends Model
         return $result;
     }
     // update trupti 24-11-2022
-    public function get_purchaseinvoice_databyid($post)
-    {
+    public function get_purchaseinvoice_databyid($post) {
 
         $db = $this->db;
         $db->setDatabase(session('DataSource'));
@@ -3490,8 +3515,7 @@ class PurchaseModel extends Model
         return $result;
     }
     // update trupti 24-11-2022
-    public function get_purchase_return($id)
-    {
+    public function get_purchase_return($id) {
 
         $db = $this->db;
         $db->setDatabase(session('DataSource'));
@@ -3516,7 +3540,6 @@ class PurchaseModel extends Model
             $igst_acc = $gmodel->get_data_table('account', array('id' => @$row['igst_acc']), 'name');
             $sgst_acc = $gmodel->get_data_table('account', array('id' => @$row['sgst_acc']), 'name');
             $cgst_acc = $gmodel->get_data_table('account', array('id' => @$row['cgst_acc']), 'name');
-            $ledger = $gmodel->get_data_table('account', array('id' => @$row['ledger']), 'name');
 
             $getdata['p_return']['broker_name'] = @$getbroker['name'];
             $getdata['p_return']['account_name'] = @$getac['name'];
@@ -3532,7 +3555,6 @@ class PurchaseModel extends Model
             $getdata['p_return']['igst_acc_name'] = @$igst_acc['name'];
             $getdata['p_return']['sgst_acc_name'] = @$sgst_acc['name'];
             $getdata['p_return']['cgst_acc_name'] = @$cgst_acc['name'];
-            $getdata['p_return']['ledger_name'] = @$ledger['name'];
 
             if (!empty($getinvoice)) {
                 $getdata['p_return']['invoice_name'] = '(' . @$getinvoice['id'] . ') -' . @$getac['name'] . ' / ' . user_date(@$getinvoice['invoice_date']) . '/ ₹' . @$getinvoice['net_amount'];
@@ -3543,7 +3565,7 @@ class PurchaseModel extends Model
         $item_builder = $db->table('purchase_item st');
         $item_builder->select('st.*,st.uom as uom');
         //$item_builder->join('item i','i.id = st.item_id');
-        $item_builder->where(array('st.parent_id' => $id, 'st.type' => 'return','expence_type'=>'', 'st.is_delete' => 0));
+        $item_builder->where(array('st.parent_id' => $id, 'st.type' => 'return', 'expence_type' => '', 'st.is_delete' => 0));
         $query = $item_builder->get();
         $getdata1 = $query->getResultArray();
         //echo '<pre>';print_r($getdata1);exit;
@@ -3577,8 +3599,8 @@ class PurchaseModel extends Model
         // echo '<pre>';print_r($getdata);exit;
         $item_builder = $db->table('purchase_item st');
         $item_builder->select('st.*,ac.name as acc_name');
-        $item_builder->join('account ac','ac.id = st.item_id');
-        $item_builder->where(array('st.parent_id' => $id, 'st.type' => 'return','st.expence_type'=>'rounding_invoices','is_expence'=>1, 'st.is_delete' => 0));
+        $item_builder->join('account ac', 'ac.id = st.item_id');
+        $item_builder->where(array('st.parent_id' => $id, 'st.type' => 'return', 'st.expence_type' => 'rounding_invoices', 'is_expence' => 1, 'st.is_delete' => 0));
         $query = $item_builder->get();
         $getrounding = $query->getRowArray();
 
@@ -3587,8 +3609,8 @@ class PurchaseModel extends Model
 
         $item_builder = $db->table('purchase_item st');
         $item_builder->select('st.*,ac.name as acc_name');
-        $item_builder->join('account ac','ac.id = st.item_id');
-        $item_builder->where(array('st.parent_id' => $id, 'st.type' => 'return','st.expence_type'=>'discount','is_expence'=>1, 'st.is_delete' => 0));
+        $item_builder->join('account ac', 'ac.id = st.item_id');
+        $item_builder->where(array('st.parent_id' => $id, 'st.type' => 'return', 'st.expence_type' => 'discount', 'is_expence' => 1, 'st.is_delete' => 0));
         $query = $item_builder->get();
         $getdiscount = $query->getRowArray();
 
@@ -3599,8 +3621,7 @@ class PurchaseModel extends Model
 
 
 
-    public function get_purchasegeneral_databyid($post)
-    {
+    public function get_purchasegeneral_databyid($post) {
         // print_r($post);exit;
         $db = $this->db;
         $db->setDatabase(session('DataSource'));
@@ -3638,8 +3659,7 @@ class PurchaseModel extends Model
         return $data;
     }
 
-    public function UpdateData($post)
-    {
+    public function UpdateData($post) {
         $result = array();
 
         if ($post['type'] == 'Remove') {
